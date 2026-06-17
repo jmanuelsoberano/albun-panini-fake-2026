@@ -126,7 +126,8 @@ Ese checklist incluye:
 - comandos previos (`npm run verify:migration`, `npm audit --omit=dev`).
 - smoke de teclado real con Playwright/Chromium.
 - smoke local de Hosting.
-- comando de deploy con `firebase-tools@14.19.0`.
+- GitHub Actions para deploy automatico al merge/push en `main`.
+- comando de deploy manual con `firebase-tools@14.19.0` como fallback.
 - verificacion posterior al deploy.
 - rollback temporal a `hosting.public = "public"`.
 
@@ -209,7 +210,7 @@ import {
   listenToInventory,
   listenToUserProfile,
   claimStarterPack,
-  openPack as openPackFromFirebase
+  openPack as openPackFromFirebase,
 } from "./firebase-client.js";
 ```
 
