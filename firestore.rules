@@ -1,0 +1,58 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+    function signedIn() {
+      return request.auth != null;
+    }
+
+    function isOwner(userId) {
+      return signedIn() && request.auth.uid == userId;
+    }
+
+    match /users/{userId} {
+      allow read: if signedIn();
+      allow create: if isOwner(userId);
+      allow update: if isOwner(userId)
+        && !('packsAvailable' in request.resource.data.diff(resource.data).changedKeys())
+        && !('coins' in request.resource.data.diff(resource.data).changedKeys());
+      allow delete: if false;
+    }
+
+    match /users/{userId}/inventory/{stickerId} {
+      allow read: if isOwner(userId);
+      allow write: if false; // Solo Cloud Functions debe modificar inventarios.
+    }
+
+    match /users/{userId}/missions/{missionId} {
+      allow read: if isOwner(userId);
+      allow write: if false; // Solo Cloud Functions debe otorgar recompensas.
+    }
+
+    match /rooms/{roomId} {
+      allow read: if signedIn();
+      allow create: if signedIn();
+      allow update: if signedIn() && request.auth.uid in resource.data.memberIds;
+      allow delete: if false;
+
+      match /members/{userId} {
+        allow read: if signedIn();
+        allow write: if isOwner(userId);
+      }
+    }
+
+    match /trades/{tradeId} {
+      allow read: if signedIn()
+        && (request.auth.uid == resource.data.fromUserId || request.auth.uid == resource.data.toUserId);
+      allow create: if signedIn()
+        && request.auth.uid == request.resource.data.fromUserId
+        && request.resource.data.status == 'pending';
+      allow update, delete: if false; // Aceptar/cancelar debe pasar por Cloud Functions.
+    }
+
+    match /catalog/{docId} {
+      allow read: if true;
+      allow write: if false;
+    }
+  }
+}
