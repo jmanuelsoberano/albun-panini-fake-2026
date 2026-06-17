@@ -1,0 +1,38 @@
+<article
+  class="sticker-card"
+  [class.missing]="missing()"
+  [class.duplicate]="duplicate()"
+  [style.--team-a]="sticker().colors[0]"
+  [style.--team-b]="sticker().colors[1]"
+  role="button"
+  tabindex="0"
+  [attr.aria-label]="accessibilityLabel()"
+  (click)="selectSticker()"
+  (keydown.enter)="selectSticker()"
+  (keydown.space)="selectStickerFromKeyboard($event)"
+>
+  <div class="sticker-art">
+    <span class="sticker-code">{{ sticker().id }}</span>
+    <span class="rarity-badge">{{ sticker().rarity }}</span>
+    <div class="placeholder-photo">
+      <strong>{{ initials() }}</strong>
+      <span>{{ sticker().privateSlot }}</span>
+    </div>
+    <div class="sticker-number">{{ sticker().number }}</div>
+  </div>
+  <div class="sticker-body">
+    <div class="sticker-name">{{ sticker().name }}</div>
+    <div class="sticker-meta">
+      {{ sticker().team }} · {{ sticker().position }} #{{ sticker().shirt }}
+    </div>
+    <div class="sticker-footer">
+      @if (missing()) {
+        <span class="pill">Falta</span>
+      } @else if (duplicate()) {
+        <span class="pill green">x{{ copies() }}</span>
+      } @else {
+        <span class="pill gold">Pegado</span>
+      }
+    </div>
+  </div>
+</article>

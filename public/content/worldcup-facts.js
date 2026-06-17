@@ -1,0 +1,16175 @@
+// Factual text data for the local fan album prototype.
+// Generated from FIFA public tournament and squad information on 2026-06-17.
+// This file intentionally contains no logos, shields, mascots, official photos, or protected artwork.
+
+export const tournamentTeams = [
+  {
+    "id": "T01",
+    "name": "Algeria",
+    "code": "ALG",
+    "confederation": "CAF",
+    "colors": [
+      "#0f62fe",
+      "#7dd3fc"
+    ]
+  },
+  {
+    "id": "T02",
+    "name": "Argentina",
+    "code": "ARG",
+    "confederation": "CONMEBOL",
+    "colors": [
+      "#e11d48",
+      "#f59e0b"
+    ]
+  },
+  {
+    "id": "T03",
+    "name": "Australia",
+    "code": "AUS",
+    "confederation": "AFC",
+    "colors": [
+      "#16a34a",
+      "#facc15"
+    ]
+  },
+  {
+    "id": "T04",
+    "name": "Austria",
+    "code": "AUT",
+    "confederation": "UEFA",
+    "colors": [
+      "#7c3aed",
+      "#22d3ee"
+    ]
+  },
+  {
+    "id": "T05",
+    "name": "Belgium",
+    "code": "BEL",
+    "confederation": "UEFA",
+    "colors": [
+      "#dc2626",
+      "#2563eb"
+    ]
+  },
+  {
+    "id": "T06",
+    "name": "Bosnia And Herzegovina",
+    "code": "BIH",
+    "confederation": "UEFA",
+    "colors": [
+      "#0891b2",
+      "#84cc16"
+    ]
+  },
+  {
+    "id": "T07",
+    "name": "Brazil",
+    "code": "BRA",
+    "confederation": "CONMEBOL",
+    "colors": [
+      "#111827",
+      "#f97316"
+    ]
+  },
+  {
+    "id": "T08",
+    "name": "Cabo Verde",
+    "code": "CPV",
+    "confederation": "CAF",
+    "colors": [
+      "#be123c",
+      "#fda4af"
+    ]
+  },
+  {
+    "id": "T09",
+    "name": "Canada",
+    "code": "CAN",
+    "confederation": "Concacaf",
+    "colors": [
+      "#0f62fe",
+      "#7dd3fc"
+    ]
+  },
+  {
+    "id": "T10",
+    "name": "Colombia",
+    "code": "COL",
+    "confederation": "CONMEBOL",
+    "colors": [
+      "#e11d48",
+      "#f59e0b"
+    ]
+  },
+  {
+    "id": "T11",
+    "name": "Congo DR",
+    "code": "COD",
+    "confederation": "CAF",
+    "colors": [
+      "#16a34a",
+      "#facc15"
+    ]
+  },
+  {
+    "id": "T12",
+    "name": "Côte D'Ivoire",
+    "code": "CIV",
+    "confederation": "FIFA",
+    "colors": [
+      "#7c3aed",
+      "#22d3ee"
+    ]
+  },
+  {
+    "id": "T13",
+    "name": "Croatia",
+    "code": "CRO",
+    "confederation": "UEFA",
+    "colors": [
+      "#dc2626",
+      "#2563eb"
+    ]
+  },
+  {
+    "id": "T14",
+    "name": "Curaçao",
+    "code": "CUW",
+    "confederation": "FIFA",
+    "colors": [
+      "#0891b2",
+      "#84cc16"
+    ]
+  },
+  {
+    "id": "T15",
+    "name": "Czechia",
+    "code": "CZE",
+    "confederation": "UEFA",
+    "colors": [
+      "#111827",
+      "#f97316"
+    ]
+  },
+  {
+    "id": "T16",
+    "name": "Ecuador",
+    "code": "ECU",
+    "confederation": "CONMEBOL",
+    "colors": [
+      "#be123c",
+      "#fda4af"
+    ]
+  },
+  {
+    "id": "T17",
+    "name": "Egypt",
+    "code": "EGY",
+    "confederation": "CAF",
+    "colors": [
+      "#0f62fe",
+      "#7dd3fc"
+    ]
+  },
+  {
+    "id": "T18",
+    "name": "England",
+    "code": "ENG",
+    "confederation": "UEFA",
+    "colors": [
+      "#e11d48",
+      "#f59e0b"
+    ]
+  },
+  {
+    "id": "T19",
+    "name": "France",
+    "code": "FRA",
+    "confederation": "UEFA",
+    "colors": [
+      "#16a34a",
+      "#facc15"
+    ]
+  },
+  {
+    "id": "T20",
+    "name": "Germany",
+    "code": "GER",
+    "confederation": "UEFA",
+    "colors": [
+      "#7c3aed",
+      "#22d3ee"
+    ]
+  },
+  {
+    "id": "T21",
+    "name": "Ghana",
+    "code": "GHA",
+    "confederation": "CAF",
+    "colors": [
+      "#dc2626",
+      "#2563eb"
+    ]
+  },
+  {
+    "id": "T22",
+    "name": "Haiti",
+    "code": "HAI",
+    "confederation": "Concacaf",
+    "colors": [
+      "#0891b2",
+      "#84cc16"
+    ]
+  },
+  {
+    "id": "T23",
+    "name": "IR Iran",
+    "code": "IRN",
+    "confederation": "AFC",
+    "colors": [
+      "#111827",
+      "#f97316"
+    ]
+  },
+  {
+    "id": "T24",
+    "name": "Iraq",
+    "code": "IRQ",
+    "confederation": "AFC",
+    "colors": [
+      "#be123c",
+      "#fda4af"
+    ]
+  },
+  {
+    "id": "T25",
+    "name": "Japan",
+    "code": "JPN",
+    "confederation": "AFC",
+    "colors": [
+      "#0f62fe",
+      "#7dd3fc"
+    ]
+  },
+  {
+    "id": "T26",
+    "name": "Jordan",
+    "code": "JOR",
+    "confederation": "AFC",
+    "colors": [
+      "#e11d48",
+      "#f59e0b"
+    ]
+  },
+  {
+    "id": "T27",
+    "name": "Korea Republic",
+    "code": "KOR",
+    "confederation": "AFC",
+    "colors": [
+      "#16a34a",
+      "#facc15"
+    ]
+  },
+  {
+    "id": "T28",
+    "name": "Mexico",
+    "code": "MEX",
+    "confederation": "Concacaf",
+    "colors": [
+      "#7c3aed",
+      "#22d3ee"
+    ]
+  },
+  {
+    "id": "T29",
+    "name": "Morocco",
+    "code": "MAR",
+    "confederation": "CAF",
+    "colors": [
+      "#dc2626",
+      "#2563eb"
+    ]
+  },
+  {
+    "id": "T30",
+    "name": "Netherlands",
+    "code": "NED",
+    "confederation": "UEFA",
+    "colors": [
+      "#0891b2",
+      "#84cc16"
+    ]
+  },
+  {
+    "id": "T31",
+    "name": "New Zealand",
+    "code": "NZL",
+    "confederation": "OFC",
+    "colors": [
+      "#111827",
+      "#f97316"
+    ]
+  },
+  {
+    "id": "T32",
+    "name": "Norway",
+    "code": "NOR",
+    "confederation": "UEFA",
+    "colors": [
+      "#be123c",
+      "#fda4af"
+    ]
+  },
+  {
+    "id": "T33",
+    "name": "Panama",
+    "code": "PAN",
+    "confederation": "Concacaf",
+    "colors": [
+      "#0f62fe",
+      "#7dd3fc"
+    ]
+  },
+  {
+    "id": "T34",
+    "name": "Paraguay",
+    "code": "PAR",
+    "confederation": "CONMEBOL",
+    "colors": [
+      "#e11d48",
+      "#f59e0b"
+    ]
+  },
+  {
+    "id": "T35",
+    "name": "Portugal",
+    "code": "POR",
+    "confederation": "UEFA",
+    "colors": [
+      "#16a34a",
+      "#facc15"
+    ]
+  },
+  {
+    "id": "T36",
+    "name": "Qatar",
+    "code": "QAT",
+    "confederation": "AFC",
+    "colors": [
+      "#7c3aed",
+      "#22d3ee"
+    ]
+  },
+  {
+    "id": "T37",
+    "name": "Saudi Arabia",
+    "code": "KSA",
+    "confederation": "AFC",
+    "colors": [
+      "#dc2626",
+      "#2563eb"
+    ]
+  },
+  {
+    "id": "T38",
+    "name": "Scotland",
+    "code": "SCO",
+    "confederation": "UEFA",
+    "colors": [
+      "#0891b2",
+      "#84cc16"
+    ]
+  },
+  {
+    "id": "T39",
+    "name": "Senegal",
+    "code": "SEN",
+    "confederation": "CAF",
+    "colors": [
+      "#111827",
+      "#f97316"
+    ]
+  },
+  {
+    "id": "T40",
+    "name": "South Africa",
+    "code": "RSA",
+    "confederation": "CAF",
+    "colors": [
+      "#be123c",
+      "#fda4af"
+    ]
+  },
+  {
+    "id": "T41",
+    "name": "Spain",
+    "code": "ESP",
+    "confederation": "UEFA",
+    "colors": [
+      "#0f62fe",
+      "#7dd3fc"
+    ]
+  },
+  {
+    "id": "T42",
+    "name": "Sweden",
+    "code": "SWE",
+    "confederation": "UEFA",
+    "colors": [
+      "#e11d48",
+      "#f59e0b"
+    ]
+  },
+  {
+    "id": "T43",
+    "name": "Switzerland",
+    "code": "SUI",
+    "confederation": "UEFA",
+    "colors": [
+      "#16a34a",
+      "#facc15"
+    ]
+  },
+  {
+    "id": "T44",
+    "name": "Tunisia",
+    "code": "TUN",
+    "confederation": "CAF",
+    "colors": [
+      "#7c3aed",
+      "#22d3ee"
+    ]
+  },
+  {
+    "id": "T45",
+    "name": "Türkiye",
+    "code": "TUR",
+    "confederation": "FIFA",
+    "colors": [
+      "#dc2626",
+      "#2563eb"
+    ]
+  },
+  {
+    "id": "T46",
+    "name": "Uruguay",
+    "code": "URU",
+    "confederation": "CONMEBOL",
+    "colors": [
+      "#0891b2",
+      "#84cc16"
+    ]
+  },
+  {
+    "id": "T47",
+    "name": "USA",
+    "code": "USA",
+    "confederation": "Concacaf",
+    "colors": [
+      "#111827",
+      "#f97316"
+    ]
+  },
+  {
+    "id": "T48",
+    "name": "Uzbekistan",
+    "code": "UZB",
+    "confederation": "AFC",
+    "colors": [
+      "#be123c",
+      "#fda4af"
+    ]
+  }
+];
+
+export const tournamentStadiums = [
+  [
+    "Toronto Stadium",
+    "Toronto, Canada",
+    "Sede factual del torneo 2026; sin logotipos ni arte oficial."
+  ],
+  [
+    "BC Place Vancouver",
+    "Vancouver, Canada",
+    "Sede factual del torneo 2026; sin logotipos ni arte oficial."
+  ],
+  [
+    "Mexico City Stadium",
+    "Mexico City, Mexico",
+    "Sede factual del torneo 2026; sin logotipos ni arte oficial."
+  ],
+  [
+    "Estadio Guadalajara",
+    "Guadalajara, Mexico",
+    "Sede factual del torneo 2026; sin logotipos ni arte oficial."
+  ],
+  [
+    "Estadio Monterrey",
+    "Monterrey, Mexico",
+    "Sede factual del torneo 2026; sin logotipos ni arte oficial."
+  ],
+  [
+    "Atlanta Stadium",
+    "Atlanta, USA",
+    "Sede factual del torneo 2026; sin logotipos ni arte oficial."
+  ],
+  [
+    "Boston Stadium",
+    "Boston, USA",
+    "Sede factual del torneo 2026; sin logotipos ni arte oficial."
+  ],
+  [
+    "Dallas Stadium",
+    "Dallas, USA",
+    "Sede factual del torneo 2026; sin logotipos ni arte oficial."
+  ],
+  [
+    "Houston Stadium",
+    "Houston, USA",
+    "Sede factual del torneo 2026; sin logotipos ni arte oficial."
+  ],
+  [
+    "Kansas City Stadium",
+    "Kansas City, USA",
+    "Sede factual del torneo 2026; sin logotipos ni arte oficial."
+  ],
+  [
+    "Los Angeles Stadium",
+    "Los Angeles, USA",
+    "Sede factual del torneo 2026; sin logotipos ni arte oficial."
+  ],
+  [
+    "Miami Stadium",
+    "Miami, USA",
+    "Sede factual del torneo 2026; sin logotipos ni arte oficial."
+  ],
+  [
+    "New York New Jersey Stadium",
+    "New York New Jersey, USA",
+    "Sede factual del torneo 2026; sin logotipos ni arte oficial."
+  ],
+  [
+    "Philadelphia Stadium",
+    "Philadelphia, USA",
+    "Sede factual del torneo 2026; sin logotipos ni arte oficial."
+  ],
+  [
+    "San Francisco Bay Area Stadium",
+    "San Francisco Bay Area, USA",
+    "Sede factual del torneo 2026; sin logotipos ni arte oficial."
+  ],
+  [
+    "Seattle Stadium",
+    "Seattle, USA",
+    "Sede factual del torneo 2026; sin logotipos ni arte oficial."
+  ]
+];
+
+export const fullSquads = {
+  "T01": [
+    {
+      "shirt": "1",
+      "position": "GK",
+      "role": "Portero",
+      "name": "Melvin Feycal Mastil",
+      "nameOnShirt": "MASTIL",
+      "club": "FC Stade Nyonnais (SUI)",
+      "height": "1.94 m",
+      "caps": 2,
+      "goals": 0
+    },
+    {
+      "shirt": "2",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Aissa Mandi",
+      "nameOnShirt": "MANDI",
+      "club": "Lille OSC (FRA)",
+      "height": "1.84 m",
+      "caps": 120,
+      "goals": 8
+    },
+    {
+      "shirt": "3",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Achref Abada",
+      "nameOnShirt": "ABADA",
+      "club": "USM Alger (ALG)",
+      "height": "1.85 m",
+      "caps": 10,
+      "goals": 1
+    },
+    {
+      "shirt": "4",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Mohamed Amine Tougai",
+      "nameOnShirt": "TOUGAI",
+      "club": "Espérance De Tunisie (TUN)",
+      "height": "1.86 m",
+      "caps": 30,
+      "goals": 2
+    },
+    {
+      "shirt": "5",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Zineddine Belaïd",
+      "nameOnShirt": "BELAID",
+      "club": "JS Kabylie (ALG)",
+      "height": "1.86 m",
+      "caps": 18,
+      "goals": 1
+    },
+    {
+      "shirt": "6",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Ramiz Larbi Zerrouki",
+      "nameOnShirt": "ZERROUKI",
+      "club": "FC Twente (NED)",
+      "height": "1.83 m",
+      "caps": 54,
+      "goals": 3
+    },
+    {
+      "shirt": "7",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Riyad Karim Mahrez",
+      "nameOnShirt": "MAHREZ",
+      "club": "Al Ahli FC (KSA)",
+      "height": "1.79 m",
+      "caps": 117,
+      "goals": 38
+    },
+    {
+      "shirt": "8",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Houssem-Eddine Chaabane Aouar",
+      "nameOnShirt": "AOUAR",
+      "club": "Al Ittihad (KSA)",
+      "height": "1.75 m",
+      "caps": 24,
+      "goals": 6
+    },
+    {
+      "shirt": "9",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Amine Ferid Ghouiri",
+      "nameOnShirt": "GOUIRI",
+      "club": "Olympique Marseille (FRA)",
+      "height": "1.80 m",
+      "caps": 24,
+      "goals": 10
+    },
+    {
+      "shirt": "10",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Fares Chaibi",
+      "nameOnShirt": "CHAIBI",
+      "club": "Eintracht Frankfurt (GER)",
+      "height": "1.83 m",
+      "caps": 32,
+      "goals": 3
+    },
+    {
+      "shirt": "11",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Anis Hadj Moussa",
+      "nameOnShirt": "HADJ MOUSSA",
+      "club": "Feyenoord Rotterdam (NED)",
+      "height": "1.76 m",
+      "caps": 16,
+      "goals": 2
+    },
+    {
+      "shirt": "12",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Ahmed Nadhir Benbouali",
+      "nameOnShirt": "BENBOUALI",
+      "club": "Györi ETO FC (HUN)",
+      "height": "1.90 m",
+      "caps": 4,
+      "goals": 1
+    },
+    {
+      "shirt": "13",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Jaouen Djimmy Hadjam",
+      "nameOnShirt": "HADJAM",
+      "club": "BSC Young Boys (SUI)",
+      "height": "1.85 m",
+      "caps": 18,
+      "goals": 3
+    },
+    {
+      "shirt": "14",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Hicham Boudaoui",
+      "nameOnShirt": "BOUDAOUI",
+      "club": "OGC Nice (FRA)",
+      "height": "1.75 m",
+      "caps": 35,
+      "goals": 0
+    },
+    {
+      "shirt": "15",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Rayan Aït-Nouri",
+      "nameOnShirt": "AIT NOURI",
+      "club": "Manchester City FC (ENG)",
+      "height": "1.80 m",
+      "caps": 31,
+      "goals": 0
+    },
+    {
+      "shirt": "16",
+      "position": "GK",
+      "role": "Portero",
+      "name": "Oussama Benbot",
+      "nameOnShirt": "BENBOT",
+      "club": "USM Alger (ALG)",
+      "height": "1.88 m",
+      "caps": 3,
+      "goals": 0
+    },
+    {
+      "shirt": "17",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Rak Belghali",
+      "nameOnShirt": "BELGHALI",
+      "club": "Hellas Verona FC (ITA)",
+      "height": "1.80 m",
+      "caps": 14,
+      "goals": 1
+    },
+    {
+      "shirt": "18",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Mohammed Elamine Amoura",
+      "nameOnShirt": "AMOURA",
+      "club": "VfL Wolfsburg (GER)",
+      "height": "1.70 m",
+      "caps": 48,
+      "goals": 19
+    },
+    {
+      "shirt": "19",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Nabil Bentaleb",
+      "nameOnShirt": "BENTALEB",
+      "club": "Lille OSC (FRA)",
+      "height": "1.89 m",
+      "caps": 61,
+      "goals": 6
+    },
+    {
+      "shirt": "20",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Adil Boulbina",
+      "nameOnShirt": "BOULBINA",
+      "club": "Al Duhail SC (QAT)",
+      "height": "1.83 m",
+      "caps": 12,
+      "goals": 5
+    },
+    {
+      "shirt": "21",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Amir Selmane Rami Bensebaini",
+      "nameOnShirt": "BENSEBAINI",
+      "club": "Borussia Dortmund (GER)",
+      "height": "1.87 m",
+      "caps": 83,
+      "goals": 9
+    },
+    {
+      "shirt": "22",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Ibrahim Maza",
+      "nameOnShirt": "MAZA",
+      "club": "Bayer 04 Leverkusen (GER)",
+      "height": "1.80 m",
+      "caps": 18,
+      "goals": 2
+    },
+    {
+      "shirt": "23",
+      "position": "GK",
+      "role": "Portero",
+      "name": "Luca Zinedine Zidane",
+      "nameOnShirt": "ZIDANE",
+      "club": "Granada CF (ESP)",
+      "height": "1.83 m",
+      "caps": 8,
+      "goals": 0
+    },
+    {
+      "shirt": "24",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Yassine M E G Titraoui",
+      "nameOnShirt": "TITRAOUI",
+      "club": "Sporting Charleroi (BEL)",
+      "height": "1.80 m",
+      "caps": 5,
+      "goals": 0
+    },
+    {
+      "shirt": "25",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Fares Ghedjemis",
+      "nameOnShirt": "GHEDJEMIS",
+      "club": "Frosinone (ITA)",
+      "height": "1.83 m",
+      "caps": 1,
+      "goals": 1
+    },
+    {
+      "shirt": "26",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Samir Sophian Chergui",
+      "nameOnShirt": "CHERGUI",
+      "club": "Paris FC (FRA)",
+      "height": "1.85 m",
+      "caps": 5,
+      "goals": 0
+    }
+  ],
+  "T02": [
+    {
+      "shirt": "1",
+      "position": "GK",
+      "role": "Portero",
+      "name": "Juan Agustín Musso",
+      "nameOnShirt": "MUSSO",
+      "club": "Atlético De Madrid (ESP)",
+      "height": "1.93 m",
+      "caps": 4,
+      "goals": 0
+    },
+    {
+      "shirt": "2",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Marcos Nicolás Senesi Baron",
+      "nameOnShirt": "SENESI",
+      "club": "AFC Bournemouth (ENG)",
+      "height": "1.85 m",
+      "caps": 3,
+      "goals": 0
+    },
+    {
+      "shirt": "3",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Nicolás Alejandro Tagliafico",
+      "nameOnShirt": "TAGLIAFICO",
+      "club": "Olympique Lyonnais (FRA)",
+      "height": "1.72 m",
+      "caps": 76,
+      "goals": 1
+    },
+    {
+      "shirt": "4",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Gonzalo Ariel Montiel",
+      "nameOnShirt": "MONTIEL",
+      "club": "CA River Plate (ARG)",
+      "height": "1.75 m",
+      "caps": 40,
+      "goals": 2
+    },
+    {
+      "shirt": "5",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Leandro Daniel Paredes",
+      "nameOnShirt": "PAREDES",
+      "club": "CA Boca Juniors (ARG)",
+      "height": "1.82 m",
+      "caps": 77,
+      "goals": 5
+    },
+    {
+      "shirt": "6",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Lisandro Martínez",
+      "nameOnShirt": "MARTÍNEZ",
+      "club": "Manchester United FC (ENG)",
+      "height": "1.75 m",
+      "caps": 29,
+      "goals": 1
+    },
+    {
+      "shirt": "7",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Rodrigo Javier De Paul",
+      "nameOnShirt": "DE PAUL",
+      "club": "Inter Miami CF (USA)",
+      "height": "1.78 m",
+      "caps": 88,
+      "goals": 2
+    },
+    {
+      "shirt": "8",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Valentin Barco",
+      "nameOnShirt": "BARCO",
+      "club": "RC Strasbourg (FRA)",
+      "height": "1.72 m",
+      "caps": 4,
+      "goals": 2
+    },
+    {
+      "shirt": "9",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Julián Álvarez",
+      "nameOnShirt": "J. ALVAREZ",
+      "club": "Atlético De Madrid (ESP)",
+      "height": "1.70 m",
+      "caps": 52,
+      "goals": 14
+    },
+    {
+      "shirt": "10",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Lionel Andrés Messi",
+      "nameOnShirt": "MESSI",
+      "club": "Inter Miami CF (USA)",
+      "height": "1.70 m",
+      "caps": 200,
+      "goals": 120
+    },
+    {
+      "shirt": "11",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Giovani Lo Celso",
+      "nameOnShirt": "LO CELSO",
+      "club": "Real Betis (ESP)",
+      "height": "1.77 m",
+      "caps": 67,
+      "goals": 4
+    },
+    {
+      "shirt": "12",
+      "position": "GK",
+      "role": "Portero",
+      "name": "Geronimo Rulli",
+      "nameOnShirt": "RULLI",
+      "club": "Olympique Marseille (FRA)",
+      "height": "1.89 m",
+      "caps": 8,
+      "goals": 0
+    },
+    {
+      "shirt": "13",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Cristian Gabriel Romero",
+      "nameOnShirt": "ROMERO",
+      "club": "Tottenham Hotspur FC (ENG)",
+      "height": "1.85 m",
+      "caps": 52,
+      "goals": 3
+    },
+    {
+      "shirt": "14",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Exequiel Alejandro Palacios",
+      "nameOnShirt": "PALACIOS",
+      "club": "Bayer 04 Leverkusen (GER)",
+      "height": "1.77 m",
+      "caps": 40,
+      "goals": 0
+    },
+    {
+      "shirt": "15",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Nicolas Ivan Gonzalez",
+      "nameOnShirt": "N. GONZALEZ",
+      "club": "Atlético De Madrid (ESP)",
+      "height": "1.80 m",
+      "caps": 52,
+      "goals": 6
+    },
+    {
+      "shirt": "16",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Thiago Ezequiel Almada",
+      "nameOnShirt": "ALMADA",
+      "club": "Atlético De Madrid (ESP)",
+      "height": "1.71 m",
+      "caps": 17,
+      "goals": 5
+    },
+    {
+      "shirt": "17",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Giuliano Simeone",
+      "nameOnShirt": "SIMEONE",
+      "club": "Atlético De Madrid (ESP)",
+      "height": "1.74 m",
+      "caps": 13,
+      "goals": 2
+    },
+    {
+      "shirt": "18",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Nicolas Paz Martínez",
+      "nameOnShirt": "NICO PAZ",
+      "club": "Como (ITA)",
+      "height": "1.85 m",
+      "caps": 10,
+      "goals": 1
+    },
+    {
+      "shirt": "19",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Nicolas Hernan Gonzalo Otamendi",
+      "nameOnShirt": "OTAMENDI",
+      "club": "SL Benca (POR)",
+      "height": "1.82 m",
+      "caps": 133,
+      "goals": 8
+    },
+    {
+      "shirt": "20",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Alexis Mac Allister",
+      "nameOnShirt": "MAC ALLISTER",
+      "club": "Liverpool FC (ENG)",
+      "height": "1.76 m",
+      "caps": 47,
+      "goals": 6
+    },
+    {
+      "shirt": "21",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Jose Manuel Alberto Lopez",
+      "nameOnShirt": "LOPEZ",
+      "club": "SE Palmeiras (BRA)",
+      "height": "1.90 m",
+      "caps": 5,
+      "goals": 0
+    },
+    {
+      "shirt": "22",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Lautaro Javier Martínez",
+      "nameOnShirt": "L. MARTINEZ",
+      "club": "FC Internazionale Milano (ITA)",
+      "height": "1.75 m",
+      "caps": 78,
+      "goals": 37
+    },
+    {
+      "shirt": "23",
+      "position": "GK",
+      "role": "Portero",
+      "name": "Damián Emiliano Martínez",
+      "nameOnShirt": "E. MARTINEZ",
+      "club": "Aston Villa FC (ENG)",
+      "height": "1.95 m",
+      "caps": 60,
+      "goals": 0
+    },
+    {
+      "shirt": "24",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Enzo Jeremías Fernández",
+      "nameOnShirt": "E. FERNANDEZ",
+      "club": "Chelsea FC (ENG)",
+      "height": "1.78 m",
+      "caps": 43,
+      "goals": 6
+    },
+    {
+      "shirt": "25",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Facundo Axel Medina",
+      "nameOnShirt": "MEDINA",
+      "club": "Olympique Marseille (FRA)",
+      "height": "1.84 m",
+      "caps": 10,
+      "goals": 0
+    },
+    {
+      "shirt": "26",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Nahuel Molina Lucero",
+      "nameOnShirt": "MOLINA",
+      "club": "Atlético De Madrid (ESP)",
+      "height": "1.79 m",
+      "caps": 59,
+      "goals": 1
+    }
+  ],
+  "T03": [
+    {
+      "shirt": "1",
+      "position": "GK",
+      "role": "Portero",
+      "name": "Mathew David Ryan",
+      "nameOnShirt": "RYAN",
+      "club": "Levante UD (ESP)",
+      "height": "1.84 m",
+      "caps": 104,
+      "goals": 0
+    },
+    {
+      "shirt": "2",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Milos Degenek",
+      "nameOnShirt": "DEGENEK",
+      "club": "APOEL FC (CYP)",
+      "height": "1.87 m",
+      "caps": 57,
+      "goals": 1
+    },
+    {
+      "shirt": "3",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Alessandro Circati",
+      "nameOnShirt": "CIRCATI",
+      "club": "Parma (ITA)",
+      "height": "1.91 m",
+      "caps": 14,
+      "goals": 1
+    },
+    {
+      "shirt": "4",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Jacob Michael Italiano",
+      "nameOnShirt": "ITALIANO",
+      "club": "Grazer AK (AUT)",
+      "height": "1.77 m",
+      "caps": 6,
+      "goals": 0
+    },
+    {
+      "shirt": "5",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Jordan Jacob Bos",
+      "nameOnShirt": "BOS",
+      "club": "Feyenoord Rotterdam (NED)",
+      "height": "1.80 m",
+      "caps": 28,
+      "goals": 4
+    },
+    {
+      "shirt": "6",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Jason Kato Geria",
+      "nameOnShirt": "GERIA",
+      "club": "Albirex Niigata (JPN)",
+      "height": "1.81 m",
+      "caps": 15,
+      "goals": 0
+    },
+    {
+      "shirt": "7",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Mathew Allan Leckie",
+      "nameOnShirt": "LECKIE",
+      "club": "Melbourne City FC (AUS)",
+      "height": "1.81 m",
+      "caps": 81,
+      "goals": 14
+    },
+    {
+      "shirt": "8",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Connor Isaac Metcalfe",
+      "nameOnShirt": "METCALFE",
+      "club": "FC St. Pauli (GER)",
+      "height": "1.83 m",
+      "caps": 37,
+      "goals": 2
+    },
+    {
+      "shirt": "9",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Mohamed A Toure",
+      "nameOnShirt": "TOURE",
+      "club": "Norwich City FC (ENG)",
+      "height": "1.86 m",
+      "caps": 11,
+      "goals": 2
+    },
+    {
+      "shirt": "10",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Ajdin Hrustic",
+      "nameOnShirt": "HRUSTIC",
+      "club": "SC Heracles Almelo (NED)",
+      "height": "1.80 m",
+      "caps": 37,
+      "goals": 3
+    },
+    {
+      "shirt": "11",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Awer Bul Mabil",
+      "nameOnShirt": "MABIL",
+      "club": "CD Castellón (ESP)",
+      "height": "1.78 m",
+      "caps": 38,
+      "goals": 10
+    },
+    {
+      "shirt": "12",
+      "position": "GK",
+      "role": "Portero",
+      "name": "Paul David Izzo",
+      "nameOnShirt": "IZZO",
+      "club": "Randers FC (DEN)",
+      "height": "1.84 m",
+      "caps": 4,
+      "goals": 0
+    },
+    {
+      "shirt": "13",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Aiden Connor O'neill",
+      "nameOnShirt": "O'NEILL",
+      "club": "New York City FC (USA)",
+      "height": "1.80 m",
+      "caps": 32,
+      "goals": 0
+    },
+    {
+      "shirt": "14",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Cameron Peter Devlin",
+      "nameOnShirt": "DEVLIN",
+      "club": "Heart Of Midlothian FC (SCO)",
+      "height": "1.70 m",
+      "caps": 5,
+      "goals": 0
+    },
+    {
+      "shirt": "15",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Kai Clifton Trewin",
+      "nameOnShirt": "TREWIN",
+      "club": "New York City FC (USA)",
+      "height": "1.83 m",
+      "caps": 6,
+      "goals": 0
+    },
+    {
+      "shirt": "16",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Aziz Behich",
+      "nameOnShirt": "BEHICH",
+      "club": "Melbourne City FC (AUS)",
+      "height": "1.70 m",
+      "caps": 85,
+      "goals": 3
+    },
+    {
+      "shirt": "17",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Nestory Irankunda",
+      "nameOnShirt": "IRANKUNDA",
+      "club": "Watford FC (ENG)",
+      "height": "1.65 m",
+      "caps": 16,
+      "goals": 6
+    },
+    {
+      "shirt": "18",
+      "position": "GK",
+      "role": "Portero",
+      "name": "Patrick Thomas Beach",
+      "nameOnShirt": "BEACH",
+      "club": "Melbourne City FC (AUS)",
+      "height": "1.89 m",
+      "caps": 3,
+      "goals": 0
+    },
+    {
+      "shirt": "19",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Harry James Souttar",
+      "nameOnShirt": "SOUTTAR",
+      "club": "Leicester City FC (ENG)",
+      "height": "1.98 m",
+      "caps": 39,
+      "goals": 11
+    },
+    {
+      "shirt": "20",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Cristian Volpato",
+      "nameOnShirt": "VOLPATO",
+      "club": "US Sassuolo (ITA)",
+      "height": "1.87 m",
+      "caps": 1,
+      "goals": 0
+    },
+    {
+      "shirt": "21",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Cameron Robert Burgess",
+      "nameOnShirt": "BURGESS",
+      "club": "Swansea City AFC (WAL)",
+      "height": "1.94 m",
+      "caps": 28,
+      "goals": 0
+    },
+    {
+      "shirt": "22",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Jackson Alexander Irvine",
+      "nameOnShirt": "IRVINE",
+      "club": "FC St. Pauli (GER)",
+      "height": "1.89 m",
+      "caps": 83,
+      "goals": 14
+    },
+    {
+      "shirt": "23",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Nishan Matthew Velupillay",
+      "nameOnShirt": "VELUPILLAY",
+      "club": "Melbourne Victory FC (AUS)",
+      "height": "1.81 m",
+      "caps": 8,
+      "goals": 3
+    },
+    {
+      "shirt": "24",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Paul Michael Junior Okon-Engstler",
+      "nameOnShirt": "OKON-ENGSTLER",
+      "club": "Sydney FC (AUS)",
+      "height": "1.85 m",
+      "caps": 7,
+      "goals": 0
+    },
+    {
+      "shirt": "25",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Lucas Herrington",
+      "nameOnShirt": "HERRINGTON",
+      "club": "Colorado Rapids (USA)",
+      "height": "1.93 m",
+      "caps": 4,
+      "goals": 0
+    },
+    {
+      "shirt": "26",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Tete Owen Yengi",
+      "nameOnShirt": "YENGI",
+      "club": "FC Machida Zelvia (JPN)",
+      "height": "1.97 m",
+      "caps": 2,
+      "goals": 1
+    }
+  ],
+  "T04": [
+    {
+      "shirt": "1",
+      "position": "GK",
+      "role": "Portero",
+      "name": "Alexander Schlager",
+      "nameOnShirt": "SCHLAGER",
+      "club": "FC Red Bull Salzburg (AUT)",
+      "height": "1.88 m",
+      "caps": 27,
+      "goals": 0
+    },
+    {
+      "shirt": "2",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "David Leopold Affengruber",
+      "nameOnShirt": "AFFENGRUBER",
+      "club": "Elche CF (ESP)",
+      "height": "1.85 m",
+      "caps": 1,
+      "goals": 0
+    },
+    {
+      "shirt": "3",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Kevin Danso",
+      "nameOnShirt": "DANSO",
+      "club": "Tottenham Hotspur FC (ENG)",
+      "height": "1.90 m",
+      "caps": 33,
+      "goals": 0
+    },
+    {
+      "shirt": "4",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Xaver Schlager",
+      "nameOnShirt": "XAVER",
+      "club": "RB Leipzig (GER)",
+      "height": "1.74 m",
+      "caps": 52,
+      "goals": 4
+    },
+    {
+      "shirt": "5",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Stefan Posch",
+      "nameOnShirt": "POSCH",
+      "club": "1. FSV Mainz 05 (GER)",
+      "height": "1.88 m",
+      "caps": 53,
+      "goals": 5
+    },
+    {
+      "shirt": "6",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Nicolas Seiwald",
+      "nameOnShirt": "SEIWALD",
+      "club": "RB Leipzig (GER)",
+      "height": "1.79 m",
+      "caps": 48,
+      "goals": 1
+    },
+    {
+      "shirt": "7",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Marko Arnautovic",
+      "nameOnShirt": "ARNAUTOVIC",
+      "club": "FK Crvena Zvezda (SRB)",
+      "height": "1.92 m",
+      "caps": 134,
+      "goals": 48
+    },
+    {
+      "shirt": "8",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "David Alaba",
+      "nameOnShirt": "ALABA",
+      "club": "Real Madrid C. F. (ESP)",
+      "height": "1.80 m",
+      "caps": 114,
+      "goals": 15
+    },
+    {
+      "shirt": "9",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Marcel Sabitzer",
+      "nameOnShirt": "SABITZER",
+      "club": "Borussia Dortmund (GER)",
+      "height": "1.78 m",
+      "caps": 99,
+      "goals": 26
+    },
+    {
+      "shirt": "10",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Florian Grillitsch",
+      "nameOnShirt": "GRILLITSCH",
+      "club": "SC Braga (POR)",
+      "height": "1.86 m",
+      "caps": 59,
+      "goals": 1
+    },
+    {
+      "shirt": "11",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Michael Gregoritsch",
+      "nameOnShirt": "GREGORITSCH",
+      "club": "FC Augsburg (GER)",
+      "height": "1.93 m",
+      "caps": 75,
+      "goals": 24
+    },
+    {
+      "shirt": "12",
+      "position": "GK",
+      "role": "Portero",
+      "name": "Florian Wiegele",
+      "nameOnShirt": "WIEGELE",
+      "club": "FC Viktoria Plzeň (CZE)",
+      "height": "2.05 m",
+      "caps": 1,
+      "goals": 0
+    },
+    {
+      "shirt": "13",
+      "position": "GK",
+      "role": "Portero",
+      "name": "Patrick Pentz",
+      "nameOnShirt": "PENTZ",
+      "club": "Brøndby IF (DEN)",
+      "height": "1.83 m",
+      "caps": 18,
+      "goals": 0
+    },
+    {
+      "shirt": "14",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Saša Kalajdžić",
+      "nameOnShirt": "KALAJDZIC",
+      "club": "LASK Linz (AUT)",
+      "height": "2.00 m",
+      "caps": 23,
+      "goals": 4
+    },
+    {
+      "shirt": "15",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Philipp Lienhart",
+      "nameOnShirt": "LIENHART",
+      "club": "SC Freiburg (GER)",
+      "height": "1.89 m",
+      "caps": 42,
+      "goals": 3
+    },
+    {
+      "shirt": "16",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Phillip Mwene",
+      "nameOnShirt": "MWENE",
+      "club": "1. FSV Mainz 05 (GER)",
+      "height": "1.70 m",
+      "caps": 31,
+      "goals": 0
+    },
+    {
+      "shirt": "17",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Carney Chibueze Chukwuemeka",
+      "nameOnShirt": "CHUKWUEMEKA",
+      "club": "Borussia Dortmund (GER)",
+      "height": "1.87 m",
+      "caps": 4,
+      "goals": 1
+    },
+    {
+      "shirt": "18",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Romano Schmid",
+      "nameOnShirt": "SCHMID",
+      "club": "SV Werder Bremen (GER)",
+      "height": "1.68 m",
+      "caps": 35,
+      "goals": 4
+    },
+    {
+      "shirt": "19",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Dejan Ljubičić",
+      "nameOnShirt": "LJUBICIC",
+      "club": "FC Schalke 04 (GER)",
+      "height": "1.87 m",
+      "caps": 9,
+      "goals": 1
+    },
+    {
+      "shirt": "20",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Konrad Laimer",
+      "nameOnShirt": "LAIMER",
+      "club": "FC Bayern München (GER)",
+      "height": "1.80 m",
+      "caps": 58,
+      "goals": 7
+    },
+    {
+      "shirt": "21",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Patrick Wimmer",
+      "nameOnShirt": "WIMMER",
+      "club": "VfL Wolfsburg (GER)",
+      "height": "1.82 m",
+      "caps": 31,
+      "goals": 1
+    },
+    {
+      "shirt": "22",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Alexander Prass",
+      "nameOnShirt": "PRASS",
+      "club": "TSG Hoffenheim (GER)",
+      "height": "1.80 m",
+      "caps": 19,
+      "goals": 0
+    },
+    {
+      "shirt": "23",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Marco Friedl",
+      "nameOnShirt": "FRIEDL",
+      "club": "SV Werder Bremen (GER)",
+      "height": "1.87 m",
+      "caps": 11,
+      "goals": 0
+    },
+    {
+      "shirt": "24",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Paul Wanner",
+      "nameOnShirt": "WANNER",
+      "club": "PSV Eindhoven (NED)",
+      "height": "1.85 m",
+      "caps": 4,
+      "goals": 0
+    },
+    {
+      "shirt": "25",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Michael Svoboda",
+      "nameOnShirt": "SVOBODA",
+      "club": "Venezia FC (ITA)",
+      "height": "1.95 m",
+      "caps": 4,
+      "goals": 0
+    },
+    {
+      "shirt": "26",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Alessandro Andre Schöpf",
+      "nameOnShirt": "SCHÖPF",
+      "club": "Wolfsberger AC (AUT)",
+      "height": "1.78 m",
+      "caps": 35,
+      "goals": 6
+    }
+  ],
+  "T05": [
+    {
+      "shirt": "1",
+      "position": "GK",
+      "role": "Portero",
+      "name": "Thibaut Nicolas M Courtois",
+      "nameOnShirt": "COURTOIS",
+      "club": "Real Madrid C. F. (ESP)",
+      "height": "1.99 m",
+      "caps": 110,
+      "goals": 0
+    },
+    {
+      "shirt": "2",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Zeno Koen Debast",
+      "nameOnShirt": "DEBAST",
+      "club": "Sporting CP (POR)",
+      "height": "1.89 m",
+      "caps": 26,
+      "goals": 1
+    },
+    {
+      "shirt": "3",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Arthur Nicolas R Theate",
+      "nameOnShirt": "THEATE",
+      "club": "Eintracht Frankfurt (GER)",
+      "height": "1.85 m",
+      "caps": 33,
+      "goals": 1
+    },
+    {
+      "shirt": "4",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Brandon Erik Mechele",
+      "nameOnShirt": "MECHELE",
+      "club": "Club Brugge (BEL)",
+      "height": "1.90 m",
+      "caps": 10,
+      "goals": 1
+    },
+    {
+      "shirt": "5",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Maxim Peter M De Cuyper",
+      "nameOnShirt": "DE CUYPER",
+      "club": "Brighton & Hove Albion FC (ENG)",
+      "height": "1.82 m",
+      "caps": 20,
+      "goals": 4
+    },
+    {
+      "shirt": "6",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Axel Laurent A Witsel",
+      "nameOnShirt": "WITSEL",
+      "club": "Girona FC (ESP)",
+      "height": "1.86 m",
+      "caps": 138,
+      "goals": 12
+    },
+    {
+      "shirt": "7",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Kevin De Bruyne",
+      "nameOnShirt": "DE BRUYNE",
+      "club": "SSC Napoli (ITA)",
+      "height": "1.81 m",
+      "caps": 120,
+      "goals": 37
+    },
+    {
+      "shirt": "8",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Youri Marion A Tielemans",
+      "nameOnShirt": "TIELEMANS",
+      "club": "Aston Villa FC (ENG)",
+      "height": "1.76 m",
+      "caps": 86,
+      "goals": 13
+    },
+    {
+      "shirt": "9",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Romelu Lukaku Bolingoli",
+      "nameOnShirt": "LUKAKU",
+      "club": "SSC Napoli (ITA)",
+      "height": "1.90 m",
+      "caps": 127,
+      "goals": 90
+    },
+    {
+      "shirt": "10",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Leandro Trossard",
+      "nameOnShirt": "TROSSARD",
+      "club": "Arsenal FC (ENG)",
+      "height": "1.72 m",
+      "caps": 52,
+      "goals": 12
+    },
+    {
+      "shirt": "11",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Jeremy Baffour Doku",
+      "nameOnShirt": "DOKU",
+      "club": "Manchester City FC (ENG)",
+      "height": "1.73 m",
+      "caps": 44,
+      "goals": 7
+    },
+    {
+      "shirt": "12",
+      "position": "GK",
+      "role": "Portero",
+      "name": "Senne Lammens",
+      "nameOnShirt": "LAMMENS",
+      "club": "Manchester United FC (ENG)",
+      "height": "1.93 m",
+      "caps": 2,
+      "goals": 0
+    },
+    {
+      "shirt": "13",
+      "position": "GK",
+      "role": "Portero",
+      "name": "Mike Louis Penders",
+      "nameOnShirt": "PENDERS",
+      "club": "RC Strasbourg (FRA)",
+      "height": "2.00 m",
+      "caps": 0,
+      "goals": 0
+    },
+    {
+      "shirt": "14",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Dodi Lukebakio Ngandoli",
+      "nameOnShirt": "LUKEBAKIO",
+      "club": "SL Benca (POR)",
+      "height": "1.84 m",
+      "caps": 30,
+      "goals": 6
+    },
+    {
+      "shirt": "15",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Thomas Andre A Meunier",
+      "nameOnShirt": "MEUNIER",
+      "club": "Lille OSC (FRA)",
+      "height": "1.90 m",
+      "caps": 81,
+      "goals": 10
+    },
+    {
+      "shirt": "16",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Koni De Winter",
+      "nameOnShirt": "DE WINTER",
+      "club": "AC Milan (ITA)",
+      "height": "1.91 m",
+      "caps": 8,
+      "goals": 0
+    },
+    {
+      "shirt": "17",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Charles Marc S De Ketelaere",
+      "nameOnShirt": "DE KETELAERE",
+      "club": "Atalanta Bergamo (ITA)",
+      "height": "1.92 m",
+      "caps": 31,
+      "goals": 6
+    },
+    {
+      "shirt": "18",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Joaquin Ronny Seys",
+      "nameOnShirt": "SEYS",
+      "club": "Club Brugge (BEL)",
+      "height": "1.78 m",
+      "caps": 5,
+      "goals": 0
+    },
+    {
+      "shirt": "19",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Diego Manuel J Da Silva Moreira",
+      "nameOnShirt": "MOREIRA JR",
+      "club": "RC Strasbourg (FRA)",
+      "height": "1.79 m",
+      "caps": 3,
+      "goals": 0
+    },
+    {
+      "shirt": "20",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Hans Vanaken",
+      "nameOnShirt": "VANAKEN",
+      "club": "Club Brugge (BEL)",
+      "height": "1.95 m",
+      "caps": 35,
+      "goals": 7
+    },
+    {
+      "shirt": "21",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Timothy Castagne",
+      "nameOnShirt": "CASTAGNE",
+      "club": "Fulham FC (ENG)",
+      "height": "1.85 m",
+      "caps": 64,
+      "goals": 2
+    },
+    {
+      "shirt": "22",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Alexis Jesse M Saelemaekers",
+      "nameOnShirt": "SAELEMAEKERS",
+      "club": "AC Milan (ITA)",
+      "height": "1.80 m",
+      "caps": 24,
+      "goals": 2
+    },
+    {
+      "shirt": "23",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Nicolas Thierry Y Raskin",
+      "nameOnShirt": "RASKIN",
+      "club": "Rangers FC (SCO)",
+      "height": "1.78 m",
+      "caps": 14,
+      "goals": 2
+    },
+    {
+      "shirt": "24",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Amadou Ba Z Mvom Onana",
+      "nameOnShirt": "ONANA",
+      "club": "Aston Villa FC (ENG)",
+      "height": "1.92 m",
+      "caps": 30,
+      "goals": 1
+    },
+    {
+      "shirt": "25",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Nathan Ngoy",
+      "nameOnShirt": "NGOY",
+      "club": "Lille OSC (FRA)",
+      "height": "1.83 m",
+      "caps": 5,
+      "goals": 0
+    },
+    {
+      "shirt": "26",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Matias Fernandez-Pardo",
+      "nameOnShirt": "FERNANDEZ-PARDO",
+      "club": "Lille OSC (FRA)",
+      "height": "1.88 m",
+      "caps": 3,
+      "goals": 0
+    }
+  ],
+  "T06": [
+    {
+      "shirt": "1",
+      "position": "GK",
+      "role": "Portero",
+      "name": "Nikola Vasilj",
+      "nameOnShirt": "VASILJ",
+      "club": "FC St. Pauli (GER)",
+      "height": "1.93 m",
+      "caps": 27,
+      "goals": 0
+    },
+    {
+      "shirt": "2",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Nihad Mujakić",
+      "nameOnShirt": "MUJAKIĆ",
+      "club": "Gaziantep FK (TUR)",
+      "height": "1.89 m",
+      "caps": 12,
+      "goals": 1
+    },
+    {
+      "shirt": "3",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Dennis Hadžikadunić",
+      "nameOnShirt": "HADŽIKADUNIĆ",
+      "club": "UC Sampdoria (ITA)",
+      "height": "1.91 m",
+      "caps": 32,
+      "goals": 0
+    },
+    {
+      "shirt": "4",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Tarik Muharemović",
+      "nameOnShirt": "MUHAREMOVIĆ",
+      "club": "US Sassuolo (ITA)",
+      "height": "1.92 m",
+      "caps": 15,
+      "goals": 1
+    },
+    {
+      "shirt": "5",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Sead Kolašinac",
+      "nameOnShirt": "KOLAŠINAC",
+      "club": "Atalanta Bergamo (ITA)",
+      "height": "1.83 m",
+      "caps": 66,
+      "goals": 0
+    },
+    {
+      "shirt": "6",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Benjamin Tahirovic",
+      "nameOnShirt": "TAHIROVIĆ",
+      "club": "Brøndby IF (DEN)",
+      "height": "1.91 m",
+      "caps": 29,
+      "goals": 2
+    },
+    {
+      "shirt": "7",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Amar Dedić",
+      "nameOnShirt": "DEDIĆ",
+      "club": "SL Benca (POR)",
+      "height": "1.80 m",
+      "caps": 29,
+      "goals": 1
+    },
+    {
+      "shirt": "8",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Armin Gigović",
+      "nameOnShirt": "GIGOVIĆ",
+      "club": "BSC Young Boys (SUI)",
+      "height": "1.87 m",
+      "caps": 21,
+      "goals": 1
+    },
+    {
+      "shirt": "9",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Samed Baždar",
+      "nameOnShirt": "BAŽDAR",
+      "club": "Jagiellonia Białystok (POL)",
+      "height": "1.89 m",
+      "caps": 14,
+      "goals": 1
+    },
+    {
+      "shirt": "10",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Ermedin Demirović",
+      "nameOnShirt": "DEMIROVIĆ",
+      "club": "VfB Stuttgart (GER)",
+      "height": "1.85 m",
+      "caps": 41,
+      "goals": 4
+    },
+    {
+      "shirt": "11",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Edin Džeko",
+      "nameOnShirt": "DŽEKO",
+      "club": "FC Schalke 04 (GER)",
+      "height": "1.92 m",
+      "caps": 148,
+      "goals": 73
+    },
+    {
+      "shirt": "12",
+      "position": "GK",
+      "role": "Portero",
+      "name": "Mladen Jurkas",
+      "nameOnShirt": "JURKAS",
+      "club": "FK Borac Banja Luka (BIH)",
+      "height": "1.93 m",
+      "caps": 0,
+      "goals": 0
+    },
+    {
+      "shirt": "13",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Ivan Bašić",
+      "nameOnShirt": "BAŠIĆ",
+      "club": "FC Astana (KAZ)",
+      "height": "1.78 m",
+      "caps": 18,
+      "goals": 0
+    },
+    {
+      "shirt": "14",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Ivan Šunjić",
+      "nameOnShirt": "ŠUNJIĆ",
+      "club": "Pafos FC (CYP)",
+      "height": "1.83 m",
+      "caps": 12,
+      "goals": 0
+    },
+    {
+      "shirt": "15",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Amar Memić",
+      "nameOnShirt": "MEMIĆ",
+      "club": "FC Viktoria Plzeň (CZE)",
+      "height": "1.76 m",
+      "caps": 14,
+      "goals": 1
+    },
+    {
+      "shirt": "16",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Amir Hadžiahmetović",
+      "nameOnShirt": "HADŽIAHMETOVIĆ",
+      "club": "Hull City FC (ENG)",
+      "height": "1.79 m",
+      "caps": 36,
+      "goals": 0
+    },
+    {
+      "shirt": "17",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Dženis Burnić",
+      "nameOnShirt": "BURNIĆ",
+      "club": "Karlsruher SC (GER)",
+      "height": "1.82 m",
+      "caps": 21,
+      "goals": 0
+    },
+    {
+      "shirt": "18",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Nikola Katić",
+      "nameOnShirt": "KATIĆ",
+      "club": "FC Schalke 04 (GER)",
+      "height": "1.94 m",
+      "caps": 18,
+      "goals": 2
+    },
+    {
+      "shirt": "19",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Kerim Alajbegović",
+      "nameOnShirt": "ALAJBEGOVIĆ",
+      "club": "FC Red Bull Salzburg (AUT)",
+      "height": "1.86 m",
+      "caps": 11,
+      "goals": 1
+    },
+    {
+      "shirt": "20",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Esmir Bajraktarević",
+      "nameOnShirt": "BAJRAKTAREVIĆ",
+      "club": "PSV Eindhoven (NED)",
+      "height": "1.75 m",
+      "caps": 17,
+      "goals": 1
+    },
+    {
+      "shirt": "21",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Stjepan Radeljić",
+      "nameOnShirt": "RADELJIĆ",
+      "club": "HNK Rijeka (CRO)",
+      "height": "2.01 m",
+      "caps": 5,
+      "goals": 0
+    },
+    {
+      "shirt": "22",
+      "position": "GK",
+      "role": "Portero",
+      "name": "Martin Zlomislić",
+      "nameOnShirt": "ZLOMISLIĆ",
+      "club": "HNK Rijeka (CRO)",
+      "height": "1.89 m",
+      "caps": 3,
+      "goals": 0
+    },
+    {
+      "shirt": "23",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Haris Tabaković",
+      "nameOnShirt": "TABAKOVIĆ",
+      "club": "Borussia Mönchengladbach (GER)",
+      "height": "1.96 m",
+      "caps": 10,
+      "goals": 4
+    },
+    {
+      "shirt": "24",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Arjan Malić",
+      "nameOnShirt": "MALIĆ",
+      "club": "SK Sturm Graz (AUT)",
+      "height": "1.88 m",
+      "caps": 8,
+      "goals": 0
+    },
+    {
+      "shirt": "25",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Jovo Lukić",
+      "nameOnShirt": "LUKIĆ",
+      "club": "Universitatea Cluj (ROU)",
+      "height": "1.90 m",
+      "caps": 4,
+      "goals": 1
+    },
+    {
+      "shirt": "26",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Ermin Mahmić",
+      "nameOnShirt": "MAHMIĆ",
+      "club": "FC Slovan Liberec (CZE)",
+      "height": "1.82 m",
+      "caps": 2,
+      "goals": 0
+    }
+  ],
+  "T07": [
+    {
+      "shirt": "1",
+      "position": "GK",
+      "role": "Portero",
+      "name": "Álisson Ramsés Becker",
+      "nameOnShirt": "A. BECKER",
+      "club": "Liverpool FC (ENG)",
+      "height": "1.93 m",
+      "caps": 79,
+      "goals": 0
+    },
+    {
+      "shirt": "2",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Éderson José Dos Santos Lourenço Da Silva",
+      "nameOnShirt": "ÉDERSON S.",
+      "club": "Atalanta Bergamo (ITA)",
+      "height": "1.84 m",
+      "caps": 3,
+      "goals": 0
+    },
+    {
+      "shirt": "3",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Gabriel Dos Santos Magalhães",
+      "nameOnShirt": "GABRIEL",
+      "club": "Arsenal FC (ENG)",
+      "height": "1.90 m",
+      "caps": 18,
+      "goals": 1
+    },
+    {
+      "shirt": "4",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Marcos Aoas Correa",
+      "nameOnShirt": "MARQUINHOS",
+      "club": "Paris Saint-Germain (FRA)",
+      "height": "1.83 m",
+      "caps": 106,
+      "goals": 7
+    },
+    {
+      "shirt": "5",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Carlos Henrique Casimiro",
+      "nameOnShirt": "CASEMIRO",
+      "club": "Manchester United FC (ENG)",
+      "height": "1.85 m",
+      "caps": 87,
+      "goals": 9
+    },
+    {
+      "shirt": "6",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Alex Sandro Lobo Silva",
+      "nameOnShirt": "ALEX SANDRO",
+      "club": "CR Flamengo (BRA)",
+      "height": "1.80 m",
+      "caps": 45,
+      "goals": 2
+    },
+    {
+      "shirt": "7",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Vinicius José Paixão De Oliveira Júnior",
+      "nameOnShirt": "VINI JR.",
+      "club": "Real Madrid C. F. (ESP)",
+      "height": "1.76 m",
+      "caps": 50,
+      "goals": 10
+    },
+    {
+      "shirt": "8",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Bruno Guimarães Rodriguez Moura",
+      "nameOnShirt": "BRUNO G.",
+      "club": "Newcastle United FC (ENG)",
+      "height": "1.82 m",
+      "caps": 44,
+      "goals": 3
+    },
+    {
+      "shirt": "9",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Matheus Santos Carneiro Da Cunha",
+      "nameOnShirt": "CUNHA",
+      "club": "Manchester United FC (ENG)",
+      "height": "1.83 m",
+      "caps": 24,
+      "goals": 1
+    },
+    {
+      "shirt": "10",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Neymar Da Silva Santos Júnior",
+      "nameOnShirt": "NEYMAR JR",
+      "club": "Santos FC (BRA)",
+      "height": "1.75 m",
+      "caps": 128,
+      "goals": 79
+    },
+    {
+      "shirt": "11",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Raphael Dias Belloli",
+      "nameOnShirt": "RAPHINHA",
+      "club": "FC Barcelona (ESP)",
+      "height": "1.76 m",
+      "caps": 40,
+      "goals": 11
+    },
+    {
+      "shirt": "12",
+      "position": "GK",
+      "role": "Portero",
+      "name": "Weverton Pereira Da Silva",
+      "nameOnShirt": "WEVERTON",
+      "club": "Grêmio FBPA (BRA)",
+      "height": "1.89 m",
+      "caps": 11,
+      "goals": 0
+    },
+    {
+      "shirt": "13",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Danilo Luiz Da Silva",
+      "nameOnShirt": "DANILO",
+      "club": "CR Flamengo (BRA)",
+      "height": "1.84 m",
+      "caps": 71,
+      "goals": 1
+    },
+    {
+      "shirt": "14",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Gleison Bremer Silva Nascimento",
+      "nameOnShirt": "BREMER",
+      "club": "Juventus FC (ITA)",
+      "height": "1.88 m",
+      "caps": 8,
+      "goals": 1
+    },
+    {
+      "shirt": "15",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Leonardo Pereira",
+      "nameOnShirt": "LÉO PEREIRA",
+      "club": "CR Flamengo (BRA)",
+      "height": "1.89 m",
+      "caps": 4,
+      "goals": 0
+    },
+    {
+      "shirt": "16",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Douglas Dos Santos Justino De Melo",
+      "nameOnShirt": "DOUGLAS S.",
+      "club": "FC Zenit St. Petersburg (RUS)",
+      "height": "1.73 m",
+      "caps": 8,
+      "goals": 0
+    },
+    {
+      "shirt": "17",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Fabio Henrique Tavares",
+      "nameOnShirt": "FABINHO",
+      "club": "Al Ittihad (KSA)",
+      "height": "1.88 m",
+      "caps": 34,
+      "goals": 0
+    },
+    {
+      "shirt": "18",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Danilo Dos Santos De Oliveira",
+      "nameOnShirt": "DANILO S.",
+      "club": "Botafogo (BRA)",
+      "height": "1.77 m",
+      "caps": 5,
+      "goals": 2
+    },
+    {
+      "shirt": "19",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Endrick Felipe Moreira De Sousa Pessoa",
+      "nameOnShirt": "ENDRICK",
+      "club": "Olympique Lyonnais (FRA)",
+      "height": "1.72 m",
+      "caps": 17,
+      "goals": 4
+    },
+    {
+      "shirt": "20",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Lucas Tolentino Coelho De Lima",
+      "nameOnShirt": "L. PAQUETÁ",
+      "club": "CR Flamengo (BRA)",
+      "height": "1.83 m",
+      "caps": 64,
+      "goals": 13
+    },
+    {
+      "shirt": "21",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Luiz Henrique André Rosa Da Silva",
+      "nameOnShirt": "L. HENRIQUE",
+      "club": "FC Zenit St. Petersburg (RUS)",
+      "height": "1.82 m",
+      "caps": 16,
+      "goals": 2
+    },
+    {
+      "shirt": "22",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Gabriel Teodoro Martinelli Silva",
+      "nameOnShirt": "MARTINELLI",
+      "club": "Arsenal FC (ENG)",
+      "height": "1.78 m",
+      "caps": 23,
+      "goals": 4
+    },
+    {
+      "shirt": "23",
+      "position": "GK",
+      "role": "Portero",
+      "name": "Ederson Santana De Moraes",
+      "nameOnShirt": "EDERSON",
+      "club": "Fenerbahçe SK (TUR)",
+      "height": "1.88 m",
+      "caps": 32,
+      "goals": 0
+    },
+    {
+      "shirt": "24",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Roger Ibañez Da Silva",
+      "nameOnShirt": "IBAÑEZ",
+      "club": "Al Ahli FC (KSA)",
+      "height": "1.86 m",
+      "caps": 8,
+      "goals": 0
+    },
+    {
+      "shirt": "25",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Igor Thiago Nascimento Rodrigues",
+      "nameOnShirt": "THIAGO",
+      "club": "Brentford FC (ENG)",
+      "height": "1.90 m",
+      "caps": 5,
+      "goals": 2
+    },
+    {
+      "shirt": "26",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Rayan Vitor Simplicio Rocha",
+      "nameOnShirt": "RAYAN",
+      "club": "AFC Bournemouth (ENG)",
+      "height": "1.87 m",
+      "caps": 2,
+      "goals": 1
+    }
+  ],
+  "T08": [
+    {
+      "shirt": "1",
+      "position": "GK",
+      "role": "Portero",
+      "name": "Josimar José Évora Dias",
+      "nameOnShirt": "VOZINHA",
+      "club": "GD Chaves (POR)",
+      "height": "1.89 m",
+      "caps": 91,
+      "goals": 0
+    },
+    {
+      "shirt": "2",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Ianique Dos Santos Tavares",
+      "nameOnShirt": "STOPIRA",
+      "club": "SCU Torreense (POR)",
+      "height": "1.78 m",
+      "caps": 61,
+      "goals": 4
+    },
+    {
+      "shirt": "3",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Edilson Alberto Monteiro Sanches Borges",
+      "nameOnShirt": "BORGES",
+      "club": "Al Bataeh Club (UAE)",
+      "height": "1.85 m",
+      "caps": 33,
+      "goals": 2
+    },
+    {
+      "shirt": "4",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Roberto Carlos Lopes",
+      "nameOnShirt": "LOPES",
+      "club": "Shamrock Rovers FC (IRL)",
+      "height": "1.86 m",
+      "caps": 46,
+      "goals": 0
+    },
+    {
+      "shirt": "5",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Logan Evans Costa",
+      "nameOnShirt": "COSTA",
+      "club": "Villarreal CF (ESP)",
+      "height": "1.90 m",
+      "caps": 28,
+      "goals": 0
+    },
+    {
+      "shirt": "6",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Kevin Lenini Gonçalves Pereira De Pina",
+      "nameOnShirt": "KEVIN L.",
+      "club": "FC Krasnodar (RUS)",
+      "height": "1.77 m",
+      "caps": 32,
+      "goals": 3
+    },
+    {
+      "shirt": "7",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Jovane Eduardo Borges Cabral",
+      "nameOnShirt": "JOVANE",
+      "club": "CF Estrela Da Amadora (POR)",
+      "height": "1.74 m",
+      "caps": 30,
+      "goals": 3
+    },
+    {
+      "shirt": "8",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "João Paulo Moreira Fernandes",
+      "nameOnShirt": "JOÃO PAULO",
+      "club": "FC FCSB (ROU)",
+      "height": "1.80 m",
+      "caps": 42,
+      "goals": 1
+    },
+    {
+      "shirt": "9",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Gilson Benchimol Tavares",
+      "nameOnShirt": "BENCHIMOL",
+      "club": "FC Akron Tolyatti (RUS)",
+      "height": "1.87 m",
+      "caps": 21,
+      "goals": 6
+    },
+    {
+      "shirt": "10",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Jamiro Gregory Monteiro Alvarenga",
+      "nameOnShirt": "MONTEIRO",
+      "club": "PEC Zwolle (NED)",
+      "height": "1.75 m",
+      "caps": 56,
+      "goals": 5
+    },
+    {
+      "shirt": "11",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Garry Mendes Rodrigues",
+      "nameOnShirt": "RODRIGUES",
+      "club": "Apollon Limassol (CYP)",
+      "height": "1.73 m",
+      "caps": 61,
+      "goals": 10
+    },
+    {
+      "shirt": "12",
+      "position": "GK",
+      "role": "Portero",
+      "name": "Márcio Salomão Brazão Da Rosa",
+      "nameOnShirt": "MARCIO",
+      "club": "PFC Montana (BUL)",
+      "height": "1.86 m",
+      "caps": 11,
+      "goals": 0
+    },
+    {
+      "shirt": "13",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Sidny Lopes Cabral",
+      "nameOnShirt": "LOPES CABRAL",
+      "club": "SL Benca (POR)",
+      "height": "1.76 m",
+      "caps": 12,
+      "goals": 3
+    },
+    {
+      "shirt": "14",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Deroy D'encarnação Duarte",
+      "nameOnShirt": "D. DUARTE",
+      "club": "PFC Ludogorets Razgrad (BUL)",
+      "height": "1.77 m",
+      "caps": 34,
+      "goals": 0
+    },
+    {
+      "shirt": "15",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Laros Michael D'encarnação Duarte",
+      "nameOnShirt": "L. DUARTE",
+      "club": "Puskás Akadémia FC (HUN)",
+      "height": "1.80 m",
+      "caps": 21,
+      "goals": 1
+    },
+    {
+      "shirt": "16",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Jair Semedo Monteiro",
+      "nameOnShirt": "Y. SEMEDO",
+      "club": "SC Farense (POR)",
+      "height": "1.76 m",
+      "caps": 11,
+      "goals": 1
+    },
+    {
+      "shirt": "17",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Willy Johnson Semedo Afonso",
+      "nameOnShirt": "SEMEDO",
+      "club": "AC Omonia (CYP)",
+      "height": "1.85 m",
+      "caps": 39,
+      "goals": 3
+    },
+    {
+      "shirt": "18",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Telmo Emanuel Gomes Arcanjo",
+      "nameOnShirt": "ARCANJO",
+      "club": "Vitória SC (POR)",
+      "height": "1.80 m",
+      "caps": 17,
+      "goals": 1
+    },
+    {
+      "shirt": "19",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Dailon Rocha Livramento",
+      "nameOnShirt": "LIVRAMENTO",
+      "club": "Casa Pia AC (POR)",
+      "height": "1.85 m",
+      "caps": 23,
+      "goals": 7
+    },
+    {
+      "shirt": "20",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Ryan Isaac Da Graca Mendes",
+      "nameOnShirt": "RYAN",
+      "club": "Iğdır FK (TUR)",
+      "height": "1.78 m",
+      "caps": 99,
+      "goals": 22
+    },
+    {
+      "shirt": "21",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Nuno Miguel Da Costa Joia",
+      "nameOnShirt": "DA COSTA",
+      "club": "Başakşehir FK (TUR)",
+      "height": "1.82 m",
+      "caps": 10,
+      "goals": 2
+    },
+    {
+      "shirt": "22",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Steven Moreira",
+      "nameOnShirt": "MOREIRA",
+      "club": "Columbus Crew (USA)",
+      "height": "1.78 m",
+      "caps": 21,
+      "goals": 0
+    },
+    {
+      "shirt": "23",
+      "position": "GK",
+      "role": "Portero",
+      "name": "Carlos Joaquim Antunes Dos Santos",
+      "nameOnShirt": "DOS SANTOS",
+      "club": "San Diego FC (USA)",
+      "height": "1.89 m",
+      "caps": 1,
+      "goals": 0
+    },
+    {
+      "shirt": "24",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Wagner Fabricio Cardoso De Pina",
+      "nameOnShirt": "WAGNER P.",
+      "club": "Trabzonspor (TUR)",
+      "height": "1.80 m",
+      "caps": 14,
+      "goals": 0
+    },
+    {
+      "shirt": "25",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Kelvin Spencer Pires",
+      "nameOnShirt": "KELVIN",
+      "club": "SJK (FIN)",
+      "height": "1.93 m",
+      "caps": 6,
+      "goals": 1
+    },
+    {
+      "shirt": "26",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Hélio Sandro Oliveira Alves Varela",
+      "nameOnShirt": "HÉLIO",
+      "club": "Maccabi Tel-Aviv FC (ISR)",
+      "height": "1.76 m",
+      "caps": 21,
+      "goals": 0
+    }
+  ],
+  "T09": [
+    {
+      "shirt": "1",
+      "position": "GK",
+      "role": "Portero",
+      "name": "Dayne Tristan St. Clair",
+      "nameOnShirt": "ST. CLAIR",
+      "club": "Inter Miami CF (USA)",
+      "height": "1.91 m",
+      "caps": 20,
+      "goals": 0
+    },
+    {
+      "shirt": "2",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Alistair William Johnston",
+      "nameOnShirt": "JOHNSTON",
+      "club": "Celtic FC (SCO)",
+      "height": "1.80 m",
+      "caps": 59,
+      "goals": 1
+    },
+    {
+      "shirt": "3",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Ale Charles Jones",
+      "nameOnShirt": "JONES",
+      "club": "Middlesbrough FC (ENG)",
+      "height": "1.91 m",
+      "caps": 2,
+      "goals": 0
+    },
+    {
+      "shirt": "4",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Luc Rollet De Fougerolles",
+      "nameOnShirt": "DE FOUGEROLLES",
+      "club": "FCV Dender EH (BEL)",
+      "height": "1.83 m",
+      "caps": 14,
+      "goals": 0
+    },
+    {
+      "shirt": "5",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Joel Robert Waterman",
+      "nameOnShirt": "WATERMAN",
+      "club": "Chicago Fire FC (USA)",
+      "height": "1.85 m",
+      "caps": 17,
+      "goals": 0
+    },
+    {
+      "shirt": "6",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Mathieu Choinière",
+      "nameOnShirt": "CHOINIÈRE",
+      "club": "LAFC (USA)",
+      "height": "1.73 m",
+      "caps": 24,
+      "goals": 0
+    },
+    {
+      "shirt": "7",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Stephen Eustaquio",
+      "nameOnShirt": "EUSTÁQUIO",
+      "club": "LAFC (USA)",
+      "height": "1.75 m",
+      "caps": 57,
+      "goals": 4
+    },
+    {
+      "shirt": "8",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Ismaël Kenneth Jordan Kone",
+      "nameOnShirt": "KONÉ",
+      "club": "US Sassuolo (ITA)",
+      "height": "1.88 m",
+      "caps": 41,
+      "goals": 4
+    },
+    {
+      "shirt": "9",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Cyle Christopher Larin",
+      "nameOnShirt": "LARIN",
+      "club": "Southampton FC (ENG)",
+      "height": "1.88 m",
+      "caps": 91,
+      "goals": 31
+    },
+    {
+      "shirt": "10",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Jonathan Christian David",
+      "nameOnShirt": "J. DAVID",
+      "club": "Juventus FC (ITA)",
+      "height": "1.75 m",
+      "caps": 78,
+      "goals": 39
+    },
+    {
+      "shirt": "11",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Liam Alan Millar",
+      "nameOnShirt": "MILLAR",
+      "club": "Hull City FC (ENG)",
+      "height": "1.76 m",
+      "caps": 42,
+      "goals": 1
+    },
+    {
+      "shirt": "12",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Tanitoluwa Oluwatimilehin Oluwaseyi",
+      "nameOnShirt": "OLUWASEYI",
+      "club": "Villarreal CF (ESP)",
+      "height": "1.87 m",
+      "caps": 25,
+      "goals": 2
+    },
+    {
+      "shirt": "13",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Derek Austin Cornelius",
+      "nameOnShirt": "CORNELIUS",
+      "club": "Rangers FC (SCO)",
+      "height": "1.86 m",
+      "caps": 45,
+      "goals": 1
+    },
+    {
+      "shirt": "14",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Jacob Everett Shaffelburg",
+      "nameOnShirt": "SHAFFELBURG",
+      "club": "LAFC (USA)",
+      "height": "1.81 m",
+      "caps": 32,
+      "goals": 6
+    },
+    {
+      "shirt": "15",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Moïse Bombito Lumpungu",
+      "nameOnShirt": "BOMBITO",
+      "club": "OGC Nice (FRA)",
+      "height": "1.90 m",
+      "caps": 20,
+      "goals": 0
+    },
+    {
+      "shirt": "16",
+      "position": "GK",
+      "role": "Portero",
+      "name": "Maxime Crépeau",
+      "nameOnShirt": "CRÉPEAU",
+      "club": "Orlando City SC (USA)",
+      "height": "1.85 m",
+      "caps": 33,
+      "goals": 0
+    },
+    {
+      "shirt": "17",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Tajon Trevor Buchanan",
+      "nameOnShirt": "BUCHANAN",
+      "club": "Villarreal CF (ESP)",
+      "height": "1.83 m",
+      "caps": 61,
+      "goals": 8
+    },
+    {
+      "shirt": "18",
+      "position": "GK",
+      "role": "Portero",
+      "name": "Owen Olamidayo Goodman",
+      "nameOnShirt": "GOODMAN",
+      "club": "Barnsley (ENG)",
+      "height": "1.93 m",
+      "caps": 0,
+      "goals": 0
+    },
+    {
+      "shirt": "19",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Alphonso Boyle Davies",
+      "nameOnShirt": "DAVIES",
+      "club": "FC Bayern München (GER)",
+      "height": "1.83 m",
+      "caps": 58,
+      "goals": 15
+    },
+    {
+      "shirt": "20",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Ali Ahmed",
+      "nameOnShirt": "AHMED",
+      "club": "Norwich City FC (ENG)",
+      "height": "1.80 m",
+      "caps": 25,
+      "goals": 1
+    },
+    {
+      "shirt": "21",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Jonathan Osorio",
+      "nameOnShirt": "OSORIO",
+      "club": "Toronto FC (CAN)",
+      "height": "1.75 m",
+      "caps": 92,
+      "goals": 10
+    },
+    {
+      "shirt": "22",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Richmond Mamah Laryea",
+      "nameOnShirt": "LARYEA",
+      "club": "Toronto FC (CAN)",
+      "height": "1.75 m",
+      "caps": 77,
+      "goals": 1
+    },
+    {
+      "shirt": "23",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Niko Kristian Sigur",
+      "nameOnShirt": "SIGUR",
+      "club": "HNK Hajduk Split (CRO)",
+      "height": "1.78 m",
+      "caps": 19,
+      "goals": 2
+    },
+    {
+      "shirt": "24",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Promise Oluwatobi Emmanuel David",
+      "nameOnShirt": "PROMISE",
+      "club": "Royale Union Saint-Gilloise (BEL)",
+      "height": "1.95 m",
+      "caps": 11,
+      "goals": 3
+    },
+    {
+      "shirt": "25",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Nathan-Dylan Saliba",
+      "nameOnShirt": "SALIBA",
+      "club": "RSC Anderlecht (BEL)",
+      "height": "1.74 m",
+      "caps": 15,
+      "goals": 2
+    },
+    {
+      "shirt": "26",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Jayden Nelson",
+      "nameOnShirt": "NELSON",
+      "club": "Austin FC (USA)",
+      "height": "1.70 m",
+      "caps": 15,
+      "goals": 3
+    }
+  ],
+  "T10": [
+    {
+      "shirt": "1",
+      "position": "GK",
+      "role": "Portero",
+      "name": "David Ospina Ramirez",
+      "nameOnShirt": "OSPINA",
+      "club": "Atlético Nacional (COL)",
+      "height": "1.83 m",
+      "caps": 130,
+      "goals": 0
+    },
+    {
+      "shirt": "2",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Daniel Muñoz Mejia",
+      "nameOnShirt": "D. MUÑOZ",
+      "club": "Crystal Palace FC (ENG)",
+      "height": "1.80 m",
+      "caps": 46,
+      "goals": 3
+    },
+    {
+      "shirt": "3",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Jhon Janer Lucumi Bonilla",
+      "nameOnShirt": "J. LUCUMI",
+      "club": "Bologna FC (ITA)",
+      "height": "1.87 m",
+      "caps": 37,
+      "goals": 1
+    },
+    {
+      "shirt": "4",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Santiago Arias Naranjo",
+      "nameOnShirt": "ARIAS",
+      "club": "CA Independiente (ARG)",
+      "height": "1.77 m",
+      "caps": 68,
+      "goals": 0
+    },
+    {
+      "shirt": "5",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Kevin Duvan Castaño Gil",
+      "nameOnShirt": "K. CASTAÑO",
+      "club": "CA River Plate (ARG)",
+      "height": "1.79 m",
+      "caps": 25,
+      "goals": 0
+    },
+    {
+      "shirt": "6",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Richard Ríos Montoya",
+      "nameOnShirt": "RICHARD RIOS",
+      "club": "SL Benca (POR)",
+      "height": "1.85 m",
+      "caps": 32,
+      "goals": 2
+    },
+    {
+      "shirt": "7",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Luis Fernando Díaz Marulanda",
+      "nameOnShirt": "LUIS DIAZ",
+      "club": "FC Bayern München (GER)",
+      "height": "1.79 m",
+      "caps": 74,
+      "goals": 22
+    },
+    {
+      "shirt": "8",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Jorge Andres Carrascal Guardo",
+      "nameOnShirt": "CARRASCAL",
+      "club": "CR Flamengo (BRA)",
+      "height": "1.80 m",
+      "caps": 25,
+      "goals": 2
+    },
+    {
+      "shirt": "9",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Jhon Andrés Córdoba Copete",
+      "nameOnShirt": "CORDOBA",
+      "club": "FC Krasnodar (RUS)",
+      "height": "1.86 m",
+      "caps": 21,
+      "goals": 6
+    },
+    {
+      "shirt": "10",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "James David Rodríguez Rubio",
+      "nameOnShirt": "JAMES",
+      "club": "Minnesota United FC (USA)",
+      "height": "1.81 m",
+      "caps": 126,
+      "goals": 31
+    },
+    {
+      "shirt": "11",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Jhon Adolfo Arias Andrade",
+      "nameOnShirt": "J. ARIAS",
+      "club": "SE Palmeiras (BRA)",
+      "height": "1.68 m",
+      "caps": 38,
+      "goals": 6
+    },
+    {
+      "shirt": "12",
+      "position": "GK",
+      "role": "Portero",
+      "name": "Camilo Andres Vargas Gil",
+      "nameOnShirt": "C. VARGAS",
+      "club": "Atlas FC (MEX)",
+      "height": "1.83 m",
+      "caps": 42,
+      "goals": 0
+    },
+    {
+      "shirt": "13",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Yerry Fernando Mina Gonzalez",
+      "nameOnShirt": "Y. MINA",
+      "club": "Cagliari (ITA)",
+      "height": "1.95 m",
+      "caps": 54,
+      "goals": 8
+    },
+    {
+      "shirt": "14",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Gustavo Adolfo Puerta Molano",
+      "nameOnShirt": "PUERTA",
+      "club": "Racing Santander (ESP)",
+      "height": "1.73 m",
+      "caps": 6,
+      "goals": 1
+    },
+    {
+      "shirt": "15",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Juan Camilo Portilla Orozco",
+      "nameOnShirt": "PORTILLA",
+      "club": "Athletico Paranaense (BRA)",
+      "height": "1.81 m",
+      "caps": 10,
+      "goals": 0
+    },
+    {
+      "shirt": "16",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Jefferson Andrés Lerma Solis",
+      "nameOnShirt": "J. LERMA",
+      "club": "Crystal Palace FC (ENG)",
+      "height": "1.80 m",
+      "caps": 65,
+      "goals": 5
+    },
+    {
+      "shirt": "17",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Johan Andrés Mojica Palacio",
+      "nameOnShirt": "J. MOJICA",
+      "club": "RCD Mallorca (ESP)",
+      "height": "1.84 m",
+      "caps": 45,
+      "goals": 1
+    },
+    {
+      "shirt": "18",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Willer Emilio Ditta Perez",
+      "nameOnShirt": "W. DITTA",
+      "club": "CF Cruz Azul (MEX)",
+      "height": "1.79 m",
+      "caps": 5,
+      "goals": 0
+    },
+    {
+      "shirt": "19",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Juan Camilo Hernandez Suarez",
+      "nameOnShirt": "C. HERNANDEZ",
+      "club": "Real Betis (ESP)",
+      "height": "1.76 m",
+      "caps": 9,
+      "goals": 2
+    },
+    {
+      "shirt": "20",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Juan Fernando Quintero Paniagua",
+      "nameOnShirt": "QUINTERO",
+      "club": "CA River Plate (ARG)",
+      "height": "1.67 m",
+      "caps": 49,
+      "goals": 6
+    },
+    {
+      "shirt": "21",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Jaminton Leandro Campaz",
+      "nameOnShirt": "CAMPAZ",
+      "club": "CA Rosario Central (ARG)",
+      "height": "1.66 m",
+      "caps": 10,
+      "goals": 1
+    },
+    {
+      "shirt": "22",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Deiver Machado Mena",
+      "nameOnShirt": "MACHADO",
+      "club": "FC Nantes (FRA)",
+      "height": "1.73 m",
+      "caps": 15,
+      "goals": 0
+    },
+    {
+      "shirt": "23",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Davinson Sánchez Mina",
+      "nameOnShirt": "SANCHEZ",
+      "club": "Galatasaray SK (TUR)",
+      "height": "1.88 m",
+      "caps": 79,
+      "goals": 4
+    },
+    {
+      "shirt": "24",
+      "position": "GK",
+      "role": "Portero",
+      "name": "Álvaro David Montero Perales",
+      "nameOnShirt": "MONTERO",
+      "club": "CA Vélez Sarseld (ARG)",
+      "height": "2.01 m",
+      "caps": 12,
+      "goals": 0
+    },
+    {
+      "shirt": "25",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Luis Javier Suárez Charris",
+      "nameOnShirt": "SUAREZ",
+      "club": "Sporting CP (POR)",
+      "height": "1.79 m",
+      "caps": 12,
+      "goals": 5
+    },
+    {
+      "shirt": "26",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Carlos Andrés Gómez Hinestroza",
+      "nameOnShirt": "A. GOMEZ",
+      "club": "CR Vasco Da Gama (BRA)",
+      "height": "1.70 m",
+      "caps": 8,
+      "goals": 2
+    }
+  ],
+  "T11": [
+    {
+      "shirt": "1",
+      "position": "GK",
+      "role": "Portero",
+      "name": "Lionel Nzau Mpasi",
+      "nameOnShirt": "MPASI",
+      "club": "Le Havre AC (FRA)",
+      "height": "1.82 m",
+      "caps": 28,
+      "goals": 0
+    },
+    {
+      "shirt": "2",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Wan Bissaka",
+      "nameOnShirt": "WAN BISSAKA",
+      "club": "West Ham United FC (ENG)",
+      "height": "1.83 m",
+      "caps": 12,
+      "goals": 0
+    },
+    {
+      "shirt": "3",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Steve Nkanu Kapuadi",
+      "nameOnShirt": "KAPUADI",
+      "club": "Widzew Łódź (POL)",
+      "height": "1.96 m",
+      "caps": 3,
+      "goals": 0
+    },
+    {
+      "shirt": "4",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Axel Tuanzebe",
+      "nameOnShirt": "TUANZEBE",
+      "club": "Burnley FC (ENG)",
+      "height": "1.88 m",
+      "caps": 13,
+      "goals": 1
+    },
+    {
+      "shirt": "5",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Dylan Buduka Batubinsika",
+      "nameOnShirt": "BATUBINSIKA",
+      "club": "AEL FC (GRE)",
+      "height": "1.85 m",
+      "caps": 15,
+      "goals": 1
+    },
+    {
+      "shirt": "6",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Ngal’ayel Mukau",
+      "nameOnShirt": "MUKAU",
+      "club": "Lille OSC (FRA)",
+      "height": "1.86 m",
+      "caps": 14,
+      "goals": 0
+    },
+    {
+      "shirt": "7",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Nathanaël Mbuku",
+      "nameOnShirt": "MBUKU",
+      "club": "Montpellier HSC (FRA)",
+      "height": "1.70 m",
+      "caps": 19,
+      "goals": 2
+    },
+    {
+      "shirt": "8",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Samuel Alain Moutoussamy",
+      "nameOnShirt": "MOUTOUSSAMY",
+      "club": "Atromitos FC (GRE)",
+      "height": "1.76 m",
+      "caps": 58,
+      "goals": 0
+    },
+    {
+      "shirt": "9",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Kibambe Brian Cipenga",
+      "nameOnShirt": "CIPENGA",
+      "club": "CD Castellón (ESP)",
+      "height": "1.72 m",
+      "caps": 8,
+      "goals": 0
+    },
+    {
+      "shirt": "10",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Theo Mbulofeko Batombo Bongonda",
+      "nameOnShirt": "BONGONDA",
+      "club": "FC Spartak Moscow (RUS)",
+      "height": "1.76 m",
+      "caps": 38,
+      "goals": 7
+    },
+    {
+      "shirt": "11",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Mambenga Gaël Roméo Kakuta",
+      "nameOnShirt": "KAKUTA",
+      "club": "AEL FC (GRE)",
+      "height": "1.74 m",
+      "caps": 31,
+      "goals": 5
+    },
+    {
+      "shirt": "12",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Joris Kayembe-Ditu",
+      "nameOnShirt": "J. KAYEMBE",
+      "club": "KRC Genk (BEL)",
+      "height": "1.80 m",
+      "caps": 26,
+      "goals": 1
+    },
+    {
+      "shirt": "13",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Meschack Lina Elia",
+      "nameOnShirt": "MESCHACK",
+      "club": "Alanyaspor (TUR)",
+      "height": "1.73 m",
+      "caps": 68,
+      "goals": 12
+    },
+    {
+      "shirt": "14",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Noah Junior Sadiki",
+      "nameOnShirt": "SADIKI",
+      "club": "Sunderland AFC (ENG)",
+      "height": "1.65 m",
+      "caps": 20,
+      "goals": 0
+    },
+    {
+      "shirt": "15",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Tshibola Aaron",
+      "nameOnShirt": "TSHIBOLA",
+      "club": "Kilmarnock FC (SCO)",
+      "height": "1.84 m",
+      "caps": 17,
+      "goals": 1
+    },
+    {
+      "shirt": "16",
+      "position": "GK",
+      "role": "Portero",
+      "name": "Timothy Bruce Munzoko Fayulu",
+      "nameOnShirt": "FAYULU",
+      "club": "FC Noah (ARM)",
+      "height": "1.92 m",
+      "caps": 3,
+      "goals": 0
+    },
+    {
+      "shirt": "17",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Cedric Bakambu",
+      "nameOnShirt": "BAKAMBU",
+      "club": "Real Betis (ESP)",
+      "height": "1.82 m",
+      "caps": 70,
+      "goals": 21
+    },
+    {
+      "shirt": "18",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Charles Monginda Pickel",
+      "nameOnShirt": "PICKEL",
+      "club": "RCD Espanyol (ESP)",
+      "height": "1.87 m",
+      "caps": 34,
+      "goals": 1
+    },
+    {
+      "shirt": "19",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Mayele Fiston Kalala",
+      "nameOnShirt": "MAYELE",
+      "club": "Pyramids FC (EGY)",
+      "height": "1.85 m",
+      "caps": 36,
+      "goals": 5
+    },
+    {
+      "shirt": "20",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Yoane Wissa",
+      "nameOnShirt": "WISSA",
+      "club": "Newcastle United FC (ENG)",
+      "height": "1.76 m",
+      "caps": 38,
+      "goals": 8
+    },
+    {
+      "shirt": "21",
+      "position": "GK",
+      "role": "Portero",
+      "name": "Matthieu Luka Epolo",
+      "nameOnShirt": "EPOLO",
+      "club": "Standard Liège (BEL)",
+      "height": "1.83 m",
+      "caps": 1,
+      "goals": 0
+    },
+    {
+      "shirt": "22",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Mangulu Chancel Mbemba",
+      "nameOnShirt": "MBEMBA",
+      "club": "Lille OSC (FRA)",
+      "height": "1.82 m",
+      "caps": 109,
+      "goals": 7
+    },
+    {
+      "shirt": "23",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Simon Bokote Banza",
+      "nameOnShirt": "BANZA",
+      "club": "Al Jazira (UAE)",
+      "height": "1.89 m",
+      "caps": 15,
+      "goals": 2
+    },
+    {
+      "shirt": "24",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Gédéon Tchingoma Kyatengwa Kalulu",
+      "nameOnShirt": "KALULU",
+      "club": "Aris Limassol FC (CYP)",
+      "height": "1.78 m",
+      "caps": 28,
+      "goals": 0
+    },
+    {
+      "shirt": "25",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Edo Kayembe Kayembe",
+      "nameOnShirt": "E. KAYEMBE",
+      "club": "Watford FC (ENG)",
+      "height": "1.83 m",
+      "caps": 42,
+      "goals": 2
+    },
+    {
+      "shirt": "26",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Arthur Fuka Masuaku Kawela",
+      "nameOnShirt": "MASUAKU",
+      "club": "RC Lens (FRA)",
+      "height": "1.79 m",
+      "caps": 44,
+      "goals": 4
+    }
+  ],
+  "T12": [
+    {
+      "shirt": "1",
+      "position": "GK",
+      "role": "Portero",
+      "name": "Yahia Fofana",
+      "nameOnShirt": "Y. FOFANA",
+      "club": "Çaykur Rizespor (TUR)",
+      "height": "1.94 m",
+      "caps": 37,
+      "goals": 0
+    },
+    {
+      "shirt": "2",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Ousmane Diomande",
+      "nameOnShirt": "O. DIOMANDE",
+      "club": "Sporting CP (POR)",
+      "height": "1.90 m",
+      "caps": 16,
+      "goals": 1
+    },
+    {
+      "shirt": "3",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "N'clomande Ghislain Konan",
+      "nameOnShirt": "G. KONAN",
+      "club": "Gil Vicente FC (POR)",
+      "height": "1.76 m",
+      "caps": 55,
+      "goals": 0
+    },
+    {
+      "shirt": "4",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Jean Michael Seri",
+      "nameOnShirt": "SERI",
+      "club": "NK Maribor (SVN)",
+      "height": "1.68 m",
+      "caps": 65,
+      "goals": 4
+    },
+    {
+      "shirt": "5",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Wilfried Stephane Singo",
+      "nameOnShirt": "SINGO",
+      "club": "Galatasaray SK (TUR)",
+      "height": "1.82 m",
+      "caps": 36,
+      "goals": 1
+    },
+    {
+      "shirt": "6",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Seko Mohamed Fofana",
+      "nameOnShirt": "FOFANA",
+      "club": "FC Porto (POR)",
+      "height": "1.85 m",
+      "caps": 33,
+      "goals": 7
+    },
+    {
+      "shirt": "7",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Kouakou Odilon Dorgeless Kossounou",
+      "nameOnShirt": "KOSSOUNOU",
+      "club": "Atalanta Bergamo (ITA)",
+      "height": "1.91 m",
+      "caps": 37,
+      "goals": 0
+    },
+    {
+      "shirt": "8",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Franck Yannick Kessie",
+      "nameOnShirt": "KESSIE",
+      "club": "Al Ahli FC (KSA)",
+      "height": "1.83 m",
+      "caps": 105,
+      "goals": 15
+    },
+    {
+      "shirt": "9",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Ange-Yoan Laurent Bonny",
+      "nameOnShirt": "BONNY",
+      "club": "FC Internazionale Milano (ITA)",
+      "height": "1.89 m",
+      "caps": 2,
+      "goals": 0
+    },
+    {
+      "shirt": "10",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Simon Adingra",
+      "nameOnShirt": "ADINGRA",
+      "club": "AS Monaco (FRA)",
+      "height": "1.75 m",
+      "caps": 29,
+      "goals": 5
+    },
+    {
+      "shirt": "11",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Yan Diomande",
+      "nameOnShirt": "YAN DIOMANDE",
+      "club": "RB Leipzig (GER)",
+      "height": "1.80 m",
+      "caps": 11,
+      "goals": 3
+    },
+    {
+      "shirt": "12",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Sepe Elye Delmas Wahi",
+      "nameOnShirt": "WAHI",
+      "club": "OGC Nice (FRA)",
+      "height": "1.81 m",
+      "caps": 3,
+      "goals": 0
+    },
+    {
+      "shirt": "13",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Christopher Tea Domoraud Operi",
+      "nameOnShirt": "OPERI",
+      "club": "Başakşehir FK (TUR)",
+      "height": "1.83 m",
+      "caps": 12,
+      "goals": 0
+    },
+    {
+      "shirt": "14",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Oumar Diakite",
+      "nameOnShirt": "DIAKITE",
+      "club": "Cercle Brugge (BEL)",
+      "height": "1.82 m",
+      "caps": 29,
+      "goals": 6
+    },
+    {
+      "shirt": "15",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Amad Diallo",
+      "nameOnShirt": "AMAD",
+      "club": "Manchester United FC (ENG)",
+      "height": "1.73 m",
+      "caps": 20,
+      "goals": 7
+    },
+    {
+      "shirt": "16",
+      "position": "GK",
+      "role": "Portero",
+      "name": "Mohamed Kone",
+      "nameOnShirt": "KONE",
+      "club": "Sporting Charleroi (BEL)",
+      "height": "1.86 m",
+      "caps": 0,
+      "goals": 0
+    },
+    {
+      "shirt": "17",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Guela Maho-Lewis Doue",
+      "nameOnShirt": "G. DOUE",
+      "club": "RC Strasbourg (FRA)",
+      "height": "1.87 m",
+      "caps": 21,
+      "goals": 3
+    },
+    {
+      "shirt": "18",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Ibrahim Sangare",
+      "nameOnShirt": "SANGARE",
+      "club": "Nottingham Forest FC (ENG)",
+      "height": "1.91 m",
+      "caps": 56,
+      "goals": 11
+    },
+    {
+      "shirt": "19",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Nicolas Pepe",
+      "nameOnShirt": "PEPE",
+      "club": "Villarreal CF (ESP)",
+      "height": "1.83 m",
+      "caps": 57,
+      "goals": 12
+    },
+    {
+      "shirt": "20",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Badobre Emmanuel Elysee Djedje Agbadou",
+      "nameOnShirt": "AGBADOU",
+      "club": "Beşiktaş JK (TUR)",
+      "height": "1.85 m",
+      "caps": 22,
+      "goals": 2
+    },
+    {
+      "shirt": "21",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Obite Evan Ndicka",
+      "nameOnShirt": "NDICKA",
+      "club": "AS Roma (ITA)",
+      "height": "1.92 m",
+      "caps": 29,
+      "goals": 0
+    },
+    {
+      "shirt": "22",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Evann Ludovic Vidjannagni Guessand",
+      "nameOnShirt": "GUESSAND",
+      "club": "Crystal Palace FC (ENG)",
+      "height": "1.88 m",
+      "caps": 21,
+      "goals": 4
+    },
+    {
+      "shirt": "23",
+      "position": "GK",
+      "role": "Portero",
+      "name": "Alban-Marc Lafont",
+      "nameOnShirt": "LAFONT",
+      "club": "Panathinaikos FC (GRE)",
+      "height": "1.96 m",
+      "caps": 4,
+      "goals": 0
+    },
+    {
+      "shirt": "24",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Bazoumana Toure",
+      "nameOnShirt": "TOURE",
+      "club": "TSG Hoffenheim (GER)",
+      "height": "1.78 m",
+      "caps": 7,
+      "goals": 2
+    },
+    {
+      "shirt": "25",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Parfait Guiagon",
+      "nameOnShirt": "GUIAGON",
+      "club": "Sporting Charleroi (BEL)",
+      "height": "1.65 m",
+      "caps": 5,
+      "goals": 0
+    },
+    {
+      "shirt": "26",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Christ Ravynel Inao Oulai",
+      "nameOnShirt": "INAO",
+      "club": "Trabzonspor (TUR)",
+      "height": "1.73 m",
+      "caps": 10,
+      "goals": 0
+    }
+  ],
+  "T13": [
+    {
+      "shirt": "1",
+      "position": "GK",
+      "role": "Portero",
+      "name": "Dominik Livaković",
+      "nameOnShirt": "LIVAKOVIĆ",
+      "club": "GNK Dinamo Zagreb (CRO)",
+      "height": "1.88 m",
+      "caps": 75,
+      "goals": 0
+    },
+    {
+      "shirt": "2",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Josip Stanišić",
+      "nameOnShirt": "STANIŠIĆ",
+      "club": "FC Bayern München (GER)",
+      "height": "1.86 m",
+      "caps": 31,
+      "goals": 0
+    },
+    {
+      "shirt": "3",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Marin Pongračić",
+      "nameOnShirt": "PONGRAČIĆ",
+      "club": "ACF Fiorentina (ITA)",
+      "height": "1.93 m",
+      "caps": 20,
+      "goals": 0
+    },
+    {
+      "shirt": "4",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Joško Gvardiol",
+      "nameOnShirt": "GVARDIOL",
+      "club": "Manchester City FC (ENG)",
+      "height": "1.85 m",
+      "caps": 48,
+      "goals": 4
+    },
+    {
+      "shirt": "5",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Duje Ćaleta-Car",
+      "nameOnShirt": "ĆALETA-CAR",
+      "club": "Real Sociedad (ESP)",
+      "height": "1.93 m",
+      "caps": 38,
+      "goals": 1
+    },
+    {
+      "shirt": "6",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Josip Šutalo",
+      "nameOnShirt": "ŠUTALO",
+      "club": "AFC Ajax (NED)",
+      "height": "1.85 m",
+      "caps": 33,
+      "goals": 0
+    },
+    {
+      "shirt": "7",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Nikola Moro",
+      "nameOnShirt": "MORO",
+      "club": "Bologna FC (ITA)",
+      "height": "1.83 m",
+      "caps": 10,
+      "goals": 0
+    },
+    {
+      "shirt": "8",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Mateo Kovačić",
+      "nameOnShirt": "KOVAČIĆ",
+      "club": "Manchester City FC (ENG)",
+      "height": "1.78 m",
+      "caps": 113,
+      "goals": 5
+    },
+    {
+      "shirt": "9",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Andrej Kramarić",
+      "nameOnShirt": "KRAMARIĆ",
+      "club": "TSG Hoffenheim (GER)",
+      "height": "1.77 m",
+      "caps": 116,
+      "goals": 36
+    },
+    {
+      "shirt": "10",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Luka Modrić",
+      "nameOnShirt": "MODRIĆ",
+      "club": "AC Milan (ITA)",
+      "height": "1.72 m",
+      "caps": 198,
+      "goals": 29
+    },
+    {
+      "shirt": "11",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Ante Budimir",
+      "nameOnShirt": "BUDIMIR",
+      "club": "CA Osasuna (ESP)",
+      "height": "1.90 m",
+      "caps": 38,
+      "goals": 6
+    },
+    {
+      "shirt": "12",
+      "position": "GK",
+      "role": "Portero",
+      "name": "Ivor Pandur",
+      "nameOnShirt": "PANDUR",
+      "club": "Hull City FC (ENG)",
+      "height": "1.87 m",
+      "caps": 0,
+      "goals": 0
+    },
+    {
+      "shirt": "13",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Nikola Vlašić",
+      "nameOnShirt": "VLAŠIĆ",
+      "club": "Torino FC (ITA)",
+      "height": "1.79 m",
+      "caps": 63,
+      "goals": 10
+    },
+    {
+      "shirt": "14",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Ivan Perišić",
+      "nameOnShirt": "PERIŠIĆ",
+      "club": "PSV Eindhoven (NED)",
+      "height": "1.86 m",
+      "caps": 154,
+      "goals": 38
+    },
+    {
+      "shirt": "15",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Mario Pašalić",
+      "nameOnShirt": "PAŠALIĆ",
+      "club": "Atalanta Bergamo (ITA)",
+      "height": "1.88 m",
+      "caps": 85,
+      "goals": 12
+    },
+    {
+      "shirt": "16",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Martin Baturina",
+      "nameOnShirt": "BATURINA",
+      "club": "Como (ITA)",
+      "height": "1.72 m",
+      "caps": 19,
+      "goals": 1
+    },
+    {
+      "shirt": "17",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Petar Sučić",
+      "nameOnShirt": "P. SUČIĆ",
+      "club": "FC Internazionale Milano (ITA)",
+      "height": "1.83 m",
+      "caps": 17,
+      "goals": 1
+    },
+    {
+      "shirt": "18",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Kristijan Jakić",
+      "nameOnShirt": "JAKIĆ",
+      "club": "FC Augsburg (GER)",
+      "height": "1.81 m",
+      "caps": 17,
+      "goals": 2
+    },
+    {
+      "shirt": "19",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Toni Fruk",
+      "nameOnShirt": "FRUK",
+      "club": "HNK Rijeka (CRO)",
+      "height": "1.77 m",
+      "caps": 7,
+      "goals": 1
+    },
+    {
+      "shirt": "20",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Igor Matanović",
+      "nameOnShirt": "MATANOVIĆ",
+      "club": "SC Freiburg (GER)",
+      "height": "1.94 m",
+      "caps": 9,
+      "goals": 2
+    },
+    {
+      "shirt": "21",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Luka Sučić",
+      "nameOnShirt": "SUČIĆ",
+      "club": "Real Sociedad (ESP)",
+      "height": "1.85 m",
+      "caps": 21,
+      "goals": 1
+    },
+    {
+      "shirt": "22",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Luka Vušković",
+      "nameOnShirt": "VUŠKOVIĆ",
+      "club": "Hamburger SV (GER)",
+      "height": "1.93 m",
+      "caps": 5,
+      "goals": 1
+    },
+    {
+      "shirt": "23",
+      "position": "GK",
+      "role": "Portero",
+      "name": "Dominik Kotarski",
+      "nameOnShirt": "KOTARSKI",
+      "club": "FC København (DEN)",
+      "height": "1.90 m",
+      "caps": 4,
+      "goals": 0
+    },
+    {
+      "shirt": "24",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Marco Pašalić",
+      "nameOnShirt": "M. PAŠALIĆ",
+      "club": "Orlando City SC (USA)",
+      "height": "1.77 m",
+      "caps": 15,
+      "goals": 1
+    },
+    {
+      "shirt": "25",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Martin Erlić",
+      "nameOnShirt": "ERLIĆ",
+      "club": "FC Midtjylland (DEN)",
+      "height": "1.92 m",
+      "caps": 13,
+      "goals": 1
+    },
+    {
+      "shirt": "26",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Petar Musa",
+      "nameOnShirt": "MUSA",
+      "club": "FC Dallas (USA)",
+      "height": "1.90 m",
+      "caps": 11,
+      "goals": 1
+    }
+  ],
+  "T14": [
+    {
+      "shirt": "1",
+      "position": "GK",
+      "role": "Portero",
+      "name": "Eloy Victor Room",
+      "nameOnShirt": "ROOM",
+      "club": "Miami FC (USA)",
+      "height": "1.90 m",
+      "caps": 73,
+      "goals": 0
+    },
+    {
+      "shirt": "2",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Shurandy Ruggerio Sambo",
+      "nameOnShirt": "SAMBO",
+      "club": "Sparta Rotterdam (NED)",
+      "height": "1.74 m",
+      "caps": 8,
+      "goals": 0
+    },
+    {
+      "shirt": "3",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Juriën Godfried Juan Gaari",
+      "nameOnShirt": "GAARI",
+      "club": "Abha Club (KSA)",
+      "height": "1.83 m",
+      "caps": 60,
+      "goals": 1
+    },
+    {
+      "shirt": "4",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Róshón Felix Romar Jordan Van Eijma",
+      "nameOnShirt": "VAN EIJMA",
+      "club": "RKC Waalwijk (NED)",
+      "height": "1.86 m",
+      "caps": 28,
+      "goals": 1
+    },
+    {
+      "shirt": "5",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Sherel Constancio Floranus",
+      "nameOnShirt": "FLORANUS",
+      "club": "PEC Zwolle (NED)",
+      "height": "1.81 m",
+      "caps": 28,
+      "goals": 0
+    },
+    {
+      "shirt": "6",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Godfried Roemeratoe",
+      "nameOnShirt": "ROEMERATOE",
+      "club": "RKC Waalwijk (NED)",
+      "height": "1.78 m",
+      "caps": 29,
+      "goals": 1
+    },
+    {
+      "shirt": "7",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Juninho Gracielo Bacuna",
+      "nameOnShirt": "J. BACUNA",
+      "club": "FC Volendam (NED)",
+      "height": "1.78 m",
+      "caps": 51,
+      "goals": 14
+    },
+    {
+      "shirt": "8",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Livano Shyron Liomar Comenencia",
+      "nameOnShirt": "COMENENCIA",
+      "club": "FC Zürich (SUI)",
+      "height": "1.85 m",
+      "caps": 21,
+      "goals": 3
+    },
+    {
+      "shirt": "9",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Jürgen Leonardo Locadia",
+      "nameOnShirt": "LOCADIA",
+      "club": "Miami FC (USA)",
+      "height": "1.93 m",
+      "caps": 14,
+      "goals": 1
+    },
+    {
+      "shirt": "10",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Leandro Jones Johan Bacuna",
+      "nameOnShirt": "L. BACUNA",
+      "club": "Iğdır FK (TUR)",
+      "height": "1.80 m",
+      "caps": 73,
+      "goals": 16
+    },
+    {
+      "shirt": "11",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Jeremy Cornelis Jacobus Antonisse",
+      "nameOnShirt": "ANTONISSE",
+      "club": "AE Kisia FC (GRE)",
+      "height": "1.64 m",
+      "caps": 28,
+      "goals": 4
+    },
+    {
+      "shirt": "12",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Misjonne Juniffer Naigelino Hansen",
+      "nameOnShirt": "HANSEN",
+      "club": "Middlesbrough FC (ENG)",
+      "height": "1.76 m",
+      "caps": 7,
+      "goals": 1
+    },
+    {
+      "shirt": "13",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Tyrese Yurvencey Noslin",
+      "nameOnShirt": "NOSLIN",
+      "club": "SC Telstar (NED)",
+      "height": "1.82 m",
+      "caps": 7,
+      "goals": 1
+    },
+    {
+      "shirt": "14",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Kenji Joël Gorré",
+      "nameOnShirt": "GORRÉ",
+      "club": "Maccabi Haifa FC (ISR)",
+      "height": "1.74 m",
+      "caps": 38,
+      "goals": 6
+    },
+    {
+      "shirt": "15",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Ar'jany Jainel Archenir Martha",
+      "nameOnShirt": "MARTHA",
+      "club": "Rotherham United FC (ENG)",
+      "height": "1.80 m",
+      "caps": 9,
+      "goals": 2
+    },
+    {
+      "shirt": "16",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Jearl Erwin Margaritha",
+      "nameOnShirt": "MARGARITHA",
+      "club": "SK Beveren (BEL)",
+      "height": "1.81 m",
+      "caps": 23,
+      "goals": 5
+    },
+    {
+      "shirt": "17",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Brandley Mack-Olien Kuwas",
+      "nameOnShirt": "KUWAS",
+      "club": "FC Volendam (NED)",
+      "height": "1.81 m",
+      "caps": 36,
+      "goals": 2
+    },
+    {
+      "shirt": "18",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Armando Maria Obispo",
+      "nameOnShirt": "OBISPO",
+      "club": "PSV Eindhoven (NED)",
+      "height": "1.85 m",
+      "caps": 7,
+      "goals": 0
+    },
+    {
+      "shirt": "19",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Gervane Zjandric Adonnis Kastaneer",
+      "nameOnShirt": "KASTANEER",
+      "club": "Terengganu FC (MAS)",
+      "height": "1.89 m",
+      "caps": 30,
+      "goals": 9
+    },
+    {
+      "shirt": "20",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Joshua Benjamin Brenet",
+      "nameOnShirt": "BRENET",
+      "club": "Kayserispor (TUR)",
+      "height": "1.81 m",
+      "caps": 18,
+      "goals": 2
+    },
+    {
+      "shirt": "21",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Tahith Jose Girigorio Djorkaef Chong",
+      "nameOnShirt": "CHONG",
+      "club": "Sheeld United FC (ENG)",
+      "height": "1.85 m",
+      "caps": 7,
+      "goals": 3
+    },
+    {
+      "shirt": "22",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Kevin Antonio Felida",
+      "nameOnShirt": "FELIDA",
+      "club": "FC Den Bosch (NED)",
+      "height": "1.74 m",
+      "caps": 19,
+      "goals": 1
+    },
+    {
+      "shirt": "23",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Riechedly Guillermo Bazoer",
+      "nameOnShirt": "BAZOER",
+      "club": "Konyaspor (TUR)",
+      "height": "1.84 m",
+      "caps": 6,
+      "goals": 0
+    },
+    {
+      "shirt": "24",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Deveron Lenny Fonville",
+      "nameOnShirt": "FONVILLE",
+      "club": "NEC Nijmegen (NED)",
+      "height": "1.88 m",
+      "caps": 3,
+      "goals": 0
+    },
+    {
+      "shirt": "25",
+      "position": "GK",
+      "role": "Portero",
+      "name": "Tyrick Jeremy Bodak",
+      "nameOnShirt": "BODAK",
+      "club": "SC Telstar (NED)",
+      "height": "1.90 m",
+      "caps": 4,
+      "goals": 0
+    },
+    {
+      "shirt": "26",
+      "position": "GK",
+      "role": "Portero",
+      "name": "Trevor Irving Doornbusch",
+      "nameOnShirt": "DOORNBUSCH",
+      "club": "VVV Venlo (NED)",
+      "height": "1.88 m",
+      "caps": 8,
+      "goals": 0
+    }
+  ],
+  "T15": [
+    {
+      "shirt": "1",
+      "position": "GK",
+      "role": "Portero",
+      "name": "Matěj Kovář",
+      "nameOnShirt": "KOVÁŘ",
+      "club": "PSV Eindhoven (NED)",
+      "height": "1.96 m",
+      "caps": 21,
+      "goals": 0
+    },
+    {
+      "shirt": "2",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "David Zima",
+      "nameOnShirt": "ZIMA",
+      "club": "SK Slavia Praha (CZE)",
+      "height": "1.90 m",
+      "caps": 25,
+      "goals": 1
+    },
+    {
+      "shirt": "3",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Tomáš Holeš",
+      "nameOnShirt": "HOLEŠ",
+      "club": "SK Slavia Praha (CZE)",
+      "height": "1.80 m",
+      "caps": 41,
+      "goals": 2
+    },
+    {
+      "shirt": "4",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Robin Hranáč",
+      "nameOnShirt": "HRANÁČ",
+      "club": "TSG Hoffenheim (GER)",
+      "height": "1.89 m",
+      "caps": 15,
+      "goals": 1
+    },
+    {
+      "shirt": "5",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Vladimír Coufal",
+      "nameOnShirt": "COUFAL",
+      "club": "TSG Hoffenheim (GER)",
+      "height": "1.75 m",
+      "caps": 63,
+      "goals": 2
+    },
+    {
+      "shirt": "6",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Štěpán Chaloupek",
+      "nameOnShirt": "CHALOUPEK",
+      "club": "SK Slavia Praha (CZE)",
+      "height": "1.88 m",
+      "caps": 6,
+      "goals": 0
+    },
+    {
+      "shirt": "7",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Ladislav Krejčí",
+      "nameOnShirt": "KREJČÍ",
+      "club": "Wolverhampton Wanderers FC (ENG)",
+      "height": "1.91 m",
+      "caps": 28,
+      "goals": 6
+    },
+    {
+      "shirt": "8",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Vladimír Darida",
+      "nameOnShirt": "DARIDA",
+      "club": "FC Hradec Králové (CZE)",
+      "height": "1.72 m",
+      "caps": 79,
+      "goals": 8
+    },
+    {
+      "shirt": "9",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Adam Hložek",
+      "nameOnShirt": "HLOŽEK",
+      "club": "TSG Hoffenheim (GER)",
+      "height": "1.88 m",
+      "caps": 44,
+      "goals": 5
+    },
+    {
+      "shirt": "10",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Patrik Schick",
+      "nameOnShirt": "SCHICK",
+      "club": "Bayer 04 Leverkusen (GER)",
+      "height": "1.91 m",
+      "caps": 54,
+      "goals": 26
+    },
+    {
+      "shirt": "11",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Jan Kuchta",
+      "nameOnShirt": "KUCHTA",
+      "club": "AC Sparta Praha (CZE)",
+      "height": "1.85 m",
+      "caps": 31,
+      "goals": 3
+    },
+    {
+      "shirt": "12",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Lukáš Červ",
+      "nameOnShirt": "ČERV",
+      "club": "FC Viktoria Plzeň (CZE)",
+      "height": "1.82 m",
+      "caps": 17,
+      "goals": 2
+    },
+    {
+      "shirt": "13",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Mojmír Chytil",
+      "nameOnShirt": "CHYTIL",
+      "club": "SK Slavia Praha (CZE)",
+      "height": "1.87 m",
+      "caps": 23,
+      "goals": 6
+    },
+    {
+      "shirt": "14",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "David Jurásek",
+      "nameOnShirt": "JURÁSEK",
+      "club": "SK Slavia Praha (CZE)",
+      "height": "1.83 m",
+      "caps": 18,
+      "goals": 1
+    },
+    {
+      "shirt": "15",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Pavel Šulc",
+      "nameOnShirt": "ŠULC",
+      "club": "Olympique Lyonnais (FRA)",
+      "height": "1.77 m",
+      "caps": 22,
+      "goals": 5
+    },
+    {
+      "shirt": "16",
+      "position": "GK",
+      "role": "Portero",
+      "name": "Jindřich Staněk",
+      "nameOnShirt": "STANĚK",
+      "club": "SK Slavia Praha (CZE)",
+      "height": "1.92 m",
+      "caps": 14,
+      "goals": 0
+    },
+    {
+      "shirt": "17",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Lukáš Provod",
+      "nameOnShirt": "PROVOD",
+      "club": "SK Slavia Praha (CZE)",
+      "height": "1.91 m",
+      "caps": 39,
+      "goals": 3
+    },
+    {
+      "shirt": "18",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Michal Sadílek",
+      "nameOnShirt": "SADÍLEK",
+      "club": "SK Slavia Praha (CZE)",
+      "height": "1.69 m",
+      "caps": 36,
+      "goals": 1
+    },
+    {
+      "shirt": "19",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Tomáš Chorý",
+      "nameOnShirt": "CHORÝ",
+      "club": "SK Slavia Praha (CZE)",
+      "height": "1.99 m",
+      "caps": 23,
+      "goals": 7
+    },
+    {
+      "shirt": "20",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Jaroslav Zelený",
+      "nameOnShirt": "ZELENÝ",
+      "club": "AC Sparta Praha (CZE)",
+      "height": "1.90 m",
+      "caps": 24,
+      "goals": 0
+    },
+    {
+      "shirt": "21",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "David Douděra",
+      "nameOnShirt": "DOUDĚRA",
+      "club": "SK Slavia Praha (CZE)",
+      "height": "1.75 m",
+      "caps": 17,
+      "goals": 2
+    },
+    {
+      "shirt": "22",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Tomáš Souček",
+      "nameOnShirt": "SOUČEK",
+      "club": "West Ham United FC (ENG)",
+      "height": "1.92 m",
+      "caps": 91,
+      "goals": 17
+    },
+    {
+      "shirt": "23",
+      "position": "GK",
+      "role": "Portero",
+      "name": "Lukáš Horníček",
+      "nameOnShirt": "HORNÍČEK",
+      "club": "SC Braga (POR)",
+      "height": "1.98 m",
+      "caps": 1,
+      "goals": 0
+    },
+    {
+      "shirt": "24",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Alexandr Sojka",
+      "nameOnShirt": "SOJKA",
+      "club": "FC Viktoria Plzeň (CZE)",
+      "height": "1.88 m",
+      "caps": 3,
+      "goals": 0
+    },
+    {
+      "shirt": "25",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Hugo Sochůrek",
+      "nameOnShirt": "SOCHŮREK",
+      "club": "AC Sparta Praha (CZE)",
+      "height": "1.83 m",
+      "caps": 1,
+      "goals": 0
+    },
+    {
+      "shirt": "26",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Denis Višinský",
+      "nameOnShirt": "VIŠINSKÝ",
+      "club": "FC Viktoria Plzeň (CZE)",
+      "height": "1.78 m",
+      "caps": 2,
+      "goals": 1
+    }
+  ],
+  "T16": [
+    {
+      "shirt": "1",
+      "position": "GK",
+      "role": "Portero",
+      "name": "Hernán Ismael Galíndez",
+      "nameOnShirt": "GALINDEZ",
+      "club": "CA Huracán (ARG)",
+      "height": "1.89 m",
+      "caps": 36,
+      "goals": 0
+    },
+    {
+      "shirt": "2",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Félix Eduardo Torres Caicedo",
+      "nameOnShirt": "TORRES",
+      "club": "SC Internacional (BRA)",
+      "height": "1.87 m",
+      "caps": 49,
+      "goals": 5
+    },
+    {
+      "shirt": "3",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Piero Martin Hincapié Reyna",
+      "nameOnShirt": "HINCAPIE",
+      "club": "Arsenal FC (ENG)",
+      "height": "1.83 m",
+      "caps": 53,
+      "goals": 2
+    },
+    {
+      "shirt": "4",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Joel Leandro Ordóñez Guerrero",
+      "nameOnShirt": "ORDÓÑEZ",
+      "club": "Club Brugge (BEL)",
+      "height": "1.88 m",
+      "caps": 18,
+      "goals": 0
+    },
+    {
+      "shirt": "5",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Jordy Jose Alcívar Macías",
+      "nameOnShirt": "ALCIVAR",
+      "club": "Independiente Del Valle (ECU)",
+      "height": "1.68 m",
+      "caps": 11,
+      "goals": 1
+    },
+    {
+      "shirt": "6",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Willian Joel Pacho Tenorio",
+      "nameOnShirt": "PACHO",
+      "club": "Paris Saint-Germain (FRA)",
+      "height": "1.88 m",
+      "caps": 35,
+      "goals": 2
+    },
+    {
+      "shirt": "7",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Pervis Josue Estupiñán Tenorio",
+      "nameOnShirt": "ESTUPIÑÁN",
+      "club": "AC Milan (ITA)",
+      "height": "1.75 m",
+      "caps": 54,
+      "goals": 5
+    },
+    {
+      "shirt": "8",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Anthony Lenin Valencia Bajaña",
+      "nameOnShirt": "A. VALENCIA",
+      "club": "Royal Antwerp FC (BEL)",
+      "height": "1.73 m",
+      "caps": 3,
+      "goals": 1
+    },
+    {
+      "shirt": "9",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "John Yeboah Zamora",
+      "nameOnShirt": "YEBOAH ZAMORA",
+      "club": "Venezia FC (ITA)",
+      "height": "1.70 m",
+      "caps": 23,
+      "goals": 3
+    },
+    {
+      "shirt": "10",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Ray Kendry Paez Andrade",
+      "nameOnShirt": "KENDRY",
+      "club": "CA River Plate (ARG)",
+      "height": "1.78 m",
+      "caps": 26,
+      "goals": 2
+    },
+    {
+      "shirt": "11",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Kevin Jose Rodríguez Cortez",
+      "nameOnShirt": "RODRIGUEZ",
+      "club": "Royale Union Saint-Gilloise (BEL)",
+      "height": "1.90 m",
+      "caps": 32,
+      "goals": 2
+    },
+    {
+      "shirt": "12",
+      "position": "GK",
+      "role": "Portero",
+      "name": "Wellington Moisés Ramírez Preciado",
+      "nameOnShirt": "RAMÍREZ",
+      "club": "AE Kisia FC (GRE)",
+      "height": "1.85 m",
+      "caps": 7,
+      "goals": 0
+    },
+    {
+      "shirt": "13",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Enner Remberto Valencia Lastra",
+      "nameOnShirt": "E. VALENCIA",
+      "club": "CF Pachuca (MEX)",
+      "height": "1.77 m",
+      "caps": 106,
+      "goals": 49
+    },
+    {
+      "shirt": "14",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Alan Steve Minda Garcia",
+      "nameOnShirt": "MINDA",
+      "club": "Atlético Mineiro (BRA)",
+      "height": "1.74 m",
+      "caps": 21,
+      "goals": 2
+    },
+    {
+      "shirt": "15",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Pedro Jeampierre Vite Uca",
+      "nameOnShirt": "VITE",
+      "club": "Pumas UNAM (MEX)",
+      "height": "1.72 m",
+      "caps": 18,
+      "goals": 1
+    },
+    {
+      "shirt": "16",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Jordy Josue Caicedo Medina",
+      "nameOnShirt": "J. CAICEDO",
+      "club": "CA Huracán (ARG)",
+      "height": "1.86 m",
+      "caps": 20,
+      "goals": 4
+    },
+    {
+      "shirt": "17",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Ángelo Smit Preciado Quiñonez",
+      "nameOnShirt": "PRECIADO",
+      "club": "Atlético Mineiro (BRA)",
+      "height": "1.74 m",
+      "caps": 57,
+      "goals": 0
+    },
+    {
+      "shirt": "18",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Denil Daniel Castillo Preciado",
+      "nameOnShirt": "CASTILLO",
+      "club": "FC Midtjylland (DEN)",
+      "height": "1.89 m",
+      "caps": 5,
+      "goals": 0
+    },
+    {
+      "shirt": "19",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Gonzalo Jordy Plata Jimenez",
+      "nameOnShirt": "PLATA",
+      "club": "CR Flamengo (BRA)",
+      "height": "1.78 m",
+      "caps": 51,
+      "goals": 8
+    },
+    {
+      "shirt": "20",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Nilson David Angulo Ramirez",
+      "nameOnShirt": "ANGULO",
+      "club": "Sunderland AFC (ENG)",
+      "height": "1.84 m",
+      "caps": 15,
+      "goals": 2
+    },
+    {
+      "shirt": "21",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Alan Steven Franco Palma",
+      "nameOnShirt": "FRANCO",
+      "club": "Atlético Mineiro (BRA)",
+      "height": "1.75 m",
+      "caps": 59,
+      "goals": 1
+    },
+    {
+      "shirt": "22",
+      "position": "GK",
+      "role": "Portero",
+      "name": "Gonzalo Roberto Valle Bustamante",
+      "nameOnShirt": "VALLE",
+      "club": "LDU Quito (ECU)",
+      "height": "1.86 m",
+      "caps": 4,
+      "goals": 0
+    },
+    {
+      "shirt": "23",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Moisés Isaac Caicedo Corozo",
+      "nameOnShirt": "M. CAICEDO",
+      "club": "Chelsea FC (ENG)",
+      "height": "1.78 m",
+      "caps": 62,
+      "goals": 3
+    },
+    {
+      "shirt": "24",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Jeremy Alberto Arevalo Mera",
+      "nameOnShirt": "AREVALO",
+      "club": "VfB Stuttgart (GER)",
+      "height": "1.82 m",
+      "caps": 4,
+      "goals": 0
+    },
+    {
+      "shirt": "25",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Jackson Gabriel Porozo Vernaza",
+      "nameOnShirt": "POROZO",
+      "club": "Club Tijuana (MEX)",
+      "height": "1.92 m",
+      "caps": 10,
+      "goals": 1
+    },
+    {
+      "shirt": "26",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Yaimar Abel Medina Ortiz",
+      "nameOnShirt": "MEDINA",
+      "club": "KRC Genk (BEL)",
+      "height": "1.73 m",
+      "caps": 6,
+      "goals": 0
+    }
+  ],
+  "T17": [
+    {
+      "shirt": "1",
+      "position": "GK",
+      "role": "Portero",
+      "name": "Mohamed Elsayed Mohamed Elshenawy Gomaa",
+      "nameOnShirt": "M. ELSHENAWY",
+      "club": "Al Ahly FC (EGY)",
+      "height": "1.91 m",
+      "caps": 77,
+      "goals": 0
+    },
+    {
+      "shirt": "2",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Yasser Ahmed Ibrahim Elhanafy",
+      "nameOnShirt": "YASSER",
+      "club": "Al Ahly FC (EGY)",
+      "height": "1.85 m",
+      "caps": 19,
+      "goals": 1
+    },
+    {
+      "shirt": "3",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Mohamed Hany Gamal Eldemerdash",
+      "nameOnShirt": "M. HANY",
+      "club": "Al Ahly FC (EGY)",
+      "height": "1.75 m",
+      "caps": 44,
+      "goals": 0
+    },
+    {
+      "shirt": "4",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Hossam Abdelmegeed Abdelsalam Abdelmegeed",
+      "nameOnShirt": "HOSSAM",
+      "club": "Zamalek SC (EGY)",
+      "height": "1.93 m",
+      "caps": 13,
+      "goals": 0
+    },
+    {
+      "shirt": "5",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Ramy Hisham Abdelaziz Moustafa Rabia",
+      "nameOnShirt": "R. RABIAA",
+      "club": "Al Ain FC (UAE)",
+      "height": "1.83 m",
+      "caps": 48,
+      "goals": 6
+    },
+    {
+      "shirt": "6",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Mohamed Abdelmoneim Elsayed M Ahmed",
+      "nameOnShirt": "M. ABDELMONIEM",
+      "club": "OGC Nice (FRA)",
+      "height": "1.84 m",
+      "caps": 36,
+      "goals": 3
+    },
+    {
+      "shirt": "7",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Mahmoud Ahmed Ibrahim Hassan",
+      "nameOnShirt": "M. TREZEGUET",
+      "club": "Al Ahly FC (EGY)",
+      "height": "1.81 m",
+      "caps": 96,
+      "goals": 23
+    },
+    {
+      "shirt": "8",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Emam Ashour Metwaly Abdelghany",
+      "nameOnShirt": "E. ASHOUR",
+      "club": "Al Ahly FC (EGY)",
+      "height": "1.80 m",
+      "caps": 30,
+      "goals": 1
+    },
+    {
+      "shirt": "9",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Hamza Mohamed Abdelkarim E Selim",
+      "nameOnShirt": "ABDELKARIM",
+      "club": "FC Barcelona (ESP)",
+      "height": "1.82 m",
+      "caps": 3,
+      "goals": 0
+    },
+    {
+      "shirt": "10",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Mohamed Salah Hamed Mahrous Ghaly",
+      "nameOnShirt": "M. SALAH",
+      "club": "Liverpool FC (ENG)",
+      "height": "1.75 m",
+      "caps": 117,
+      "goals": 67
+    },
+    {
+      "shirt": "11",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Mostafa Mohamed Zaky Abdelraouf",
+      "nameOnShirt": "ZICO",
+      "club": "Pyramids FC (EGY)",
+      "height": "1.79 m",
+      "caps": 3,
+      "goals": 2
+    },
+    {
+      "shirt": "12",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Haissem Yousry Fouad A Hassan",
+      "nameOnShirt": "H. HASSAN",
+      "club": "Real Oviedo (ESP)",
+      "height": "1.75 m",
+      "caps": 4,
+      "goals": 0
+    },
+    {
+      "shirt": "13",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Ahmed Mohamed Aboelfetouh Mohamed",
+      "nameOnShirt": "A. FATOUH",
+      "club": "Zamalek SC (EGY)",
+      "height": "1.77 m",
+      "caps": 40,
+      "goals": 1
+    },
+    {
+      "shirt": "14",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Hamdy Fathy Abdelhalim Abdelfattah",
+      "nameOnShirt": "H. FATHY",
+      "club": "Al Wakrah SC (QAT)",
+      "height": "1.83 m",
+      "caps": 65,
+      "goals": 4
+    },
+    {
+      "shirt": "15",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Karim Hafez Ramadan Seifeldin",
+      "nameOnShirt": "K. HAFEZ",
+      "club": "Pyramids FC (EGY)",
+      "height": "1.74 m",
+      "caps": 10,
+      "goals": 0
+    },
+    {
+      "shirt": "16",
+      "position": "GK",
+      "role": "Portero",
+      "name": "Mahdy Mohamed Soliman Ibrahim",
+      "nameOnShirt": "M. SOLIMAN",
+      "club": "Zamalek SC (EGY)",
+      "height": "1.89 m",
+      "caps": 0,
+      "goals": 0
+    },
+    {
+      "shirt": "17",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Mohanad Mostafa Ahmed A Lashin",
+      "nameOnShirt": "M. LASHIN",
+      "club": "Pyramids FC (EGY)",
+      "height": "1.86 m",
+      "caps": 24,
+      "goals": 0
+    },
+    {
+      "shirt": "18",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Nabil Emad Aly Elmahdy Aly",
+      "nameOnShirt": "DONGA",
+      "club": "Al Najmah SC (KSA)",
+      "height": "1.79 m",
+      "caps": 12,
+      "goals": 0
+    },
+    {
+      "shirt": "19",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Marawan Attia Fahim Ghallab",
+      "nameOnShirt": "M. ATTIA",
+      "club": "Al Ahly FC (EGY)",
+      "height": "1.76 m",
+      "caps": 36,
+      "goals": 1
+    },
+    {
+      "shirt": "20",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Ibrahim Adel Aly Mohamed Hassan",
+      "nameOnShirt": "I. ADEL",
+      "club": "FC Nordsjælland (DEN)",
+      "height": "1.78 m",
+      "caps": 25,
+      "goals": 3
+    },
+    {
+      "shirt": "21",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Mahmoud Saber Abdelmohsen H Abdelmohsen",
+      "nameOnShirt": "M. SABER",
+      "club": "ZED FC (EGY)",
+      "height": "1.70 m",
+      "caps": 15,
+      "goals": 1
+    },
+    {
+      "shirt": "22",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Omar Khaled Mohamed Abdelsalam Marmoush",
+      "nameOnShirt": "MARMOUSH",
+      "club": "Manchester City FC (ENG)",
+      "height": "1.80 m",
+      "caps": 51,
+      "goals": 11
+    },
+    {
+      "shirt": "23",
+      "position": "GK",
+      "role": "Portero",
+      "name": "Mostafa Ahmed Abdelaziz Mohame Shoubir",
+      "nameOnShirt": "SHOUBIR",
+      "club": "Al Ahly FC (EGY)",
+      "height": "1.95 m",
+      "caps": 11,
+      "goals": 0
+    },
+    {
+      "shirt": "24",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Tarek Alaa Abdelghaffar Abdel Elgebaly",
+      "nameOnShirt": "T. ALAA",
+      "club": "ZED FC (EGY)",
+      "height": "1.78 m",
+      "caps": 3,
+      "goals": 0
+    },
+    {
+      "shirt": "25",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Ahmed Mostafa Mohamed Sayed",
+      "nameOnShirt": "ZIZO",
+      "club": "Al Ahly FC (EGY)",
+      "height": "1.75 m",
+      "caps": 65,
+      "goals": 5
+    },
+    {
+      "shirt": "26",
+      "position": "GK",
+      "role": "Portero",
+      "name": "Mohamed Alaaeldin Soliman M Ahmed",
+      "nameOnShirt": "M. ALAA",
+      "club": "El Gouna FC (EGY)",
+      "height": "1.88 m",
+      "caps": 0,
+      "goals": 0
+    }
+  ],
+  "T18": [
+    {
+      "shirt": "1",
+      "position": "GK",
+      "role": "Portero",
+      "name": "Jordan Lee Pickford",
+      "nameOnShirt": "PICKFORD",
+      "club": "Everton FC (ENG)",
+      "height": "1.85 m",
+      "caps": 84,
+      "goals": 0
+    },
+    {
+      "shirt": "2",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Ezri Ngoyo Konsa",
+      "nameOnShirt": "KONSA",
+      "club": "Aston Villa FC (ENG)",
+      "height": "1.80 m",
+      "caps": 20,
+      "goals": 1
+    },
+    {
+      "shirt": "3",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Nico O'reilly",
+      "nameOnShirt": "O'REILLY",
+      "club": "Manchester City FC (ENG)",
+      "height": "1.77 m",
+      "caps": 5,
+      "goals": 0
+    },
+    {
+      "shirt": "4",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Declan Rice",
+      "nameOnShirt": "RICE",
+      "club": "Arsenal FC (ENG)",
+      "height": "1.85 m",
+      "caps": 73,
+      "goals": 7
+    },
+    {
+      "shirt": "5",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "John Stones",
+      "nameOnShirt": "STONES",
+      "club": "Manchester City FC (ENG)",
+      "height": "1.88 m",
+      "caps": 89,
+      "goals": 3
+    },
+    {
+      "shirt": "6",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Addji Keaninkin Marc-Isreal Guehi",
+      "nameOnShirt": "GUÉHI",
+      "club": "Manchester City FC (ENG)",
+      "height": "1.83 m",
+      "caps": 29,
+      "goals": 1
+    },
+    {
+      "shirt": "7",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Bukayo Ayoyinka Saka",
+      "nameOnShirt": "SAKA",
+      "club": "Arsenal FC (ENG)",
+      "height": "1.78 m",
+      "caps": 49,
+      "goals": 14
+    },
+    {
+      "shirt": "8",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Elliot Junior Anderson",
+      "nameOnShirt": "ANDERSON",
+      "club": "Nottingham Forest FC (ENG)",
+      "height": "1.79 m",
+      "caps": 9,
+      "goals": 0
+    },
+    {
+      "shirt": "9",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Harry Edward Kane",
+      "nameOnShirt": "KANE",
+      "club": "FC Bayern München (GER)",
+      "height": "1.90 m",
+      "caps": 114,
+      "goals": 79
+    },
+    {
+      "shirt": "10",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Jude Victor William Bellingham",
+      "nameOnShirt": "BELLINGHAM",
+      "club": "Real Madrid C. F. (ESP)",
+      "height": "1.83 m",
+      "caps": 48,
+      "goals": 6
+    },
+    {
+      "shirt": "11",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Marcus Rashford",
+      "nameOnShirt": "RASHFORD",
+      "club": "FC Barcelona (ESP)",
+      "height": "1.80 m",
+      "caps": 72,
+      "goals": 18
+    },
+    {
+      "shirt": "12",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Trevoh Tom Chalobah",
+      "nameOnShirt": "CHALOBAH",
+      "club": "Chelsea FC (ENG)",
+      "height": "1.92 m",
+      "caps": 1,
+      "goals": 0
+    },
+    {
+      "shirt": "13",
+      "position": "GK",
+      "role": "Portero",
+      "name": "Dean Bradley Henderson",
+      "nameOnShirt": "D. HENDERSON",
+      "club": "Crystal Palace FC (ENG)",
+      "height": "1.88 m",
+      "caps": 5,
+      "goals": 0
+    },
+    {
+      "shirt": "14",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Jordan Brian Henderson",
+      "nameOnShirt": "HENDERSON",
+      "club": "Brentford FC (ENG)",
+      "height": "1.83 m",
+      "caps": 90,
+      "goals": 3
+    },
+    {
+      "shirt": "15",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Daniel Johnson Burn",
+      "nameOnShirt": "BURN",
+      "club": "Newcastle United FC (ENG)",
+      "height": "2.01 m",
+      "caps": 8,
+      "goals": 0
+    },
+    {
+      "shirt": "16",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Kobbie Boateng Mainoo",
+      "nameOnShirt": "MAINOO",
+      "club": "Manchester United FC (ENG)",
+      "height": "1.83 m",
+      "caps": 14,
+      "goals": 0
+    },
+    {
+      "shirt": "17",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Morgan Elliot Rogers",
+      "nameOnShirt": "ROGERS",
+      "club": "Aston Villa FC (ENG)",
+      "height": "1.87 m",
+      "caps": 15,
+      "goals": 1
+    },
+    {
+      "shirt": "18",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Anthony Michael Gordon",
+      "nameOnShirt": "GORDON",
+      "club": "Newcastle United FC (ENG)",
+      "height": "1.82 m",
+      "caps": 19,
+      "goals": 3
+    },
+    {
+      "shirt": "19",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Oliver George Arthur Watkins",
+      "nameOnShirt": "WATKINS",
+      "club": "Aston Villa FC (ENG)",
+      "height": "1.80 m",
+      "caps": 22,
+      "goals": 7
+    },
+    {
+      "shirt": "20",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Chukwunonso Azuka Tristan Madueke",
+      "nameOnShirt": "MADUEKE",
+      "club": "Arsenal FC (ENG)",
+      "height": "1.82 m",
+      "caps": 11,
+      "goals": 1
+    },
+    {
+      "shirt": "21",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Eberechi Oluchi Eze",
+      "nameOnShirt": "EZE",
+      "club": "Arsenal FC (ENG)",
+      "height": "1.78 m",
+      "caps": 17,
+      "goals": 3
+    },
+    {
+      "shirt": "22",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Ivan Benjamin Elijah Toney",
+      "nameOnShirt": "TONEY",
+      "club": "Al Ahli FC (KSA)",
+      "height": "1.85 m",
+      "caps": 8,
+      "goals": 1
+    },
+    {
+      "shirt": "23",
+      "position": "GK",
+      "role": "Portero",
+      "name": "James Harrington Trafford",
+      "nameOnShirt": "TRAFFORD",
+      "club": "Manchester City FC (ENG)",
+      "height": "1.97 m",
+      "caps": 2,
+      "goals": 0
+    },
+    {
+      "shirt": "24",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Reece Lewis James",
+      "nameOnShirt": "JAMES",
+      "club": "Chelsea FC (ENG)",
+      "height": "1.80 m",
+      "caps": 24,
+      "goals": 1
+    },
+    {
+      "shirt": "25",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Diop Tehuti Djed-Hotep Spence",
+      "nameOnShirt": "SPENCE",
+      "club": "Tottenham Hotspur FC (ENG)",
+      "height": "1.84 m",
+      "caps": 6,
+      "goals": 0
+    },
+    {
+      "shirt": "26",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Jarell Amorin Quansah",
+      "nameOnShirt": "QUANSAH",
+      "club": "Bayer 04 Leverkusen (GER)",
+      "height": "1.90 m",
+      "caps": 3,
+      "goals": 0
+    }
+  ],
+  "T19": [
+    {
+      "shirt": "1",
+      "position": "GK",
+      "role": "Portero",
+      "name": "Brice Lauriche Samba",
+      "nameOnShirt": "SAMBA",
+      "club": "Stade Rennais FC (FRA)",
+      "height": "1.87 m",
+      "caps": 4,
+      "goals": 0
+    },
+    {
+      "shirt": "2",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Malo Arthur Gusto",
+      "nameOnShirt": "GUSTO",
+      "club": "Chelsea FC (ENG)",
+      "height": "1.79 m",
+      "caps": 11,
+      "goals": 0
+    },
+    {
+      "shirt": "3",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Lucas Digne",
+      "nameOnShirt": "DIGNE",
+      "club": "Aston Villa FC (ENG)",
+      "height": "1.78 m",
+      "caps": 58,
+      "goals": 0
+    },
+    {
+      "shirt": "4",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Dayotchanculle Oswald Upamecano",
+      "nameOnShirt": "UPAMECANO",
+      "club": "FC Bayern München (GER)",
+      "height": "1.86 m",
+      "caps": 39,
+      "goals": 2
+    },
+    {
+      "shirt": "5",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Jules Olivier Kounde",
+      "nameOnShirt": "KOUNDE",
+      "club": "FC Barcelona (ESP)",
+      "height": "1.78 m",
+      "caps": 49,
+      "goals": 0
+    },
+    {
+      "shirt": "6",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Kouadio Emmanuel Boris Kone",
+      "nameOnShirt": "KONE",
+      "club": "AS Roma (ITA)",
+      "height": "1.85 m",
+      "caps": 14,
+      "goals": 0
+    },
+    {
+      "shirt": "7",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Masour Ousmane Dembele",
+      "nameOnShirt": "DEMBELE",
+      "club": "Paris Saint-Germain (FRA)",
+      "height": "1.79 m",
+      "caps": 60,
+      "goals": 7
+    },
+    {
+      "shirt": "8",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Aurélien Djani Tchouameni",
+      "nameOnShirt": "TCHOUAMENI",
+      "club": "Real Madrid C. F. (ESP)",
+      "height": "1.88 m",
+      "caps": 47,
+      "goals": 3
+    },
+    {
+      "shirt": "9",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Marcus Lilian Thuram-Ulien",
+      "nameOnShirt": "THURAM",
+      "club": "FC Internazionale Milano (ITA)",
+      "height": "1.92 m",
+      "caps": 34,
+      "goals": 3
+    },
+    {
+      "shirt": "10",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Kylian Mbappe Lottin",
+      "nameOnShirt": "MBAPPE",
+      "club": "Real Madrid C. F. (ESP)",
+      "height": "1.80 m",
+      "caps": 99,
+      "goals": 58
+    },
+    {
+      "shirt": "11",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Michael Akpovie Olise",
+      "nameOnShirt": "OLISE",
+      "club": "FC Bayern München (GER)",
+      "height": "1.84 m",
+      "caps": 18,
+      "goals": 7
+    },
+    {
+      "shirt": "12",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Bradley Jean-Manuel Essolisa A Barcola",
+      "nameOnShirt": "BARCOLA",
+      "club": "Paris Saint-Germain (FRA)",
+      "height": "1.87 m",
+      "caps": 21,
+      "goals": 4
+    },
+    {
+      "shirt": "13",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "N'golo Kante",
+      "nameOnShirt": "KANTE",
+      "club": "Fenerbahçe SK (TUR)",
+      "height": "1.71 m",
+      "caps": 69,
+      "goals": 2
+    },
+    {
+      "shirt": "14",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Adrien Thibault Marie Rabiot",
+      "nameOnShirt": "RABIOT",
+      "club": "AC Milan (ITA)",
+      "height": "1.91 m",
+      "caps": 60,
+      "goals": 7
+    },
+    {
+      "shirt": "15",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Ibrahima Konaté",
+      "nameOnShirt": "KONATE",
+      "club": "Liverpool FC (ENG)",
+      "height": "1.94 m",
+      "caps": 28,
+      "goals": 0
+    },
+    {
+      "shirt": "16",
+      "position": "GK",
+      "role": "Portero",
+      "name": "Mike Peterson Maignan",
+      "nameOnShirt": "MAIGNAN",
+      "club": "AC Milan (ITA)",
+      "height": "1.91 m",
+      "caps": 41,
+      "goals": 0
+    },
+    {
+      "shirt": "17",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "William Alain André Gabriel Saliba",
+      "nameOnShirt": "SALIBA",
+      "club": "Arsenal FC (ENG)",
+      "height": "1.92 m",
+      "caps": 33,
+      "goals": 0
+    },
+    {
+      "shirt": "18",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Warren Marie Jean-Pierre Zaïre-Emery",
+      "nameOnShirt": "ZAIRE-EMERY",
+      "club": "Paris Saint-Germain (FRA)",
+      "height": "1.76 m",
+      "caps": 11,
+      "goals": 1
+    },
+    {
+      "shirt": "19",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Théo Bernard François Hernandez",
+      "nameOnShirt": "T. HERNANDEZ",
+      "club": "Al Hilal SC (KSA)",
+      "height": "1.84 m",
+      "caps": 45,
+      "goals": 2
+    },
+    {
+      "shirt": "20",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Désiré Nonka-Maho Doue",
+      "nameOnShirt": "DOUE",
+      "club": "Paris Saint-Germain (FRA)",
+      "height": "1.82 m",
+      "caps": 8,
+      "goals": 2
+    },
+    {
+      "shirt": "21",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Lucas Francois Bernard Hernandez",
+      "nameOnShirt": "L. HERNANDEZ",
+      "club": "Paris Saint-Germain (FRA)",
+      "height": "1.84 m",
+      "caps": 42,
+      "goals": 0
+    },
+    {
+      "shirt": "22",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Jean-Philippe Mateta",
+      "nameOnShirt": "MATETA",
+      "club": "Crystal Palace FC (ENG)",
+      "height": "1.92 m",
+      "caps": 4,
+      "goals": 2
+    },
+    {
+      "shirt": "23",
+      "position": "GK",
+      "role": "Portero",
+      "name": "Robin François Philippe Risser",
+      "nameOnShirt": "RISSER",
+      "club": "RC Lens (FRA)",
+      "height": "1.93 m",
+      "caps": 0,
+      "goals": 0
+    },
+    {
+      "shirt": "24",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Mathis Rayan Cherki",
+      "nameOnShirt": "CHERKI",
+      "club": "Manchester City FC (ENG)",
+      "height": "1.80 m",
+      "caps": 8,
+      "goals": 2
+    },
+    {
+      "shirt": "25",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Maghnes Akliouche",
+      "nameOnShirt": "AKLIOUCHE",
+      "club": "AS Monaco (FRA)",
+      "height": "1.83 m",
+      "caps": 9,
+      "goals": 1
+    },
+    {
+      "shirt": "26",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Maxence Guy Lacroix",
+      "nameOnShirt": "LACROIX",
+      "club": "Crystal Palace FC (ENG)",
+      "height": "1.92 m",
+      "caps": 4,
+      "goals": 0
+    }
+  ],
+  "T20": [
+    {
+      "shirt": "1",
+      "position": "GK",
+      "role": "Portero",
+      "name": "Manuel Peter Neuer",
+      "nameOnShirt": "NEUER",
+      "club": "FC Bayern München (GER)",
+      "height": "1.93 m",
+      "caps": 125,
+      "goals": 0
+    },
+    {
+      "shirt": "2",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Antonio Rüdiger",
+      "nameOnShirt": "RÜDIGER",
+      "club": "Real Madrid C. F. (ESP)",
+      "height": "1.90 m",
+      "caps": 83,
+      "goals": 3
+    },
+    {
+      "shirt": "3",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Waldemar Anton",
+      "nameOnShirt": "ANTON",
+      "club": "Borussia Dortmund (GER)",
+      "height": "1.89 m",
+      "caps": 14,
+      "goals": 0
+    },
+    {
+      "shirt": "4",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Jonathan Glao Tah",
+      "nameOnShirt": "TAH",
+      "club": "FC Bayern München (GER)",
+      "height": "1.95 m",
+      "caps": 48,
+      "goals": 1
+    },
+    {
+      "shirt": "5",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Aleksandar Pavlović",
+      "nameOnShirt": "PAVLOVIĆ",
+      "club": "FC Bayern München (GER)",
+      "height": "1.88 m",
+      "caps": 12,
+      "goals": 1
+    },
+    {
+      "shirt": "6",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Joshua Walter Kimmich",
+      "nameOnShirt": "KIMMICH",
+      "club": "FC Bayern München (GER)",
+      "height": "1.77 m",
+      "caps": 111,
+      "goals": 10
+    },
+    {
+      "shirt": "7",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Kai Lukas Havertz",
+      "nameOnShirt": "HAVERTZ",
+      "club": "Arsenal FC (ENG)",
+      "height": "1.90 m",
+      "caps": 59,
+      "goals": 24
+    },
+    {
+      "shirt": "8",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Leon Christoph Goretzka",
+      "nameOnShirt": "GORETZKA",
+      "club": "FC Bayern München (GER)",
+      "height": "1.89 m",
+      "caps": 71,
+      "goals": 15
+    },
+    {
+      "shirt": "9",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Jamie Jaleel Jeremy Leweling",
+      "nameOnShirt": "LEWELING",
+      "club": "VfB Stuttgart (GER)",
+      "height": "1.85 m",
+      "caps": 5,
+      "goals": 1
+    },
+    {
+      "shirt": "10",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Jamal Musiala",
+      "nameOnShirt": "MUSIALA",
+      "club": "FC Bayern München (GER)",
+      "height": "1.80 m",
+      "caps": 43,
+      "goals": 10
+    },
+    {
+      "shirt": "11",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Nick Woltemade",
+      "nameOnShirt": "WOLTEMADE",
+      "club": "Newcastle United FC (ENG)",
+      "height": "1.98 m",
+      "caps": 11,
+      "goals": 4
+    },
+    {
+      "shirt": "12",
+      "position": "GK",
+      "role": "Portero",
+      "name": "Oliver Baumann",
+      "nameOnShirt": "BAUMANN",
+      "club": "TSG Hoffenheim (GER)",
+      "height": "1.87 m",
+      "caps": 13,
+      "goals": 0
+    },
+    {
+      "shirt": "13",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Pascal Alexander Groß",
+      "nameOnShirt": "GROß",
+      "club": "Brighton & Hove Albion FC (ENG)",
+      "height": "1.81 m",
+      "caps": 18,
+      "goals": 1
+    },
+    {
+      "shirt": "14",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Maximilian Beier",
+      "nameOnShirt": "BEIER",
+      "club": "Borussia Dortmund (GER)",
+      "height": "1.85 m",
+      "caps": 9,
+      "goals": 0
+    },
+    {
+      "shirt": "15",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Nico Cédric Schlotterbeck",
+      "nameOnShirt": "SCHLOTTERBECK",
+      "club": "Borussia Dortmund (GER)",
+      "height": "1.91 m",
+      "caps": 28,
+      "goals": 1
+    },
+    {
+      "shirt": "16",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Angelo Nicolas Stiller",
+      "nameOnShirt": "STILLER",
+      "club": "VfB Stuttgart (GER)",
+      "height": "1.83 m",
+      "caps": 8,
+      "goals": 0
+    },
+    {
+      "shirt": "17",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Florian Richard Wirtz",
+      "nameOnShirt": "WIRTZ",
+      "club": "Liverpool FC (ENG)",
+      "height": "1.76 m",
+      "caps": 42,
+      "goals": 11
+    },
+    {
+      "shirt": "18",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Nathaniel Christopher Brown",
+      "nameOnShirt": "BROWN",
+      "club": "Eintracht Frankfurt (GER)",
+      "height": "1.76 m",
+      "caps": 6,
+      "goals": 1
+    },
+    {
+      "shirt": "19",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Leroy Aziz Sané",
+      "nameOnShirt": "SANÉ",
+      "club": "Galatasaray SK (TUR)",
+      "height": "1.83 m",
+      "caps": 77,
+      "goals": 17
+    },
+    {
+      "shirt": "20",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Nadiem Amiri",
+      "nameOnShirt": "AMIRI",
+      "club": "1. FSV Mainz 05 (GER)",
+      "height": "1.78 m",
+      "caps": 11,
+      "goals": 1
+    },
+    {
+      "shirt": "21",
+      "position": "GK",
+      "role": "Portero",
+      "name": "Alexander Nübel",
+      "nameOnShirt": "NÜBEL",
+      "club": "VfB Stuttgart (GER)",
+      "height": "1.93 m",
+      "caps": 3,
+      "goals": 0
+    },
+    {
+      "shirt": "22",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "David Raum",
+      "nameOnShirt": "RAUM",
+      "club": "RB Leipzig (GER)",
+      "height": "1.80 m",
+      "caps": 38,
+      "goals": 1
+    },
+    {
+      "shirt": "23",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Felix Kalu Nmecha",
+      "nameOnShirt": "NMECHA",
+      "club": "Borussia Dortmund (GER)",
+      "height": "1.90 m",
+      "caps": 9,
+      "goals": 2
+    },
+    {
+      "shirt": "24",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Malick Thiaw",
+      "nameOnShirt": "THIAW",
+      "club": "Newcastle United FC (ENG)",
+      "height": "1.94 m",
+      "caps": 5,
+      "goals": 0
+    },
+    {
+      "shirt": "25",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Forzan Assan Ouédraogo",
+      "nameOnShirt": "OUÉDRAOGO",
+      "club": "RB Leipzig (GER)",
+      "height": "1.91 m",
+      "caps": 1,
+      "goals": 1
+    },
+    {
+      "shirt": "26",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Deniz Undav",
+      "nameOnShirt": "UNDAV",
+      "club": "VfB Stuttgart (GER)",
+      "height": "1.79 m",
+      "caps": 10,
+      "goals": 7
+    }
+  ],
+  "T21": [
+    {
+      "shirt": "1",
+      "position": "GK",
+      "role": "Portero",
+      "name": "Lawrence Ati Zigi",
+      "nameOnShirt": "ZIGI",
+      "club": "FC St. Gallen (SUI)",
+      "height": "1.88 m",
+      "caps": 30,
+      "goals": 0
+    },
+    {
+      "shirt": "2",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Alidu Seidu",
+      "nameOnShirt": "ALIDU SEIDU",
+      "club": "Stade Rennais FC (FRA)",
+      "height": "1.73 m",
+      "caps": 24,
+      "goals": 1
+    },
+    {
+      "shirt": "3",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Caleb Marfo Yirenkyi",
+      "nameOnShirt": "YIRENKYI",
+      "club": "FC Nordsjælland (DEN)",
+      "height": "1.82 m",
+      "caps": 11,
+      "goals": 1
+    },
+    {
+      "shirt": "4",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Jonas Adjei Adjetey",
+      "nameOnShirt": "ADJETEY",
+      "club": "VfL Wolfsburg (GER)",
+      "height": "1.88 m",
+      "caps": 10,
+      "goals": 0
+    },
+    {
+      "shirt": "5",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Thomas Teye Partey",
+      "nameOnShirt": "PARTEY",
+      "club": "Villarreal CF (ESP)",
+      "height": "1.85 m",
+      "caps": 59,
+      "goals": 16
+    },
+    {
+      "shirt": "6",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Abdul Mumin Suleman",
+      "nameOnShirt": "A. MUMIN",
+      "club": "Rayo Vallecano (ESP)",
+      "height": "1.88 m",
+      "caps": 5,
+      "goals": 0
+    },
+    {
+      "shirt": "7",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Abdul Fatawu Issahaku",
+      "nameOnShirt": "A. FATAWU",
+      "club": "Leicester City FC (ENG)",
+      "height": "1.77 m",
+      "caps": 28,
+      "goals": 3
+    },
+    {
+      "shirt": "8",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Kwasi Sibo",
+      "nameOnShirt": "SIBO",
+      "club": "Real Oviedo (ESP)",
+      "height": "1.83 m",
+      "caps": 8,
+      "goals": 0
+    },
+    {
+      "shirt": "9",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Jordan Pierre Ayew",
+      "nameOnShirt": "J. AYEW",
+      "club": "Leicester City FC (ENG)",
+      "height": "1.82 m",
+      "caps": 120,
+      "goals": 34
+    },
+    {
+      "shirt": "10",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Solomon Brandon Michael Clarke Thomas-Asante",
+      "nameOnShirt": "ASANTE",
+      "club": "Coventry City FC (ENG)",
+      "height": "1.82 m",
+      "caps": 8,
+      "goals": 1
+    },
+    {
+      "shirt": "11",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Antoine Serlom Semenyo",
+      "nameOnShirt": "SEMENYO",
+      "club": "Manchester City FC (ENG)",
+      "height": "1.85 m",
+      "caps": 34,
+      "goals": 3
+    },
+    {
+      "shirt": "12",
+      "position": "GK",
+      "role": "Portero",
+      "name": "Joseph Tetteh Anang",
+      "nameOnShirt": "ANANG",
+      "club": "St Patrick's Athletic FC (IRL)",
+      "height": "1.90 m",
+      "caps": 1,
+      "goals": 0
+    },
+    {
+      "shirt": "13",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Christopher Bonsu Baah",
+      "nameOnShirt": "BONSU BAAH",
+      "club": "Al Qadsiah FC (KSA)",
+      "height": "1.72 m",
+      "caps": 9,
+      "goals": 0
+    },
+    {
+      "shirt": "14",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Gideon Mensah",
+      "nameOnShirt": "MENSAH",
+      "club": "AJ Auxerre (FRA)",
+      "height": "1.78 m",
+      "caps": 40,
+      "goals": 0
+    },
+    {
+      "shirt": "15",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Elisha Owusu",
+      "nameOnShirt": "OWUSU",
+      "club": "AJ Auxerre (FRA)",
+      "height": "1.82 m",
+      "caps": 20,
+      "goals": 0
+    },
+    {
+      "shirt": "16",
+      "position": "GK",
+      "role": "Portero",
+      "name": "Benjamin Asare",
+      "nameOnShirt": "B. ASARE",
+      "club": "Hearts Of Oak SC (GHA)",
+      "height": "1.88 m",
+      "caps": 13,
+      "goals": 0
+    },
+    {
+      "shirt": "17",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Abdul Rahman Baba",
+      "nameOnShirt": "BABA",
+      "club": "PAOK Saloniki (GRE)",
+      "height": "1.79 m",
+      "caps": 53,
+      "goals": 1
+    },
+    {
+      "shirt": "18",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Jerome Opoku",
+      "nameOnShirt": "OPOKU",
+      "club": "Başakşehir FK (TUR)",
+      "height": "1.97 m",
+      "caps": 11,
+      "goals": 1
+    },
+    {
+      "shirt": "19",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Inaki Williams Arthuer",
+      "nameOnShirt": "WILLIAMS",
+      "club": "Athletic Club (ESP)",
+      "height": "1.86 m",
+      "caps": 26,
+      "goals": 2
+    },
+    {
+      "shirt": "20",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Augustine Boakye",
+      "nameOnShirt": "BOAKYE",
+      "club": "AS Saint-Etienne (FRA)",
+      "height": "1.78 m",
+      "caps": 0,
+      "goals": 0
+    },
+    {
+      "shirt": "21",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Kojo Peprah Oppong",
+      "nameOnShirt": "OPPONG",
+      "club": "OGC Nice (FRA)",
+      "height": "1.85 m",
+      "caps": 4,
+      "goals": 0
+    },
+    {
+      "shirt": "22",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Kamal Deen Sulemana",
+      "nameOnShirt": "KAMALDEEN",
+      "club": "Atalanta Bergamo (ITA)",
+      "height": "1.74 m",
+      "caps": 28,
+      "goals": 1
+    },
+    {
+      "shirt": "23",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Derrick Luckassen",
+      "nameOnShirt": "LUCKASSEN",
+      "club": "Pafos FC (CYP)",
+      "height": "1.88 m",
+      "caps": 1,
+      "goals": 0
+    },
+    {
+      "shirt": "24",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Ernest Nuamah Appiah",
+      "nameOnShirt": "NUAMAH",
+      "club": "Olympique Lyonnais (FRA)",
+      "height": "1.78 m",
+      "caps": 19,
+      "goals": 4
+    },
+    {
+      "shirt": "25",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Prince Kwabena Adu",
+      "nameOnShirt": "PRINCE",
+      "club": "FC Viktoria Plzeň (CZE)",
+      "height": "1.79 m",
+      "caps": 5,
+      "goals": 0
+    },
+    {
+      "shirt": "26",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Marvin Elom Senaya",
+      "nameOnShirt": "SENEYA",
+      "club": "AJ Auxerre (FRA)",
+      "height": "1.81 m",
+      "caps": 2,
+      "goals": 0
+    }
+  ],
+  "T22": [
+    {
+      "shirt": "1",
+      "position": "GK",
+      "role": "Portero",
+      "name": "Johny Placide",
+      "nameOnShirt": "PLACIDE",
+      "club": "SC Bastia (FRA)",
+      "height": "1.81 m",
+      "caps": 84,
+      "goals": 0
+    },
+    {
+      "shirt": "2",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Carlens Jean Fedlaire Ruby Arcus",
+      "nameOnShirt": "ARCUS",
+      "club": "Angers SCO (FRA)",
+      "height": "1.80 m",
+      "caps": 57,
+      "goals": 1
+    },
+    {
+      "shirt": "3",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Keeto Thermoncy",
+      "nameOnShirt": "THERMONCY",
+      "club": "BSC Young Boys (SUI)",
+      "height": "1.79 m",
+      "caps": 1,
+      "goals": 0
+    },
+    {
+      "shirt": "4",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Ricardo Ade",
+      "nameOnShirt": "ADE",
+      "club": "LDU Quito (ECU)",
+      "height": "1.90 m",
+      "caps": 62,
+      "goals": 2
+    },
+    {
+      "shirt": "5",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Hannes Piterson D Delcroix",
+      "nameOnShirt": "DELCROIX",
+      "club": "FC Lugano (SUI)",
+      "height": "1.83 m",
+      "caps": 8,
+      "goals": 0
+    },
+    {
+      "shirt": "6",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Carl Fred Sainte",
+      "nameOnShirt": "SAINTE",
+      "club": "El Paso Locomotive FC (USA)",
+      "height": "1.82 m",
+      "caps": 26,
+      "goals": 0
+    },
+    {
+      "shirt": "7",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Derrick Burckley Etienne Jr",
+      "nameOnShirt": "ETIENNE JR",
+      "club": "Toronto FC (CAN)",
+      "height": "1.78 m",
+      "caps": 50,
+      "goals": 8
+    },
+    {
+      "shirt": "8",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Martin Yves Roberns Didier Experience",
+      "nameOnShirt": "EXPERIENCE",
+      "club": "AS Nancy (FRA)",
+      "height": "1.78 m",
+      "caps": 22,
+      "goals": 0
+    },
+    {
+      "shirt": "9",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Duckens Nazon",
+      "nameOnShirt": "NAZON",
+      "club": "Esteghlal Tehran FC (IRN)",
+      "height": "1.81 m",
+      "caps": 83,
+      "goals": 44
+    },
+    {
+      "shirt": "10",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Jean Ricner Bellegarde",
+      "nameOnShirt": "BELLEGARDE",
+      "club": "Wolverhampton Wanderers FC (ENG)",
+      "height": "1.70 m",
+      "caps": 11,
+      "goals": 0
+    },
+    {
+      "shirt": "11",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Don Deedson Louicius",
+      "nameOnShirt": "LOUICIUS",
+      "club": "FC Dallas (USA)",
+      "height": "1.78 m",
+      "caps": 33,
+      "goals": 10
+    },
+    {
+      "shirt": "12",
+      "position": "GK",
+      "role": "Portero",
+      "name": "Alexandre Jr Pierre",
+      "nameOnShirt": "A. PIERRE",
+      "club": "FC Sochaux-Montbéliard (FRA)",
+      "height": "1.90 m",
+      "caps": 17,
+      "goals": 0
+    },
+    {
+      "shirt": "13",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Markhus Lacroix",
+      "nameOnShirt": "LACROIX",
+      "club": "Colorado Springs Switchbacks FC (USA)",
+      "height": "1.75 m",
+      "caps": 16,
+      "goals": 3
+    },
+    {
+      "shirt": "14",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Garven-Michee Metusala",
+      "nameOnShirt": "METUSALA",
+      "club": "Colorado Springs Switchbacks FC (USA)",
+      "height": "1.86 m",
+      "caps": 15,
+      "goals": 0
+    },
+    {
+      "shirt": "15",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Ruben Fritzner Providence",
+      "nameOnShirt": "PROVIDENCE",
+      "club": "Almere City FC (NED)",
+      "height": "1.78 m",
+      "caps": 16,
+      "goals": 3
+    },
+    {
+      "shirt": "16",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Lenny Alvin Pico Joseph",
+      "nameOnShirt": "JOSEPH",
+      "club": "Ferencvárosi TC (HUN)",
+      "height": "1.82 m",
+      "caps": 3,
+      "goals": 1
+    },
+    {
+      "shirt": "17",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Danley Jean Jacques",
+      "nameOnShirt": "JEAN-JACQUES",
+      "club": "Philadelphia Union (USA)",
+      "height": "1.82 m",
+      "caps": 32,
+      "goals": 6
+    },
+    {
+      "shirt": "18",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Wilson Isidor",
+      "nameOnShirt": "ISIDOR",
+      "club": "Sunderland AFC (ENG)",
+      "height": "1.84 m",
+      "caps": 5,
+      "goals": 2
+    },
+    {
+      "shirt": "19",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Yassin Enzo Fortune",
+      "nameOnShirt": "FORTUNE",
+      "club": "FC Vizela (POR)",
+      "height": "1.86 m",
+      "caps": 5,
+      "goals": 0
+    },
+    {
+      "shirt": "20",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Frantzdy Pierrot",
+      "nameOnShirt": "PIERROT",
+      "club": "Çaykur Rizespor (TUR)",
+      "height": "1.94 m",
+      "caps": 54,
+      "goals": 34
+    },
+    {
+      "shirt": "21",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Josue Jeremie Casimir",
+      "nameOnShirt": "CASIMIR",
+      "club": "AJ Auxerre (FRA)",
+      "height": "1.78 m",
+      "caps": 8,
+      "goals": 0
+    },
+    {
+      "shirt": "22",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Jean-Kévin Duverne",
+      "nameOnShirt": "DUVERNE",
+      "club": "KAA Gent (BEL)",
+      "height": "1.84 m",
+      "caps": 17,
+      "goals": 1
+    },
+    {
+      "shirt": "23",
+      "position": "GK",
+      "role": "Portero",
+      "name": "Josue Duverger",
+      "nameOnShirt": "DUVERGER",
+      "club": "FC Cosmos Koblenz (GER)",
+      "height": "1.87 m",
+      "caps": 7,
+      "goals": 0
+    },
+    {
+      "shirt": "24",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Wilguens Raphael Polynice Paugain",
+      "nameOnShirt": "PAUGAIN",
+      "club": "SV Zulte Waregem (BEL)",
+      "height": "1.80 m",
+      "caps": 8,
+      "goals": 0
+    },
+    {
+      "shirt": "25",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Dominique Celidor Simon",
+      "nameOnShirt": "SIMON",
+      "club": "FC Tatran Prešov (SVK)",
+      "height": "1.78 m",
+      "caps": 2,
+      "goals": 0
+    },
+    {
+      "shirt": "26",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Olivier Woodensky Pierre",
+      "nameOnShirt": "W. PIERRE",
+      "club": "Violette AC (HAI)",
+      "height": "1.77 m",
+      "caps": 1,
+      "goals": 0
+    }
+  ],
+  "T23": [
+    {
+      "shirt": "1",
+      "position": "GK",
+      "role": "Portero",
+      "name": "Ali Reza Safarbeiranvand",
+      "nameOnShirt": "BEIRANVAND",
+      "club": "Tractor Sazi Tabriz FC (IRN)",
+      "height": "1.95 m",
+      "caps": 88,
+      "goals": 0
+    },
+    {
+      "shirt": "2",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Saleh Hardani Kherad",
+      "nameOnShirt": "SALEH",
+      "club": "Esteghlal Tehran FC (IRN)",
+      "height": "1.76 m",
+      "caps": 18,
+      "goals": 1
+    },
+    {
+      "shirt": "3",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Ehsan Haji Safi",
+      "nameOnShirt": "E. HAJISAFI",
+      "club": "Sepahan SC (IRN)",
+      "height": "1.78 m",
+      "caps": 147,
+      "goals": 7
+    },
+    {
+      "shirt": "4",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Shojae Khalilzadeh",
+      "nameOnShirt": "SHOJA",
+      "club": "Tractor Sazi Tabriz FC (IRN)",
+      "height": "1.83 m",
+      "caps": 59,
+      "goals": 2
+    },
+    {
+      "shirt": "5",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Milad Mohammadikeshmarzi",
+      "nameOnShirt": "M. MOHAMMADI",
+      "club": "Persepolis FC (IRN)",
+      "height": "1.75 m",
+      "caps": 78,
+      "goals": 1
+    },
+    {
+      "shirt": "6",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Saeid Ezatolahi Afagh",
+      "nameOnShirt": "S. EZATOLAHI",
+      "club": "Shabab Al Ahli Club (UAE)",
+      "height": "1.89 m",
+      "caps": 85,
+      "goals": 2
+    },
+    {
+      "shirt": "7",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Alireza Jahanbakhsh Jirandeh",
+      "nameOnShirt": "A. JAHANBAKHSH",
+      "club": "FCV Dender EH (BEL)",
+      "height": "1.80 m",
+      "caps": 99,
+      "goals": 17
+    },
+    {
+      "shirt": "8",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Mohammad Mohebbi",
+      "nameOnShirt": "M. MOHEBBI",
+      "club": "FC Rostov (RUS)",
+      "height": "1.87 m",
+      "caps": 38,
+      "goals": 14
+    },
+    {
+      "shirt": "9",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Mehdi Taremi",
+      "nameOnShirt": "TAREMI",
+      "club": "Olympiacos FC (GRE)",
+      "height": "1.87 m",
+      "caps": 107,
+      "goals": 59
+    },
+    {
+      "shirt": "10",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Mehdi Ghayedi",
+      "nameOnShirt": "MEHDI GHAYEDI",
+      "club": "Al Nasr SC (UAE)",
+      "height": "1.66 m",
+      "caps": 31,
+      "goals": 10
+    },
+    {
+      "shirt": "11",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Ali Alipourghara",
+      "nameOnShirt": "A. ALIPOUR",
+      "club": "Persepolis FC (IRN)",
+      "height": "1.81 m",
+      "caps": 15,
+      "goals": 1
+    },
+    {
+      "shirt": "12",
+      "position": "GK",
+      "role": "Portero",
+      "name": "Seyedpayam Niazmand",
+      "nameOnShirt": "PAYAM",
+      "club": "Persepolis FC (IRN)",
+      "height": "1.93 m",
+      "caps": 15,
+      "goals": 0
+    },
+    {
+      "shirt": "13",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Mohammadhossein Kanani Zadegan",
+      "nameOnShirt": "KANANI",
+      "club": "Persepolis FC (IRN)",
+      "height": "1.88 m",
+      "caps": 65,
+      "goals": 6
+    },
+    {
+      "shirt": "14",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Seyed Saman Ghoddoos",
+      "nameOnShirt": "GHODDOS",
+      "club": "Al Ittihad Kalba SCC (UAE)",
+      "height": "1.76 m",
+      "caps": 69,
+      "goals": 3
+    },
+    {
+      "shirt": "15",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Roozbeh Cheshmi",
+      "nameOnShirt": "ROOZBEH",
+      "club": "Esteghlal Tehran FC (IRN)",
+      "height": "1.92 m",
+      "caps": 41,
+      "goals": 3
+    },
+    {
+      "shirt": "16",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Mahdi Torabi",
+      "nameOnShirt": "M. TORABI",
+      "club": "Tractor Sazi Tabriz FC (IRN)",
+      "height": "1.85 m",
+      "caps": 52,
+      "goals": 7
+    },
+    {
+      "shirt": "17",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Arya Yousefi",
+      "nameOnShirt": "ARYA",
+      "club": "Sepahan SC (IRN)",
+      "height": "1.81 m",
+      "caps": 15,
+      "goals": 1
+    },
+    {
+      "shirt": "18",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Amirhossein Hosseinzadehtazehgheshlagh",
+      "nameOnShirt": "AMIRHOSSEIN",
+      "club": "Tractor Sazi Tabriz FC (IRN)",
+      "height": "1.78 m",
+      "caps": 19,
+      "goals": 5
+    },
+    {
+      "shirt": "19",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Ali Nemati",
+      "nameOnShirt": "ALI",
+      "club": "Foolad Khuzestan FC (IRN)",
+      "height": "1.82 m",
+      "caps": 19,
+      "goals": 0
+    },
+    {
+      "shirt": "20",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Shahriyar Moghanloo",
+      "nameOnShirt": "SHAHRIYAR",
+      "club": "Al Ittihad Kalba SCC (UAE)",
+      "height": "1.89 m",
+      "caps": 22,
+      "goals": 2
+    },
+    {
+      "shirt": "21",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Mohammad Ghorbani",
+      "nameOnShirt": "MOHAMMAD",
+      "club": "Al Wahda SC (UAE)",
+      "height": "1.90 m",
+      "caps": 16,
+      "goals": 0
+    },
+    {
+      "shirt": "22",
+      "position": "GK",
+      "role": "Portero",
+      "name": "Seyedhossein Hosseini",
+      "nameOnShirt": "HOSSEINI",
+      "club": "Sepahan SC (IRN)",
+      "height": "1.89 m",
+      "caps": 14,
+      "goals": 0
+    },
+    {
+      "shirt": "23",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Ramin Rezaeiansemeskandi",
+      "nameOnShirt": "RAMIN",
+      "club": "Foolad Khuzestan FC (IRN)",
+      "height": "1.84 m",
+      "caps": 75,
+      "goals": 9
+    },
+    {
+      "shirt": "24",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Dennis Dargahi",
+      "nameOnShirt": "DARGAHI",
+      "club": "Standard Liège (BEL)",
+      "height": "1.82 m",
+      "caps": 0,
+      "goals": 0
+    },
+    {
+      "shirt": "25",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Danial Iri",
+      "nameOnShirt": "DANIAL",
+      "club": "Malavan Anzali FC (IRN)",
+      "height": "1.82 m",
+      "caps": 0,
+      "goals": 0
+    },
+    {
+      "shirt": "26",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Amirmohammad Razaghinia",
+      "nameOnShirt": "RAZAGH",
+      "club": "Esteghlal Tehran FC (IRN)",
+      "height": "1.87 m",
+      "caps": 4,
+      "goals": 0
+    }
+  ],
+  "T24": [
+    {
+      "shirt": "1",
+      "position": "GK",
+      "role": "Portero",
+      "name": "Fahad Talib Raheem Raheem",
+      "nameOnShirt": "FAHAD",
+      "club": "Al Talaba SC (IRQ)",
+      "height": "1.92 m",
+      "caps": 21,
+      "goals": 0
+    },
+    {
+      "shirt": "2",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Rebin Ghareeb Solaka Adhamat",
+      "nameOnShirt": "REBIN",
+      "club": "Port FC (THA)",
+      "height": "1.93 m",
+      "caps": 56,
+      "goals": 1
+    },
+    {
+      "shirt": "3",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Hussein Haydar Hussein Ali",
+      "nameOnShirt": "HUSSEIN",
+      "club": "Pogoń Szczecin (POL)",
+      "height": "1.82 m",
+      "caps": 28,
+      "goals": 1
+    },
+    {
+      "shirt": "4",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Zaid Tahseen Abd Zaid Hantoosh",
+      "nameOnShirt": "ZAID T.",
+      "club": "Pakhtakor Tashkent FK (UZB)",
+      "height": "1.87 m",
+      "caps": 29,
+      "goals": 1
+    },
+    {
+      "shirt": "5",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Akam Hashim Rahman Rahman",
+      "nameOnShirt": "AKAM",
+      "club": "Al Zawra'a SC (IRQ)",
+      "height": "1.84 m",
+      "caps": 15,
+      "goals": 1
+    },
+    {
+      "shirt": "6",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Munaf Younus Hashim Al-Tekreeti",
+      "nameOnShirt": "MUNAF",
+      "club": "Al Shorta SC (IRQ)",
+      "height": "1.84 m",
+      "caps": 34,
+      "goals": 1
+    },
+    {
+      "shirt": "7",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Youssef Wali Faeq Amyn",
+      "nameOnShirt": "YOUSSEF",
+      "club": "AEK Larnaca FC (CYP)",
+      "height": "1.72 m",
+      "caps": 27,
+      "goals": 2
+    },
+    {
+      "shirt": "8",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Ibrahim Bayesh Kamil Al-Kaabawi",
+      "nameOnShirt": "IBRAHIM",
+      "club": "Al Dhafra SCC (UAE)",
+      "height": "1.80 m",
+      "caps": 77,
+      "goals": 8
+    },
+    {
+      "shirt": "9",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Ali Ibrahim Karim Alzubaidi",
+      "nameOnShirt": "AL-HAMADI",
+      "club": "Luton Town FC (ENG)",
+      "height": "1.87 m",
+      "caps": 21,
+      "goals": 5
+    },
+    {
+      "shirt": "10",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Mohanad Ali Kadhim Al-Shammari",
+      "nameOnShirt": "MOHANAD",
+      "club": "Dibba FC (UAE)",
+      "height": "1.83 m",
+      "caps": 73,
+      "goals": 26
+    },
+    {
+      "shirt": "11",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Ahmed Ihab Ahmed Ahmed",
+      "nameOnShirt": "AHMED Q.",
+      "club": "Nashville SC (USA)",
+      "height": "1.83 m",
+      "caps": 4,
+      "goals": 0
+    },
+    {
+      "shirt": "12",
+      "position": "GK",
+      "role": "Portero",
+      "name": "Jalal Hasan Hachim Hachim",
+      "nameOnShirt": "JALAL",
+      "club": "Al Zawra'a SC (IRQ)",
+      "height": "1.88 m",
+      "caps": 105,
+      "goals": 0
+    },
+    {
+      "shirt": "13",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Ali Yousif Hashim Najatee",
+      "nameOnShirt": "ALI Y.",
+      "club": "Al Talaba SC (IRQ)",
+      "height": "1.80 m",
+      "caps": 7,
+      "goals": 1
+    },
+    {
+      "shirt": "14",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Zidane Aamar Iqbal Iqbal",
+      "nameOnShirt": "Z. IQBAL",
+      "club": "FC Utrecht (NED)",
+      "height": "1.83 m",
+      "caps": 26,
+      "goals": 2
+    },
+    {
+      "shirt": "15",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Ahmed Hasan Maknazi Al-Deeshawee",
+      "nameOnShirt": "AHMED H.",
+      "club": "Al Karma SC (IRQ)",
+      "height": "1.83 m",
+      "caps": 7,
+      "goals": 0
+    },
+    {
+      "shirt": "16",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Amir Fouad Aboud Al-Ammari",
+      "nameOnShirt": "AL-AMMARI",
+      "club": "KS Cracovia (POL)",
+      "height": "1.80 m",
+      "caps": 52,
+      "goals": 3
+    },
+    {
+      "shirt": "17",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Ali Jasim Elaibi Al-Tameemi",
+      "nameOnShirt": "ALI J.",
+      "club": "Al Najmah SC (KSA)",
+      "height": "1.78 m",
+      "caps": 37,
+      "goals": 2
+    },
+    {
+      "shirt": "18",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Aymen Hussein Ghadhban Ghadhban",
+      "nameOnShirt": "AYMEN",
+      "club": "Al Karma SC (IRQ)",
+      "height": "1.90 m",
+      "caps": 96,
+      "goals": 34
+    },
+    {
+      "shirt": "19",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Kevin Enkido Yakob William William",
+      "nameOnShirt": "K. YAKOB",
+      "club": "Aarhus GF (DEN)",
+      "height": "1.80 m",
+      "caps": 9,
+      "goals": 0
+    },
+    {
+      "shirt": "20",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Aimar Hazar Anwar Sher",
+      "nameOnShirt": "AIMAR",
+      "club": "Sarpsborg 08 FF (NOR)",
+      "height": "1.80 m",
+      "caps": 7,
+      "goals": 0
+    },
+    {
+      "shirt": "21",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Marko Jabbar Hussein Hussein",
+      "nameOnShirt": "MARKO",
+      "club": "Venezia FC (ITA)",
+      "height": "1.85 m",
+      "caps": 13,
+      "goals": 0
+    },
+    {
+      "shirt": "22",
+      "position": "GK",
+      "role": "Portero",
+      "name": "Ahmed Basil Fadhil Al-Fadhli",
+      "nameOnShirt": "AHMED B.",
+      "club": "Al Shorta SC (IRQ)",
+      "height": "1.84 m",
+      "caps": 16,
+      "goals": 0
+    },
+    {
+      "shirt": "23",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Merchas Ghazi Salih Salih",
+      "nameOnShirt": "DOSKI",
+      "club": "FC Viktoria Plzeň (CZE)",
+      "height": "1.73 m",
+      "caps": 32,
+      "goals": 1
+    },
+    {
+      "shirt": "24",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Zaid Ismael Khaleel Al-Dulaimi",
+      "nameOnShirt": "ZAID I.",
+      "club": "Al Talaba SC (IRQ)",
+      "height": "1.85 m",
+      "caps": 7,
+      "goals": 0
+    },
+    {
+      "shirt": "25",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Mustafa Saadoon Abbood Al-Korji",
+      "nameOnShirt": "MUSTAFA",
+      "club": "Al Shorta SC (IRQ)",
+      "height": "1.81 m",
+      "caps": 18,
+      "goals": 0
+    },
+    {
+      "shirt": "26",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Frans Dhia Jirjis Haddad",
+      "nameOnShirt": "FRANS",
+      "club": "Persib Bandung (IDN)",
+      "height": "1.82 m",
+      "caps": 28,
+      "goals": 0
+    }
+  ],
+  "T25": [
+    {
+      "shirt": "1",
+      "position": "GK",
+      "role": "Portero",
+      "name": "Zion Suzuki",
+      "nameOnShirt": "SUZUKI",
+      "club": "Parma (ITA)",
+      "height": "1.90 m",
+      "caps": 26,
+      "goals": 0
+    },
+    {
+      "shirt": "2",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Yukinari Sugawara",
+      "nameOnShirt": "SUGAWARA",
+      "club": "SV Werder Bremen (GER)",
+      "height": "1.79 m",
+      "caps": 23,
+      "goals": 2
+    },
+    {
+      "shirt": "3",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Shogo Taniguchi",
+      "nameOnShirt": "TANIGUCHI",
+      "club": "Sint-Truiden VV (BEL)",
+      "height": "1.85 m",
+      "caps": 40,
+      "goals": 1
+    },
+    {
+      "shirt": "4",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Kou Itakura",
+      "nameOnShirt": "ITAKURA",
+      "club": "AFC Ajax (NED)",
+      "height": "1.88 m",
+      "caps": 41,
+      "goals": 3
+    },
+    {
+      "shirt": "5",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Yuto Nagatomo",
+      "nameOnShirt": "NAGATOMO",
+      "club": "FC Tokyo (JPN)",
+      "height": "1.70 m",
+      "caps": 145,
+      "goals": 4
+    },
+    {
+      "shirt": "6",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Shuto Machino",
+      "nameOnShirt": "MACHINO",
+      "club": "Borussia Mönchengladbach (GER)",
+      "height": "1.85 m",
+      "caps": 14,
+      "goals": 5
+    },
+    {
+      "shirt": "7",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Ao Tanaka",
+      "nameOnShirt": "TANAKA",
+      "club": "Leeds United FC (ENG)",
+      "height": "1.80 m",
+      "caps": 38,
+      "goals": 8
+    },
+    {
+      "shirt": "8",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Takefusa Kubo",
+      "nameOnShirt": "KUBO",
+      "club": "Real Sociedad (ESP)",
+      "height": "1.73 m",
+      "caps": 50,
+      "goals": 7
+    },
+    {
+      "shirt": "9",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Keisuke Goto",
+      "nameOnShirt": "GOTO",
+      "club": "Sint-Truiden VV (BEL)",
+      "height": "1.91 m",
+      "caps": 4,
+      "goals": 0
+    },
+    {
+      "shirt": "10",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Ritsu Doan",
+      "nameOnShirt": "DOAN",
+      "club": "Eintracht Frankfurt (GER)",
+      "height": "1.72 m",
+      "caps": 67,
+      "goals": 11
+    },
+    {
+      "shirt": "11",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Daizen Maeda",
+      "nameOnShirt": "DAIZEN",
+      "club": "Celtic FC (SCO)",
+      "height": "1.73 m",
+      "caps": 29,
+      "goals": 5
+    },
+    {
+      "shirt": "12",
+      "position": "GK",
+      "role": "Portero",
+      "name": "Keisuke Osako",
+      "nameOnShirt": "OSAKO",
+      "club": "Sanfrecce Hiroshima (JPN)",
+      "height": "1.88 m",
+      "caps": 11,
+      "goals": 0
+    },
+    {
+      "shirt": "13",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Keito Nakamura",
+      "nameOnShirt": "NAKAMURA",
+      "club": "Stade Reims (FRA)",
+      "height": "1.80 m",
+      "caps": 27,
+      "goals": 12
+    },
+    {
+      "shirt": "14",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Junya Ito",
+      "nameOnShirt": "ITO",
+      "club": "KRC Genk (BEL)",
+      "height": "1.77 m",
+      "caps": 70,
+      "goals": 15
+    },
+    {
+      "shirt": "15",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Daichi Kamada",
+      "nameOnShirt": "KAMADA",
+      "club": "Crystal Palace FC (ENG)",
+      "height": "1.80 m",
+      "caps": 50,
+      "goals": 13
+    },
+    {
+      "shirt": "16",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Tsuyoshi Watanabe",
+      "nameOnShirt": "WATANABE",
+      "club": "Feyenoord Rotterdam (NED)",
+      "height": "1.84 m",
+      "caps": 13,
+      "goals": 0
+    },
+    {
+      "shirt": "17",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Yuito Suzuki",
+      "nameOnShirt": "Y. SUZUKI",
+      "club": "SC Freiburg (GER)",
+      "height": "1.75 m",
+      "caps": 6,
+      "goals": 0
+    },
+    {
+      "shirt": "18",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Ayase Ueda",
+      "nameOnShirt": "AYASE",
+      "club": "Feyenoord Rotterdam (NED)",
+      "height": "1.82 m",
+      "caps": 41,
+      "goals": 16
+    },
+    {
+      "shirt": "19",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Koki Ogawa",
+      "nameOnShirt": "OGAWA",
+      "club": "NEC Nijmegen (NED)",
+      "height": "1.86 m",
+      "caps": 16,
+      "goals": 11
+    },
+    {
+      "shirt": "20",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Ayumu Seko",
+      "nameOnShirt": "SEKO",
+      "club": "Le Havre AC (FRA)",
+      "height": "1.86 m",
+      "caps": 14,
+      "goals": 0
+    },
+    {
+      "shirt": "21",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Hiroki Ito",
+      "nameOnShirt": "H. ITO",
+      "club": "FC Bayern München (GER)",
+      "height": "1.88 m",
+      "caps": 26,
+      "goals": 1
+    },
+    {
+      "shirt": "22",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Takehiro Tomiyasu",
+      "nameOnShirt": "TOMIYASU",
+      "club": "AFC Ajax (NED)",
+      "height": "1.87 m",
+      "caps": 44,
+      "goals": 1
+    },
+    {
+      "shirt": "23",
+      "position": "GK",
+      "role": "Portero",
+      "name": "Tomoki Hayakawa",
+      "nameOnShirt": "HAYAKAWA",
+      "club": "Kashima Antlers (JPN)",
+      "height": "1.87 m",
+      "caps": 4,
+      "goals": 0
+    },
+    {
+      "shirt": "24",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Kaishu Sano",
+      "nameOnShirt": "SANO",
+      "club": "1. FSV Mainz 05 (GER)",
+      "height": "1.76 m",
+      "caps": 15,
+      "goals": 0
+    },
+    {
+      "shirt": "25",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Junnosuke Suzuki",
+      "nameOnShirt": "J. SUZUKI",
+      "club": "FC København (DEN)",
+      "height": "1.80 m",
+      "caps": 6,
+      "goals": 0
+    },
+    {
+      "shirt": "26",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Kento Shiogai",
+      "nameOnShirt": "SHIOGAI",
+      "club": "VfL Wolfsburg (GER)",
+      "height": "1.80 m",
+      "caps": 3,
+      "goals": 0
+    }
+  ],
+  "T26": [
+    {
+      "shirt": "1",
+      "position": "GK",
+      "role": "Portero",
+      "name": "Yazeed Mo'ien Hasan Abulaila",
+      "nameOnShirt": "YAZEED",
+      "club": "Al Hussein SC (JOR)",
+      "height": "1.88 m",
+      "caps": 77,
+      "goals": 0
+    },
+    {
+      "shirt": "2",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Mohammad Ali Hasan Abuhasheesh",
+      "nameOnShirt": "ABU HASHEESH",
+      "club": "Al Karma SC (IRQ)",
+      "height": "1.79 m",
+      "caps": 56,
+      "goals": 1
+    },
+    {
+      "shirt": "3",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Abdallah Mousa Musallam Nasib",
+      "nameOnShirt": "NASIB",
+      "club": "Al Zawra'a SC (IRQ)",
+      "height": "1.84 m",
+      "caps": 66,
+      "goals": 2
+    },
+    {
+      "shirt": "4",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Husam Ali Mohammad Abudahab",
+      "nameOnShirt": "ABU DAHAB",
+      "club": "Al Faisaly SC (JOR)",
+      "height": "1.86 m",
+      "caps": 17,
+      "goals": 0
+    },
+    {
+      "shirt": "5",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Yazan Mousa Mahmoud Alarab",
+      "nameOnShirt": "ALARAB",
+      "club": "FC Seoul (KOR)",
+      "height": "1.85 m",
+      "caps": 81,
+      "goals": 3
+    },
+    {
+      "shirt": "6",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Amer Rasem Adel Jamous",
+      "nameOnShirt": "JAMOUS",
+      "club": "Al Zawra'a SC (IRQ)",
+      "height": "1.77 m",
+      "caps": 19,
+      "goals": 1
+    },
+    {
+      "shirt": "7",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Mohammad Faisal Yousef Abu Zraiq",
+      "nameOnShirt": "ABU ZRAIQ",
+      "club": "Raja Casablanca (MAR)",
+      "height": "1.70 m",
+      "caps": 40,
+      "goals": 5
+    },
+    {
+      "shirt": "8",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Noor Al-Deen Mahmoud Ali Al Rawabdeh",
+      "nameOnShirt": "ALRAWABDEH",
+      "club": "Selangor FC (MAS)",
+      "height": "1.82 m",
+      "caps": 69,
+      "goals": 3
+    },
+    {
+      "shirt": "9",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Ali Iyad Ali Olwan",
+      "nameOnShirt": "OLWAN",
+      "club": "Al Sailiya SC (QAT)",
+      "height": "1.82 m",
+      "caps": 67,
+      "goals": 30
+    },
+    {
+      "shirt": "10",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Mousa Mohammad Mousa Suleiman",
+      "nameOnShirt": "ALTAMARI",
+      "club": "Stade Rennais FC (FRA)",
+      "height": "1.76 m",
+      "caps": 93,
+      "goals": 24
+    },
+    {
+      "shirt": "11",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Odeh Burhan Shehadeh Fakhoury",
+      "nameOnShirt": "ODEH",
+      "club": "Pyramids FC (EGY)",
+      "height": "1.80 m",
+      "caps": 11,
+      "goals": 1
+    },
+    {
+      "shirt": "12",
+      "position": "GK",
+      "role": "Portero",
+      "name": "Noureddin Zaid Khaleel Bani Ateyah",
+      "nameOnShirt": "BANI ATEYAH",
+      "club": "Al Faisaly SC (JOR)",
+      "height": "1.79 m",
+      "caps": 5,
+      "goals": 0
+    },
+    {
+      "shirt": "13",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Mahmoud Nayef Ahmad Almardi",
+      "nameOnShirt": "ALMARDI",
+      "club": "Al Hussein SC (JOR)",
+      "height": "1.73 m",
+      "caps": 88,
+      "goals": 8
+    },
+    {
+      "shirt": "14",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Raja'ei Ayed Fadel Hasan",
+      "nameOnShirt": "RAJA'EI",
+      "club": "Al Hussein SC (JOR)",
+      "height": "1.75 m",
+      "caps": 73,
+      "goals": 0
+    },
+    {
+      "shirt": "15",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Ibrahim Mohammad Sami Sa'deh",
+      "nameOnShirt": "SA'DEH",
+      "club": "Al Karma SC (IRQ)",
+      "height": "1.75 m",
+      "caps": 57,
+      "goals": 3
+    },
+    {
+      "shirt": "16",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Mohammad Majed Jamil Abualnadi",
+      "nameOnShirt": "ABU ALNADI",
+      "club": "Selangor FC (MAS)",
+      "height": "1.85 m",
+      "caps": 19,
+      "goals": 0
+    },
+    {
+      "shirt": "17",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Saleem Amer Saleem Obaid",
+      "nameOnShirt": "SALEEM",
+      "club": "Al Hussein SC (JOR)",
+      "height": "1.87 m",
+      "caps": 13,
+      "goals": 0
+    },
+    {
+      "shirt": "18",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Mohammad Ahmed Mohammad Taha",
+      "nameOnShirt": "ABU GHOUSH",
+      "club": "Al Hussein SC (JOR)",
+      "height": "1.82 m",
+      "caps": 0,
+      "goals": 0
+    },
+    {
+      "shirt": "19",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Sa'ed Ahmad Salameh Alrosan",
+      "nameOnShirt": "SA'ED",
+      "club": "Al Hussein SC (JOR)",
+      "height": "1.86 m",
+      "caps": 22,
+      "goals": 2
+    },
+    {
+      "shirt": "20",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Mohannad Mahmoud Saleh Abu Taha",
+      "nameOnShirt": "ABU TAHA",
+      "club": "Al-Quwa Al-Jawiya (IRQ)",
+      "height": "1.73 m",
+      "caps": 31,
+      "goals": 1
+    },
+    {
+      "shirt": "21",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Nizar Mahmoud Ahmed Al-Rashdan",
+      "nameOnShirt": "NIZAR",
+      "club": "Qatar SC (QAT)",
+      "height": "1.83 m",
+      "caps": 48,
+      "goals": 4
+    },
+    {
+      "shirt": "22",
+      "position": "GK",
+      "role": "Portero",
+      "name": "Abdallah Ra'ed Mahmoud Alfakhori",
+      "nameOnShirt": "ALFAKHORI",
+      "club": "Al Wahdat SC (JOR)",
+      "height": "1.90 m",
+      "caps": 16,
+      "goals": 0
+    },
+    {
+      "shirt": "23",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Ehsan Manel Farhan Haddad",
+      "nameOnShirt": "EHSAN",
+      "club": "Al Hussein SC (JOR)",
+      "height": "1.74 m",
+      "caps": 91,
+      "goals": 2
+    },
+    {
+      "shirt": "24",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Ali Ahmad Ali Azaizeh",
+      "nameOnShirt": "AZAIZEH",
+      "club": "Al Shabab FC (KSA)",
+      "height": "1.78 m",
+      "caps": 5,
+      "goals": 0
+    },
+    {
+      "shirt": "25",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Mohammad Ratib Mohammad Aldaoud",
+      "nameOnShirt": "ALDAOUD",
+      "club": "Al Wahdat SC (JOR)",
+      "height": "1.85 m",
+      "caps": 14,
+      "goals": 1
+    },
+    {
+      "shirt": "26",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Anas Said Ghazi Badawi",
+      "nameOnShirt": "BADAWI",
+      "club": "Al Faisaly SC (JOR)",
+      "height": "1.74 m",
+      "caps": 1,
+      "goals": 0
+    }
+  ],
+  "T27": [
+    {
+      "shirt": "1",
+      "position": "GK",
+      "role": "Portero",
+      "name": "Seunggyu Kim",
+      "nameOnShirt": "SEUNGGYU",
+      "club": "FC Tokyo (JPN)",
+      "height": "1.87 m",
+      "caps": 87,
+      "goals": 0
+    },
+    {
+      "shirt": "2",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Hanbeom Lee",
+      "nameOnShirt": "HANBEOM",
+      "club": "FC Midtjylland (DEN)",
+      "height": "1.88 m",
+      "caps": 9,
+      "goals": 0
+    },
+    {
+      "shirt": "3",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Gihyuk Lee",
+      "nameOnShirt": "GIHYUK",
+      "club": "Gangwon FC (KOR)",
+      "height": "1.84 m",
+      "caps": 4,
+      "goals": 0
+    },
+    {
+      "shirt": "4",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Minjae Kim",
+      "nameOnShirt": "MINJAE",
+      "club": "FC Bayern München (GER)",
+      "height": "1.90 m",
+      "caps": 80,
+      "goals": 4
+    },
+    {
+      "shirt": "5",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Taehyeon Kim",
+      "nameOnShirt": "TAEHYEON",
+      "club": "Kashima Antlers (JPN)",
+      "height": "1.86 m",
+      "caps": 7,
+      "goals": 0
+    },
+    {
+      "shirt": "6",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Inbeom Hwang",
+      "nameOnShirt": "INBEOM",
+      "club": "Feyenoord Rotterdam (NED)",
+      "height": "1.77 m",
+      "caps": 74,
+      "goals": 7
+    },
+    {
+      "shirt": "7",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Heung Min Son",
+      "nameOnShirt": "HEUNGMIN",
+      "club": "LAFC (USA)",
+      "height": "1.83 m",
+      "caps": 145,
+      "goals": 56
+    },
+    {
+      "shirt": "8",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Seungho Paik",
+      "nameOnShirt": "SEUNGHO",
+      "club": "Birmingham City FC (ENG)",
+      "height": "1.82 m",
+      "caps": 28,
+      "goals": 3
+    },
+    {
+      "shirt": "9",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Guesung Cho",
+      "nameOnShirt": "GUESUNG",
+      "club": "FC Midtjylland (DEN)",
+      "height": "1.88 m",
+      "caps": 44,
+      "goals": 12
+    },
+    {
+      "shirt": "10",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Jae Sung Lee",
+      "nameOnShirt": "JAESUNG",
+      "club": "1. FSV Mainz 05 (GER)",
+      "height": "1.80 m",
+      "caps": 106,
+      "goals": 15
+    },
+    {
+      "shirt": "11",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Hee Chan Hwang",
+      "nameOnShirt": "HEECHAN",
+      "club": "Wolverhampton Wanderers FC (ENG)",
+      "height": "1.77 m",
+      "caps": 80,
+      "goals": 17
+    },
+    {
+      "shirt": "12",
+      "position": "GK",
+      "role": "Portero",
+      "name": "Bumkeun Song",
+      "nameOnShirt": "BUMKEUN",
+      "club": "Jeonbuk Hyundai Motors FC (KOR)",
+      "height": "1.96 m",
+      "caps": 3,
+      "goals": 0
+    },
+    {
+      "shirt": "13",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Taeseok Lee",
+      "nameOnShirt": "TAESEOK",
+      "club": "FK Austria Wien (AUT)",
+      "height": "1.74 m",
+      "caps": 16,
+      "goals": 1
+    },
+    {
+      "shirt": "14",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Wije Cho",
+      "nameOnShirt": "WIJE",
+      "club": "Jeonbuk Hyundai Motors FC (KOR)",
+      "height": "1.90 m",
+      "caps": 1,
+      "goals": 0
+    },
+    {
+      "shirt": "15",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Moonhwan Kim",
+      "nameOnShirt": "MOONHWAN",
+      "club": "Daejeon Hana Citizen FC (KOR)",
+      "height": "1.73 m",
+      "caps": 36,
+      "goals": 0
+    },
+    {
+      "shirt": "16",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Jinseob Park",
+      "nameOnShirt": "JINSEOB",
+      "club": "Zhejiang FC (CHN)",
+      "height": "1.83 m",
+      "caps": 15,
+      "goals": 1
+    },
+    {
+      "shirt": "17",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Junho Bae",
+      "nameOnShirt": "JUNHO",
+      "club": "Stoke City FC (ENG)",
+      "height": "1.80 m",
+      "caps": 13,
+      "goals": 2
+    },
+    {
+      "shirt": "18",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Hyeongyu Oh",
+      "nameOnShirt": "HYEONGYU",
+      "club": "Beşiktaş JK (TUR)",
+      "height": "1.83 m",
+      "caps": 28,
+      "goals": 7
+    },
+    {
+      "shirt": "19",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Kangin Lee",
+      "nameOnShirt": "KANGIN",
+      "club": "Paris Saint-Germain (FRA)",
+      "height": "1.74 m",
+      "caps": 48,
+      "goals": 10
+    },
+    {
+      "shirt": "20",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Hyunjun Yang",
+      "nameOnShirt": "HYUNJUN",
+      "club": "Celtic FC (SCO)",
+      "height": "1.79 m",
+      "caps": 9,
+      "goals": 0
+    },
+    {
+      "shirt": "21",
+      "position": "GK",
+      "role": "Portero",
+      "name": "Hyeonwoo Jo",
+      "nameOnShirt": "HYEONWOO",
+      "club": "Ulsan HD (KOR)",
+      "height": "1.89 m",
+      "caps": 48,
+      "goals": 0
+    },
+    {
+      "shirt": "22",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Youngwoo Seol",
+      "nameOnShirt": "YOUNGWOO",
+      "club": "FK Crvena Zvezda (SRB)",
+      "height": "1.80 m",
+      "caps": 35,
+      "goals": 0
+    },
+    {
+      "shirt": "23",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Jens Castrop",
+      "nameOnShirt": "JENS",
+      "club": "Borussia Mönchengladbach (GER)",
+      "height": "1.78 m",
+      "caps": 7,
+      "goals": 0
+    },
+    {
+      "shirt": "24",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Jingyu Kim",
+      "nameOnShirt": "JINGYU",
+      "club": "Jeonbuk Hyundai Motors FC (KOR)",
+      "height": "1.77 m",
+      "caps": 23,
+      "goals": 3
+    },
+    {
+      "shirt": "25",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Jisung Eom",
+      "nameOnShirt": "JISUNG",
+      "club": "Swansea City AFC (WAL)",
+      "height": "1.77 m",
+      "caps": 10,
+      "goals": 2
+    },
+    {
+      "shirt": "26",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Donggyeong Lee",
+      "nameOnShirt": "DONGGYEONG",
+      "club": "Ulsan HD (KOR)",
+      "height": "1.75 m",
+      "caps": 18,
+      "goals": 4
+    }
+  ],
+  "T28": [
+    {
+      "shirt": "1",
+      "position": "GK",
+      "role": "Portero",
+      "name": "José Raúl Rangel Aguilar",
+      "nameOnShirt": "R. RANGEL",
+      "club": "CD Guadalajara (MEX)",
+      "height": "1.90 m",
+      "caps": 15,
+      "goals": 0
+    },
+    {
+      "shirt": "2",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Jorge Eduardo Sánchez Ramos",
+      "nameOnShirt": "J. SÁNCHEZ",
+      "club": "PAOK Saloniki (GRE)",
+      "height": "1.76 m",
+      "caps": 59,
+      "goals": 3
+    },
+    {
+      "shirt": "3",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "César Jasib Montes Castro",
+      "nameOnShirt": "C. MONTES",
+      "club": "FC Lokomotiv Moscow (RUS)",
+      "height": "1.91 m",
+      "caps": 69,
+      "goals": 4
+    },
+    {
+      "shirt": "4",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Edson Omar Álvarez Velázquez",
+      "nameOnShirt": "E. ÁLVAREZ",
+      "club": "Fenerbahçe SK (TUR)",
+      "height": "1.80 m",
+      "caps": 100,
+      "goals": 7
+    },
+    {
+      "shirt": "5",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Johan Felipe Vásquez Ibarra",
+      "nameOnShirt": "J. VÁSQUEZ",
+      "club": "Genoa CFC (ITA)",
+      "height": "1.82 m",
+      "caps": 47,
+      "goals": 3
+    },
+    {
+      "shirt": "6",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Erik Antonio Lira Méndez",
+      "nameOnShirt": "E. LIRA",
+      "club": "CF Cruz Azul (MEX)",
+      "height": "1.72 m",
+      "caps": 26,
+      "goals": 0
+    },
+    {
+      "shirt": "7",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Luis Francisco Romo Barrón",
+      "nameOnShirt": "L. ROMO",
+      "club": "CD Guadalajara (MEX)",
+      "height": "1.83 m",
+      "caps": 62,
+      "goals": 4
+    },
+    {
+      "shirt": "8",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Álvaro Fidalgo Fernández",
+      "nameOnShirt": "FIDALGO",
+      "club": "Real Betis (ESP)",
+      "height": "1.75 m",
+      "caps": 5,
+      "goals": 0
+    },
+    {
+      "shirt": "9",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Raúl Alonso Jiménez Rodríguez",
+      "nameOnShirt": "RAÚL",
+      "club": "Fulham FC (ENG)",
+      "height": "1.88 m",
+      "caps": 127,
+      "goals": 46
+    },
+    {
+      "shirt": "10",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Ernesto Alexis Vega Rojas",
+      "nameOnShirt": "A. VEGA",
+      "club": "Deportivo Toluca FC (MEX)",
+      "height": "1.75 m",
+      "caps": 53,
+      "goals": 7
+    },
+    {
+      "shirt": "11",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Santiago Tomás Gimenez",
+      "nameOnShirt": "S. GIMENEZ",
+      "club": "AC Milan (ITA)",
+      "height": "1.80 m",
+      "caps": 47,
+      "goals": 6
+    },
+    {
+      "shirt": "12",
+      "position": "GK",
+      "role": "Portero",
+      "name": "Carlos Acevedo López",
+      "nameOnShirt": "C. ACEVEDO",
+      "club": "Club Santos Laguna (MEX)",
+      "height": "1.85 m",
+      "caps": 7,
+      "goals": 0
+    },
+    {
+      "shirt": "13",
+      "position": "GK",
+      "role": "Portero",
+      "name": "Francisco Guillermo Ochoa Magaña",
+      "nameOnShirt": "G. OCHOA",
+      "club": "AEL Limassol (CYP)",
+      "height": "1.85 m",
+      "caps": 153,
+      "goals": 0
+    },
+    {
+      "shirt": "14",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Armando González Alba",
+      "nameOnShirt": "A. GONZÁLEZ",
+      "club": "CD Guadalajara (MEX)",
+      "height": "1.82 m",
+      "caps": 8,
+      "goals": 1
+    },
+    {
+      "shirt": "15",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Israel Reyes Romero",
+      "nameOnShirt": "I. REYES",
+      "club": "Club América (MEX)",
+      "height": "1.81 m",
+      "caps": 35,
+      "goals": 2
+    },
+    {
+      "shirt": "16",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Julián Andrés Quiñones Quiñones",
+      "nameOnShirt": "J. QUIÑONES",
+      "club": "Al Qadsiah FC (KSA)",
+      "height": "1.77 m",
+      "caps": 23,
+      "goals": 3
+    },
+    {
+      "shirt": "17",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Orbelín Pineda Alvarado",
+      "nameOnShirt": "ORBELÍN",
+      "club": "AEK Athens (GRE)",
+      "height": "1.69 m",
+      "caps": 92,
+      "goals": 12
+    },
+    {
+      "shirt": "18",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Obed Goméz Vargas",
+      "nameOnShirt": "O. VARGAS",
+      "club": "Atlético De Madrid (ESP)",
+      "height": "1.75 m",
+      "caps": 6,
+      "goals": 0
+    },
+    {
+      "shirt": "19",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Gilberto Rafael Mora Zambrano",
+      "nameOnShirt": "G. MORA",
+      "club": "Club Tijuana (MEX)",
+      "height": "1.75 m",
+      "caps": 9,
+      "goals": 0
+    },
+    {
+      "shirt": "20",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Mateo Chávez García",
+      "nameOnShirt": "M. CHÁVEZ",
+      "club": "AZ Alkmaar (NED)",
+      "height": "1.78 m",
+      "caps": 10,
+      "goals": 0
+    },
+    {
+      "shirt": "21",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "César Saúl Huerta Valera",
+      "nameOnShirt": "C. HUERTA",
+      "club": "RSC Anderlecht (BEL)",
+      "height": "1.71 m",
+      "caps": 26,
+      "goals": 3
+    },
+    {
+      "shirt": "22",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Guillermo Martínez Ayala",
+      "nameOnShirt": "G. MARTÍNEZ",
+      "club": "Pumas UNAM (MEX)",
+      "height": "1.91 m",
+      "caps": 12,
+      "goals": 3
+    },
+    {
+      "shirt": "23",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Jesús Daniel Gallardo Vasconcelos",
+      "nameOnShirt": "J. GALLARDO",
+      "club": "Deportivo Toluca FC (MEX)",
+      "height": "1.74 m",
+      "caps": 123,
+      "goals": 3
+    },
+    {
+      "shirt": "24",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Luis Gerardo Chávez Magallón",
+      "nameOnShirt": "L. CHÁVEZ",
+      "club": "FC Dynamo Moscow (RUS)",
+      "height": "1.78 m",
+      "caps": 46,
+      "goals": 5
+    },
+    {
+      "shirt": "25",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Roberto Carlos Alvarado Hernández",
+      "nameOnShirt": "R. ALVARADO",
+      "club": "CD Guadalajara (MEX)",
+      "height": "1.76 m",
+      "caps": 69,
+      "goals": 6
+    },
+    {
+      "shirt": "26",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Brian Gutiérrez",
+      "nameOnShirt": "B. GUTIÉRREZ",
+      "club": "CD Guadalajara (MEX)",
+      "height": "1.78 m",
+      "caps": 8,
+      "goals": 2
+    }
+  ],
+  "T29": [
+    {
+      "shirt": "1",
+      "position": "GK",
+      "role": "Portero",
+      "name": "Yassine Bounou",
+      "nameOnShirt": "BONO",
+      "club": "Al Hilal SC (KSA)",
+      "height": "1.92 m",
+      "caps": 91,
+      "goals": 0
+    },
+    {
+      "shirt": "2",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Achraf Hakimi",
+      "nameOnShirt": "HAKIMI",
+      "club": "Paris Saint-Germain (FRA)",
+      "height": "1.80 m",
+      "caps": 97,
+      "goals": 11
+    },
+    {
+      "shirt": "3",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Noussair Mazraoui",
+      "nameOnShirt": "MAZRAOUI",
+      "club": "Manchester United FC (ENG)",
+      "height": "1.83 m",
+      "caps": 46,
+      "goals": 2
+    },
+    {
+      "shirt": "4",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Sofyan Amrabat",
+      "nameOnShirt": "AMRABAT",
+      "club": "Real Betis (ESP)",
+      "height": "1.85 m",
+      "caps": 75,
+      "goals": 0
+    },
+    {
+      "shirt": "5",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Marwane Saadane",
+      "nameOnShirt": "SAADANE",
+      "club": "Al Fateh SC (KSA)",
+      "height": "1.85 m",
+      "caps": 17,
+      "goals": 1
+    },
+    {
+      "shirt": "6",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Ayyoub Bouaddi",
+      "nameOnShirt": "BOUADDI",
+      "club": "Lille OSC (FRA)",
+      "height": "1.85 m",
+      "caps": 4,
+      "goals": 0
+    },
+    {
+      "shirt": "7",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Chemsdine Talbi",
+      "nameOnShirt": "TALBI",
+      "club": "Sunderland AFC (ENG)",
+      "height": "1.75 m",
+      "caps": 6,
+      "goals": 0
+    },
+    {
+      "shirt": "8",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Azz-Eddine Ounahi",
+      "nameOnShirt": "OUNAHI",
+      "club": "Girona FC (ESP)",
+      "height": "1.82 m",
+      "caps": 50,
+      "goals": 9
+    },
+    {
+      "shirt": "9",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Souane Rahimi",
+      "nameOnShirt": "RAHIMI",
+      "club": "Al Ain FC (UAE)",
+      "height": "1.80 m",
+      "caps": 38,
+      "goals": 12
+    },
+    {
+      "shirt": "10",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Brahim Abdelkader Diaz",
+      "nameOnShirt": "BRAHIM",
+      "club": "Real Madrid C. F. (ESP)",
+      "height": "1.70 m",
+      "caps": 27,
+      "goals": 15
+    },
+    {
+      "shirt": "11",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Ismael Saibari",
+      "nameOnShirt": "SAIBARI",
+      "club": "PSV Eindhoven (NED)",
+      "height": "1.85 m",
+      "caps": 31,
+      "goals": 10
+    },
+    {
+      "shirt": "12",
+      "position": "GK",
+      "role": "Portero",
+      "name": "Monir El Kajoui",
+      "nameOnShirt": "EL KAJOUI",
+      "club": "RS Berkane (MAR)",
+      "height": "1.90 m",
+      "caps": 52,
+      "goals": 0
+    },
+    {
+      "shirt": "13",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Zakaria El Ouahdi",
+      "nameOnShirt": "EL OUAHDI",
+      "club": "KRC Genk (BEL)",
+      "height": "1.71 m",
+      "caps": 3,
+      "goals": 0
+    },
+    {
+      "shirt": "14",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Issa Laye Lucas Jean Diop",
+      "nameOnShirt": "ISSA",
+      "club": "Fulham FC (ENG)",
+      "height": "1.94 m",
+      "caps": 5,
+      "goals": 0
+    },
+    {
+      "shirt": "15",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Samir El Mourabet",
+      "nameOnShirt": "EL MOURABET",
+      "club": "RC Strasbourg (FRA)",
+      "height": "1.87 m",
+      "caps": 5,
+      "goals": 0
+    },
+    {
+      "shirt": "16",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Gessime Ben Youssef Mustapha Yassine",
+      "nameOnShirt": "YASSINE",
+      "club": "RC Strasbourg (FRA)",
+      "height": "1.72 m",
+      "caps": 4,
+      "goals": 0
+    },
+    {
+      "shirt": "17",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Mohamed Amine Sbai",
+      "nameOnShirt": "SBAÏ",
+      "club": "Angers SCO (FRA)",
+      "height": "1.75 m",
+      "caps": 2,
+      "goals": 0
+    },
+    {
+      "shirt": "18",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Chadi Riad",
+      "nameOnShirt": "RIAD",
+      "club": "Crystal Palace FC (ENG)",
+      "height": "1.86 m",
+      "caps": 7,
+      "goals": 1
+    },
+    {
+      "shirt": "19",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Youssef Belammari",
+      "nameOnShirt": "BELAMMARI",
+      "club": "Al Ahly FC (EGY)",
+      "height": "1.75 m",
+      "caps": 18,
+      "goals": 0
+    },
+    {
+      "shirt": "20",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Ayoub El Kaabi",
+      "nameOnShirt": "EL KAABI",
+      "club": "Olympiacos FC (GRE)",
+      "height": "1.82 m",
+      "caps": 71,
+      "goals": 36
+    },
+    {
+      "shirt": "21",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Ayoube Amaimouni",
+      "nameOnShirt": "AMAIMOUNI",
+      "club": "Eintracht Frankfurt (GER)",
+      "height": "1.79 m",
+      "caps": 3,
+      "goals": 0
+    },
+    {
+      "shirt": "22",
+      "position": "GK",
+      "role": "Portero",
+      "name": "Ahmed Reda Tagnaouti",
+      "nameOnShirt": "TAGNAOUTI",
+      "club": "ASFAR (MAR)",
+      "height": "1.94 m",
+      "caps": 3,
+      "goals": 0
+    },
+    {
+      "shirt": "23",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Bilal El Khannouss",
+      "nameOnShirt": "EL KHANNOUSS",
+      "club": "VfB Stuttgart (GER)",
+      "height": "1.80 m",
+      "caps": 38,
+      "goals": 3
+    },
+    {
+      "shirt": "24",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Neil Yoni El Aynaoui",
+      "nameOnShirt": "EL AYNAOUI",
+      "club": "AS Roma (ITA)",
+      "height": "1.85 m",
+      "caps": 17,
+      "goals": 2
+    },
+    {
+      "shirt": "25",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Redouane Halhal",
+      "nameOnShirt": "HALHAL",
+      "club": "KV Mechelen (BEL)",
+      "height": "1.89 m",
+      "caps": 3,
+      "goals": 0
+    },
+    {
+      "shirt": "26",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Anass Salah Eddine",
+      "nameOnShirt": "SALAH-EDDINE",
+      "club": "PSV Eindhoven (NED)",
+      "height": "1.81 m",
+      "caps": 10,
+      "goals": 0
+    }
+  ],
+  "T30": [
+    {
+      "shirt": "1",
+      "position": "GK",
+      "role": "Portero",
+      "name": "Bart Verbruggen",
+      "nameOnShirt": "VERBRUGGEN",
+      "club": "Brighton & Hove Albion FC (ENG)",
+      "height": "1.93 m",
+      "caps": 30,
+      "goals": 0
+    },
+    {
+      "shirt": "2",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Lutsharel Emiliano Geertruida",
+      "nameOnShirt": "GEERTRUIDA",
+      "club": "Sunderland AFC (ENG)",
+      "height": "1.85 m",
+      "caps": 21,
+      "goals": 0
+    },
+    {
+      "shirt": "3",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Marten Elco De Roon",
+      "nameOnShirt": "DE ROON",
+      "club": "Atalanta Bergamo (ITA)",
+      "height": "1.86 m",
+      "caps": 43,
+      "goals": 1
+    },
+    {
+      "shirt": "4",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Virgil Van Dijk",
+      "nameOnShirt": "VIRGIL",
+      "club": "Liverpool FC (ENG)",
+      "height": "1.95 m",
+      "caps": 93,
+      "goals": 13
+    },
+    {
+      "shirt": "5",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Nathan Benjamin Ake",
+      "nameOnShirt": "AKÉ",
+      "club": "Manchester City FC (ENG)",
+      "height": "1.80 m",
+      "caps": 60,
+      "goals": 5
+    },
+    {
+      "shirt": "6",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Jan-Paul Van Hecke",
+      "nameOnShirt": "VAN HECKE",
+      "club": "Brighton & Hove Albion FC (ENG)",
+      "height": "1.89 m",
+      "caps": 13,
+      "goals": 0
+    },
+    {
+      "shirt": "7",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Justin Dean Kluivert",
+      "nameOnShirt": "KLUIVERT",
+      "club": "AFC Bournemouth (ENG)",
+      "height": "1.73 m",
+      "caps": 12,
+      "goals": 0
+    },
+    {
+      "shirt": "8",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Ryan Jiro Gravenberch",
+      "nameOnShirt": "GRAVENBERCH",
+      "club": "Liverpool FC (ENG)",
+      "height": "1.90 m",
+      "caps": 28,
+      "goals": 1
+    },
+    {
+      "shirt": "9",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Wout François Maria Weghorst",
+      "nameOnShirt": "WEGHORST",
+      "club": "AFC Ajax (NED)",
+      "height": "1.97 m",
+      "caps": 52,
+      "goals": 14
+    },
+    {
+      "shirt": "10",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Memphis Depay",
+      "nameOnShirt": "MEMPHIS",
+      "club": "SC Corinthians (BRA)",
+      "height": "1.78 m",
+      "caps": 110,
+      "goals": 55
+    },
+    {
+      "shirt": "11",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Cody Mathès Gakpo",
+      "nameOnShirt": "GAKPO",
+      "club": "Liverpool FC (ENG)",
+      "height": "1.93 m",
+      "caps": 51,
+      "goals": 21
+    },
+    {
+      "shirt": "12",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Mats Henrik Berne Wieffer",
+      "nameOnShirt": "WIEFFER",
+      "club": "Brighton & Hove Albion FC (ENG)",
+      "height": "1.89 m",
+      "caps": 15,
+      "goals": 1
+    },
+    {
+      "shirt": "13",
+      "position": "GK",
+      "role": "Portero",
+      "name": "Robin Gerardus Petrus Roefs",
+      "nameOnShirt": "ROEFS",
+      "club": "Sunderland AFC (ENG)",
+      "height": "1.93 m",
+      "caps": 1,
+      "goals": 0
+    },
+    {
+      "shirt": "14",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Tijjani Martinus Jan Reijnders",
+      "nameOnShirt": "REIJNDERS",
+      "club": "Manchester City FC (ENG)",
+      "height": "1.78 m",
+      "caps": 33,
+      "goals": 7
+    },
+    {
+      "shirt": "15",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Micky Van De Ven",
+      "nameOnShirt": "VAN DE VEN",
+      "club": "Tottenham Hotspur FC (ENG)",
+      "height": "1.93 m",
+      "caps": 22,
+      "goals": 1
+    },
+    {
+      "shirt": "16",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Guus Berend Til",
+      "nameOnShirt": "TIL",
+      "club": "PSV Eindhoven (NED)",
+      "height": "1.88 m",
+      "caps": 7,
+      "goals": 1
+    },
+    {
+      "shirt": "17",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Noa Noëll Lang",
+      "nameOnShirt": "LANG",
+      "club": "Galatasaray SK (TUR)",
+      "height": "1.76 m",
+      "caps": 15,
+      "goals": 3
+    },
+    {
+      "shirt": "18",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Donyell Malen",
+      "nameOnShirt": "MALEN",
+      "club": "AS Roma (ITA)",
+      "height": "1.78 m",
+      "caps": 54,
+      "goals": 13
+    },
+    {
+      "shirt": "19",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Brian Ebenezer Adjei Brobbey",
+      "nameOnShirt": "BROBBEY",
+      "club": "Sunderland AFC (ENG)",
+      "height": "1.81 m",
+      "caps": 13,
+      "goals": 1
+    },
+    {
+      "shirt": "20",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Teun Koopmeiners",
+      "nameOnShirt": "KOOPMEINERS",
+      "club": "Juventus FC (ITA)",
+      "height": "1.85 m",
+      "caps": 29,
+      "goals": 3
+    },
+    {
+      "shirt": "21",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Frenkie De Jong",
+      "nameOnShirt": "F. DE JONG",
+      "club": "FC Barcelona (ESP)",
+      "height": "1.81 m",
+      "caps": 67,
+      "goals": 2
+    },
+    {
+      "shirt": "22",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Denzel Justus Morris Dumfries",
+      "nameOnShirt": "DUMFRIES",
+      "club": "FC Internazionale Milano (ITA)",
+      "height": "1.88 m",
+      "caps": 73,
+      "goals": 11
+    },
+    {
+      "shirt": "23",
+      "position": "GK",
+      "role": "Portero",
+      "name": "Mark Maria Hubertus Flekken",
+      "nameOnShirt": "FLEKKEN",
+      "club": "Bayer 04 Leverkusen (GER)",
+      "height": "1.95 m",
+      "caps": 12,
+      "goals": 0
+    },
+    {
+      "shirt": "24",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Crysencio Jilbert Sylverio Cir Summerville",
+      "nameOnShirt": "SUMMERVILLE",
+      "club": "West Ham United FC (ENG)",
+      "height": "1.72 m",
+      "caps": 3,
+      "goals": 1
+    },
+    {
+      "shirt": "25",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Jorrel Evan Hato",
+      "nameOnShirt": "HATO",
+      "club": "Chelsea FC (ENG)",
+      "height": "1.82 m",
+      "caps": 8,
+      "goals": 0
+    },
+    {
+      "shirt": "26",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Quinten Ryan Crispito Timber",
+      "nameOnShirt": "Q. TIMBER",
+      "club": "Olympique Marseille (FRA)",
+      "height": "1.76 m",
+      "caps": 12,
+      "goals": 1
+    }
+  ],
+  "T31": [
+    {
+      "shirt": "1",
+      "position": "GK",
+      "role": "Portero",
+      "name": "Maxime Teremoana Crocombe",
+      "nameOnShirt": "CROCOMBE",
+      "club": "Millwall FC (ENG)",
+      "height": "1.90 m",
+      "caps": 25,
+      "goals": 0
+    },
+    {
+      "shirt": "2",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Timothy John Payne",
+      "nameOnShirt": "PAYNE",
+      "club": "Wellington Phoenix FC (NZL)",
+      "height": "1.79 m",
+      "caps": 53,
+      "goals": 3
+    },
+    {
+      "shirt": "3",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Francis De Vries",
+      "nameOnShirt": "DE VRIES",
+      "club": "Auckland FC (NZL)",
+      "height": "1.81 m",
+      "caps": 20,
+      "goals": 1
+    },
+    {
+      "shirt": "4",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Tyler Grant Bindon",
+      "nameOnShirt": "BINDON",
+      "club": "Sheeld United FC (ENG)",
+      "height": "1.90 m",
+      "caps": 26,
+      "goals": 2
+    },
+    {
+      "shirt": "5",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Michael Joseph Boxall",
+      "nameOnShirt": "BOXALL",
+      "club": "Minnesota United FC (USA)",
+      "height": "1.91 m",
+      "caps": 65,
+      "goals": 1
+    },
+    {
+      "shirt": "6",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Joe Zen Robert Bell",
+      "nameOnShirt": "BELL",
+      "club": "Viking Stavanger (NOR)",
+      "height": "1.82 m",
+      "caps": 33,
+      "goals": 1
+    },
+    {
+      "shirt": "7",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Logan Tipene Rogerson",
+      "nameOnShirt": "ROGERSON",
+      "club": "Auckland FC (NZL)",
+      "height": "1.82 m",
+      "caps": 18,
+      "goals": 2
+    },
+    {
+      "shirt": "8",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Marko Seufatu Nikola Stamenic",
+      "nameOnShirt": "STAMENIC",
+      "club": "Swansea City AFC (WAL)",
+      "height": "1.88 m",
+      "caps": 41,
+      "goals": 3
+    },
+    {
+      "shirt": "9",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Christopher Grant Wood",
+      "nameOnShirt": "WOOD",
+      "club": "Nottingham Forest FC (ENG)",
+      "height": "1.91 m",
+      "caps": 91,
+      "goals": 45
+    },
+    {
+      "shirt": "10",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Sarpreet Singh",
+      "nameOnShirt": "SINGH",
+      "club": "Wellington Phoenix FC (NZL)",
+      "height": "1.80 m",
+      "caps": 29,
+      "goals": 3
+    },
+    {
+      "shirt": "11",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Elijah Henry Just",
+      "nameOnShirt": "JUST",
+      "club": "Motherwell FC (SCO)",
+      "height": "1.76 m",
+      "caps": 45,
+      "goals": 11
+    },
+    {
+      "shirt": "12",
+      "position": "GK",
+      "role": "Portero",
+      "name": "Alexander Noah Paulsen",
+      "nameOnShirt": "PAULSEN",
+      "club": "Lechia Gdańsk (POL)",
+      "height": "1.93 m",
+      "caps": 8,
+      "goals": 0
+    },
+    {
+      "shirt": "13",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Liberato Gianpaolo Cacace",
+      "nameOnShirt": "CACACE",
+      "club": "Wrexham AFC (WAL)",
+      "height": "1.82 m",
+      "caps": 38,
+      "goals": 1
+    },
+    {
+      "shirt": "14",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Alex Arthur Rufer",
+      "nameOnShirt": "RUFER",
+      "club": "Wellington Phoenix FC (NZL)",
+      "height": "1.80 m",
+      "caps": 26,
+      "goals": 0
+    },
+    {
+      "shirt": "15",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Nando Zen Pijnaker",
+      "nameOnShirt": "PIJNAKER",
+      "club": "Auckland FC (NZL)",
+      "height": "1.85 m",
+      "caps": 26,
+      "goals": 0
+    },
+    {
+      "shirt": "16",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Finn Surman",
+      "nameOnShirt": "SURMAN",
+      "club": "Portland Timbers (USA)",
+      "height": "1.90 m",
+      "caps": 20,
+      "goals": 2
+    },
+    {
+      "shirt": "17",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Kosta Barbarouses",
+      "nameOnShirt": "BARBAROUSES",
+      "club": "WS Wanderers FC (AUS)",
+      "height": "1.71 m",
+      "caps": 76,
+      "goals": 10
+    },
+    {
+      "shirt": "18",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Benjamin Peter Waine",
+      "nameOnShirt": "WAINE",
+      "club": "Port Vale FC (ENG)",
+      "height": "1.85 m",
+      "caps": 31,
+      "goals": 9
+    },
+    {
+      "shirt": "19",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Benjamin Craig Old",
+      "nameOnShirt": "OLD",
+      "club": "AS Saint-Etienne (FRA)",
+      "height": "1.73 m",
+      "caps": 25,
+      "goals": 2
+    },
+    {
+      "shirt": "20",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Callum William Mccowatt",
+      "nameOnShirt": "MCCOWATT",
+      "club": "Silkeborg IF (DEN)",
+      "height": "1.80 m",
+      "caps": 34,
+      "goals": 5
+    },
+    {
+      "shirt": "21",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Jesse Carmichael Randall",
+      "nameOnShirt": "RANDALL",
+      "club": "Auckland FC (NZL)",
+      "height": "1.76 m",
+      "caps": 12,
+      "goals": 2
+    },
+    {
+      "shirt": "22",
+      "position": "GK",
+      "role": "Portero",
+      "name": "Michael Cornelis Woud",
+      "nameOnShirt": "WOUD",
+      "club": "Auckland FC (NZL)",
+      "height": "1.96 m",
+      "caps": 7,
+      "goals": 0
+    },
+    {
+      "shirt": "23",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Ryan Jared Thomas",
+      "nameOnShirt": "THOMAS",
+      "club": "PEC Zwolle (NED)",
+      "height": "1.76 m",
+      "caps": 26,
+      "goals": 3
+    },
+    {
+      "shirt": "24",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Callan Rennie Elliot",
+      "nameOnShirt": "ELLIOT",
+      "club": "Auckland FC (NZL)",
+      "height": "1.77 m",
+      "caps": 12,
+      "goals": 0
+    },
+    {
+      "shirt": "25",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Lachlan Ryan Bayliss",
+      "nameOnShirt": "BAYLISS",
+      "club": "Newcastle United Jets FC (AUS)",
+      "height": "1.78 m",
+      "caps": 4,
+      "goals": 0
+    },
+    {
+      "shirt": "26",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Thomas Jefferson Smith",
+      "nameOnShirt": "SMITH",
+      "club": "Braintree Town FC (ENG)",
+      "height": "1.88 m",
+      "caps": 57,
+      "goals": 2
+    }
+  ],
+  "T32": [
+    {
+      "shirt": "1",
+      "position": "GK",
+      "role": "Portero",
+      "name": "Ørjan Haskjold Nyland",
+      "nameOnShirt": "NYLAND",
+      "club": "Sevilla FC (ESP)",
+      "height": "1.92 m",
+      "caps": 72,
+      "goals": 0
+    },
+    {
+      "shirt": "2",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Morten Thorsby",
+      "nameOnShirt": "THORSBY",
+      "club": "US Cremonese (ITA)",
+      "height": "1.88 m",
+      "caps": 31,
+      "goals": 0
+    },
+    {
+      "shirt": "3",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Kristoffer Vassbakk Köpp Ajer",
+      "nameOnShirt": "VASSBAKK AJER",
+      "club": "Brentford FC (ENG)",
+      "height": "1.98 m",
+      "caps": 53,
+      "goals": 2
+    },
+    {
+      "shirt": "4",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Leo Skiri Østigård",
+      "nameOnShirt": "ØSTIGÅRD",
+      "club": "Genoa CFC (ITA)",
+      "height": "1.83 m",
+      "caps": 39,
+      "goals": 2
+    },
+    {
+      "shirt": "5",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "David Møller Wolfe",
+      "nameOnShirt": "MØLLER WOLFE",
+      "club": "Wolverhampton Wanderers FC (ENG)",
+      "height": "1.85 m",
+      "caps": 23,
+      "goals": 1
+    },
+    {
+      "shirt": "6",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Patrick Berg",
+      "nameOnShirt": "BERG",
+      "club": "FK Bodø/Glimt (NOR)",
+      "height": "1.78 m",
+      "caps": 44,
+      "goals": 0
+    },
+    {
+      "shirt": "7",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Alexander Sørloth",
+      "nameOnShirt": "SØRLOTH",
+      "club": "Atlético De Madrid (ESP)",
+      "height": "1.96 m",
+      "caps": 73,
+      "goals": 26
+    },
+    {
+      "shirt": "8",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Sander Gard Bolin Berge",
+      "nameOnShirt": "BERGE",
+      "club": "Fulham FC (ENG)",
+      "height": "1.95 m",
+      "caps": 67,
+      "goals": 1
+    },
+    {
+      "shirt": "9",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Erling Braut Haaland",
+      "nameOnShirt": "BRAUT HAALAND",
+      "club": "Manchester City FC (ENG)",
+      "height": "1.95 m",
+      "caps": 51,
+      "goals": 57
+    },
+    {
+      "shirt": "10",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Martín Ødegaard",
+      "nameOnShirt": "ØDEGAARD",
+      "club": "Arsenal FC (ENG)",
+      "height": "1.78 m",
+      "caps": 69,
+      "goals": 5
+    },
+    {
+      "shirt": "11",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Jørgen Strand Larsen",
+      "nameOnShirt": "STRAND LARSEN",
+      "club": "Crystal Palace FC (ENG)",
+      "height": "1.93 m",
+      "caps": 28,
+      "goals": 6
+    },
+    {
+      "shirt": "12",
+      "position": "GK",
+      "role": "Portero",
+      "name": "Sander Tangvik",
+      "nameOnShirt": "TANGVIK",
+      "club": "Hamburger SV (GER)",
+      "height": "1.93 m",
+      "caps": 0,
+      "goals": 0
+    },
+    {
+      "shirt": "13",
+      "position": "GK",
+      "role": "Portero",
+      "name": "Egil Selvik",
+      "nameOnShirt": "SELVIK",
+      "club": "Watford FC (ENG)",
+      "height": "1.87 m",
+      "caps": 7,
+      "goals": 0
+    },
+    {
+      "shirt": "14",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Fredrik Aursnes",
+      "nameOnShirt": "AURSNES",
+      "club": "SL Benca (POR)",
+      "height": "1.81 m",
+      "caps": 23,
+      "goals": 1
+    },
+    {
+      "shirt": "15",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Fredrik André Bjørkan",
+      "nameOnShirt": "BJØRKAN",
+      "club": "FK Bodø/Glimt (NOR)",
+      "height": "1.80 m",
+      "caps": 21,
+      "goals": 1
+    },
+    {
+      "shirt": "16",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Marcus Holmgren Pedersen",
+      "nameOnShirt": "HOLMGREN",
+      "club": "Torino FC (ITA)",
+      "height": "1.84 m",
+      "caps": 32,
+      "goals": 0
+    },
+    {
+      "shirt": "17",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Torbjørn Lysaker Heggem",
+      "nameOnShirt": "HEGGEM",
+      "club": "Bologna FC (ITA)",
+      "height": "1.92 m",
+      "caps": 16,
+      "goals": 0
+    },
+    {
+      "shirt": "18",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Kristian Thorstvedt",
+      "nameOnShirt": "THORSTVEDT",
+      "club": "US Sassuolo (ITA)",
+      "height": "1.89 m",
+      "caps": 38,
+      "goals": 4
+    },
+    {
+      "shirt": "19",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Thelonious Gerard Aasgaard",
+      "nameOnShirt": "AASGAARD",
+      "club": "Rangers FC (SCO)",
+      "height": "1.88 m",
+      "caps": 8,
+      "goals": 5
+    },
+    {
+      "shirt": "20",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Antonio Eromonsele Nordby Nusa",
+      "nameOnShirt": "NUSA",
+      "club": "RB Leipzig (GER)",
+      "height": "1.83 m",
+      "caps": 25,
+      "goals": 8
+    },
+    {
+      "shirt": "21",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Andreas Rædergård Schjelderup",
+      "nameOnShirt": "SCHJELDERUP",
+      "club": "SL Benca (POR)",
+      "height": "1.77 m",
+      "caps": 13,
+      "goals": 1
+    },
+    {
+      "shirt": "22",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Oscar Bobb",
+      "nameOnShirt": "BOBB",
+      "club": "Fulham FC (ENG)",
+      "height": "1.77 m",
+      "caps": 21,
+      "goals": 2
+    },
+    {
+      "shirt": "23",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Jens Petter Hauge",
+      "nameOnShirt": "HAUGE",
+      "club": "FK Bodø/Glimt (NOR)",
+      "height": "1.84 m",
+      "caps": 15,
+      "goals": 1
+    },
+    {
+      "shirt": "24",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Sondre Klingen Langås",
+      "nameOnShirt": "LANGÅS",
+      "club": "Derby County FC (ENG)",
+      "height": "1.90 m",
+      "caps": 3,
+      "goals": 0
+    },
+    {
+      "shirt": "25",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Henrik Sælebakke Falchener",
+      "nameOnShirt": "FALCHENER",
+      "club": "Viking Stavanger (NOR)",
+      "height": "1.94 m",
+      "caps": 1,
+      "goals": 0
+    },
+    {
+      "shirt": "26",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Julian Ryerson",
+      "nameOnShirt": "RYERSON",
+      "club": "Borussia Dortmund (GER)",
+      "height": "1.86 m",
+      "caps": 44,
+      "goals": 1
+    }
+  ],
+  "T33": [
+    {
+      "shirt": "1",
+      "position": "GK",
+      "role": "Portero",
+      "name": "Luis Ricardo Mejía Cajar",
+      "nameOnShirt": "MEJIA",
+      "club": "Club Nacional (URU)",
+      "height": "1.93 m",
+      "caps": 56,
+      "goals": 0
+    },
+    {
+      "shirt": "2",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Cesar Rodolfo Blackman Camarena",
+      "nameOnShirt": "BLACKMAN",
+      "club": "ŠK Slovan Bratislava (SVK)",
+      "height": "1.74 m",
+      "caps": 40,
+      "goals": 3
+    },
+    {
+      "shirt": "3",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Jose Angel Cordoba Chambers",
+      "nameOnShirt": "CORDOBA",
+      "club": "Norwich City FC (ENG)",
+      "height": "1.89 m",
+      "caps": 32,
+      "goals": 1
+    },
+    {
+      "shirt": "4",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Fidel Escobar Mendieta",
+      "nameOnShirt": "F. ESCOBAR",
+      "club": "Deportivo Saprissa (CRC)",
+      "height": "1.84 m",
+      "caps": 99,
+      "goals": 4
+    },
+    {
+      "shirt": "5",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Edgardo Issac Fariña Wynter",
+      "nameOnShirt": "FARIÑA",
+      "club": "FC Pari Nizhny Novgorod (RUS)",
+      "height": "1.95 m",
+      "caps": 18,
+      "goals": 0
+    },
+    {
+      "shirt": "6",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Cristian Jesus Martinez",
+      "nameOnShirt": "MARTÍNEZ",
+      "club": "Hapoel Kiryat Shmona FC (ISR)",
+      "height": "1.70 m",
+      "caps": 67,
+      "goals": 2
+    },
+    {
+      "shirt": "7",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Jose Luis Rodriguez Francis",
+      "nameOnShirt": "J.L. RODRÍGUEZ",
+      "club": "FC Juárez (MEX)",
+      "height": "1.80 m",
+      "caps": 70,
+      "goals": 8
+    },
+    {
+      "shirt": "8",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Adalberto Eliecer Carrasquilla Alcazar",
+      "nameOnShirt": "CARRASQUILLA",
+      "club": "Pumas UNAM (MEX)",
+      "height": "1.71 m",
+      "caps": 73,
+      "goals": 3
+    },
+    {
+      "shirt": "9",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Tomas Abdiel Rodriguez Mena",
+      "nameOnShirt": "T. RODRÍGUEZ",
+      "club": "Deportivo Saprissa (CRC)",
+      "height": "1.83 m",
+      "caps": 13,
+      "goals": 4
+    },
+    {
+      "shirt": "10",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Ismael Diaz De Leon",
+      "nameOnShirt": "ISMAEL",
+      "club": "Club León (MEX)",
+      "height": "1.84 m",
+      "caps": 56,
+      "goals": 17
+    },
+    {
+      "shirt": "11",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Edgar Yoel Barcenas Herrera",
+      "nameOnShirt": "BÁRCENAS",
+      "club": "Mazatlán FC (MEX)",
+      "height": "1.75 m",
+      "caps": 104,
+      "goals": 10
+    },
+    {
+      "shirt": "12",
+      "position": "GK",
+      "role": "Portero",
+      "name": "Cesar Jair Samudio Murillo",
+      "nameOnShirt": "SAMUDIO",
+      "club": "CD Marathón (HON)",
+      "height": "1.89 m",
+      "caps": 5,
+      "goals": 0
+    },
+    {
+      "shirt": "13",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Jiovany Javier Ramos Diaz",
+      "nameOnShirt": "RAMOS",
+      "club": "Puerto Cabello CF (VEN)",
+      "height": "1.88 m",
+      "caps": 23,
+      "goals": 2
+    },
+    {
+      "shirt": "14",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Carlos Miguel Harvey Cesneros",
+      "nameOnShirt": "HARVEY",
+      "club": "Minnesota United FC (USA)",
+      "height": "1.84 m",
+      "caps": 28,
+      "goals": 3
+    },
+    {
+      "shirt": "15",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Eric Javier Davis Grajales",
+      "nameOnShirt": "DAVIS",
+      "club": "CD Plaza Amador (PAN)",
+      "height": "1.80 m",
+      "caps": 107,
+      "goals": 9
+    },
+    {
+      "shirt": "16",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Andres Alberto Andrade Cedeño",
+      "nameOnShirt": "ANDRADE",
+      "club": "LASK Linz (AUT)",
+      "height": "1.87 m",
+      "caps": 50,
+      "goals": 1
+    },
+    {
+      "shirt": "17",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Jose Fajardo Nelson",
+      "nameOnShirt": "FAJARDO",
+      "club": "CD Universidad Católica (ECU)",
+      "height": "1.84 m",
+      "caps": 69,
+      "goals": 17
+    },
+    {
+      "shirt": "18",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Cecilio Alfonso Waterman Ruiz",
+      "nameOnShirt": "WATERMAN",
+      "club": "CD Universidad De Concepción (CHI)",
+      "height": "1.80 m",
+      "caps": 55,
+      "goals": 15
+    },
+    {
+      "shirt": "19",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Alberto Abdiel Quintero Medina",
+      "nameOnShirt": "QUINTERO",
+      "club": "CD Plaza Amador (PAN)",
+      "height": "1.65 m",
+      "caps": 141,
+      "goals": 7
+    },
+    {
+      "shirt": "20",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Anibal Casis Godoy Lemus",
+      "nameOnShirt": "GODOY",
+      "club": "San Diego FC (USA)",
+      "height": "1.84 m",
+      "caps": 159,
+      "goals": 4
+    },
+    {
+      "shirt": "21",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Cesar Augusto Yanis Velasco",
+      "nameOnShirt": "YANIS",
+      "club": "CD Cobresal (CHI)",
+      "height": "1.60 m",
+      "caps": 55,
+      "goals": 5
+    },
+    {
+      "shirt": "22",
+      "position": "GK",
+      "role": "Portero",
+      "name": "Orlando Mosquera",
+      "nameOnShirt": "MOSQUERA",
+      "club": "Al Fayha FC (KSA)",
+      "height": "1.91 m",
+      "caps": 49,
+      "goals": 0
+    },
+    {
+      "shirt": "23",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Michael Amir Murillo Bermudez",
+      "nameOnShirt": "A. MURILLO",
+      "club": "Beşiktaş JK (TUR)",
+      "height": "1.85 m",
+      "caps": 93,
+      "goals": 9
+    },
+    {
+      "shirt": "24",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Azarías Emmanuel Londoño Gonzalez",
+      "nameOnShirt": "LONDOÑO",
+      "club": "CD Universidad Católica (ECU)",
+      "height": "1.85 m",
+      "caps": 12,
+      "goals": 1
+    },
+    {
+      "shirt": "25",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Roderick Alonso Miller Molina",
+      "nameOnShirt": "MILLER",
+      "club": "Turan Tovuz (AZE)",
+      "height": "1.90 m",
+      "caps": 49,
+      "goals": 2
+    },
+    {
+      "shirt": "26",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Jorge Abdiel Gutierrez Cornejo",
+      "nameOnShirt": "GUTIÉRREZ",
+      "club": "Deportivo La Guaira (VEN)",
+      "height": "1.71 m",
+      "caps": 18,
+      "goals": 0
+    }
+  ],
+  "T34": [
+    {
+      "shirt": "1",
+      "position": "GK",
+      "role": "Portero",
+      "name": "Roberto Junior Fernandez Torres",
+      "nameOnShirt": "FERNÁNDEZ",
+      "club": "Cerro Porteño (PAR)",
+      "height": "1.91 m",
+      "caps": 30,
+      "goals": 0
+    },
+    {
+      "shirt": "2",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Victor Gustavo Velazquez Ramos",
+      "nameOnShirt": "VELÁZQUEZ",
+      "club": "Cerro Porteño (PAR)",
+      "height": "1.89 m",
+      "caps": 14,
+      "goals": 1
+    },
+    {
+      "shirt": "3",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Omar Federico Alderete Fernandez",
+      "nameOnShirt": "ALDERETE",
+      "club": "Sunderland AFC (ENG)",
+      "height": "1.90 m",
+      "caps": 37,
+      "goals": 3
+    },
+    {
+      "shirt": "4",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Juan Jose Caceres",
+      "nameOnShirt": "CÁCERES",
+      "club": "FC Dynamo Moscow (RUS)",
+      "height": "1.87 m",
+      "caps": 18,
+      "goals": 0
+    },
+    {
+      "shirt": "5",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Fabián Cornelio Balbuena González",
+      "nameOnShirt": "BALBUENA",
+      "club": "Grêmio FBPA (BRA)",
+      "height": "1.88 m",
+      "caps": 47,
+      "goals": 2
+    },
+    {
+      "shirt": "6",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Júnior Osmar Ignacio Alonso Mujica",
+      "nameOnShirt": "ALONSO",
+      "club": "Atlético Mineiro (BRA)",
+      "height": "1.84 m",
+      "caps": 72,
+      "goals": 3
+    },
+    {
+      "shirt": "7",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Ramón Sosa Acosta",
+      "nameOnShirt": "SOSA",
+      "club": "SE Palmeiras (BRA)",
+      "height": "1.78 m",
+      "caps": 30,
+      "goals": 1
+    },
+    {
+      "shirt": "8",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Diego Alexander Gomez Amarilla",
+      "nameOnShirt": "D. GÓMEZ",
+      "club": "Brighton & Hove Albion FC (ENG)",
+      "height": "1.83 m",
+      "caps": 25,
+      "goals": 3
+    },
+    {
+      "shirt": "9",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Arnaldo Antonio Sanabria Ayala",
+      "nameOnShirt": "SANABRIA",
+      "club": "US Cremonese (ITA)",
+      "height": "1.80 m",
+      "caps": 49,
+      "goals": 7
+    },
+    {
+      "shirt": "10",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Miguel Angel Almiron Rejala",
+      "nameOnShirt": "ALMIRÓN",
+      "club": "Atlanta United FC (USA)",
+      "height": "1.78 m",
+      "caps": 77,
+      "goals": 10
+    },
+    {
+      "shirt": "11",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Mauricio Magalhaes Prado",
+      "nameOnShirt": "MAURICIO",
+      "club": "SE Palmeiras (BRA)",
+      "height": "1.75 m",
+      "caps": 4,
+      "goals": 1
+    },
+    {
+      "shirt": "12",
+      "position": "GK",
+      "role": "Portero",
+      "name": "Orlando Daniel Gill Noldin",
+      "nameOnShirt": "O. GILL",
+      "club": "CA San Lorenzo (ARG)",
+      "height": "1.90 m",
+      "caps": 7,
+      "goals": 0
+    },
+    {
+      "shirt": "13",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Jose Maria Canale Dominguez",
+      "nameOnShirt": "CANALE",
+      "club": "CA Lanús (ARG)",
+      "height": "1.92 m",
+      "caps": 2,
+      "goals": 0
+    },
+    {
+      "shirt": "14",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Adrián Andrés Cubas",
+      "nameOnShirt": "CUBAS",
+      "club": "Vancouver Whitecaps FC (CAN)",
+      "height": "1.66 m",
+      "caps": 34,
+      "goals": 0
+    },
+    {
+      "shirt": "15",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Gustavo Raul Gómez Portillo",
+      "nameOnShirt": "G. GÓMEZ",
+      "club": "SE Palmeiras (BRA)",
+      "height": "1.79 m",
+      "caps": 90,
+      "goals": 4
+    },
+    {
+      "shirt": "16",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Damián Josue Bobadilla Benitez",
+      "nameOnShirt": "BOBADILLA",
+      "club": "São Paulo FC (BRA)",
+      "height": "1.80 m",
+      "caps": 20,
+      "goals": 1
+    },
+    {
+      "shirt": "17",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Alejandro Sebastian Romero Gamarra",
+      "nameOnShirt": "R. GAMARRA",
+      "club": "Al Ain FC (UAE)",
+      "height": "1.65 m",
+      "caps": 35,
+      "goals": 6
+    },
+    {
+      "shirt": "18",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Alex Adrian Arce Barrios",
+      "nameOnShirt": "ARCE",
+      "club": "CS Independiente Rivadavia (ARG)",
+      "height": "1.88 m",
+      "caps": 16,
+      "goals": 1
+    },
+    {
+      "shirt": "19",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Julio Cesar Enciso Espinola",
+      "nameOnShirt": "ENCISO",
+      "club": "RC Strasbourg (FRA)",
+      "height": "1.68 m",
+      "caps": 33,
+      "goals": 4
+    },
+    {
+      "shirt": "20",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Braian Oscar Ojeda Rodriguez",
+      "nameOnShirt": "OJEDA",
+      "club": "Orlando City SC (USA)",
+      "height": "1.73 m",
+      "caps": 17,
+      "goals": 0
+    },
+    {
+      "shirt": "21",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Gabriel Avalos Stumpfs",
+      "nameOnShirt": "AVALOS",
+      "club": "CA Independiente (ARG)",
+      "height": "1.85 m",
+      "caps": 23,
+      "goals": 2
+    },
+    {
+      "shirt": "22",
+      "position": "GK",
+      "role": "Portero",
+      "name": "Gastón Hernán Olveira Echeverria",
+      "nameOnShirt": "OLVEIRA",
+      "club": "Club Olimpia (PAR)",
+      "height": "1.91 m",
+      "caps": 1,
+      "goals": 0
+    },
+    {
+      "shirt": "23",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Matias Galarza Fonda",
+      "nameOnShirt": "GALARZA",
+      "club": "Atlanta United FC (USA)",
+      "height": "1.75 m",
+      "caps": 15,
+      "goals": 3
+    },
+    {
+      "shirt": "24",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Gustavo Ruben Caballero Gonzalez",
+      "nameOnShirt": "CABALLERO",
+      "club": "Portsmouth FC (ENG)",
+      "height": "1.89 m",
+      "caps": 2,
+      "goals": 1
+    },
+    {
+      "shirt": "25",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Isidro Miguel Pitta Saldivar",
+      "nameOnShirt": "PITTA",
+      "club": "Red Bull Bragantino (BRA)",
+      "height": "1.85 m",
+      "caps": 5,
+      "goals": 0
+    },
+    {
+      "shirt": "26",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Alexandro Maidana Mendieta",
+      "nameOnShirt": "MAIDANA",
+      "club": "CA Talleres (ARG)",
+      "height": "1.73 m",
+      "caps": 2,
+      "goals": 1
+    }
+  ],
+  "T35": [
+    {
+      "shirt": "1",
+      "position": "GK",
+      "role": "Portero",
+      "name": "Diogo Meireles Da Costa",
+      "nameOnShirt": "DIOGO COSTA",
+      "club": "FC Porto (POR)",
+      "height": "1.88 m",
+      "caps": 43,
+      "goals": 0
+    },
+    {
+      "shirt": "2",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Nélson Cabral Semedo",
+      "nameOnShirt": "N. SEMEDO",
+      "club": "Fenerbahçe SK (TUR)",
+      "height": "1.79 m",
+      "caps": 50,
+      "goals": 0
+    },
+    {
+      "shirt": "3",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Rúben Dos Santos Gato Alves Dias",
+      "nameOnShirt": "RÚBEN DIAS",
+      "club": "Manchester City FC (ENG)",
+      "height": "1.87 m",
+      "caps": 76,
+      "goals": 3
+    },
+    {
+      "shirt": "4",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Tomás Lemos Araújo",
+      "nameOnShirt": "TOMÁS A.",
+      "club": "SL Benca (POR)",
+      "height": "1.87 m",
+      "caps": 5,
+      "goals": 0
+    },
+    {
+      "shirt": "5",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "José Diogo Dalot Teixeira",
+      "nameOnShirt": "DALOT",
+      "club": "Manchester United FC (ENG)",
+      "height": "1.84 m",
+      "caps": 35,
+      "goals": 3
+    },
+    {
+      "shirt": "6",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Matheus Luiz Nunes",
+      "nameOnShirt": "MATHEUS N.",
+      "club": "Manchester City FC (ENG)",
+      "height": "1.83 m",
+      "caps": 20,
+      "goals": 2
+    },
+    {
+      "shirt": "7",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Cristiano Ronaldo Dos Santos Aveiro",
+      "nameOnShirt": "RONALDO",
+      "club": "Al Nassr FC (KSA)",
+      "height": "1.85 m",
+      "caps": 228,
+      "goals": 143
+    },
+    {
+      "shirt": "8",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Bruno Miguel Borges Fernandes",
+      "nameOnShirt": "B. FERNANDES",
+      "club": "Manchester United FC (ENG)",
+      "height": "1.83 m",
+      "caps": 89,
+      "goals": 29
+    },
+    {
+      "shirt": "9",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Gonçalo Matias Ramos",
+      "nameOnShirt": "G. RAMOS",
+      "club": "Paris Saint-Germain (FRA)",
+      "height": "1.85 m",
+      "caps": 25,
+      "goals": 10
+    },
+    {
+      "shirt": "10",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Bernardo Mota Veiga De Carvalho E Silva",
+      "nameOnShirt": "BERNARDO",
+      "club": "Manchester City FC (ENG)",
+      "height": "1.73 m",
+      "caps": 109,
+      "goals": 14
+    },
+    {
+      "shirt": "11",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "João Félix Sequeira",
+      "nameOnShirt": "JOÃO FÉLIX",
+      "club": "Al Nassr FC (KSA)",
+      "height": "1.79 m",
+      "caps": 54,
+      "goals": 12
+    },
+    {
+      "shirt": "12",
+      "position": "GK",
+      "role": "Portero",
+      "name": "José Pedro Malheiro De Sá",
+      "nameOnShirt": "JOSÉ SÁ",
+      "club": "Wolverhampton Wanderers FC (ENG)",
+      "height": "1.92 m",
+      "caps": 5,
+      "goals": 0
+    },
+    {
+      "shirt": "13",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Renato Da Palma Veiga",
+      "nameOnShirt": "RENATO VEIGA",
+      "club": "Villarreal CF (ESP)",
+      "height": "1.88 m",
+      "caps": 13,
+      "goals": 1
+    },
+    {
+      "shirt": "14",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Gonçalo Bernardo Inácio",
+      "nameOnShirt": "G. INÁCIO",
+      "club": "Sporting CP (POR)",
+      "height": "1.85 m",
+      "caps": 22,
+      "goals": 2
+    },
+    {
+      "shirt": "15",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "João Pedro Gonçalves Neves",
+      "nameOnShirt": "JOÃO NEVES",
+      "club": "Paris Saint-Germain (FRA)",
+      "height": "1.71 m",
+      "caps": 22,
+      "goals": 3
+    },
+    {
+      "shirt": "16",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Francisco António Machado Mota De Castro Trincão",
+      "nameOnShirt": "TRINCÃO",
+      "club": "Sporting CP (POR)",
+      "height": "1.84 m",
+      "caps": 18,
+      "goals": 3
+    },
+    {
+      "shirt": "17",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Rafael Alexandre Da Conceição Leão",
+      "nameOnShirt": "RAFA LEÃO",
+      "club": "AC Milan (ITA)",
+      "height": "1.88 m",
+      "caps": 44,
+      "goals": 5
+    },
+    {
+      "shirt": "18",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Pedro Lomba Neto",
+      "nameOnShirt": "NETO",
+      "club": "Chelsea FC (ENG)",
+      "height": "1.74 m",
+      "caps": 25,
+      "goals": 3
+    },
+    {
+      "shirt": "19",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Gonçalo Manuel Ganchinho Guedes",
+      "nameOnShirt": "G. GUEDES",
+      "club": "Real Sociedad (ESP)",
+      "height": "1.79 m",
+      "caps": 35,
+      "goals": 8
+    },
+    {
+      "shirt": "20",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "João Pedro Cavaco Cancelo",
+      "nameOnShirt": "JOÃO CANCELO",
+      "club": "FC Barcelona (ESP)",
+      "height": "1.73 m",
+      "caps": 68,
+      "goals": 12
+    },
+    {
+      "shirt": "21",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Rúben Diogo Da Silva Neves",
+      "nameOnShirt": "R. NEVES",
+      "club": "Al Hilal SC (KSA)",
+      "height": "1.83 m",
+      "caps": 67,
+      "goals": 1
+    },
+    {
+      "shirt": "22",
+      "position": "GK",
+      "role": "Portero",
+      "name": "Rui Tiago Dantas Da Silva",
+      "nameOnShirt": "RUI SILVA",
+      "club": "Sporting CP (POR)",
+      "height": "1.91 m",
+      "caps": 3,
+      "goals": 0
+    },
+    {
+      "shirt": "23",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Vitor Machado Ferreira",
+      "nameOnShirt": "VITINHA",
+      "club": "Paris Saint-Germain (FRA)",
+      "height": "1.70 m",
+      "caps": 38,
+      "goals": 0
+    },
+    {
+      "shirt": "24",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Samuel De Almeida Costa",
+      "nameOnShirt": "SAMU",
+      "club": "RCD Mallorca (ESP)",
+      "height": "1.85 m",
+      "caps": 6,
+      "goals": 0
+    },
+    {
+      "shirt": "25",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Nuno Alexandre Tavares Mendes",
+      "nameOnShirt": "N. MENDES",
+      "club": "Paris Saint-Germain (FRA)",
+      "height": "1.77 m",
+      "caps": 44,
+      "goals": 1
+    },
+    {
+      "shirt": "26",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Francisco Fernandes Da Conceição",
+      "nameOnShirt": "F. CONCEIÇÃO",
+      "club": "Juventus FC (ITA)",
+      "height": "1.66 m",
+      "caps": 17,
+      "goals": 4
+    }
+  ],
+  "T36": [
+    {
+      "shirt": "1",
+      "position": "GK",
+      "role": "Portero",
+      "name": "Mahmoud Ibrahim M Abunada",
+      "nameOnShirt": "ABUNADA",
+      "club": "Al Rayyan SC (QAT)",
+      "height": "1.85 m",
+      "caps": 7,
+      "goals": 0
+    },
+    {
+      "shirt": "2",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Pedro Miguel D D Correia",
+      "nameOnShirt": "PEDRO",
+      "club": "Al Sadd SC (QAT)",
+      "height": "1.80 m",
+      "caps": 112,
+      "goals": 4
+    },
+    {
+      "shirt": "3",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Lucas Michel Mendes",
+      "nameOnShirt": "L.MENDES",
+      "club": "Al Wakrah SC (QAT)",
+      "height": "1.79 m",
+      "caps": 28,
+      "goals": 2
+    },
+    {
+      "shirt": "4",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Gueye Seydinaissalaye",
+      "nameOnShirt": "GUEYE",
+      "club": "Al Arabi SC (QAT)",
+      "height": "1.78 m",
+      "caps": 5,
+      "goals": 0
+    },
+    {
+      "shirt": "5",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Jassem Gaber E Abdulsallam",
+      "nameOnShirt": "JASSEM",
+      "club": "Al Rayyan SC (QAT)",
+      "height": "1.81 m",
+      "caps": 38,
+      "goals": 1
+    },
+    {
+      "shirt": "6",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Abdelaziz Hatim A Mohamed",
+      "nameOnShirt": "A. AZIZ",
+      "club": "Al Rayyan SC (QAT)",
+      "height": "1.79 m",
+      "caps": 132,
+      "goals": 11
+    },
+    {
+      "shirt": "7",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Ahmed Alaaeldin B M Abdelmotaal",
+      "nameOnShirt": "ALAAELDIN",
+      "club": "Al Rayyan SC (QAT)",
+      "height": "1.79 m",
+      "caps": 78,
+      "goals": 10
+    },
+    {
+      "shirt": "8",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Edmilson Junior P Dasilva",
+      "nameOnShirt": "EDMILSON JR.",
+      "club": "Al Duhail SC (QAT)",
+      "height": "1.80 m",
+      "caps": 17,
+      "goals": 0
+    },
+    {
+      "shirt": "9",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Mohammed Muntari",
+      "nameOnShirt": "MUNTARI",
+      "club": "Al Gharafa SC (QAT)",
+      "height": "1.92 m",
+      "caps": 74,
+      "goals": 17
+    },
+    {
+      "shirt": "10",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Hasan Khalid H Alhaydos",
+      "nameOnShirt": "ALHAYDOS",
+      "club": "Al Sadd SC (QAT)",
+      "height": "1.74 m",
+      "caps": 190,
+      "goals": 39
+    },
+    {
+      "shirt": "11",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Akram Hassan A Y Afif",
+      "nameOnShirt": "AFIF",
+      "club": "Al Sadd SC (QAT)",
+      "height": "1.76 m",
+      "caps": 137,
+      "goals": 40
+    },
+    {
+      "shirt": "12",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Karim Boudiaf",
+      "nameOnShirt": "KARIM",
+      "club": "Al Duhail SC (QAT)",
+      "height": "1.90 m",
+      "caps": 129,
+      "goals": 6
+    },
+    {
+      "shirt": "13",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Ayoub Mohamed Aloui",
+      "nameOnShirt": "AYOUB",
+      "club": "Al Gharafa SC (QAT)",
+      "height": "1.81 m",
+      "caps": 8,
+      "goals": 0
+    },
+    {
+      "shirt": "14",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Homam Elamin M Ahmed",
+      "nameOnShirt": "HOMAM",
+      "club": "Cultural Leonesa (ESP)",
+      "height": "1.88 m",
+      "caps": 77,
+      "goals": 3
+    },
+    {
+      "shirt": "15",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Yusuf Abdurisag Yusuf",
+      "nameOnShirt": "YUSUF",
+      "club": "Al Wakrah SC (QAT)",
+      "height": "1.71 m",
+      "caps": 45,
+      "goals": 3
+    },
+    {
+      "shirt": "16",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Boualem Khoukhi",
+      "nameOnShirt": "KHOUKHI",
+      "club": "Al Sadd SC (QAT)",
+      "height": "1.85 m",
+      "caps": 129,
+      "goals": 21
+    },
+    {
+      "shirt": "17",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Ahmed Mohamed H K Alganehi",
+      "nameOnShirt": "A. ALGANEHI",
+      "club": "Al Gharafa SC (QAT)",
+      "height": "1.75 m",
+      "caps": 15,
+      "goals": 1
+    },
+    {
+      "shirt": "18",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Sultan Hussain M H Al-Brake",
+      "nameOnShirt": "SULTAN",
+      "club": "Al Duhail SC (QAT)",
+      "height": "1.78 m",
+      "caps": 20,
+      "goals": 0
+    },
+    {
+      "shirt": "19",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Almoez Ali Zainelabdeen M Abdulla",
+      "nameOnShirt": "ALMOEZ",
+      "club": "Al Duhail SC (QAT)",
+      "height": "1.80 m",
+      "caps": 128,
+      "goals": 58
+    },
+    {
+      "shirt": "20",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Ahmed Fathy M Abdoulla",
+      "nameOnShirt": "A. FATHY",
+      "club": "Al Arabi SC (QAT)",
+      "height": "1.71 m",
+      "caps": 55,
+      "goals": 0
+    },
+    {
+      "shirt": "21",
+      "position": "GK",
+      "role": "Portero",
+      "name": "Salah Zakaria M M Hassan",
+      "nameOnShirt": "SALAH",
+      "club": "Al Duhail SC (QAT)",
+      "height": "1.86 m",
+      "caps": 10,
+      "goals": 0
+    },
+    {
+      "shirt": "22",
+      "position": "GK",
+      "role": "Portero",
+      "name": "Meshaal Aissa M Barsham",
+      "nameOnShirt": "BARSHAM",
+      "club": "Al Sadd SC (QAT)",
+      "height": "1.80 m",
+      "caps": 60,
+      "goals": 0
+    },
+    {
+      "shirt": "23",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Assim Omer A Madibo",
+      "nameOnShirt": "MADIBO",
+      "club": "Al Wakrah SC (QAT)",
+      "height": "1.68 m",
+      "caps": 65,
+      "goals": 0
+    },
+    {
+      "shirt": "24",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Tahsin Mohammad Jamshid",
+      "nameOnShirt": "TAHSIN",
+      "club": "Al Duhail SC (QAT)",
+      "height": "1.66 m",
+      "caps": 5,
+      "goals": 0
+    },
+    {
+      "shirt": "25",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Alhashmi Alhussein A Mohialdin",
+      "nameOnShirt": "ALHASHMI",
+      "club": "Al Arabi SC (QAT)",
+      "height": "1.82 m",
+      "caps": 10,
+      "goals": 0
+    },
+    {
+      "shirt": "26",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Mohamed Naceur Manai",
+      "nameOnShirt": "MANAI",
+      "club": "Al Shamal SC (QAT)",
+      "height": "1.80 m",
+      "caps": 12,
+      "goals": 0
+    }
+  ],
+  "T37": [
+    {
+      "shirt": "1",
+      "position": "GK",
+      "role": "Portero",
+      "name": "Nawaf Dhahi F Alaqidi",
+      "nameOnShirt": "ALAQIDI",
+      "club": "Al Nassr FC (KSA)",
+      "height": "1.86 m",
+      "caps": 24,
+      "goals": 0
+    },
+    {
+      "shirt": "2",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Ali Hassan M Majrashi",
+      "nameOnShirt": "MAJRASHI",
+      "club": "Al Ahli FC (KSA)",
+      "height": "1.69 m",
+      "caps": 21,
+      "goals": 0
+    },
+    {
+      "shirt": "3",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Ali Mohammed A Lajami",
+      "nameOnShirt": "LAJAMI",
+      "club": "Al Hilal SC (KSA)",
+      "height": "1.77 m",
+      "caps": 25,
+      "goals": 1
+    },
+    {
+      "shirt": "4",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Abdulelah Ali A Alamri",
+      "nameOnShirt": "ALAMRI",
+      "club": "Al Nassr FC (KSA)",
+      "height": "1.85 m",
+      "caps": 45,
+      "goals": 2
+    },
+    {
+      "shirt": "5",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Hassan Mohammed O Altambakti",
+      "nameOnShirt": "ALTAMBAKTI",
+      "club": "Al Hilal SC (KSA)",
+      "height": "1.83 m",
+      "caps": 55,
+      "goals": 1
+    },
+    {
+      "shirt": "6",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Nasser Essa S Aldawsari",
+      "nameOnShirt": "NASSER",
+      "club": "Al Hilal SC (KSA)",
+      "height": "1.78 m",
+      "caps": 48,
+      "goals": 1
+    },
+    {
+      "shirt": "7",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Musab Fahad Z Aljuwayr",
+      "nameOnShirt": "MUSAB",
+      "club": "Al Qadsiah FC (KSA)",
+      "height": "1.75 m",
+      "caps": 38,
+      "goals": 6
+    },
+    {
+      "shirt": "8",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Aiman Yahya Y Ahmed",
+      "nameOnShirt": "AIMAN",
+      "club": "Al Nassr FC (KSA)",
+      "height": "1.73 m",
+      "caps": 26,
+      "goals": 0
+    },
+    {
+      "shirt": "9",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Feras Tariq N Albrikan",
+      "nameOnShirt": "FERAS",
+      "club": "Al Ahli FC (KSA)",
+      "height": "1.85 m",
+      "caps": 73,
+      "goals": 16
+    },
+    {
+      "shirt": "10",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Salem Mohammed S Aldawsari",
+      "nameOnShirt": "SALEM",
+      "club": "Al Hilal SC (KSA)",
+      "height": "1.73 m",
+      "caps": 112,
+      "goals": 27
+    },
+    {
+      "shirt": "11",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Saleh Khalid M Alshehri",
+      "nameOnShirt": "ALSHEHRI",
+      "club": "Al Ittihad (KSA)",
+      "height": "1.84 m",
+      "caps": 59,
+      "goals": 17
+    },
+    {
+      "shirt": "12",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Saud Abdullah S Abdulhamid",
+      "nameOnShirt": "SAUD",
+      "club": "RC Lens (FRA)",
+      "height": "1.72 m",
+      "caps": 56,
+      "goals": 1
+    },
+    {
+      "shirt": "13",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Nawaf Meshari M Bu Washl",
+      "nameOnShirt": "NAWAF",
+      "club": "Al Nassr FC (KSA)",
+      "height": "1.73 m",
+      "caps": 28,
+      "goals": 0
+    },
+    {
+      "shirt": "14",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Hassan Kadish Y Mahbub",
+      "nameOnShirt": "KADISH",
+      "club": "Al Ittihad (KSA)",
+      "height": "1.79 m",
+      "caps": 21,
+      "goals": 2
+    },
+    {
+      "shirt": "15",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Abdullah Mohammed H Alkhaibari",
+      "nameOnShirt": "ALKHAIBARI",
+      "club": "Al Nassr FC (KSA)",
+      "height": "1.75 m",
+      "caps": 43,
+      "goals": 0
+    },
+    {
+      "shirt": "16",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Ziyad Mubarak E Aljohani",
+      "nameOnShirt": "ZIYAD",
+      "club": "Al Ahli FC (KSA)",
+      "height": "1.80 m",
+      "caps": 12,
+      "goals": 0
+    },
+    {
+      "shirt": "17",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Khalid Essa M Alghannam",
+      "nameOnShirt": "KHALID",
+      "club": "Al Ettifaq FC (KSA)",
+      "height": "1.71 m",
+      "caps": 7,
+      "goals": 0
+    },
+    {
+      "shirt": "18",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Ala Mohsen A Alhajji",
+      "nameOnShirt": "ALHAJJI",
+      "club": "Neom SC (KSA)",
+      "height": "1.78 m",
+      "caps": 4,
+      "goals": 0
+    },
+    {
+      "shirt": "19",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Abdullah Abdulrahman A Alhamddan",
+      "nameOnShirt": "ALHAMDDAN",
+      "club": "Al Nassr FC (KSA)",
+      "height": "1.86 m",
+      "caps": 53,
+      "goals": 13
+    },
+    {
+      "shirt": "20",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Sultan Ahmed M Mandash",
+      "nameOnShirt": "MANDASH",
+      "club": "Al Hilal SC (KSA)",
+      "height": "1.72 m",
+      "caps": 7,
+      "goals": 2
+    },
+    {
+      "shirt": "21",
+      "position": "GK",
+      "role": "Portero",
+      "name": "Mohammed Khalil I Alowais",
+      "nameOnShirt": "ALOWAIS",
+      "club": "Al Ula Saudi FC (KSA)",
+      "height": "1.85 m",
+      "caps": 66,
+      "goals": 0
+    },
+    {
+      "shirt": "22",
+      "position": "GK",
+      "role": "Portero",
+      "name": "Ahmed Ali H Alkassar",
+      "nameOnShirt": "ALKASSAR",
+      "club": "Al Qadsiah FC (KSA)",
+      "height": "1.78 m",
+      "caps": 9,
+      "goals": 0
+    },
+    {
+      "shirt": "23",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Mohamed Ibrahim A Kanno",
+      "nameOnShirt": "KANNO",
+      "club": "Al Hilal SC (KSA)",
+      "height": "1.91 m",
+      "caps": 80,
+      "goals": 8
+    },
+    {
+      "shirt": "24",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Moteb Saad S Alharbi",
+      "nameOnShirt": "MOTEB",
+      "club": "Al Hilal SC (KSA)",
+      "height": "1.77 m",
+      "caps": 14,
+      "goals": 0
+    },
+    {
+      "shirt": "25",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Jehad Abdullatif A Thikri",
+      "nameOnShirt": "JEHAD",
+      "club": "Al Qadsiah FC (KSA)",
+      "height": "1.84 m",
+      "caps": 8,
+      "goals": 0
+    },
+    {
+      "shirt": "26",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Mohammed Waheeb S Abu Alshamat",
+      "nameOnShirt": "MOHAMMED",
+      "club": "Al Qadsiah FC (KSA)",
+      "height": "1.70 m",
+      "caps": 9,
+      "goals": 0
+    }
+  ],
+  "T38": [
+    {
+      "shirt": "1",
+      "position": "GK",
+      "role": "Portero",
+      "name": "Angus Fraser James Gunn",
+      "nameOnShirt": "GUNN",
+      "club": "Nottingham Forest FC (ENG)",
+      "height": "1.96 m",
+      "caps": 23,
+      "goals": 0
+    },
+    {
+      "shirt": "2",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Aaron Buchanan Hickey",
+      "nameOnShirt": "HICKEY",
+      "club": "Brentford FC (ENG)",
+      "height": "1.85 m",
+      "caps": 22,
+      "goals": 0
+    },
+    {
+      "shirt": "3",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Andrew Henry Robertson",
+      "nameOnShirt": "ROBERTSON",
+      "club": "Liverpool FC (ENG)",
+      "height": "1.78 m",
+      "caps": 95,
+      "goals": 4
+    },
+    {
+      "shirt": "4",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Scott Francis Mctominay",
+      "nameOnShirt": "MCTOMINAY",
+      "club": "SSC Napoli (ITA)",
+      "height": "1.93 m",
+      "caps": 71,
+      "goals": 15
+    },
+    {
+      "shirt": "5",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Grant Campbell Hanley",
+      "nameOnShirt": "HANLEY",
+      "club": "Hibernian FC (SCO)",
+      "height": "1.88 m",
+      "caps": 69,
+      "goals": 2
+    },
+    {
+      "shirt": "6",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Kieran Tierney",
+      "nameOnShirt": "TIERNEY",
+      "club": "Celtic FC (SCO)",
+      "height": "1.80 m",
+      "caps": 56,
+      "goals": 2
+    },
+    {
+      "shirt": "7",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "John Mcginn",
+      "nameOnShirt": "MCGINN",
+      "club": "Aston Villa FC (ENG)",
+      "height": "1.78 m",
+      "caps": 87,
+      "goals": 21
+    },
+    {
+      "shirt": "8",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Tyler Robert Fletcher",
+      "nameOnShirt": "FLETCHER",
+      "club": "Manchester United FC (ENG)",
+      "height": "1.83 m",
+      "caps": 2,
+      "goals": 0
+    },
+    {
+      "shirt": "9",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Lyndon John Dykes",
+      "nameOnShirt": "DYKES",
+      "club": "Charlton Athletic FC (ENG)",
+      "height": "1.88 m",
+      "caps": 52,
+      "goals": 10
+    },
+    {
+      "shirt": "10",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Che Sac Everton Fred Adams",
+      "nameOnShirt": "ADAMS",
+      "club": "Torino FC (ITA)",
+      "height": "1.75 m",
+      "caps": 48,
+      "goals": 13
+    },
+    {
+      "shirt": "11",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Ryan Christie",
+      "nameOnShirt": "CHRISTIE",
+      "club": "AFC Bournemouth (ENG)",
+      "height": "1.78 m",
+      "caps": 69,
+      "goals": 10
+    },
+    {
+      "shirt": "12",
+      "position": "GK",
+      "role": "Portero",
+      "name": "Liam Patrick Kelly",
+      "nameOnShirt": "KELLY",
+      "club": "Rangers FC (SCO)",
+      "height": "1.84 m",
+      "caps": 3,
+      "goals": 0
+    },
+    {
+      "shirt": "13",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Jack William Hendry",
+      "nameOnShirt": "HENDRY",
+      "club": "Al Ettifaq FC (KSA)",
+      "height": "1.92 m",
+      "caps": 39,
+      "goals": 3
+    },
+    {
+      "shirt": "14",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Ross Cameron Stewart",
+      "nameOnShirt": "STEWART",
+      "club": "Southampton FC (ENG)",
+      "height": "1.88 m",
+      "caps": 3,
+      "goals": 0
+    },
+    {
+      "shirt": "15",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "John Francis Souttar",
+      "nameOnShirt": "SOUTTAR",
+      "club": "Rangers FC (SCO)",
+      "height": "1.86 m",
+      "caps": 24,
+      "goals": 2
+    },
+    {
+      "shirt": "16",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Dominic John Hyam",
+      "nameOnShirt": "HYAM",
+      "club": "Wrexham AFC (WAL)",
+      "height": "1.88 m",
+      "caps": 4,
+      "goals": 0
+    },
+    {
+      "shirt": "17",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Ben Gannon Doak",
+      "nameOnShirt": "GANNON DOAK",
+      "club": "AFC Bournemouth (ENG)",
+      "height": "1.73 m",
+      "caps": 15,
+      "goals": 1
+    },
+    {
+      "shirt": "18",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "George David Eric Hirst",
+      "nameOnShirt": "HIRST",
+      "club": "Ipswich Town FC (ENG)",
+      "height": "1.91 m",
+      "caps": 10,
+      "goals": 1
+    },
+    {
+      "shirt": "19",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Lewis Ferguson",
+      "nameOnShirt": "FERGUSON",
+      "club": "Bologna FC (ITA)",
+      "height": "1.81 m",
+      "caps": 25,
+      "goals": 1
+    },
+    {
+      "shirt": "20",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Lawrence Shankland",
+      "nameOnShirt": "SHANKLAND",
+      "club": "Heart Of Midlothian FC (SCO)",
+      "height": "1.85 m",
+      "caps": 21,
+      "goals": 7
+    },
+    {
+      "shirt": "21",
+      "position": "GK",
+      "role": "Portero",
+      "name": "Craig Sinclair Gordon",
+      "nameOnShirt": "GORDON",
+      "club": "Heart Of Midlothian FC (SCO)",
+      "height": "1.93 m",
+      "caps": 84,
+      "goals": 0
+    },
+    {
+      "shirt": "22",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Nathan Kenneth Patterson",
+      "nameOnShirt": "PATTERSON",
+      "club": "Everton FC (ENG)",
+      "height": "1.83 m",
+      "caps": 27,
+      "goals": 1
+    },
+    {
+      "shirt": "23",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Kenneth Mclean",
+      "nameOnShirt": "MCLEAN",
+      "club": "Norwich City FC (ENG)",
+      "height": "1.83 m",
+      "caps": 59,
+      "goals": 3
+    },
+    {
+      "shirt": "24",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Anthony Ralston",
+      "nameOnShirt": "RALSTON",
+      "club": "Celtic FC (SCO)",
+      "height": "1.78 m",
+      "caps": 27,
+      "goals": 1
+    },
+    {
+      "shirt": "25",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Findlay Kenneth Curtis",
+      "nameOnShirt": "CURTIS",
+      "club": "Kilmarnock FC (SCO)",
+      "height": "1.80 m",
+      "caps": 4,
+      "goals": 1
+    },
+    {
+      "shirt": "26",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Scott Fraser Mckenna",
+      "nameOnShirt": "MCKENNA",
+      "club": "GNK Dinamo Zagreb (CRO)",
+      "height": "1.89 m",
+      "caps": 50,
+      "goals": 1
+    }
+  ],
+  "T39": [
+    {
+      "shirt": "1",
+      "position": "GK",
+      "role": "Portero",
+      "name": "Yehvann Djibril Victor Diouf",
+      "nameOnShirt": "Y. DIOUF",
+      "club": "OGC Nice (FRA)",
+      "height": "1.88 m",
+      "caps": 2,
+      "goals": 0
+    },
+    {
+      "shirt": "2",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Mamadou Sarr",
+      "nameOnShirt": "SARR",
+      "club": "Chelsea FC (ENG)",
+      "height": "1.94 m",
+      "caps": 8,
+      "goals": 0
+    },
+    {
+      "shirt": "3",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Kalidou Koulibaly",
+      "nameOnShirt": "KOULIBALY",
+      "club": "Al Hilal SC (KSA)",
+      "height": "1.86 m",
+      "caps": 105,
+      "goals": 2
+    },
+    {
+      "shirt": "4",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Abdoulaye Seck",
+      "nameOnShirt": "SECK",
+      "club": "Maccabi Haifa FC (ISR)",
+      "height": "1.92 m",
+      "caps": 23,
+      "goals": 4
+    },
+    {
+      "shirt": "5",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Idrissa Gana Gueye",
+      "nameOnShirt": "GANA",
+      "club": "Everton FC (ENG)",
+      "height": "1.74 m",
+      "caps": 137,
+      "goals": 7
+    },
+    {
+      "shirt": "6",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Ismaila Pathe Ciss",
+      "nameOnShirt": "P.I. CISS",
+      "club": "Rayo Vallecano (ESP)",
+      "height": "1.86 m",
+      "caps": 32,
+      "goals": 0
+    },
+    {
+      "shirt": "7",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Assane Diao",
+      "nameOnShirt": "A. DIAO",
+      "club": "Como (ITA)",
+      "height": "1.85 m",
+      "caps": 5,
+      "goals": 0
+    },
+    {
+      "shirt": "8",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Lamine Camara",
+      "nameOnShirt": "LAMINE",
+      "club": "AS Monaco (FRA)",
+      "height": "1.74 m",
+      "caps": 46,
+      "goals": 7
+    },
+    {
+      "shirt": "9",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Cheikh Ahmadou Bamba Mbacke Dieng",
+      "nameOnShirt": "BAMBA",
+      "club": "FC Lorient (FRA)",
+      "height": "1.78 m",
+      "caps": 24,
+      "goals": 2
+    },
+    {
+      "shirt": "10",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Sadio Mane",
+      "nameOnShirt": "MANÉ",
+      "club": "Al Nassr FC (KSA)",
+      "height": "1.75 m",
+      "caps": 131,
+      "goals": 54
+    },
+    {
+      "shirt": "11",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Nicolas Jackson",
+      "nameOnShirt": "N. JACKSON",
+      "club": "FC Bayern München (GER)",
+      "height": "1.87 m",
+      "caps": 35,
+      "goals": 8
+    },
+    {
+      "shirt": "12",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Pape Cherif Ndiaye",
+      "nameOnShirt": "CHÉRIF",
+      "club": "Samsunspor (TUR)",
+      "height": "1.90 m",
+      "caps": 19,
+      "goals": 4
+    },
+    {
+      "shirt": "13",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Iliman Cheikh Baroy Ndiaye",
+      "nameOnShirt": "NDIAYE",
+      "club": "Everton FC (ENG)",
+      "height": "1.80 m",
+      "caps": 42,
+      "goals": 4
+    },
+    {
+      "shirt": "14",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Ismail Joshua Jakobs",
+      "nameOnShirt": "JAKOBS",
+      "club": "Galatasaray SK (TUR)",
+      "height": "1.84 m",
+      "caps": 31,
+      "goals": 0
+    },
+    {
+      "shirt": "15",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Krepin Diatta",
+      "nameOnShirt": "DIATTA",
+      "club": "AS Monaco (FRA)",
+      "height": "1.73 m",
+      "caps": 63,
+      "goals": 2
+    },
+    {
+      "shirt": "16",
+      "position": "GK",
+      "role": "Portero",
+      "name": "Edouard Osoque Mendy",
+      "nameOnShirt": "MENDY",
+      "club": "Al Ahli FC (KSA)",
+      "height": "1.94 m",
+      "caps": 59,
+      "goals": 0
+    },
+    {
+      "shirt": "17",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Pape Matar Sarr",
+      "nameOnShirt": "P.M. SARR",
+      "club": "Tottenham Hotspur FC (ENG)",
+      "height": "1.85 m",
+      "caps": 41,
+      "goals": 4
+    },
+    {
+      "shirt": "18",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Ismaila Sarr",
+      "nameOnShirt": "ISMAÏLA",
+      "club": "Crystal Palace FC (ENG)",
+      "height": "1.85 m",
+      "caps": 85,
+      "goals": 19
+    },
+    {
+      "shirt": "19",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Moussa Niakhate",
+      "nameOnShirt": "NIAKHATÉ",
+      "club": "Olympique Lyonnais (FRA)",
+      "height": "1.90 m",
+      "caps": 33,
+      "goals": 0
+    },
+    {
+      "shirt": "20",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Ibrahim Mbaye",
+      "nameOnShirt": "I. MBAYE",
+      "club": "Paris Saint-Germain (FRA)",
+      "height": "1.75 m",
+      "caps": 12,
+      "goals": 4
+    },
+    {
+      "shirt": "21",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Mouhamadou Habib Mbacke Diarra",
+      "nameOnShirt": "H. DIARRA",
+      "club": "Sunderland AFC (ENG)",
+      "height": "1.78 m",
+      "caps": 22,
+      "goals": 4
+    },
+    {
+      "shirt": "22",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Bara Sapoko Ndiaye",
+      "nameOnShirt": "BARA",
+      "club": "FC Bayern München (GER)",
+      "height": "1.80 m",
+      "caps": 1,
+      "goals": 0
+    },
+    {
+      "shirt": "23",
+      "position": "GK",
+      "role": "Portero",
+      "name": "Mory Diaw",
+      "nameOnShirt": "DIAW",
+      "club": "Le Havre AC (FRA)",
+      "height": "1.97 m",
+      "caps": 5,
+      "goals": 0
+    },
+    {
+      "shirt": "24",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Antoine Alpha Mendy",
+      "nameOnShirt": "A. MENDY",
+      "club": "OGC Nice (FRA)",
+      "height": "1.87 m",
+      "caps": 7,
+      "goals": 0
+    },
+    {
+      "shirt": "25",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "El Hadji Malick Diouf",
+      "nameOnShirt": "DIOUF",
+      "club": "West Ham United FC (ENG)",
+      "height": "1.77 m",
+      "caps": 21,
+      "goals": 1
+    },
+    {
+      "shirt": "26",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Pape Alassane Gueye",
+      "nameOnShirt": "GUEYE",
+      "club": "Villarreal CF (ESP)",
+      "height": "1.89 m",
+      "caps": 43,
+      "goals": 6
+    }
+  ],
+  "T40": [
+    {
+      "shirt": "1",
+      "position": "GK",
+      "role": "Portero",
+      "name": "Ronwen Hayden Williams",
+      "nameOnShirt": "WILLIAMS",
+      "club": "Mamelodi Sundowns FC (RSA)",
+      "height": "1.84 m",
+      "caps": 65,
+      "goals": 0
+    },
+    {
+      "shirt": "2",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Tholo Thabang Matuludi",
+      "nameOnShirt": "MATULUDI",
+      "club": "Polokwane City FC (RSA)",
+      "height": "1.89 m",
+      "caps": 3,
+      "goals": 0
+    },
+    {
+      "shirt": "3",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Khulumani Ndamane",
+      "nameOnShirt": "NDAMANE",
+      "club": "Mamelodi Sundowns FC (RSA)",
+      "height": "1.83 m",
+      "caps": 5,
+      "goals": 0
+    },
+    {
+      "shirt": "4",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Teboho Mokoena",
+      "nameOnShirt": "MOKOENA",
+      "club": "Mamelodi Sundowns FC (RSA)",
+      "height": "1.77 m",
+      "caps": 58,
+      "goals": 9
+    },
+    {
+      "shirt": "5",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Thalente Wandile Mbatha",
+      "nameOnShirt": "MBATHA",
+      "club": "Orlando Pirates FC (RSA)",
+      "height": "1.79 m",
+      "caps": 17,
+      "goals": 3
+    },
+    {
+      "shirt": "6",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Aubrey Maphosa Modiba",
+      "nameOnShirt": "MODIBA",
+      "club": "Mamelodi Sundowns FC (RSA)",
+      "height": "1.71 m",
+      "caps": 49,
+      "goals": 3
+    },
+    {
+      "shirt": "7",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Oswin Reagan Appollis",
+      "nameOnShirt": "APPOLLIS",
+      "club": "Orlando Pirates FC (RSA)",
+      "height": "1.71 m",
+      "caps": 28,
+      "goals": 8
+    },
+    {
+      "shirt": "8",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Tshepang Moremi",
+      "nameOnShirt": "MOREMI",
+      "club": "Orlando Pirates FC (RSA)",
+      "height": "1.69 m",
+      "caps": 10,
+      "goals": 1
+    },
+    {
+      "shirt": "9",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Lyle Brent Foster",
+      "nameOnShirt": "FOSTER",
+      "club": "Burnley FC (ENG)",
+      "height": "1.85 m",
+      "caps": 32,
+      "goals": 10
+    },
+    {
+      "shirt": "10",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Relebohile Mofokeng",
+      "nameOnShirt": "MOFOKENG",
+      "club": "Orlando Pirates FC (RSA)",
+      "height": "1.68 m",
+      "caps": 14,
+      "goals": 1
+    },
+    {
+      "shirt": "11",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Themba Zwane",
+      "nameOnShirt": "ZWANE",
+      "club": "Mamelodi Sundowns FC (RSA)",
+      "height": "1.78 m",
+      "caps": 56,
+      "goals": 12
+    },
+    {
+      "shirt": "12",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Thapelo Maseko",
+      "nameOnShirt": "MASEKO",
+      "club": "AEL Limassol (CYP)",
+      "height": "1.78 m",
+      "caps": 8,
+      "goals": 1
+    },
+    {
+      "shirt": "13",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Sphephelo S'miso Sithole",
+      "nameOnShirt": "SITHOLE",
+      "club": "CD Tondela (POR)",
+      "height": "1.97 m",
+      "caps": 30,
+      "goals": 1
+    },
+    {
+      "shirt": "14",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Mbekezeli Mfanukile Mbokazi",
+      "nameOnShirt": "MBOKAZI",
+      "club": "Chicago Fire FC (USA)",
+      "height": "1.77 m",
+      "caps": 11,
+      "goals": 1
+    },
+    {
+      "shirt": "15",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Iqraam Rayners",
+      "nameOnShirt": "RAYNERS",
+      "club": "Mamelodi Sundowns FC (RSA)",
+      "height": "1.74 m",
+      "caps": 21,
+      "goals": 5
+    },
+    {
+      "shirt": "16",
+      "position": "GK",
+      "role": "Portero",
+      "name": "Sipho Justin Chaine",
+      "nameOnShirt": "CHAINE",
+      "club": "Orlando Pirates FC (RSA)",
+      "height": "1.86 m",
+      "caps": 4,
+      "goals": 0
+    },
+    {
+      "shirt": "17",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Sekotori Evidence Makgopa",
+      "nameOnShirt": "MAKGPA",
+      "club": "Orlando Pirates FC (RSA)",
+      "height": "1.83 m",
+      "caps": 28,
+      "goals": 6
+    },
+    {
+      "shirt": "18",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Samukele Alucious Kabini",
+      "nameOnShirt": "KABINI",
+      "club": "Molde FK (NOR)",
+      "height": "1.79 m",
+      "caps": 6,
+      "goals": 0
+    },
+    {
+      "shirt": "19",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Nkosinathi Emmanuel Sibisi",
+      "nameOnShirt": "SIBISI",
+      "club": "Orlando Pirates FC (RSA)",
+      "height": "1.72 m",
+      "caps": 22,
+      "goals": 0
+    },
+    {
+      "shirt": "20",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Khuliso Johnson Mudau",
+      "nameOnShirt": "MUDAU",
+      "club": "Mamelodi Sundowns FC (RSA)",
+      "height": "1.79 m",
+      "caps": 35,
+      "goals": 1
+    },
+    {
+      "shirt": "21",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Ime Daniel Okon",
+      "nameOnShirt": "OKON",
+      "club": "Hannover 96 (GER)",
+      "height": "1.87 m",
+      "caps": 9,
+      "goals": 1
+    },
+    {
+      "shirt": "22",
+      "position": "GK",
+      "role": "Portero",
+      "name": "Stuart Ricardo Goss",
+      "nameOnShirt": "GOSS",
+      "club": "Siwelele FC (RSA)",
+      "height": "1.81 m",
+      "caps": 7,
+      "goals": 0
+    },
+    {
+      "shirt": "23",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Jayden Oswin Adams",
+      "nameOnShirt": "ADAMS",
+      "club": "Mamelodi Sundowns FC (RSA)",
+      "height": "1.77 m",
+      "caps": 9,
+      "goals": 2
+    },
+    {
+      "shirt": "24",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Olwethu Mpilwenhle Makhanya",
+      "nameOnShirt": "MAKHANYA",
+      "club": "Philadelphia Union (USA)",
+      "height": "1.85 m",
+      "caps": 1,
+      "goals": 0
+    },
+    {
+      "shirt": "25",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Kamogelo Michael Sebelebele",
+      "nameOnShirt": "SEBELEBELE",
+      "club": "Orlando Pirates FC (RSA)",
+      "height": "1.66 m",
+      "caps": 9,
+      "goals": 1
+    },
+    {
+      "shirt": "26",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Bradley Paul Cross",
+      "nameOnShirt": "CROSS",
+      "club": "Kaizer Chiefs FC (RSA)",
+      "height": "1.75 m",
+      "caps": 1,
+      "goals": 0
+    }
+  ],
+  "T41": [
+    {
+      "shirt": "1",
+      "position": "GK",
+      "role": "Portero",
+      "name": "David Raya Martín",
+      "nameOnShirt": "RAYA",
+      "club": "Arsenal FC (ENG)",
+      "height": "1.86 m",
+      "caps": 13,
+      "goals": 0
+    },
+    {
+      "shirt": "2",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Marc Pubill Pages",
+      "nameOnShirt": "MARC PUBILL",
+      "club": "Atlético De Madrid (ESP)",
+      "height": "1.91 m",
+      "caps": 2,
+      "goals": 0
+    },
+    {
+      "shirt": "3",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Alejandro Grimaldo García",
+      "nameOnShirt": "GRIMALDO",
+      "club": "Bayer 04 Leverkusen (GER)",
+      "height": "1.71 m",
+      "caps": 14,
+      "goals": 0
+    },
+    {
+      "shirt": "4",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Eric García Martret",
+      "nameOnShirt": "ERIC",
+      "club": "FC Barcelona (ESP)",
+      "height": "1.83 m",
+      "caps": 21,
+      "goals": 0
+    },
+    {
+      "shirt": "5",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Marcos Llorente Moreno",
+      "nameOnShirt": "M. LLORENTE",
+      "club": "Atlético De Madrid (ESP)",
+      "height": "1.83 m",
+      "caps": 25,
+      "goals": 0
+    },
+    {
+      "shirt": "6",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Mikel Merino Zazón",
+      "nameOnShirt": "MERINO",
+      "club": "Arsenal FC (ENG)",
+      "height": "1.88 m",
+      "caps": 44,
+      "goals": 10
+    },
+    {
+      "shirt": "7",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Ferran Torres García",
+      "nameOnShirt": "FERRAN",
+      "club": "FC Barcelona (ESP)",
+      "height": "1.83 m",
+      "caps": 58,
+      "goals": 24
+    },
+    {
+      "shirt": "8",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Fabian Ruiz Peña",
+      "nameOnShirt": "FABIÁN",
+      "club": "Paris Saint-Germain (FRA)",
+      "height": "1.88 m",
+      "caps": 43,
+      "goals": 6
+    },
+    {
+      "shirt": "9",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Pablo Paez Gavira",
+      "nameOnShirt": "GAVI",
+      "club": "FC Barcelona (ESP)",
+      "height": "1.73 m",
+      "caps": 31,
+      "goals": 5
+    },
+    {
+      "shirt": "10",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Daniel Olmo Carvajal",
+      "nameOnShirt": "OLMO",
+      "club": "FC Barcelona (ESP)",
+      "height": "1.79 m",
+      "caps": 51,
+      "goals": 12
+    },
+    {
+      "shirt": "11",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Yeremy Jesús Pino Santos",
+      "nameOnShirt": "YEREMY",
+      "club": "Crystal Palace FC (ENG)",
+      "height": "1.74 m",
+      "caps": 23,
+      "goals": 4
+    },
+    {
+      "shirt": "12",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Pedro Antonio Porro Sauceda",
+      "nameOnShirt": "PEDRO PORRO",
+      "club": "Tottenham Hotspur FC (ENG)",
+      "height": "1.73 m",
+      "caps": 18,
+      "goals": 0
+    },
+    {
+      "shirt": "13",
+      "position": "GK",
+      "role": "Portero",
+      "name": "Joan Garcia Pons",
+      "nameOnShirt": "JOAN GARCIA",
+      "club": "FC Barcelona (ESP)",
+      "height": "1.94 m",
+      "caps": 2,
+      "goals": 0
+    },
+    {
+      "shirt": "14",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Aymeric Laporte Fevre",
+      "nameOnShirt": "LAPORTE",
+      "club": "Athletic Club (ESP)",
+      "height": "1.91 m",
+      "caps": 47,
+      "goals": 2
+    },
+    {
+      "shirt": "15",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Alejandro Baena Rodríguez",
+      "nameOnShirt": "ALEX B.",
+      "club": "Atlético De Madrid (ESP)",
+      "height": "1.72 m",
+      "caps": 17,
+      "goals": 2
+    },
+    {
+      "shirt": "16",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Rodrigo Hernández Cascante",
+      "nameOnShirt": "RODRIGO",
+      "club": "Manchester City FC (ENG)",
+      "height": "1.90 m",
+      "caps": 63,
+      "goals": 4
+    },
+    {
+      "shirt": "17",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Nicholas Williams Arthuer",
+      "nameOnShirt": "WILLIAMS JR.",
+      "club": "Athletic Club (ESP)",
+      "height": "1.81 m",
+      "caps": 31,
+      "goals": 6
+    },
+    {
+      "shirt": "18",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Martin Zubimendi Ibañez",
+      "nameOnShirt": "ZUBIMENDI",
+      "club": "Arsenal FC (ENG)",
+      "height": "1.81 m",
+      "caps": 26,
+      "goals": 3
+    },
+    {
+      "shirt": "19",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Lamine Yamal Nasraoui Ebana",
+      "nameOnShirt": "LAMINE YAMAL",
+      "club": "FC Barcelona (ESP)",
+      "height": "1.83 m",
+      "caps": 26,
+      "goals": 6
+    },
+    {
+      "shirt": "20",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Pedro González López",
+      "nameOnShirt": "PEDRI",
+      "club": "FC Barcelona (ESP)",
+      "height": "1.74 m",
+      "caps": 42,
+      "goals": 6
+    },
+    {
+      "shirt": "21",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Mikel Oyarzabal Ugarte",
+      "nameOnShirt": "OYARZABAL",
+      "club": "Real Sociedad (ESP)",
+      "height": "1.81 m",
+      "caps": 54,
+      "goals": 25
+    },
+    {
+      "shirt": "22",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Pau Cubarsi I Paredes",
+      "nameOnShirt": "CUBARSÍ",
+      "club": "FC Barcelona (ESP)",
+      "height": "1.83 m",
+      "caps": 13,
+      "goals": 0
+    },
+    {
+      "shirt": "23",
+      "position": "GK",
+      "role": "Portero",
+      "name": "Unai Simón Mendibil",
+      "nameOnShirt": "UNAI SIMÓN",
+      "club": "Athletic Club (ESP)",
+      "height": "1.90 m",
+      "caps": 59,
+      "goals": 0
+    },
+    {
+      "shirt": "24",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Marc Cucurella Saseta",
+      "nameOnShirt": "CUCURELLA",
+      "club": "Chelsea FC (ENG)",
+      "height": "1.73 m",
+      "caps": 25,
+      "goals": 1
+    },
+    {
+      "shirt": "25",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Victor Muñoz Villanueva",
+      "nameOnShirt": "VICTOR M.V.",
+      "club": "CA Osasuna (ESP)",
+      "height": "1.73 m",
+      "caps": 2,
+      "goals": 1
+    },
+    {
+      "shirt": "26",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Borja Iglesias Quintás",
+      "nameOnShirt": "B. IGLESIAS",
+      "club": "RC Celta Vigo (ESP)",
+      "height": "1.87 m",
+      "caps": 8,
+      "goals": 0
+    }
+  ],
+  "T42": [
+    {
+      "shirt": "1",
+      "position": "GK",
+      "role": "Portero",
+      "name": "Jacob Mikael Widell Zetterström",
+      "nameOnShirt": "ZETTERSTRÖM",
+      "club": "Derby County FC (ENG)",
+      "height": "1.97 m",
+      "caps": 3,
+      "goals": 0
+    },
+    {
+      "shirt": "2",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Gustaf Johan Lagerbielke",
+      "nameOnShirt": "LAGERBIELKE",
+      "club": "SC Braga (POR)",
+      "height": "1.93 m",
+      "caps": 12,
+      "goals": 2
+    },
+    {
+      "shirt": "3",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Victor Jörgen Nilsson Lindelöf",
+      "nameOnShirt": "LINDELÖF",
+      "club": "Aston Villa FC (ENG)",
+      "height": "1.87 m",
+      "caps": 77,
+      "goals": 3
+    },
+    {
+      "shirt": "4",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Isak Malcolm Kwaku Hien",
+      "nameOnShirt": "HIEN",
+      "club": "Atalanta Bergamo (ITA)",
+      "height": "1.91 m",
+      "caps": 30,
+      "goals": 0
+    },
+    {
+      "shirt": "5",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Gabriel Johan Gudmundsson",
+      "nameOnShirt": "GUDMUNDSSON",
+      "club": "Leeds United FC (ENG)",
+      "height": "1.81 m",
+      "caps": 25,
+      "goals": 0
+    },
+    {
+      "shirt": "6",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Herman Nils Johansson",
+      "nameOnShirt": "H. JOHANSSON",
+      "club": "FC Dallas (USA)",
+      "height": "1.90 m",
+      "caps": 3,
+      "goals": 0
+    },
+    {
+      "shirt": "7",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Lucas Erik Holger Bergvall",
+      "nameOnShirt": "BERGVALL",
+      "club": "Tottenham Hotspur FC (ENG)",
+      "height": "1.87 m",
+      "caps": 11,
+      "goals": 0
+    },
+    {
+      "shirt": "8",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Daniel Jonathan Svensson",
+      "nameOnShirt": "SVENSSON",
+      "club": "Borussia Dortmund (GER)",
+      "height": "1.83 m",
+      "caps": 14,
+      "goals": 0
+    },
+    {
+      "shirt": "9",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Alexander Isak",
+      "nameOnShirt": "ISAK",
+      "club": "Liverpool FC (ENG)",
+      "height": "1.90 m",
+      "caps": 59,
+      "goals": 18
+    },
+    {
+      "shirt": "10",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Erik Benjamin Nygren",
+      "nameOnShirt": "NYGREN",
+      "club": "Celtic FC (SCO)",
+      "height": "1.87 m",
+      "caps": 12,
+      "goals": 3
+    },
+    {
+      "shirt": "11",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Anthony David Junior Elanga",
+      "nameOnShirt": "ELANGA",
+      "club": "Newcastle United FC (ENG)",
+      "height": "1.78 m",
+      "caps": 31,
+      "goals": 6
+    },
+    {
+      "shirt": "12",
+      "position": "GK",
+      "role": "Portero",
+      "name": "Tobias Viktor Johansson",
+      "nameOnShirt": "V. JOHANSSON",
+      "club": "Stoke City FC (ENG)",
+      "height": "1.87 m",
+      "caps": 12,
+      "goals": 0
+    },
+    {
+      "shirt": "13",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Ken Sema",
+      "nameOnShirt": "SEMA",
+      "club": "Pafos FC (CYP)",
+      "height": "1.80 m",
+      "caps": 32,
+      "goals": 5
+    },
+    {
+      "shirt": "14",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Hjalmar Ekdal",
+      "nameOnShirt": "EKDAL",
+      "club": "Burnley FC (ENG)",
+      "height": "1.87 m",
+      "caps": 13,
+      "goals": 0
+    },
+    {
+      "shirt": "15",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Carl Anders Theodor Starfelt",
+      "nameOnShirt": "STARFELT",
+      "club": "RC Celta Vigo (ESP)",
+      "height": "1.85 m",
+      "caps": 18,
+      "goals": 0
+    },
+    {
+      "shirt": "16",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Jesper Kewe Karlström",
+      "nameOnShirt": "KARLSTRÖM",
+      "club": "Udinese (ITA)",
+      "height": "1.82 m",
+      "caps": 25,
+      "goals": 0
+    },
+    {
+      "shirt": "17",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Viktor Einar Gyökeres",
+      "nameOnShirt": "GYÖKERES",
+      "club": "Arsenal FC (ENG)",
+      "height": "1.89 m",
+      "caps": 34,
+      "goals": 21
+    },
+    {
+      "shirt": "18",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Yasin Ayari",
+      "nameOnShirt": "AYARI",
+      "club": "Brighton & Hove Albion FC (ENG)",
+      "height": "1.72 m",
+      "caps": 22,
+      "goals": 5
+    },
+    {
+      "shirt": "19",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Mattias Olof Svanberg",
+      "nameOnShirt": "SVANBERG",
+      "club": "VfL Wolfsburg (GER)",
+      "height": "1.86 m",
+      "caps": 41,
+      "goals": 3
+    },
+    {
+      "shirt": "20",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Eric Anders Smith",
+      "nameOnShirt": "SMITH",
+      "club": "FC St. Pauli (GER)",
+      "height": "1.92 m",
+      "caps": 2,
+      "goals": 0
+    },
+    {
+      "shirt": "21",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Alexander Olof Bernhardsson",
+      "nameOnShirt": "BERNHARDSSON",
+      "club": "Holstein Kiel (GER)",
+      "height": "1.84 m",
+      "caps": 12,
+      "goals": 0
+    },
+    {
+      "shirt": "22",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Besfort Zeneli",
+      "nameOnShirt": "ZENELI",
+      "club": "Royale Union Saint-Gilloise (BEL)",
+      "height": "1.87 m",
+      "caps": 8,
+      "goals": 0
+    },
+    {
+      "shirt": "23",
+      "position": "GK",
+      "role": "Portero",
+      "name": "Bo Kristoffer Nordfeldt",
+      "nameOnShirt": "NORDFELDT",
+      "club": "AIK Stockholm (SWE)",
+      "height": "1.90 m",
+      "caps": 22,
+      "goals": 0
+    },
+    {
+      "shirt": "24",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Elliot Karl Stroud",
+      "nameOnShirt": "STROUD",
+      "club": "Mjällby AIF (SWE)",
+      "height": "1.85 m",
+      "caps": 2,
+      "goals": 0
+    },
+    {
+      "shirt": "25",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Håkan Gustaf Nilsson",
+      "nameOnShirt": "NILSSON",
+      "club": "Club Brugge (BEL)",
+      "height": "1.97 m",
+      "caps": 9,
+      "goals": 4
+    },
+    {
+      "shirt": "26",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Taha Abdi Ali",
+      "nameOnShirt": "ALI",
+      "club": "Malmö FF (SWE)",
+      "height": "1.74 m",
+      "caps": 2,
+      "goals": 0
+    }
+  ],
+  "T43": [
+    {
+      "shirt": "1",
+      "position": "GK",
+      "role": "Portero",
+      "name": "Gregor Kobel",
+      "nameOnShirt": "KOBEL",
+      "club": "Borussia Dortmund (GER)",
+      "height": "1.96 m",
+      "caps": 22,
+      "goals": 0
+    },
+    {
+      "shirt": "2",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Miro Max Maria Muheim",
+      "nameOnShirt": "MUHEIM",
+      "club": "Hamburger SV (GER)",
+      "height": "1.82 m",
+      "caps": 11,
+      "goals": 0
+    },
+    {
+      "shirt": "3",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Silvan Dominic Widmer",
+      "nameOnShirt": "WIDMER",
+      "club": "1. FSV Mainz 05 (GER)",
+      "height": "1.83 m",
+      "caps": 60,
+      "goals": 5
+    },
+    {
+      "shirt": "4",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Nico Elvedi",
+      "nameOnShirt": "ELVEDI",
+      "club": "Borussia Mönchengladbach (GER)",
+      "height": "1.89 m",
+      "caps": 68,
+      "goals": 3
+    },
+    {
+      "shirt": "5",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Manuel Obafemi Akanji",
+      "nameOnShirt": "AKANJI",
+      "club": "FC Internazionale Milano (ITA)",
+      "height": "1.88 m",
+      "caps": 82,
+      "goals": 4
+    },
+    {
+      "shirt": "6",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Denis Lemi Zakaria Lako Lado",
+      "nameOnShirt": "ZAKARIA",
+      "club": "AS Monaco (FRA)",
+      "height": "1.89 m",
+      "caps": 66,
+      "goals": 3
+    },
+    {
+      "shirt": "7",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Breel Donald Embolo",
+      "nameOnShirt": "EMBOLO",
+      "club": "Stade Rennais FC (FRA)",
+      "height": "1.84 m",
+      "caps": 87,
+      "goals": 25
+    },
+    {
+      "shirt": "8",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Remo Marco Freuler",
+      "nameOnShirt": "FREULER",
+      "club": "Bologna FC (ITA)",
+      "height": "1.81 m",
+      "caps": 89,
+      "goals": 11
+    },
+    {
+      "shirt": "9",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Johan Kula Manzambi",
+      "nameOnShirt": "MANZAMBI",
+      "club": "SC Freiburg (GER)",
+      "height": "1.82 m",
+      "caps": 13,
+      "goals": 3
+    },
+    {
+      "shirt": "10",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Granit Xhaka",
+      "nameOnShirt": "XHAKA",
+      "club": "Sunderland AFC (ENG)",
+      "height": "1.83 m",
+      "caps": 147,
+      "goals": 17
+    },
+    {
+      "shirt": "11",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Dan Ndoye",
+      "nameOnShirt": "NDOYE",
+      "club": "Nottingham Forest FC (ENG)",
+      "height": "1.84 m",
+      "caps": 32,
+      "goals": 8
+    },
+    {
+      "shirt": "12",
+      "position": "GK",
+      "role": "Portero",
+      "name": "Yvon Landry Mvogo Nganoma",
+      "nameOnShirt": "MVOGO",
+      "club": "FC Lorient (FRA)",
+      "height": "1.90 m",
+      "caps": 13,
+      "goals": 0
+    },
+    {
+      "shirt": "13",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Ricardo Ivan Rodriguez Araya",
+      "nameOnShirt": "RODRIGUEZ",
+      "club": "Real Betis (ESP)",
+      "height": "1.82 m",
+      "caps": 139,
+      "goals": 9
+    },
+    {
+      "shirt": "14",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Ardon Jashari",
+      "nameOnShirt": "JASHARI",
+      "club": "AC Milan (ITA)",
+      "height": "1.81 m",
+      "caps": 9,
+      "goals": 0
+    },
+    {
+      "shirt": "15",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Mohameth Djibril Ibrahima Sow",
+      "nameOnShirt": "SOW",
+      "club": "Sevilla FC (ESP)",
+      "height": "1.83 m",
+      "caps": 52,
+      "goals": 0
+    },
+    {
+      "shirt": "16",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Christian Andreas Fassnacht",
+      "nameOnShirt": "FASSNACHT",
+      "club": "BSC Young Boys (SUI)",
+      "height": "1.85 m",
+      "caps": 23,
+      "goals": 5
+    },
+    {
+      "shirt": "17",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Ruben Estephan Vargas Martinez",
+      "nameOnShirt": "VARGAS",
+      "club": "Sevilla FC (ESP)",
+      "height": "1.79 m",
+      "caps": 62,
+      "goals": 11
+    },
+    {
+      "shirt": "18",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Eray Ervin Cömert",
+      "nameOnShirt": "CÖMERT",
+      "club": "Valencia CF (ESP)",
+      "height": "1.83 m",
+      "caps": 22,
+      "goals": 0
+    },
+    {
+      "shirt": "19",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Noah Arinzechukwu Okafor",
+      "nameOnShirt": "OKAFOR",
+      "club": "Leeds United FC (ENG)",
+      "height": "1.85 m",
+      "caps": 25,
+      "goals": 2
+    },
+    {
+      "shirt": "20",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Michel Aebischer",
+      "nameOnShirt": "AEBISCHER",
+      "club": "Pisa SC (ITA)",
+      "height": "1.83 m",
+      "caps": 41,
+      "goals": 2
+    },
+    {
+      "shirt": "21",
+      "position": "GK",
+      "role": "Portero",
+      "name": "Marvin Keller",
+      "nameOnShirt": "KELLER",
+      "club": "BSC Young Boys (SUI)",
+      "height": "1.89 m",
+      "caps": 1,
+      "goals": 0
+    },
+    {
+      "shirt": "22",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Fabian Rieder",
+      "nameOnShirt": "RIEDER",
+      "club": "FC Augsburg (GER)",
+      "height": "1.81 m",
+      "caps": 29,
+      "goals": 1
+    },
+    {
+      "shirt": "23",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Mohamed Zeki Amdouni",
+      "nameOnShirt": "AMDOUNI",
+      "club": "Burnley FC (ENG)",
+      "height": "1.83 m",
+      "caps": 30,
+      "goals": 11
+    },
+    {
+      "shirt": "24",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Aurèle Florian Amenda",
+      "nameOnShirt": "AMENDA",
+      "club": "Eintracht Frankfurt (GER)",
+      "height": "1.94 m",
+      "caps": 7,
+      "goals": 0
+    },
+    {
+      "shirt": "25",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Luca Antony Jaquez",
+      "nameOnShirt": "JAQUEZ",
+      "club": "VfB Stuttgart (GER)",
+      "height": "1.87 m",
+      "caps": 3,
+      "goals": 0
+    },
+    {
+      "shirt": "26",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Cedric Jan Itten",
+      "nameOnShirt": "ITTEN",
+      "club": "Fortuna Düsseldorf (GER)",
+      "height": "1.90 m",
+      "caps": 15,
+      "goals": 5
+    }
+  ],
+  "T44": [
+    {
+      "shirt": "1",
+      "position": "GK",
+      "role": "Portero",
+      "name": "Abdelmouhib Chamakh",
+      "nameOnShirt": "CHAMAKH",
+      "club": "Club Africain (TUN)",
+      "height": "1.89 m",
+      "caps": 4,
+      "goals": 0
+    },
+    {
+      "shirt": "2",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Ali Elabdi",
+      "nameOnShirt": "ABDI",
+      "club": "OGC Nice (FRA)",
+      "height": "1.77 m",
+      "caps": 47,
+      "goals": 7
+    },
+    {
+      "shirt": "3",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Montassar Omar Talbi",
+      "nameOnShirt": "TALBI",
+      "club": "FC Lorient (FRA)",
+      "height": "1.90 m",
+      "caps": 65,
+      "goals": 4
+    },
+    {
+      "shirt": "4",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Omar Rekik",
+      "nameOnShirt": "REKIK",
+      "club": "NK Maribor (SVN)",
+      "height": "1.88 m",
+      "caps": 7,
+      "goals": 1
+    },
+    {
+      "shirt": "5",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Adam Arous",
+      "nameOnShirt": "AROUS",
+      "club": "Kasımpaşa SK (TUR)",
+      "height": "1.88 m",
+      "caps": 2,
+      "goals": 0
+    },
+    {
+      "shirt": "6",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Dylan Daniel Mahmoud Bronn",
+      "nameOnShirt": "BRONN",
+      "club": "Servette FC (SUI)",
+      "height": "1.86 m",
+      "caps": 52,
+      "goals": 2
+    },
+    {
+      "shirt": "7",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Mohamed Elyes Achouri",
+      "nameOnShirt": "ACHOURI",
+      "club": "FC København (DEN)",
+      "height": "1.87 m",
+      "caps": 31,
+      "goals": 5
+    },
+    {
+      "shirt": "8",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Elias Saad",
+      "nameOnShirt": "SAAD",
+      "club": "Hannover 96 (GER)",
+      "height": "1.85 m",
+      "caps": 16,
+      "goals": 3
+    },
+    {
+      "shirt": "9",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Hazem Mastouri",
+      "nameOnShirt": "MASTOURI",
+      "club": "FC Dynamo Makhachkala (RUS)",
+      "height": "1.91 m",
+      "caps": 19,
+      "goals": 4
+    },
+    {
+      "shirt": "10",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Hannibal Mejbri",
+      "nameOnShirt": "HANNIBAL",
+      "club": "Burnley FC (ENG)",
+      "height": "1.77 m",
+      "caps": 46,
+      "goals": 1
+    },
+    {
+      "shirt": "11",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Ismael Seifallah Gharbi",
+      "nameOnShirt": "GHARBI",
+      "club": "FC Augsburg (GER)",
+      "height": "1.80 m",
+      "caps": 18,
+      "goals": 2
+    },
+    {
+      "shirt": "12",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Ahmed Mortadha Ben Ouanes",
+      "nameOnShirt": "BEN OUANES",
+      "club": "Kasımpaşa SK (TUR)",
+      "height": "1.88 m",
+      "caps": 18,
+      "goals": 0
+    },
+    {
+      "shirt": "13",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Rani Khedira",
+      "nameOnShirt": "KHEDIRA",
+      "club": "1. FC Union Berlin (GER)",
+      "height": "1.88 m",
+      "caps": 4,
+      "goals": 0
+    },
+    {
+      "shirt": "14",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Khalil Ayari",
+      "nameOnShirt": "AYARI",
+      "club": "Paris Saint-Germain (FRA)",
+      "height": "1.74 m",
+      "caps": 4,
+      "goals": 0
+    },
+    {
+      "shirt": "15",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Mohamed Belhadj Mahmoud",
+      "nameOnShirt": "HADJ MAHMOUD",
+      "club": "FC Lugano (SUI)",
+      "height": "1.79 m",
+      "caps": 10,
+      "goals": 0
+    },
+    {
+      "shirt": "16",
+      "position": "GK",
+      "role": "Portero",
+      "name": "Aymen Dahmen",
+      "nameOnShirt": "DAHMEN",
+      "club": "CS Sfaxien (TUN)",
+      "height": "1.88 m",
+      "caps": 37,
+      "goals": 0
+    },
+    {
+      "shirt": "17",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Ellyes Joris Skhiri",
+      "nameOnShirt": "SKHIRI",
+      "club": "Eintracht Frankfurt (GER)",
+      "height": "1.85 m",
+      "caps": 84,
+      "goals": 4
+    },
+    {
+      "shirt": "18",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Rayan Elloumi",
+      "nameOnShirt": "ELLOUMI",
+      "club": "Vancouver Whitecaps FC (CAN)",
+      "height": "1.80 m",
+      "caps": 4,
+      "goals": 0
+    },
+    {
+      "shirt": "19",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Firas Chaouat",
+      "nameOnShirt": "CHAOUAT",
+      "club": "Club Africain (TUN)",
+      "height": "1.85 m",
+      "caps": 31,
+      "goals": 6
+    },
+    {
+      "shirt": "20",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Yan Valery",
+      "nameOnShirt": "VALERY",
+      "club": "BSC Young Boys (SUI)",
+      "height": "1.81 m",
+      "caps": 23,
+      "goals": 0
+    },
+    {
+      "shirt": "21",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Mohamed Amine Ben Hmida",
+      "nameOnShirt": "BEN HMIDA",
+      "club": "Espérance De Tunisie (TUN)",
+      "height": "1.81 m",
+      "caps": 14,
+      "goals": 0
+    },
+    {
+      "shirt": "22",
+      "position": "GK",
+      "role": "Portero",
+      "name": "Sabri Ben Hsan",
+      "nameOnShirt": "BEN HESSEN",
+      "club": "Étoile Du Sahel (TUN)",
+      "height": "1.89 m",
+      "caps": 1,
+      "goals": 0
+    },
+    {
+      "shirt": "23",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Moutaz Neffati",
+      "nameOnShirt": "NEFFATI",
+      "club": "IFK Norrköping FK (SWE)",
+      "height": "1.82 m",
+      "caps": 5,
+      "goals": 0
+    },
+    {
+      "shirt": "24",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Raed Chikhaoui",
+      "nameOnShirt": "CHIKHAOUI",
+      "club": "US Monastir (TUN)",
+      "height": "1.91 m",
+      "caps": 0,
+      "goals": 0
+    },
+    {
+      "shirt": "25",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Anis Ben Slimane",
+      "nameOnShirt": "SLIMANE",
+      "club": "Norwich City FC (ENG)",
+      "height": "1.88 m",
+      "caps": 41,
+      "goals": 4
+    },
+    {
+      "shirt": "26",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Sebastian Tounekti",
+      "nameOnShirt": "TOUNEKTI",
+      "club": "Celtic FC (SCO)",
+      "height": "1.82 m",
+      "caps": 13,
+      "goals": 1
+    }
+  ],
+  "T45": [
+    {
+      "shirt": "1",
+      "position": "GK",
+      "role": "Portero",
+      "name": "Fehmi Mert Günok",
+      "nameOnShirt": "MERT",
+      "club": "Fenerbahçe SK (TUR)",
+      "height": "1.96 m",
+      "caps": 37,
+      "goals": 0
+    },
+    {
+      "shirt": "2",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Mehmet Zeki Çelik",
+      "nameOnShirt": "ZEKİ ÇELİK",
+      "club": "AS Roma (ITA)",
+      "height": "1.80 m",
+      "caps": 62,
+      "goals": 3
+    },
+    {
+      "shirt": "3",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Merih Demi̇ral",
+      "nameOnShirt": "DEMİRAL",
+      "club": "Al Ahli FC (KSA)",
+      "height": "1.90 m",
+      "caps": 64,
+      "goals": 6
+    },
+    {
+      "shirt": "4",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Çağlar Söyüncü",
+      "nameOnShirt": "ÇAĞLAR",
+      "club": "Fenerbahçe SK (TUR)",
+      "height": "1.85 m",
+      "caps": 60,
+      "goals": 2
+    },
+    {
+      "shirt": "5",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Salih Özcan",
+      "nameOnShirt": "ÖZCAN",
+      "club": "Borussia Dortmund (GER)",
+      "height": "1.82 m",
+      "caps": 31,
+      "goals": 1
+    },
+    {
+      "shirt": "6",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Orkun Kökçü",
+      "nameOnShirt": "ORKUN KÖKÇÜ",
+      "club": "Beşiktaş JK (TUR)",
+      "height": "1.75 m",
+      "caps": 51,
+      "goals": 4
+    },
+    {
+      "shirt": "7",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Muhammed Kerem Aktürkoğlu",
+      "nameOnShirt": "AKTÜRKOĞLU",
+      "club": "Fenerbahçe SK (TUR)",
+      "height": "1.72 m",
+      "caps": 53,
+      "goals": 15
+    },
+    {
+      "shirt": "8",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Arda Güler",
+      "nameOnShirt": "ARDA GÜLER",
+      "club": "Real Madrid C. F. (ESP)",
+      "height": "1.75 m",
+      "caps": 31,
+      "goals": 6
+    },
+    {
+      "shirt": "9",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Deniz Daniel Gül",
+      "nameOnShirt": "DENİZ GÜL",
+      "club": "FC Porto (POR)",
+      "height": "1.92 m",
+      "caps": 9,
+      "goals": 2
+    },
+    {
+      "shirt": "10",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Hakan Çalhanoğlu",
+      "nameOnShirt": "ÇALHANOĞLU",
+      "club": "FC Internazionale Milano (ITA)",
+      "height": "1.78 m",
+      "caps": 107,
+      "goals": 22
+    },
+    {
+      "shirt": "11",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Kenan Yildiz",
+      "nameOnShirt": "YILDIZ",
+      "club": "Juventus FC (ITA)",
+      "height": "1.87 m",
+      "caps": 29,
+      "goals": 5
+    },
+    {
+      "shirt": "12",
+      "position": "GK",
+      "role": "Portero",
+      "name": "Altay Bayindir",
+      "nameOnShirt": "ALTAY",
+      "club": "Manchester United FC (ENG)",
+      "height": "1.98 m",
+      "caps": 12,
+      "goals": 0
+    },
+    {
+      "shirt": "13",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Evren Eren Elmali",
+      "nameOnShirt": "EREN ELMALI",
+      "club": "Galatasaray SK (TUR)",
+      "height": "1.81 m",
+      "caps": 23,
+      "goals": 0
+    },
+    {
+      "shirt": "14",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Abdülkerİm Bardakci",
+      "nameOnShirt": "ABDÜLKERİM",
+      "club": "Galatasaray SK (TUR)",
+      "height": "1.85 m",
+      "caps": 28,
+      "goals": 2
+    },
+    {
+      "shirt": "15",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Ozan Muhammed Kabak",
+      "nameOnShirt": "OZAN KABAK",
+      "club": "TSG Hoffenheim (GER)",
+      "height": "1.87 m",
+      "caps": 30,
+      "goals": 2
+    },
+    {
+      "shirt": "16",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "İsmaİl Yüksek",
+      "nameOnShirt": "İSMAİL",
+      "club": "Fenerbahçe SK (TUR)",
+      "height": "1.83 m",
+      "caps": 33,
+      "goals": 1
+    },
+    {
+      "shirt": "17",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "İrfan Kahveci̇",
+      "nameOnShirt": "KAHVECİ",
+      "club": "Kasımpaşa SK (TUR)",
+      "height": "1.80 m",
+      "caps": 47,
+      "goals": 6
+    },
+    {
+      "shirt": "18",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Mert Müldür",
+      "nameOnShirt": "MERT MÜLDÜR",
+      "club": "Fenerbahçe SK (TUR)",
+      "height": "1.84 m",
+      "caps": 46,
+      "goals": 3
+    },
+    {
+      "shirt": "19",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Yunus Akgün",
+      "nameOnShirt": "YUNUS",
+      "club": "Galatasaray SK (TUR)",
+      "height": "1.73 m",
+      "caps": 20,
+      "goals": 4
+    },
+    {
+      "shirt": "20",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Ferdi Erenay Kadioğlu",
+      "nameOnShirt": "F. KADIOĞLU",
+      "club": "Brighton & Hove Albion FC (ENG)",
+      "height": "1.74 m",
+      "caps": 31,
+      "goals": 2
+    },
+    {
+      "shirt": "21",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Barış Alper Yilmaz",
+      "nameOnShirt": "BARIŞ",
+      "club": "Galatasaray SK (TUR)",
+      "height": "1.86 m",
+      "caps": 36,
+      "goals": 4
+    },
+    {
+      "shirt": "22",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Kaan Ayhan",
+      "nameOnShirt": "KAAN",
+      "club": "Galatasaray SK (TUR)",
+      "height": "1.85 m",
+      "caps": 73,
+      "goals": 5
+    },
+    {
+      "shirt": "23",
+      "position": "GK",
+      "role": "Portero",
+      "name": "Uğurcan Çakir",
+      "nameOnShirt": "UĞURCAN",
+      "club": "Galatasaray SK (TUR)",
+      "height": "1.91 m",
+      "caps": 40,
+      "goals": 0
+    },
+    {
+      "shirt": "24",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Oğuz Aydin",
+      "nameOnShirt": "OĞUZ",
+      "club": "Fenerbahçe SK (TUR)",
+      "height": "1.83 m",
+      "caps": 11,
+      "goals": 0
+    },
+    {
+      "shirt": "25",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Samet Akaydin",
+      "nameOnShirt": "SAMET AKAYDIN",
+      "club": "Çaykur Rizespor (TUR)",
+      "height": "1.90 m",
+      "caps": 19,
+      "goals": 1
+    },
+    {
+      "shirt": "26",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Can Yılmaz Uzun",
+      "nameOnShirt": "CAN UZUN",
+      "club": "Eintracht Frankfurt (GER)",
+      "height": "1.86 m",
+      "caps": 6,
+      "goals": 1
+    }
+  ],
+  "T46": [
+    {
+      "shirt": "1",
+      "position": "GK",
+      "role": "Portero",
+      "name": "Sergio Ramón Rochet Alvarez",
+      "nameOnShirt": "S. ROCHET",
+      "club": "SC Internacional (BRA)",
+      "height": "1.89 m",
+      "caps": 35,
+      "goals": 0
+    },
+    {
+      "shirt": "2",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "José María Giménez De Vargas",
+      "nameOnShirt": "J.M. GIMÉNEZ",
+      "club": "Atlético De Madrid (ESP)",
+      "height": "1.86 m",
+      "caps": 99,
+      "goals": 8
+    },
+    {
+      "shirt": "3",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Sebastián Enzo Cáceres Ramos",
+      "nameOnShirt": "S. CACERES",
+      "club": "Club América (MEX)",
+      "height": "1.80 m",
+      "caps": 24,
+      "goals": 0
+    },
+    {
+      "shirt": "4",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Ronald Federico Araújo Da Silva",
+      "nameOnShirt": "R. ARAUJO",
+      "club": "FC Barcelona (ESP)",
+      "height": "1.85 m",
+      "caps": 27,
+      "goals": 1
+    },
+    {
+      "shirt": "5",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Manuel Ugarte Ribeiro",
+      "nameOnShirt": "M. UGARTE",
+      "club": "Manchester United FC (ENG)",
+      "height": "1.82 m",
+      "caps": 36,
+      "goals": 1
+    },
+    {
+      "shirt": "6",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Rodrigo Bentancur Colmán",
+      "nameOnShirt": "R. BENTANCUR",
+      "club": "Tottenham Hotspur FC (ENG)",
+      "height": "1.87 m",
+      "caps": 74,
+      "goals": 3
+    },
+    {
+      "shirt": "7",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Diego Nicolás De La Cruz Arcosa",
+      "nameOnShirt": "N. DE LA CRUZ",
+      "club": "CR Flamengo (BRA)",
+      "height": "1.67 m",
+      "caps": 35,
+      "goals": 5
+    },
+    {
+      "shirt": "8",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Federico Santiago Valverde Dipetta",
+      "nameOnShirt": "F. VALVERDE",
+      "club": "Real Madrid C. F. (ESP)",
+      "height": "1.82 m",
+      "caps": 74,
+      "goals": 9
+    },
+    {
+      "shirt": "9",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Darwin Gabriel Nuñez Ribeiro",
+      "nameOnShirt": "D. NUÑEZ",
+      "club": "Al Hilal SC (KSA)",
+      "height": "1.85 m",
+      "caps": 39,
+      "goals": 13
+    },
+    {
+      "shirt": "10",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Giorgian Daniel De Arrascaeta Benedetti",
+      "nameOnShirt": "G. DE ARRASCAETA",
+      "club": "CR Flamengo (BRA)",
+      "height": "1.77 m",
+      "caps": 59,
+      "goals": 13
+    },
+    {
+      "shirt": "11",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Facundo Pellistri Rebollo",
+      "nameOnShirt": "F. PELLISTRI",
+      "club": "Panathinaikos FC (GRE)",
+      "height": "1.74 m",
+      "caps": 39,
+      "goals": 2
+    },
+    {
+      "shirt": "12",
+      "position": "GK",
+      "role": "Portero",
+      "name": "Santiago Andres Mele Castañero",
+      "nameOnShirt": "S. MELE",
+      "club": "CF Monterrey (MEX)",
+      "height": "1.85 m",
+      "caps": 8,
+      "goals": 0
+    },
+    {
+      "shirt": "13",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Guillermo Varela Olivera",
+      "nameOnShirt": "G. VARELA",
+      "club": "CR Flamengo (BRA)",
+      "height": "1.74 m",
+      "caps": 28,
+      "goals": 0
+    },
+    {
+      "shirt": "14",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Agustin Canobbio",
+      "nameOnShirt": "A. CANOBBIO",
+      "club": "Fluminense FC (BRA)",
+      "height": "1.76 m",
+      "caps": 15,
+      "goals": 1
+    },
+    {
+      "shirt": "15",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Emiliano Martínez Toranza",
+      "nameOnShirt": "E. MARTINEZ",
+      "club": "SE Palmeiras (BRA)",
+      "height": "1.84 m",
+      "caps": 10,
+      "goals": 0
+    },
+    {
+      "shirt": "16",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Mathías Olivera Miramontes",
+      "nameOnShirt": "M. OLIVERA",
+      "club": "SSC Napoli (ITA)",
+      "height": "1.74 m",
+      "caps": 36,
+      "goals": 2
+    },
+    {
+      "shirt": "17",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Matías Nicolas Viña Susperreguy",
+      "nameOnShirt": "M. VIÑA",
+      "club": "CA River Plate (ARG)",
+      "height": "1.80 m",
+      "caps": 44,
+      "goals": 1
+    },
+    {
+      "shirt": "18",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Paul Brian Rodríguez Bravo",
+      "nameOnShirt": "B. RODRIGUEZ",
+      "club": "Club América (MEX)",
+      "height": "1.75 m",
+      "caps": 34,
+      "goals": 4
+    },
+    {
+      "shirt": "19",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Rodrigo Sebastian Aguirre Soto",
+      "nameOnShirt": "R. AGUIRRE",
+      "club": "Tigres UANL (MEX)",
+      "height": "1.82 m",
+      "caps": 11,
+      "goals": 3
+    },
+    {
+      "shirt": "20",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Maximiliano Javier Araújo Vilches",
+      "nameOnShirt": "M. ARAUJO",
+      "club": "Sporting CP (POR)",
+      "height": "1.76 m",
+      "caps": 29,
+      "goals": 4
+    },
+    {
+      "shirt": "21",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Federico Sebastian Viñas Barboza",
+      "nameOnShirt": "F. VIÑAS",
+      "club": "Real Oviedo (ESP)",
+      "height": "1.81 m",
+      "caps": 12,
+      "goals": 2
+    },
+    {
+      "shirt": "22",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Joaquin Piquerez Moreira",
+      "nameOnShirt": "J. PIQUEREZ",
+      "club": "SE Palmeiras (BRA)",
+      "height": "1.85 m",
+      "caps": 19,
+      "goals": 0
+    },
+    {
+      "shirt": "23",
+      "position": "GK",
+      "role": "Portero",
+      "name": "Nestor Fernando Muslera Micol",
+      "nameOnShirt": "F. MUSLERA",
+      "club": "Estudiantes LP (ARG)",
+      "height": "1.90 m",
+      "caps": 135,
+      "goals": 0
+    },
+    {
+      "shirt": "24",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Santiago Ignacio Bueno Sciutto",
+      "nameOnShirt": "S. BUENO",
+      "club": "Wolverhampton Wanderers FC (ENG)",
+      "height": "1.91 m",
+      "caps": 8,
+      "goals": 0
+    },
+    {
+      "shirt": "25",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Juan Manuel Sanabria Magolé",
+      "nameOnShirt": "J.M. SANABRIA",
+      "club": "Real Salt Lake (USA)",
+      "height": "1.70 m",
+      "caps": 6,
+      "goals": 1
+    },
+    {
+      "shirt": "26",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Radrigo Zalazar Martinez",
+      "nameOnShirt": "R. ZALAZAR",
+      "club": "SC Braga (POR)",
+      "height": "1.75 m",
+      "caps": 7,
+      "goals": 2
+    }
+  ],
+  "T47": [
+    {
+      "shirt": "1",
+      "position": "GK",
+      "role": "Portero",
+      "name": "Matthew Charles Turner",
+      "nameOnShirt": "TURNER",
+      "club": "New England Revolution (USA)",
+      "height": "1.90 m",
+      "caps": 54,
+      "goals": 0
+    },
+    {
+      "shirt": "2",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Sergiño Gianni Dest",
+      "nameOnShirt": "DEST",
+      "club": "PSV Eindhoven (NED)",
+      "height": "1.73 m",
+      "caps": 40,
+      "goals": 3
+    },
+    {
+      "shirt": "3",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Christopher Jeffrey Richards",
+      "nameOnShirt": "RICHARDS",
+      "club": "Crystal Palace FC (ENG)",
+      "height": "1.89 m",
+      "caps": 37,
+      "goals": 3
+    },
+    {
+      "shirt": "4",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Tyler Shaan Adams",
+      "nameOnShirt": "ADAMS",
+      "club": "AFC Bournemouth (ENG)",
+      "height": "1.75 m",
+      "caps": 55,
+      "goals": 2
+    },
+    {
+      "shirt": "5",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Antonee Robinson",
+      "nameOnShirt": "A. ROBINSON",
+      "club": "Fulham FC (ENG)",
+      "height": "1.83 m",
+      "caps": 55,
+      "goals": 5
+    },
+    {
+      "shirt": "6",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Auston Levi-Jesaiah Trusty",
+      "nameOnShirt": "TRUSTY",
+      "club": "Celtic FC (SCO)",
+      "height": "1.90 m",
+      "caps": 8,
+      "goals": 0
+    },
+    {
+      "shirt": "7",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Giovanni Alejandro Reyna",
+      "nameOnShirt": "REYNA",
+      "club": "Borussia Mönchengladbach (GER)",
+      "height": "1.87 m",
+      "caps": 39,
+      "goals": 10
+    },
+    {
+      "shirt": "8",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Weston James Earl Mc Kennie",
+      "nameOnShirt": "MCKENNIE",
+      "club": "Juventus FC (ITA)",
+      "height": "1.80 m",
+      "caps": 67,
+      "goals": 12
+    },
+    {
+      "shirt": "9",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Ricardo Daniel Pepi",
+      "nameOnShirt": "PEPI",
+      "club": "PSV Eindhoven (NED)",
+      "height": "1.85 m",
+      "caps": 38,
+      "goals": 13
+    },
+    {
+      "shirt": "10",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Christian Mate Pulisic",
+      "nameOnShirt": "PULISIC",
+      "club": "AC Milan (ITA)",
+      "height": "1.77 m",
+      "caps": 87,
+      "goals": 33
+    },
+    {
+      "shirt": "11",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Brenden Russell Aaronson",
+      "nameOnShirt": "AARONSON",
+      "club": "Leeds United FC (ENG)",
+      "height": "1.77 m",
+      "caps": 58,
+      "goals": 9
+    },
+    {
+      "shirt": "12",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Miles Gordon Robinson",
+      "nameOnShirt": "M. ROBINSON",
+      "club": "FC Cincinnatti (USA)",
+      "height": "1.87 m",
+      "caps": 40,
+      "goals": 3
+    },
+    {
+      "shirt": "13",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Timothy Michael Ream",
+      "nameOnShirt": "REAM",
+      "club": "Charlotte FC (USA)",
+      "height": "1.86 m",
+      "caps": 83,
+      "goals": 1
+    },
+    {
+      "shirt": "14",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Sebastian Matthew Berhalter",
+      "nameOnShirt": "BERHALTER",
+      "club": "Vancouver Whitecaps FC (CAN)",
+      "height": "1.75 m",
+      "caps": 14,
+      "goals": 1
+    },
+    {
+      "shirt": "15",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Cristian Roldan",
+      "nameOnShirt": "ROLDAN",
+      "club": "Seattle Sounders FC (USA)",
+      "height": "1.73 m",
+      "caps": 47,
+      "goals": 0
+    },
+    {
+      "shirt": "16",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Alexander Michael Freeman",
+      "nameOnShirt": "FREEMAN",
+      "club": "Villarreal CF (ESP)",
+      "height": "1.88 m",
+      "caps": 18,
+      "goals": 2
+    },
+    {
+      "shirt": "17",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Malik Leon Tillman",
+      "nameOnShirt": "TILLMAN",
+      "club": "Bayer 04 Leverkusen (GER)",
+      "height": "1.87 m",
+      "caps": 31,
+      "goals": 3
+    },
+    {
+      "shirt": "18",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Maximilian Michael Arfsten",
+      "nameOnShirt": "ARFSTEN",
+      "club": "Columbus Crew (USA)",
+      "height": "1.85 m",
+      "caps": 20,
+      "goals": 1
+    },
+    {
+      "shirt": "19",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Haji Amir Wright",
+      "nameOnShirt": "WRIGHT",
+      "club": "Coventry City FC (ENG)",
+      "height": "1.91 m",
+      "caps": 20,
+      "goals": 7
+    },
+    {
+      "shirt": "20",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Folarin Jolaoluwa Balogun",
+      "nameOnShirt": "BALOGUN",
+      "club": "AS Monaco (FRA)",
+      "height": "1.79 m",
+      "caps": 28,
+      "goals": 11
+    },
+    {
+      "shirt": "21",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Timothy Tarpeh Weah",
+      "nameOnShirt": "WEAH",
+      "club": "Olympique Marseille (FRA)",
+      "height": "1.83 m",
+      "caps": 52,
+      "goals": 7
+    },
+    {
+      "shirt": "22",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Mark Alexander Mckenzie",
+      "nameOnShirt": "MCKENZIE",
+      "club": "Toulouse FC (FRA)",
+      "height": "1.86 m",
+      "caps": 29,
+      "goals": 0
+    },
+    {
+      "shirt": "23",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Joseph Michael Scally",
+      "nameOnShirt": "SCALLY",
+      "club": "Borussia Mönchengladbach (GER)",
+      "height": "1.84 m",
+      "caps": 26,
+      "goals": 0
+    },
+    {
+      "shirt": "24",
+      "position": "GK",
+      "role": "Portero",
+      "name": "Matthew Andrew Geary Freese",
+      "nameOnShirt": "FREESE",
+      "club": "New York City FC (USA)",
+      "height": "1.98 m",
+      "caps": 16,
+      "goals": 0
+    },
+    {
+      "shirt": "25",
+      "position": "GK",
+      "role": "Portero",
+      "name": "Christopher Keith Brady",
+      "nameOnShirt": "BRADY",
+      "club": "Chicago Fire FC (USA)",
+      "height": "1.93 m",
+      "caps": 1,
+      "goals": 0
+    },
+    {
+      "shirt": "26",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Alejandro Zendejas Saavedra",
+      "nameOnShirt": "ZENDEJAS",
+      "club": "Club América (MEX)",
+      "height": "1.67 m",
+      "caps": 14,
+      "goals": 2
+    }
+  ],
+  "T48": [
+    {
+      "shirt": "1",
+      "position": "GK",
+      "role": "Portero",
+      "name": "Utkir Yusupov",
+      "nameOnShirt": "YUSUPOV",
+      "club": "PFC Navbahor Namangan (UZB)",
+      "height": "1.85 m",
+      "caps": 45,
+      "goals": 0
+    },
+    {
+      "shirt": "2",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Abdukodir Khusanov",
+      "nameOnShirt": "KHUSANOV",
+      "club": "Manchester City FC (ENG)",
+      "height": "1.86 m",
+      "caps": 27,
+      "goals": 0
+    },
+    {
+      "shirt": "3",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Khojiakbar Alijonov",
+      "nameOnShirt": "ALIJONOV",
+      "club": "Pakhtakor Tashkent FK (UZB)",
+      "height": "1.80 m",
+      "caps": 52,
+      "goals": 3
+    },
+    {
+      "shirt": "4",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Farrukh Sayfiev",
+      "nameOnShirt": "SAYFIEV",
+      "club": "FK Neftchi Farg'ona (UZB)",
+      "height": "1.83 m",
+      "caps": 71,
+      "goals": 1
+    },
+    {
+      "shirt": "5",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Rustamjon Ashurmatov",
+      "nameOnShirt": "ASHURMATOV",
+      "club": "Esteghlal Tehran FC (IRN)",
+      "height": "1.86 m",
+      "caps": 51,
+      "goals": 1
+    },
+    {
+      "shirt": "6",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Akmal Mozgovoy",
+      "nameOnShirt": "MOZGOVOY",
+      "club": "Pakhtakor Tashkent FK (UZB)",
+      "height": "1.80 m",
+      "caps": 25,
+      "goals": 1
+    },
+    {
+      "shirt": "7",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Otabek Shukurov",
+      "nameOnShirt": "SHUKUROV",
+      "club": "Baniyas Club (UAE)",
+      "height": "1.83 m",
+      "caps": 90,
+      "goals": 10
+    },
+    {
+      "shirt": "8",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Jamshid Iskanderov",
+      "nameOnShirt": "ISKANDEROV",
+      "club": "FK Neftchi Farg'ona (UZB)",
+      "height": "1.71 m",
+      "caps": 46,
+      "goals": 4
+    },
+    {
+      "shirt": "9",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Odiljon Xamrobekov",
+      "nameOnShirt": "XAMROBEKOV",
+      "club": "Tractor Sazi Tabriz FC (IRN)",
+      "height": "1.80 m",
+      "caps": 76,
+      "goals": 1
+    },
+    {
+      "shirt": "10",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Ruslanbek Jiyanov",
+      "nameOnShirt": "JIYANOV",
+      "club": "PFC Navbahor Namangan (UZB)",
+      "height": "1.76 m",
+      "caps": 8,
+      "goals": 1
+    },
+    {
+      "shirt": "11",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Oston Urunov",
+      "nameOnShirt": "URUNOV",
+      "club": "Persepolis FC (IRN)",
+      "height": "1.81 m",
+      "caps": 45,
+      "goals": 10
+    },
+    {
+      "shirt": "12",
+      "position": "GK",
+      "role": "Portero",
+      "name": "Abduvakhid Nematov",
+      "nameOnShirt": "NEMATOV",
+      "club": "Nasaf Qarshi FC (UZB)",
+      "height": "1.82 m",
+      "caps": 15,
+      "goals": 0
+    },
+    {
+      "shirt": "13",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Sherzod Nasrullaev",
+      "nameOnShirt": "NASRULLAEV",
+      "club": "Pakhtakor Tashkent FK (UZB)",
+      "height": "1.83 m",
+      "caps": 40,
+      "goals": 2
+    },
+    {
+      "shirt": "14",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Eldor Shomurodov",
+      "nameOnShirt": "SHOMURODOV",
+      "club": "Başakşehir FK (TUR)",
+      "height": "1.90 m",
+      "caps": 93,
+      "goals": 44
+    },
+    {
+      "shirt": "15",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Umarbek Eshmurodov",
+      "nameOnShirt": "ESHMURODOV",
+      "club": "Nasaf Qarshi FC (UZB)",
+      "height": "1.85 m",
+      "caps": 40,
+      "goals": 0
+    },
+    {
+      "shirt": "16",
+      "position": "GK",
+      "role": "Portero",
+      "name": "Botirali Ergashev",
+      "nameOnShirt": "ERGASHEV",
+      "club": "FK Neftchi Farg'ona (UZB)",
+      "height": "1.89 m",
+      "caps": 5,
+      "goals": 0
+    },
+    {
+      "shirt": "17",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Dostonbek Khamdamov",
+      "nameOnShirt": "KHAMDAMOV",
+      "club": "Pakhtakor Tashkent FK (UZB)",
+      "height": "1.78 m",
+      "caps": 37,
+      "goals": 5
+    },
+    {
+      "shirt": "18",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Abdulla Abdullaev",
+      "nameOnShirt": "ABDULLAEV",
+      "club": "Dibba FC (UAE)",
+      "height": "1.81 m",
+      "caps": 29,
+      "goals": 0
+    },
+    {
+      "shirt": "19",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Azizjon Ganiev",
+      "nameOnShirt": "GANIEV",
+      "club": "Al Bataeh Club (UAE)",
+      "height": "1.78 m",
+      "caps": 24,
+      "goals": 0
+    },
+    {
+      "shirt": "20",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Azizbek Amonov",
+      "nameOnShirt": "AMONOV",
+      "club": "FK Dinamo Samarkand (UZB)",
+      "height": "1.81 m",
+      "caps": 13,
+      "goals": 2
+    },
+    {
+      "shirt": "21",
+      "position": "FW",
+      "role": "Delantero",
+      "name": "Igor Sergeev",
+      "nameOnShirt": "SERGEEV",
+      "club": "Persepolis FC (IRN)",
+      "height": "1.85 m",
+      "caps": 85,
+      "goals": 25
+    },
+    {
+      "shirt": "22",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Abbosbek Fayzullaev",
+      "nameOnShirt": "FAYZULLAEV",
+      "club": "Başakşehir FK (TUR)",
+      "height": "1.67 m",
+      "caps": 32,
+      "goals": 8
+    },
+    {
+      "shirt": "23",
+      "position": "MF",
+      "role": "Mediocampo",
+      "name": "Sherzod Esanov",
+      "nameOnShirt": "ESANOV",
+      "club": "FK Buxoro (UZB)",
+      "height": "1.90 m",
+      "caps": 1,
+      "goals": 0
+    },
+    {
+      "shirt": "24",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Behruzjon Karimov",
+      "nameOnShirt": "KARIMOV",
+      "club": "Surkhon FK (UZB)",
+      "height": "1.72 m",
+      "caps": 2,
+      "goals": 0
+    },
+    {
+      "shirt": "25",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Avazbek Ulmasaliyev",
+      "nameOnShirt": "ULMASALIYEV",
+      "club": "OKMK FK (UZB)",
+      "height": "1.87 m",
+      "caps": 0,
+      "goals": 0
+    },
+    {
+      "shirt": "26",
+      "position": "DF",
+      "role": "Defensa",
+      "name": "Jakhongir Urozov",
+      "nameOnShirt": "UROZOV",
+      "club": "FK Dinamo Samarkand (UZB)",
+      "height": "1.90 m",
+      "caps": 4,
+      "goals": 1
+    }
+  ]
+};
+
+export const squadHighlights = {
+  "T01": [
+    {
+      "name": "Aissa Mandi",
+      "position": "DF",
+      "shirt": "2",
+      "height": "1.84 m",
+      "role": "Referente"
+    },
+    {
+      "name": "Melvin Feycal Mastil",
+      "position": "GK",
+      "shirt": "1",
+      "height": "1.94 m",
+      "role": "Portero"
+    },
+    {
+      "name": "Achref Abada",
+      "position": "DF",
+      "shirt": "3",
+      "height": "1.85 m",
+      "role": "Defensa"
+    },
+    {
+      "name": "Ramiz Larbi Zerrouki",
+      "position": "MF",
+      "shirt": "6",
+      "height": "1.83 m",
+      "role": "Mediocampo"
+    },
+    {
+      "name": "Riyad Karim Mahrez",
+      "position": "FW",
+      "shirt": "7",
+      "height": "1.79 m",
+      "role": "Delantero"
+    }
+  ],
+  "T02": [
+    {
+      "name": "Lionel Andrés Messi",
+      "position": "FW",
+      "shirt": "10",
+      "height": "1.70 m",
+      "role": "Referente"
+    },
+    {
+      "name": "Juan Agustín Musso",
+      "position": "GK",
+      "shirt": "1",
+      "height": "1.93 m",
+      "role": "Portero"
+    },
+    {
+      "name": "Marcos Nicolás Senesi Baron",
+      "position": "DF",
+      "shirt": "2",
+      "height": "1.85 m",
+      "role": "Defensa"
+    },
+    {
+      "name": "Leandro Daniel Paredes",
+      "position": "MF",
+      "shirt": "5",
+      "height": "1.82 m",
+      "role": "Mediocampo"
+    },
+    {
+      "name": "Julián Álvarez",
+      "position": "FW",
+      "shirt": "9",
+      "height": "1.70 m",
+      "role": "Delantero"
+    }
+  ],
+  "T03": [
+    {
+      "name": "Mathew David Ryan",
+      "position": "GK",
+      "shirt": "1",
+      "height": "1.84 m",
+      "role": "Referente"
+    },
+    {
+      "name": "Paul David Izzo",
+      "position": "GK",
+      "shirt": "12",
+      "height": "1.84 m",
+      "role": "Portero"
+    },
+    {
+      "name": "Milos Degenek",
+      "position": "DF",
+      "shirt": "2",
+      "height": "1.87 m",
+      "role": "Defensa"
+    },
+    {
+      "name": "Connor Isaac Metcalfe",
+      "position": "MF",
+      "shirt": "8",
+      "height": "1.83 m",
+      "role": "Mediocampo"
+    },
+    {
+      "name": "Mathew Allan Leckie",
+      "position": "FW",
+      "shirt": "7",
+      "height": "1.81 m",
+      "role": "Delantero"
+    }
+  ],
+  "T04": [
+    {
+      "name": "Marko Arnautovic",
+      "position": "FW",
+      "shirt": "7",
+      "height": "1.92 m",
+      "role": "Referente"
+    },
+    {
+      "name": "Alexander Schlager",
+      "position": "GK",
+      "shirt": "1",
+      "height": "1.88 m",
+      "role": "Portero"
+    },
+    {
+      "name": "David Leopold Affengruber",
+      "position": "DF",
+      "shirt": "2",
+      "height": "1.85 m",
+      "role": "Defensa"
+    },
+    {
+      "name": "Xaver Schlager",
+      "position": "MF",
+      "shirt": "4",
+      "height": "1.74 m",
+      "role": "Mediocampo"
+    },
+    {
+      "name": "Michael Gregoritsch",
+      "position": "FW",
+      "shirt": "11",
+      "height": "1.93 m",
+      "role": "Delantero"
+    }
+  ],
+  "T05": [
+    {
+      "name": "Axel Laurent A Witsel",
+      "position": "MF",
+      "shirt": "6",
+      "height": "1.86 m",
+      "role": "Referente"
+    },
+    {
+      "name": "Thibaut Nicolas M Courtois",
+      "position": "GK",
+      "shirt": "1",
+      "height": "1.99 m",
+      "role": "Portero"
+    },
+    {
+      "name": "Zeno Koen Debast",
+      "position": "DF",
+      "shirt": "2",
+      "height": "1.89 m",
+      "role": "Defensa"
+    },
+    {
+      "name": "Kevin De Bruyne",
+      "position": "MF",
+      "shirt": "7",
+      "height": "1.81 m",
+      "role": "Mediocampo"
+    },
+    {
+      "name": "Romelu Lukaku Bolingoli",
+      "position": "FW",
+      "shirt": "9",
+      "height": "1.90 m",
+      "role": "Delantero"
+    }
+  ],
+  "T06": [
+    {
+      "name": "Edin Džeko",
+      "position": "FW",
+      "shirt": "11",
+      "height": "1.92 m",
+      "role": "Referente"
+    },
+    {
+      "name": "Nikola Vasilj",
+      "position": "GK",
+      "shirt": "1",
+      "height": "1.93 m",
+      "role": "Portero"
+    },
+    {
+      "name": "Nihad Mujakić",
+      "position": "DF",
+      "shirt": "2",
+      "height": "1.89 m",
+      "role": "Defensa"
+    },
+    {
+      "name": "Benjamin Tahirovic",
+      "position": "MF",
+      "shirt": "6",
+      "height": "1.91 m",
+      "role": "Mediocampo"
+    },
+    {
+      "name": "Samed Baždar",
+      "position": "FW",
+      "shirt": "9",
+      "height": "1.89 m",
+      "role": "Delantero"
+    }
+  ],
+  "T07": [
+    {
+      "name": "Neymar Da Silva Santos Júnior",
+      "position": "FW",
+      "shirt": "10",
+      "height": "1.75 m",
+      "role": "Referente"
+    },
+    {
+      "name": "Álisson Ramsés Becker",
+      "position": "GK",
+      "shirt": "1",
+      "height": "1.93 m",
+      "role": "Portero"
+    },
+    {
+      "name": "Gabriel Dos Santos Magalhães",
+      "position": "DF",
+      "shirt": "3",
+      "height": "1.90 m",
+      "role": "Defensa"
+    },
+    {
+      "name": "Éderson José Dos Santos Lourenço Da Silva",
+      "position": "MF",
+      "shirt": "2",
+      "height": "1.84 m",
+      "role": "Mediocampo"
+    },
+    {
+      "name": "Vinicius José Paixão De Oliveira Júnior",
+      "position": "FW",
+      "shirt": "7",
+      "height": "1.76 m",
+      "role": "Delantero"
+    }
+  ],
+  "T08": [
+    {
+      "name": "Ryan Isaac Da Graca Mendes",
+      "position": "FW",
+      "shirt": "20",
+      "height": "1.78 m",
+      "role": "Referente"
+    },
+    {
+      "name": "Josimar José Évora Dias",
+      "position": "GK",
+      "shirt": "1",
+      "height": "1.89 m",
+      "role": "Portero"
+    },
+    {
+      "name": "Ianique Dos Santos Tavares",
+      "position": "DF",
+      "shirt": "2",
+      "height": "1.78 m",
+      "role": "Defensa"
+    },
+    {
+      "name": "Kevin Lenini Gonçalves Pereira De Pina",
+      "position": "MF",
+      "shirt": "6",
+      "height": "1.77 m",
+      "role": "Mediocampo"
+    },
+    {
+      "name": "Gilson Benchimol Tavares",
+      "position": "FW",
+      "shirt": "9",
+      "height": "1.87 m",
+      "role": "Delantero"
+    }
+  ],
+  "T09": [
+    {
+      "name": "Jonathan Osorio",
+      "position": "MF",
+      "shirt": "21",
+      "height": "1.75 m",
+      "role": "Referente"
+    },
+    {
+      "name": "Dayne Tristan St. Clair",
+      "position": "GK",
+      "shirt": "1",
+      "height": "1.91 m",
+      "role": "Portero"
+    },
+    {
+      "name": "Alistair William Johnston",
+      "position": "DF",
+      "shirt": "2",
+      "height": "1.80 m",
+      "role": "Defensa"
+    },
+    {
+      "name": "Mathieu Choinière",
+      "position": "MF",
+      "shirt": "6",
+      "height": "1.73 m",
+      "role": "Mediocampo"
+    },
+    {
+      "name": "Cyle Christopher Larin",
+      "position": "FW",
+      "shirt": "9",
+      "height": "1.88 m",
+      "role": "Delantero"
+    }
+  ],
+  "T10": [
+    {
+      "name": "David Ospina Ramirez",
+      "position": "GK",
+      "shirt": "1",
+      "height": "1.83 m",
+      "role": "Referente"
+    },
+    {
+      "name": "Camilo Andres Vargas Gil",
+      "position": "GK",
+      "shirt": "12",
+      "height": "1.83 m",
+      "role": "Portero"
+    },
+    {
+      "name": "Daniel Muñoz Mejia",
+      "position": "DF",
+      "shirt": "2",
+      "height": "1.80 m",
+      "role": "Defensa"
+    },
+    {
+      "name": "Kevin Duvan Castaño Gil",
+      "position": "MF",
+      "shirt": "5",
+      "height": "1.79 m",
+      "role": "Mediocampo"
+    },
+    {
+      "name": "Luis Fernando Díaz Marulanda",
+      "position": "FW",
+      "shirt": "7",
+      "height": "1.79 m",
+      "role": "Delantero"
+    }
+  ],
+  "T11": [
+    {
+      "name": "Mangulu Chancel Mbemba",
+      "position": "DF",
+      "shirt": "22",
+      "height": "1.82 m",
+      "role": "Referente"
+    },
+    {
+      "name": "Lionel Nzau Mpasi",
+      "position": "GK",
+      "shirt": "1",
+      "height": "1.82 m",
+      "role": "Portero"
+    },
+    {
+      "name": "Wan Bissaka",
+      "position": "DF",
+      "shirt": "2",
+      "height": "1.83 m",
+      "role": "Defensa"
+    },
+    {
+      "name": "Ngal’ayel Mukau",
+      "position": "MF",
+      "shirt": "6",
+      "height": "1.86 m",
+      "role": "Mediocampo"
+    },
+    {
+      "name": "Kibambe Brian Cipenga",
+      "position": "FW",
+      "shirt": "9",
+      "height": "1.72 m",
+      "role": "Delantero"
+    }
+  ],
+  "T12": [
+    {
+      "name": "Franck Yannick Kessie",
+      "position": "MF",
+      "shirt": "8",
+      "height": "1.83 m",
+      "role": "Referente"
+    },
+    {
+      "name": "Yahia Fofana",
+      "position": "GK",
+      "shirt": "1",
+      "height": "1.94 m",
+      "role": "Portero"
+    },
+    {
+      "name": "Ousmane Diomande",
+      "position": "DF",
+      "shirt": "2",
+      "height": "1.90 m",
+      "role": "Defensa"
+    },
+    {
+      "name": "Jean Michael Seri",
+      "position": "MF",
+      "shirt": "4",
+      "height": "1.68 m",
+      "role": "Mediocampo"
+    },
+    {
+      "name": "Ange-Yoan Laurent Bonny",
+      "position": "FW",
+      "shirt": "9",
+      "height": "1.89 m",
+      "role": "Delantero"
+    }
+  ],
+  "T13": [
+    {
+      "name": "Luka Modrić",
+      "position": "MF",
+      "shirt": "10",
+      "height": "1.72 m",
+      "role": "Referente"
+    },
+    {
+      "name": "Dominik Livaković",
+      "position": "GK",
+      "shirt": "1",
+      "height": "1.88 m",
+      "role": "Portero"
+    },
+    {
+      "name": "Josip Stanišić",
+      "position": "DF",
+      "shirt": "2",
+      "height": "1.86 m",
+      "role": "Defensa"
+    },
+    {
+      "name": "Nikola Moro",
+      "position": "MF",
+      "shirt": "7",
+      "height": "1.83 m",
+      "role": "Mediocampo"
+    },
+    {
+      "name": "Andrej Kramarić",
+      "position": "FW",
+      "shirt": "9",
+      "height": "1.77 m",
+      "role": "Delantero"
+    }
+  ],
+  "T14": [
+    {
+      "name": "Eloy Victor Room",
+      "position": "GK",
+      "shirt": "1",
+      "height": "1.90 m",
+      "role": "Referente"
+    },
+    {
+      "name": "Tyrick Jeremy Bodak",
+      "position": "GK",
+      "shirt": "25",
+      "height": "1.90 m",
+      "role": "Portero"
+    },
+    {
+      "name": "Shurandy Ruggerio Sambo",
+      "position": "DF",
+      "shirt": "2",
+      "height": "1.74 m",
+      "role": "Defensa"
+    },
+    {
+      "name": "Godfried Roemeratoe",
+      "position": "MF",
+      "shirt": "6",
+      "height": "1.78 m",
+      "role": "Mediocampo"
+    },
+    {
+      "name": "Jürgen Leonardo Locadia",
+      "position": "FW",
+      "shirt": "9",
+      "height": "1.93 m",
+      "role": "Delantero"
+    }
+  ],
+  "T15": [
+    {
+      "name": "Tomáš Souček",
+      "position": "MF",
+      "shirt": "22",
+      "height": "1.92 m",
+      "role": "Referente"
+    },
+    {
+      "name": "Matěj Kovář",
+      "position": "GK",
+      "shirt": "1",
+      "height": "1.96 m",
+      "role": "Portero"
+    },
+    {
+      "name": "David Zima",
+      "position": "DF",
+      "shirt": "2",
+      "height": "1.90 m",
+      "role": "Defensa"
+    },
+    {
+      "name": "Vladimír Darida",
+      "position": "MF",
+      "shirt": "8",
+      "height": "1.72 m",
+      "role": "Mediocampo"
+    },
+    {
+      "name": "Adam Hložek",
+      "position": "FW",
+      "shirt": "9",
+      "height": "1.88 m",
+      "role": "Delantero"
+    }
+  ],
+  "T16": [
+    {
+      "name": "Enner Remberto Valencia Lastra",
+      "position": "FW",
+      "shirt": "13",
+      "height": "1.77 m",
+      "role": "Referente"
+    },
+    {
+      "name": "Hernán Ismael Galíndez",
+      "position": "GK",
+      "shirt": "1",
+      "height": "1.89 m",
+      "role": "Portero"
+    },
+    {
+      "name": "Félix Eduardo Torres Caicedo",
+      "position": "DF",
+      "shirt": "2",
+      "height": "1.87 m",
+      "role": "Defensa"
+    },
+    {
+      "name": "Jordy Jose Alcívar Macías",
+      "position": "MF",
+      "shirt": "5",
+      "height": "1.68 m",
+      "role": "Mediocampo"
+    },
+    {
+      "name": "John Yeboah Zamora",
+      "position": "FW",
+      "shirt": "9",
+      "height": "1.70 m",
+      "role": "Delantero"
+    }
+  ],
+  "T17": [
+    {
+      "name": "Mohamed Salah Hamed Mahrous Ghaly",
+      "position": "FW",
+      "shirt": "10",
+      "height": "1.75 m",
+      "role": "Referente"
+    },
+    {
+      "name": "Mohamed Elsayed Mohamed Elshenawy Gomaa",
+      "position": "GK",
+      "shirt": "1",
+      "height": "1.91 m",
+      "role": "Portero"
+    },
+    {
+      "name": "Yasser Ahmed Ibrahim Elhanafy",
+      "position": "DF",
+      "shirt": "2",
+      "height": "1.85 m",
+      "role": "Defensa"
+    },
+    {
+      "name": "Emam Ashour Metwaly Abdelghany",
+      "position": "MF",
+      "shirt": "8",
+      "height": "1.80 m",
+      "role": "Mediocampo"
+    },
+    {
+      "name": "Mahmoud Ahmed Ibrahim Hassan",
+      "position": "FW",
+      "shirt": "7",
+      "height": "1.81 m",
+      "role": "Delantero"
+    }
+  ],
+  "T18": [
+    {
+      "name": "Harry Edward Kane",
+      "position": "FW",
+      "shirt": "9",
+      "height": "1.90 m",
+      "role": "Referente"
+    },
+    {
+      "name": "Jordan Lee Pickford",
+      "position": "GK",
+      "shirt": "1",
+      "height": "1.85 m",
+      "role": "Portero"
+    },
+    {
+      "name": "Ezri Ngoyo Konsa",
+      "position": "DF",
+      "shirt": "2",
+      "height": "1.80 m",
+      "role": "Defensa"
+    },
+    {
+      "name": "Declan Rice",
+      "position": "MF",
+      "shirt": "4",
+      "height": "1.85 m",
+      "role": "Mediocampo"
+    },
+    {
+      "name": "Bukayo Ayoyinka Saka",
+      "position": "FW",
+      "shirt": "7",
+      "height": "1.78 m",
+      "role": "Delantero"
+    }
+  ],
+  "T19": [
+    {
+      "name": "Kylian Mbappe Lottin",
+      "position": "FW",
+      "shirt": "10",
+      "height": "1.80 m",
+      "role": "Referente"
+    },
+    {
+      "name": "Brice Lauriche Samba",
+      "position": "GK",
+      "shirt": "1",
+      "height": "1.87 m",
+      "role": "Portero"
+    },
+    {
+      "name": "Malo Arthur Gusto",
+      "position": "DF",
+      "shirt": "2",
+      "height": "1.79 m",
+      "role": "Defensa"
+    },
+    {
+      "name": "Kouadio Emmanuel Boris Kone",
+      "position": "MF",
+      "shirt": "6",
+      "height": "1.85 m",
+      "role": "Mediocampo"
+    },
+    {
+      "name": "Masour Ousmane Dembele",
+      "position": "FW",
+      "shirt": "7",
+      "height": "1.79 m",
+      "role": "Delantero"
+    }
+  ],
+  "T20": [
+    {
+      "name": "Manuel Peter Neuer",
+      "position": "GK",
+      "shirt": "1",
+      "height": "1.93 m",
+      "role": "Referente"
+    },
+    {
+      "name": "Oliver Baumann",
+      "position": "GK",
+      "shirt": "12",
+      "height": "1.87 m",
+      "role": "Portero"
+    },
+    {
+      "name": "Antonio Rüdiger",
+      "position": "DF",
+      "shirt": "2",
+      "height": "1.90 m",
+      "role": "Defensa"
+    },
+    {
+      "name": "Aleksandar Pavlović",
+      "position": "MF",
+      "shirt": "5",
+      "height": "1.88 m",
+      "role": "Mediocampo"
+    },
+    {
+      "name": "Kai Lukas Havertz",
+      "position": "FW",
+      "shirt": "7",
+      "height": "1.90 m",
+      "role": "Delantero"
+    }
+  ],
+  "T21": [
+    {
+      "name": "Jordan Pierre Ayew",
+      "position": "FW",
+      "shirt": "9",
+      "height": "1.82 m",
+      "role": "Referente"
+    },
+    {
+      "name": "Lawrence Ati Zigi",
+      "position": "GK",
+      "shirt": "1",
+      "height": "1.88 m",
+      "role": "Portero"
+    },
+    {
+      "name": "Alidu Seidu",
+      "position": "DF",
+      "shirt": "2",
+      "height": "1.73 m",
+      "role": "Defensa"
+    },
+    {
+      "name": "Caleb Marfo Yirenkyi",
+      "position": "MF",
+      "shirt": "3",
+      "height": "1.82 m",
+      "role": "Mediocampo"
+    },
+    {
+      "name": "Abdul Fatawu Issahaku",
+      "position": "FW",
+      "shirt": "7",
+      "height": "1.77 m",
+      "role": "Delantero"
+    }
+  ],
+  "T22": [
+    {
+      "name": "Johny Placide",
+      "position": "GK",
+      "shirt": "1",
+      "height": "1.81 m",
+      "role": "Referente"
+    },
+    {
+      "name": "Alexandre Jr Pierre",
+      "position": "GK",
+      "shirt": "12",
+      "height": "1.90 m",
+      "role": "Portero"
+    },
+    {
+      "name": "Carlens Jean Fedlaire Ruby Arcus",
+      "position": "DF",
+      "shirt": "2",
+      "height": "1.80 m",
+      "role": "Defensa"
+    },
+    {
+      "name": "Carl Fred Sainte",
+      "position": "MF",
+      "shirt": "6",
+      "height": "1.82 m",
+      "role": "Mediocampo"
+    },
+    {
+      "name": "Derrick Burckley Etienne Jr",
+      "position": "FW",
+      "shirt": "7",
+      "height": "1.78 m",
+      "role": "Delantero"
+    }
+  ],
+  "T23": [
+    {
+      "name": "Ehsan Haji Safi",
+      "position": "DF",
+      "shirt": "3",
+      "height": "1.78 m",
+      "role": "Referente"
+    },
+    {
+      "name": "Ali Reza Safarbeiranvand",
+      "position": "GK",
+      "shirt": "1",
+      "height": "1.95 m",
+      "role": "Portero"
+    },
+    {
+      "name": "Saleh Hardani Kherad",
+      "position": "DF",
+      "shirt": "2",
+      "height": "1.76 m",
+      "role": "Defensa"
+    },
+    {
+      "name": "Saeid Ezatolahi Afagh",
+      "position": "MF",
+      "shirt": "6",
+      "height": "1.89 m",
+      "role": "Mediocampo"
+    },
+    {
+      "name": "Mehdi Taremi",
+      "position": "FW",
+      "shirt": "9",
+      "height": "1.87 m",
+      "role": "Delantero"
+    }
+  ],
+  "T24": [
+    {
+      "name": "Jalal Hasan Hachim Hachim",
+      "position": "GK",
+      "shirt": "12",
+      "height": "1.88 m",
+      "role": "Referente"
+    },
+    {
+      "name": "Fahad Talib Raheem Raheem",
+      "position": "GK",
+      "shirt": "1",
+      "height": "1.92 m",
+      "role": "Portero"
+    },
+    {
+      "name": "Rebin Ghareeb Solaka Adhamat",
+      "position": "DF",
+      "shirt": "2",
+      "height": "1.93 m",
+      "role": "Defensa"
+    },
+    {
+      "name": "Youssef Wali Faeq Amyn",
+      "position": "MF",
+      "shirt": "7",
+      "height": "1.72 m",
+      "role": "Mediocampo"
+    },
+    {
+      "name": "Ali Ibrahim Karim Alzubaidi",
+      "position": "FW",
+      "shirt": "9",
+      "height": "1.87 m",
+      "role": "Delantero"
+    }
+  ],
+  "T25": [
+    {
+      "name": "Yuto Nagatomo",
+      "position": "DF",
+      "shirt": "5",
+      "height": "1.70 m",
+      "role": "Referente"
+    },
+    {
+      "name": "Zion Suzuki",
+      "position": "GK",
+      "shirt": "1",
+      "height": "1.90 m",
+      "role": "Portero"
+    },
+    {
+      "name": "Yukinari Sugawara",
+      "position": "DF",
+      "shirt": "2",
+      "height": "1.79 m",
+      "role": "Defensa"
+    },
+    {
+      "name": "Ao Tanaka",
+      "position": "MF",
+      "shirt": "7",
+      "height": "1.80 m",
+      "role": "Mediocampo"
+    },
+    {
+      "name": "Shuto Machino",
+      "position": "FW",
+      "shirt": "6",
+      "height": "1.85 m",
+      "role": "Delantero"
+    }
+  ],
+  "T26": [
+    {
+      "name": "Mousa Mohammad Mousa Suleiman",
+      "position": "FW",
+      "shirt": "10",
+      "height": "1.76 m",
+      "role": "Referente"
+    },
+    {
+      "name": "Yazeed Mo'ien Hasan Abulaila",
+      "position": "GK",
+      "shirt": "1",
+      "height": "1.88 m",
+      "role": "Portero"
+    },
+    {
+      "name": "Mohammad Ali Hasan Abuhasheesh",
+      "position": "DF",
+      "shirt": "2",
+      "height": "1.79 m",
+      "role": "Defensa"
+    },
+    {
+      "name": "Amer Rasem Adel Jamous",
+      "position": "MF",
+      "shirt": "6",
+      "height": "1.77 m",
+      "role": "Mediocampo"
+    },
+    {
+      "name": "Mohammad Faisal Yousef Abu Zraiq",
+      "position": "FW",
+      "shirt": "7",
+      "height": "1.70 m",
+      "role": "Delantero"
+    }
+  ],
+  "T27": [
+    {
+      "name": "Heung Min Son",
+      "position": "FW",
+      "shirt": "7",
+      "height": "1.83 m",
+      "role": "Referente"
+    },
+    {
+      "name": "Seunggyu Kim",
+      "position": "GK",
+      "shirt": "1",
+      "height": "1.87 m",
+      "role": "Portero"
+    },
+    {
+      "name": "Hanbeom Lee",
+      "position": "DF",
+      "shirt": "2",
+      "height": "1.88 m",
+      "role": "Defensa"
+    },
+    {
+      "name": "Gihyuk Lee",
+      "position": "MF",
+      "shirt": "3",
+      "height": "1.84 m",
+      "role": "Mediocampo"
+    },
+    {
+      "name": "Guesung Cho",
+      "position": "FW",
+      "shirt": "9",
+      "height": "1.88 m",
+      "role": "Delantero"
+    }
+  ],
+  "T28": [
+    {
+      "name": "Francisco Guillermo Ochoa Magaña",
+      "position": "GK",
+      "shirt": "13",
+      "height": "1.85 m",
+      "role": "Referente"
+    },
+    {
+      "name": "José Raúl Rangel Aguilar",
+      "position": "GK",
+      "shirt": "1",
+      "height": "1.90 m",
+      "role": "Portero"
+    },
+    {
+      "name": "Jorge Eduardo Sánchez Ramos",
+      "position": "DF",
+      "shirt": "2",
+      "height": "1.76 m",
+      "role": "Defensa"
+    },
+    {
+      "name": "Erik Antonio Lira Méndez",
+      "position": "MF",
+      "shirt": "6",
+      "height": "1.72 m",
+      "role": "Mediocampo"
+    },
+    {
+      "name": "Raúl Alonso Jiménez Rodríguez",
+      "position": "FW",
+      "shirt": "9",
+      "height": "1.88 m",
+      "role": "Delantero"
+    }
+  ],
+  "T29": [
+    {
+      "name": "Achraf Hakimi",
+      "position": "DF",
+      "shirt": "2",
+      "height": "1.80 m",
+      "role": "Referente"
+    },
+    {
+      "name": "Yassine Bounou",
+      "position": "GK",
+      "shirt": "1",
+      "height": "1.92 m",
+      "role": "Portero"
+    },
+    {
+      "name": "Noussair Mazraoui",
+      "position": "DF",
+      "shirt": "3",
+      "height": "1.83 m",
+      "role": "Defensa"
+    },
+    {
+      "name": "Sofyan Amrabat",
+      "position": "MF",
+      "shirt": "4",
+      "height": "1.85 m",
+      "role": "Mediocampo"
+    },
+    {
+      "name": "Souane Rahimi",
+      "position": "FW",
+      "shirt": "9",
+      "height": "1.80 m",
+      "role": "Delantero"
+    }
+  ],
+  "T30": [
+    {
+      "name": "Memphis Depay",
+      "position": "FW",
+      "shirt": "10",
+      "height": "1.78 m",
+      "role": "Referente"
+    },
+    {
+      "name": "Bart Verbruggen",
+      "position": "GK",
+      "shirt": "1",
+      "height": "1.93 m",
+      "role": "Portero"
+    },
+    {
+      "name": "Lutsharel Emiliano Geertruida",
+      "position": "DF",
+      "shirt": "2",
+      "height": "1.85 m",
+      "role": "Defensa"
+    },
+    {
+      "name": "Marten Elco De Roon",
+      "position": "MF",
+      "shirt": "3",
+      "height": "1.86 m",
+      "role": "Mediocampo"
+    },
+    {
+      "name": "Wout François Maria Weghorst",
+      "position": "FW",
+      "shirt": "9",
+      "height": "1.97 m",
+      "role": "Delantero"
+    }
+  ],
+  "T31": [
+    {
+      "name": "Christopher Grant Wood",
+      "position": "FW",
+      "shirt": "9",
+      "height": "1.91 m",
+      "role": "Referente"
+    },
+    {
+      "name": "Maxime Teremoana Crocombe",
+      "position": "GK",
+      "shirt": "1",
+      "height": "1.90 m",
+      "role": "Portero"
+    },
+    {
+      "name": "Timothy John Payne",
+      "position": "DF",
+      "shirt": "2",
+      "height": "1.79 m",
+      "role": "Defensa"
+    },
+    {
+      "name": "Joe Zen Robert Bell",
+      "position": "MF",
+      "shirt": "6",
+      "height": "1.82 m",
+      "role": "Mediocampo"
+    },
+    {
+      "name": "Logan Tipene Rogerson",
+      "position": "FW",
+      "shirt": "7",
+      "height": "1.82 m",
+      "role": "Delantero"
+    }
+  ],
+  "T32": [
+    {
+      "name": "Alexander Sørloth",
+      "position": "FW",
+      "shirt": "7",
+      "height": "1.96 m",
+      "role": "Referente"
+    },
+    {
+      "name": "Ørjan Haskjold Nyland",
+      "position": "GK",
+      "shirt": "1",
+      "height": "1.92 m",
+      "role": "Portero"
+    },
+    {
+      "name": "Kristoffer Vassbakk Köpp Ajer",
+      "position": "DF",
+      "shirt": "3",
+      "height": "1.98 m",
+      "role": "Defensa"
+    },
+    {
+      "name": "Morten Thorsby",
+      "position": "MF",
+      "shirt": "2",
+      "height": "1.88 m",
+      "role": "Mediocampo"
+    },
+    {
+      "name": "Erling Braut Haaland",
+      "position": "FW",
+      "shirt": "9",
+      "height": "1.95 m",
+      "role": "Delantero"
+    }
+  ],
+  "T33": [
+    {
+      "name": "Anibal Casis Godoy Lemus",
+      "position": "MF",
+      "shirt": "20",
+      "height": "1.84 m",
+      "role": "Referente"
+    },
+    {
+      "name": "Luis Ricardo Mejía Cajar",
+      "position": "GK",
+      "shirt": "1",
+      "height": "1.93 m",
+      "role": "Portero"
+    },
+    {
+      "name": "Cesar Rodolfo Blackman Camarena",
+      "position": "DF",
+      "shirt": "2",
+      "height": "1.74 m",
+      "role": "Defensa"
+    },
+    {
+      "name": "Cristian Jesus Martinez",
+      "position": "MF",
+      "shirt": "6",
+      "height": "1.70 m",
+      "role": "Mediocampo"
+    },
+    {
+      "name": "Tomas Abdiel Rodriguez Mena",
+      "position": "FW",
+      "shirt": "9",
+      "height": "1.83 m",
+      "role": "Delantero"
+    }
+  ],
+  "T34": [
+    {
+      "name": "Gustavo Raul Gómez Portillo",
+      "position": "DF",
+      "shirt": "15",
+      "height": "1.79 m",
+      "role": "Referente"
+    },
+    {
+      "name": "Roberto Junior Fernandez Torres",
+      "position": "GK",
+      "shirt": "1",
+      "height": "1.91 m",
+      "role": "Portero"
+    },
+    {
+      "name": "Victor Gustavo Velazquez Ramos",
+      "position": "DF",
+      "shirt": "2",
+      "height": "1.89 m",
+      "role": "Defensa"
+    },
+    {
+      "name": "Ramón Sosa Acosta",
+      "position": "MF",
+      "shirt": "7",
+      "height": "1.78 m",
+      "role": "Mediocampo"
+    },
+    {
+      "name": "Arnaldo Antonio Sanabria Ayala",
+      "position": "FW",
+      "shirt": "9",
+      "height": "1.80 m",
+      "role": "Delantero"
+    }
+  ],
+  "T35": [
+    {
+      "name": "Cristiano Ronaldo Dos Santos Aveiro",
+      "position": "FW",
+      "shirt": "7",
+      "height": "1.85 m",
+      "role": "Referente"
+    },
+    {
+      "name": "Diogo Meireles Da Costa",
+      "position": "GK",
+      "shirt": "1",
+      "height": "1.88 m",
+      "role": "Portero"
+    },
+    {
+      "name": "Nélson Cabral Semedo",
+      "position": "DF",
+      "shirt": "2",
+      "height": "1.79 m",
+      "role": "Defensa"
+    },
+    {
+      "name": "Matheus Luiz Nunes",
+      "position": "MF",
+      "shirt": "6",
+      "height": "1.83 m",
+      "role": "Mediocampo"
+    },
+    {
+      "name": "Gonçalo Matias Ramos",
+      "position": "FW",
+      "shirt": "9",
+      "height": "1.85 m",
+      "role": "Delantero"
+    }
+  ],
+  "T36": [
+    {
+      "name": "Hasan Khalid H Alhaydos",
+      "position": "FW",
+      "shirt": "10",
+      "height": "1.74 m",
+      "role": "Referente"
+    },
+    {
+      "name": "Mahmoud Ibrahim M Abunada",
+      "position": "GK",
+      "shirt": "1",
+      "height": "1.85 m",
+      "role": "Portero"
+    },
+    {
+      "name": "Pedro Miguel D D Correia",
+      "position": "DF",
+      "shirt": "2",
+      "height": "1.80 m",
+      "role": "Defensa"
+    },
+    {
+      "name": "Abdelaziz Hatim A Mohamed",
+      "position": "MF",
+      "shirt": "6",
+      "height": "1.79 m",
+      "role": "Mediocampo"
+    },
+    {
+      "name": "Ahmed Alaaeldin B M Abdelmotaal",
+      "position": "FW",
+      "shirt": "7",
+      "height": "1.79 m",
+      "role": "Delantero"
+    }
+  ],
+  "T37": [
+    {
+      "name": "Salem Mohammed S Aldawsari",
+      "position": "FW",
+      "shirt": "10",
+      "height": "1.73 m",
+      "role": "Referente"
+    },
+    {
+      "name": "Nawaf Dhahi F Alaqidi",
+      "position": "GK",
+      "shirt": "1",
+      "height": "1.86 m",
+      "role": "Portero"
+    },
+    {
+      "name": "Ali Hassan M Majrashi",
+      "position": "DF",
+      "shirt": "2",
+      "height": "1.69 m",
+      "role": "Defensa"
+    },
+    {
+      "name": "Nasser Essa S Aldawsari",
+      "position": "MF",
+      "shirt": "6",
+      "height": "1.78 m",
+      "role": "Mediocampo"
+    },
+    {
+      "name": "Aiman Yahya Y Ahmed",
+      "position": "FW",
+      "shirt": "8",
+      "height": "1.73 m",
+      "role": "Delantero"
+    }
+  ],
+  "T38": [
+    {
+      "name": "Andrew Henry Robertson",
+      "position": "DF",
+      "shirt": "3",
+      "height": "1.78 m",
+      "role": "Referente"
+    },
+    {
+      "name": "Angus Fraser James Gunn",
+      "position": "GK",
+      "shirt": "1",
+      "height": "1.96 m",
+      "role": "Portero"
+    },
+    {
+      "name": "Aaron Buchanan Hickey",
+      "position": "DF",
+      "shirt": "2",
+      "height": "1.85 m",
+      "role": "Defensa"
+    },
+    {
+      "name": "Scott Francis Mctominay",
+      "position": "MF",
+      "shirt": "4",
+      "height": "1.93 m",
+      "role": "Mediocampo"
+    },
+    {
+      "name": "Lyndon John Dykes",
+      "position": "FW",
+      "shirt": "9",
+      "height": "1.88 m",
+      "role": "Delantero"
+    }
+  ],
+  "T39": [
+    {
+      "name": "Idrissa Gana Gueye",
+      "position": "MF",
+      "shirt": "5",
+      "height": "1.74 m",
+      "role": "Referente"
+    },
+    {
+      "name": "Yehvann Djibril Victor Diouf",
+      "position": "GK",
+      "shirt": "1",
+      "height": "1.88 m",
+      "role": "Portero"
+    },
+    {
+      "name": "Mamadou Sarr",
+      "position": "DF",
+      "shirt": "2",
+      "height": "1.94 m",
+      "role": "Defensa"
+    },
+    {
+      "name": "Ismaila Pathe Ciss",
+      "position": "MF",
+      "shirt": "6",
+      "height": "1.86 m",
+      "role": "Mediocampo"
+    },
+    {
+      "name": "Assane Diao",
+      "position": "FW",
+      "shirt": "7",
+      "height": "1.85 m",
+      "role": "Delantero"
+    }
+  ],
+  "T40": [
+    {
+      "name": "Ronwen Hayden Williams",
+      "position": "GK",
+      "shirt": "1",
+      "height": "1.84 m",
+      "role": "Referente"
+    },
+    {
+      "name": "Sipho Justin Chaine",
+      "position": "GK",
+      "shirt": "16",
+      "height": "1.86 m",
+      "role": "Portero"
+    },
+    {
+      "name": "Tholo Thabang Matuludi",
+      "position": "DF",
+      "shirt": "2",
+      "height": "1.89 m",
+      "role": "Defensa"
+    },
+    {
+      "name": "Teboho Mokoena",
+      "position": "MF",
+      "shirt": "4",
+      "height": "1.77 m",
+      "role": "Mediocampo"
+    },
+    {
+      "name": "Oswin Reagan Appollis",
+      "position": "FW",
+      "shirt": "7",
+      "height": "1.71 m",
+      "role": "Delantero"
+    }
+  ],
+  "T41": [
+    {
+      "name": "Rodrigo Hernández Cascante",
+      "position": "MF",
+      "shirt": "16",
+      "height": "1.90 m",
+      "role": "Referente"
+    },
+    {
+      "name": "David Raya Martín",
+      "position": "GK",
+      "shirt": "1",
+      "height": "1.86 m",
+      "role": "Portero"
+    },
+    {
+      "name": "Marc Pubill Pages",
+      "position": "DF",
+      "shirt": "2",
+      "height": "1.91 m",
+      "role": "Defensa"
+    },
+    {
+      "name": "Mikel Merino Zazón",
+      "position": "MF",
+      "shirt": "6",
+      "height": "1.88 m",
+      "role": "Mediocampo"
+    },
+    {
+      "name": "Ferran Torres García",
+      "position": "FW",
+      "shirt": "7",
+      "height": "1.83 m",
+      "role": "Delantero"
+    }
+  ],
+  "T42": [
+    {
+      "name": "Victor Jörgen Nilsson Lindelöf",
+      "position": "DF",
+      "shirt": "3",
+      "height": "1.87 m",
+      "role": "Referente"
+    },
+    {
+      "name": "Jacob Mikael Widell Zetterström",
+      "position": "GK",
+      "shirt": "1",
+      "height": "1.97 m",
+      "role": "Portero"
+    },
+    {
+      "name": "Gustaf Johan Lagerbielke",
+      "position": "DF",
+      "shirt": "2",
+      "height": "1.93 m",
+      "role": "Defensa"
+    },
+    {
+      "name": "Lucas Erik Holger Bergvall",
+      "position": "MF",
+      "shirt": "7",
+      "height": "1.87 m",
+      "role": "Mediocampo"
+    },
+    {
+      "name": "Alexander Isak",
+      "position": "FW",
+      "shirt": "9",
+      "height": "1.90 m",
+      "role": "Delantero"
+    }
+  ],
+  "T43": [
+    {
+      "name": "Granit Xhaka",
+      "position": "MF",
+      "shirt": "10",
+      "height": "1.83 m",
+      "role": "Referente"
+    },
+    {
+      "name": "Gregor Kobel",
+      "position": "GK",
+      "shirt": "1",
+      "height": "1.96 m",
+      "role": "Portero"
+    },
+    {
+      "name": "Miro Max Maria Muheim",
+      "position": "DF",
+      "shirt": "2",
+      "height": "1.82 m",
+      "role": "Defensa"
+    },
+    {
+      "name": "Denis Lemi Zakaria Lako Lado",
+      "position": "MF",
+      "shirt": "6",
+      "height": "1.89 m",
+      "role": "Mediocampo"
+    },
+    {
+      "name": "Breel Donald Embolo",
+      "position": "FW",
+      "shirt": "7",
+      "height": "1.84 m",
+      "role": "Delantero"
+    }
+  ],
+  "T44": [
+    {
+      "name": "Ellyes Joris Skhiri",
+      "position": "MF",
+      "shirt": "17",
+      "height": "1.85 m",
+      "role": "Referente"
+    },
+    {
+      "name": "Abdelmouhib Chamakh",
+      "position": "GK",
+      "shirt": "1",
+      "height": "1.89 m",
+      "role": "Portero"
+    },
+    {
+      "name": "Ali Elabdi",
+      "position": "DF",
+      "shirt": "2",
+      "height": "1.77 m",
+      "role": "Defensa"
+    },
+    {
+      "name": "Hannibal Mejbri",
+      "position": "MF",
+      "shirt": "10",
+      "height": "1.77 m",
+      "role": "Mediocampo"
+    },
+    {
+      "name": "Mohamed Elyes Achouri",
+      "position": "FW",
+      "shirt": "7",
+      "height": "1.87 m",
+      "role": "Delantero"
+    }
+  ],
+  "T45": [
+    {
+      "name": "Hakan Çalhanoğlu",
+      "position": "MF",
+      "shirt": "10",
+      "height": "1.78 m",
+      "role": "Referente"
+    },
+    {
+      "name": "Fehmi Mert Günok",
+      "position": "GK",
+      "shirt": "1",
+      "height": "1.96 m",
+      "role": "Portero"
+    },
+    {
+      "name": "Mehmet Zeki Çelik",
+      "position": "DF",
+      "shirt": "2",
+      "height": "1.80 m",
+      "role": "Defensa"
+    },
+    {
+      "name": "Salih Özcan",
+      "position": "MF",
+      "shirt": "5",
+      "height": "1.82 m",
+      "role": "Mediocampo"
+    },
+    {
+      "name": "Muhammed Kerem Aktürkoğlu",
+      "position": "FW",
+      "shirt": "7",
+      "height": "1.72 m",
+      "role": "Delantero"
+    }
+  ],
+  "T46": [
+    {
+      "name": "Nestor Fernando Muslera Micol",
+      "position": "GK",
+      "shirt": "23",
+      "height": "1.90 m",
+      "role": "Referente"
+    },
+    {
+      "name": "Sergio Ramón Rochet Alvarez",
+      "position": "GK",
+      "shirt": "1",
+      "height": "1.89 m",
+      "role": "Portero"
+    },
+    {
+      "name": "José María Giménez De Vargas",
+      "position": "DF",
+      "shirt": "2",
+      "height": "1.86 m",
+      "role": "Defensa"
+    },
+    {
+      "name": "Manuel Ugarte Ribeiro",
+      "position": "MF",
+      "shirt": "5",
+      "height": "1.82 m",
+      "role": "Mediocampo"
+    },
+    {
+      "name": "Darwin Gabriel Nuñez Ribeiro",
+      "position": "FW",
+      "shirt": "9",
+      "height": "1.85 m",
+      "role": "Delantero"
+    }
+  ],
+  "T47": [
+    {
+      "name": "Christian Mate Pulisic",
+      "position": "FW",
+      "shirt": "10",
+      "height": "1.77 m",
+      "role": "Referente"
+    },
+    {
+      "name": "Matthew Charles Turner",
+      "position": "GK",
+      "shirt": "1",
+      "height": "1.90 m",
+      "role": "Portero"
+    },
+    {
+      "name": "Sergiño Gianni Dest",
+      "position": "DF",
+      "shirt": "2",
+      "height": "1.73 m",
+      "role": "Defensa"
+    },
+    {
+      "name": "Tyler Shaan Adams",
+      "position": "MF",
+      "shirt": "4",
+      "height": "1.75 m",
+      "role": "Mediocampo"
+    },
+    {
+      "name": "Ricardo Daniel Pepi",
+      "position": "FW",
+      "shirt": "9",
+      "height": "1.85 m",
+      "role": "Delantero"
+    }
+  ],
+  "T48": [
+    {
+      "name": "Eldor Shomurodov",
+      "position": "FW",
+      "shirt": "14",
+      "height": "1.90 m",
+      "role": "Referente"
+    },
+    {
+      "name": "Utkir Yusupov",
+      "position": "GK",
+      "shirt": "1",
+      "height": "1.85 m",
+      "role": "Portero"
+    },
+    {
+      "name": "Abdukodir Khusanov",
+      "position": "DF",
+      "shirt": "2",
+      "height": "1.86 m",
+      "role": "Defensa"
+    },
+    {
+      "name": "Akmal Mozgovoy",
+      "position": "MF",
+      "shirt": "6",
+      "height": "1.80 m",
+      "role": "Mediocampo"
+    },
+    {
+      "name": "Azizbek Amonov",
+      "position": "FW",
+      "shirt": "20",
+      "height": "1.81 m",
+      "role": "Delantero"
+    }
+  ]
+};

@@ -12,3 +12,7 @@ export const firebaseConfig = {
 
 // Cambiar a true para trabajar con Firebase Emulator Suite.
 export const USE_FIREBASE_EMULATORS = false;
+
+// Mantener false en Spark/free tier publicado.
+// Cambiar a true solo si hay Cloud Functions desplegadas o emuladas.
+export const USE_CLOUD_FUNCTIONS = false;

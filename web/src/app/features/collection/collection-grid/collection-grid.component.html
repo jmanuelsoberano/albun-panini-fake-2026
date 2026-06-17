@@ -1,0 +1,9 @@
+<div class="sticker-grid">
+  @for (sticker of stickers(); track sticker.id) {
+    <app-sticker-card
+      [sticker]="sticker"
+      [copies]="copyCount(sticker.id)"
+      (stickerSelected)="selectSticker($event)"
+    />
+  }
+</div>

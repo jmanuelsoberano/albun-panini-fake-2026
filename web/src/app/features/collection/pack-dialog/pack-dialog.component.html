@@ -1,0 +1,51 @@
+<section
+  class="dialog"
+  role="dialog"
+  aria-modal="true"
+  aria-labelledby="pack-dialog-title"
+  aria-describedby="pack-dialog-description"
+  tabindex="-1"
+  (keydown.escape)="closeDialog()"
+>
+  <button
+    class="backdrop"
+    type="button"
+    tabindex="-1"
+    aria-label="Cerrar sobre"
+    (click)="closeDialog()"
+  ></button>
+  <article class="panel" cdkTrapFocus [cdkTrapFocusAutoCapture]="true">
+    <button
+      #closeButton
+      class="close-btn"
+      type="button"
+      aria-label="Cerrar sobre"
+      (click)="closeDialog()"
+    >
+      ×
+    </button>
+    <p class="eyebrow">{{ sourceLabel() }}</p>
+    <h2 id="pack-dialog-title">Tus nuevos cromos</h2>
+    <p id="pack-dialog-description" class="sr-only">
+      Este sobre contiene {{ stickers().length }} cromos nuevos. Puedes revisar cada cromo o cerrar
+      el dialogo.
+    </p>
+
+    <div class="pack-grid">
+      @for (sticker of stickers(); track sticker.id) {
+        <app-sticker-card
+          [sticker]="sticker"
+          [copies]="copyCount(sticker.id)"
+          (stickerSelected)="selectSticker($event)"
+        />
+      }
+    </div>
+
+    <div class="actions">
+      @if (canOpenAnother()) {
+        <button type="button" (click)="openAnother()">Abrir otro sobre</button>
+      }
+      <button class="secondary" type="button" (click)="closeDialog()">Cerrar</button>
+    </div>
+  </article>
+</section>

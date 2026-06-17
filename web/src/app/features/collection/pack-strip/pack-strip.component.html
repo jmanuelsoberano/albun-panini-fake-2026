@@ -1,0 +1,8 @@
+<section class="pack-strip" aria-label="Ultimo sobre abierto">
+  <strong>Ultimo sobre</strong>
+  <div>
+    @for (sticker of stickers(); track sticker.id) {
+      <span>{{ sticker.id }} · {{ sticker.name }}</span>
+    }
+  </div>
+</section>

@@ -1,0 +1,84 @@
+.dialog {
+  position: fixed;
+  inset: 0;
+  z-index: 75;
+  display: grid;
+  place-items: center;
+  padding: 1rem;
+}
+
+.backdrop {
+  position: absolute;
+  inset: 0;
+  border: 0;
+  background: rgba(16, 35, 61, 0.58);
+}
+
+.panel {
+  position: relative;
+  width: min(1020px, 100%);
+  max-height: min(86vh, 780px);
+  overflow: auto;
+  padding: clamp(1rem, 3vw, 1.6rem);
+  border: 3px solid var(--deep);
+  border-radius: 8px;
+  background: #fffaf0;
+  box-shadow: 0 30px 90px rgba(16, 35, 61, 0.34);
+}
+
+.close-btn {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  width: 42px;
+  height: 42px;
+  border: 2px solid var(--deep);
+  border-radius: 4px;
+  background: #fff;
+  color: var(--deep);
+  font-size: 1.45rem;
+  line-height: 1;
+}
+
+h2 {
+  margin: 0 0 1rem;
+  color: var(--deep);
+  font-size: clamp(1.8rem, 4vw, 3rem);
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.pack-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(150px, 1fr));
+  gap: 0.8rem;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  margin-top: 1rem;
+}
+
+.actions button {
+  min-height: 42px;
+  padding: 0.68rem 0.9rem;
+  border: 0;
+  border-radius: 6px;
+  background: var(--deep);
+  color: #fff;
+  font-weight: 950;
+}
+
+.actions .secondary {
+  border: 1px solid var(--rule);
+  background: #fff;
+  color: var(--deep);
+}
+
+@media (max-width: 920px) {
+  .pack-grid {
+    grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+  }
+}

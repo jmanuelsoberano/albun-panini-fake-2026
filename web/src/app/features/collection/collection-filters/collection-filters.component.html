@@ -1,0 +1,36 @@
+<div class="toolbox">
+  <label>
+    <span>Buscar</span>
+    <input
+      type="search"
+      placeholder="Pais, jugador, posicion o codigo"
+      [value]="filters().query"
+      (input)="updateQuery($event)"
+    />
+  </label>
+  <label>
+    <span>Confederacion</span>
+    <select [value]="filters().confederation" (change)="updateConfederation($event)">
+      <option value="all">Todas</option>
+      @for (confederation of confederations(); track confederation) {
+        <option [value]="confederation">{{ confederation }}</option>
+      }
+    </select>
+  </label>
+  <label>
+    <span>Estado</span>
+    <select [value]="filters().status" (change)="updateStatus($event)">
+      @for (status of statusOptions; track status) {
+        <option [value]="status">{{ statusLabel(status) }}</option>
+      }
+    </select>
+  </label>
+  <label>
+    <span>Rareza</span>
+    <select [value]="filters().rarity" (change)="updateRarity($event)">
+      @for (rarity of rarityOptions; track rarity) {
+        <option [value]="rarity">{{ rarityLabel(rarity) }}</option>
+      }
+    </select>
+  </label>
+</div>

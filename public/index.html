@@ -16,12 +16,12 @@
       <span class="brand-mark" aria-hidden="true">FG</span>
       <span>
         <strong>Álbum Fan Global 2026</strong>
-        <small>No oficial · diseño ficticio</small>
+        <small>No oficial · datos factuales</small>
       </span>
     </a>
     <nav class="main-nav" aria-label="Navegación principal">
       <a href="#coleccion">Colección</a>
-      <a href="#equipos">Equipos</a>
+      <a href="#equipos">Países</a>
       <a href="#estadios">Sedes</a>
       <a href="#retos">Retos</a>
     </nav>
@@ -34,9 +34,9 @@
   <main id="top">
     <section class="hero section-shell">
       <div class="hero-copy">
-        <p class="eyebrow">Edición fanmade · 48 equipos ficticios · 240 cromos</p>
+        <p class="eyebrow">Edición fanmade · 48 equipos · 240 cromos</p>
         <h1>Completa tu álbum digital de fútbol 2026.</h1>
-        <p class="hero-text">Una experiencia interactiva lista para navegador: sobres aleatorios, cromos coleccionables, buscador, filtros, progreso guardado y diseño responsive. Todo el contenido es inventado para evitar marcas, logos y material protegido.</p>
+        <p class="hero-text">Una experiencia interactiva lista para navegador: sobres aleatorios, cromos coleccionables, buscador, filtros, progreso guardado y diseño responsive. Usa datos factuales sin logos, escudos, mascotas, marcas ni arte oficial.</p>
         <div class="hero-actions">
           <button class="primary-btn" id="openPackHero" type="button">Abrir sobre de 5 cromos</button>
           <a class="secondary-btn" href="#coleccion">Ver colección</a>
@@ -46,9 +46,34 @@
           <span>💾 Guarda progreso</span>
           <span>🎴 Cromos animados</span>
         </div>
+        <section class="session-panel" aria-label="Sesión de jugador">
+          <div class="session-status">
+            <span id="sessionMode" class="status-pill">Modo local</span>
+            <span id="sessionMessage">Progreso guardado en este navegador.</span>
+          </div>
+          <div class="session-grid">
+            <label class="nickname-field">
+              <span>Nickname</span>
+              <input id="nicknameInput" type="text" maxlength="28" value="Coleccionista" autocomplete="nickname" />
+            </label>
+            <div class="session-stat">
+              <small>Monedas</small>
+              <strong id="sessionCoins">0</strong>
+            </div>
+            <div class="session-stat">
+              <small>Sobres</small>
+              <strong id="sessionPacks">Local</strong>
+            </div>
+          </div>
+          <div class="session-actions">
+            <button class="primary-btn small" id="googleLogin" type="button">Entrar con Google</button>
+            <button class="secondary-btn small" id="guestLogin" type="button">Invitado local</button>
+            <button class="primary-btn small" id="claimStarterPack" type="button" disabled>Reclamar sobre inicial</button>
+          </div>
+        </section>
       </div>
 
-      <div class="cover-wrap" aria-label="Portada del álbum ficticio">
+      <div class="cover-wrap" aria-label="Portada del álbum no oficial">
         <div class="album-cover">
           <div class="cover-glow"></div>
           <div class="cover-badge">NO OFICIAL</div>
@@ -110,13 +135,13 @@
           <input id="searchInput" type="search" placeholder="Equipo, jugador, rareza o código..." autocomplete="off" />
         </label>
         <label>
-          <span>Región</span>
+          <span>Confederación</span>
           <select id="regionFilter">
             <option value="all">Todas</option>
           </select>
         </label>
         <label>
-          <span>Estado</span>
+          <span>Estado del cromo</span>
           <select id="statusFilter">
             <option value="all">Todos</option>
             <option value="owned">Pegados</option>
@@ -150,8 +175,30 @@
     <section id="equipos" class="section-shell panel-section">
       <div class="section-heading">
         <div>
-          <p class="eyebrow">Equipos ficticios</p>
-          <h2>48 selecciones inventadas</h2>
+          <p class="eyebrow">Países</p>
+          <h2>48 países participantes</h2>
+        </div>
+      </div>
+      <div class="squad-summary" aria-label="Resumen de plantillas">
+        <article>
+          <span id="squadTeamTotal">48</span>
+          <small>paises</small>
+        </article>
+        <article>
+          <span id="squadPlayerTotal">1,248</span>
+          <small>jugadores totales</small>
+        </article>
+        <article>
+          <span id="squadPerTeam">26</span>
+          <small>jugadores por pais</small>
+        </article>
+        <div class="squad-sources" aria-label="Fuentes oficiales de plantillas">
+          <a id="squadSourceLink" class="squad-source" href="https://fdp.fifa.org/assetspublic/ce281/pdf/SquadLists-English.pdf" target="_blank" rel="noopener noreferrer">
+            Lista oficial FIFA (PDF)
+          </a>
+          <a id="squadArticleLink" class="squad-source secondary-source" href="https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/fifa-world-cup-2026-squads-confirmed" target="_blank" rel="noopener noreferrer">
+            48 plantillas confirmadas
+          </a>
         </div>
       </div>
       <div id="teamsBoard" class="teams-board"></div>
@@ -161,7 +208,7 @@
       <div class="section-heading">
         <div>
           <p class="eyebrow">Sedes</p>
-          <h2>Ruta de sedes fanmade</h2>
+          <h2>Ruta de sedes</h2>
         </div>
       </div>
       <div id="stadiumRoute" class="stadium-route"></div>
@@ -217,9 +264,9 @@
 
   <footer class="footer section-shell">
     <strong>Álbum Fan Global 2026</strong>
-    <span>Proyecto demostrativo no oficial. No usa nombres, escudos, logos, tipografías, fotografías ni diseños oficiales.</span>
+    <span>Proyecto demostrativo no oficial. Usa datos factuales de texto; no usa escudos, logos, tipografías, fotografías ni diseños oficiales.</span>
   </footer>
 
-  <script src="script.js"></script>
+  <script type="module" src="script.js"></script>
 </body>
 </html>

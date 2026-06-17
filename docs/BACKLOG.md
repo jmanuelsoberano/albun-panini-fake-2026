@@ -2,16 +2,18 @@
 
 ## Prioridad alta
 
+- [ ] Seguir `docs/ANGULAR_22_MIGRATION_PLAN.md` para migrar la app estatica a Angular 22 en `web/`.
+- [x] Instalar o seleccionar Node compatible con Angular 22 antes de crear el workspace.
 - [ ] Configurar proyecto Firebase real.
 - [ ] Activar Firebase Authentication.
 - [ ] Activar Cloud Firestore.
 - [ ] Activar Firebase Hosting.
-- [ ] Correr Firebase Emulator Suite.
+- [x] Correr Firebase Emulator Suite.
 - [ ] Sembrar catálogo ficticio en Firestore.
-- [ ] Crear perfil de usuario con nickname y avatar.
-- [ ] Implementar sobre inicial gratis una sola vez.
+- [x] Crear perfil de usuario con nickname y avatar.
+- [x] Implementar sobre inicial gratis una sola vez.
 - [ ] Mover apertura de sobres del cliente a Cloud Functions.
-- [ ] Quitar apertura ilimitada en modo online.
+- [x] Quitar apertura ilimitada en modo online.
 
 ## Prioridad media
 

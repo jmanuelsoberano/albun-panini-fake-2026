@@ -1,5 +1,15 @@
 # Roadmap de versiones
 
+## Plan transversal - Migracion Angular 22
+
+El plan detallado de migracion vive en:
+
+```txt
+docs/ANGULAR_22_MIGRATION_PLAN.md
+```
+
+Este plan debe ejecutarse en paralelo dentro de `web/` hasta que la app Angular cumpla los criterios de aceptacion y pueda reemplazar el Hosting actual sin romper el modo local ni Firebase.
+
 ## v0.1 — Prototipo visual local
 
 Estado: en progreso en este PR.
