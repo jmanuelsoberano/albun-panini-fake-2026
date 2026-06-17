@@ -1,0 +1,12 @@
+node_modules/
+.firebase/
+.firebaserc
+firebase-debug.log
+firebase-debug.*.log
+*.local
+.env
+.env.*
+.DS_Store
+dist/
+build/
+coverage/
