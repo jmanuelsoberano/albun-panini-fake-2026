@@ -26,7 +26,32 @@ cp .firebaserc.example .firebaserc
 
 Editar `.firebaserc` y reemplazar `TU_PROJECT_ID_DE_FIREBASE`.
 
-## 4. Instalar dependencias de Functions
+## 4. Configurar Firebase Web App
+
+En Firebase Console, crear una Web App y copiar su configuración.
+
+Después copiar el archivo de ejemplo:
+
+```bash
+cp public/firebase-config.example.js public/firebase-config.js
+```
+
+Editar `public/firebase-config.js` con los valores reales:
+
+```js
+export const firebaseConfig = {
+  apiKey: "...",
+  authDomain: "...",
+  projectId: "...",
+  storageBucket: "...",
+  messagingSenderId: "...",
+  appId: "..."
+};
+```
+
+`public/firebase-config.js` está en `.gitignore` para evitar subir configuración local al repo.
+
+## 5. Instalar dependencias de Functions
 
 ```bash
 cd functions
@@ -34,7 +59,15 @@ npm install
 cd ..
 ```
 
-## 5. Correr local con emuladores
+## 6. Correr local con emuladores
+
+Para usar emuladores, cambiar temporalmente en `public/firebase-config.js`:
+
+```js
+export const USE_FIREBASE_EMULATORS = true;
+```
+
+Después ejecutar:
 
 ```bash
 firebase emulators:start
@@ -52,13 +85,13 @@ Emulator UI:
 http://localhost:4000
 ```
 
-## 6. Deploy Hosting
+## 7. Deploy Hosting
 
 ```bash
 firebase deploy --only hosting
 ```
 
-## 7. Deploy completo cuando Functions esté listo
+## 8. Deploy completo cuando Functions esté listo
 
 ```bash
 firebase deploy

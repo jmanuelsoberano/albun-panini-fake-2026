@@ -6,6 +6,7 @@ firebase-debug.*.log
 *.local
 .env
 .env.*
+public/firebase-config.js
 .DS_Store
 dist/
 build/
