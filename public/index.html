@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Álbum digital fanmade 2026, no oficial, creado con HTML, CSS y JavaScript." />
+  <title>Álbum Fan Global 2026 — No oficial</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23102a56'/%3E%3Cpath d='M32 8 50 19v22L32 56 14 41V19Z' fill='%23f5c542'/%3E%3Ccircle cx='32' cy='32' r='11' fill='%23fff'/%3E%3C/svg%3E" />
+</head>
+<body>
+  <canvas id="confettiCanvas" aria-hidden="true"></canvas>
+
+  <header class="app-header">
+    <a class="brand" href="#top" aria-label="Volver al inicio">
+      <span class="brand-mark" aria-hidden="true">FG</span>
+      <span>
+        <strong>Álbum Fan Global 2026</strong>
+        <small>No oficial · diseño ficticio</small>
+      </span>
+    </a>
+    <nav class="main-nav" aria-label="Navegación principal">
+      <a href="#coleccion">Colección</a>
+      <a href="#equipos">Equipos</a>
+      <a href="#estadios">Sedes</a>
+      <a href="#retos">Retos</a>
+    </nav>
+    <div class="header-actions">
+      <button class="ghost-btn" id="themeToggle" type="button" aria-label="Cambiar tema">☾</button>
+      <button class="primary-btn compact" id="openPackTop" type="button">Abrir sobre</button>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero section-shell">
+      <div class="hero-copy">
+        <p class="eyebrow">Edición fanmade · 48 equipos ficticios · 240 cromos</p>
+        <h1>Completa tu álbum digital de fútbol 2026.</h1>
+        <p class="hero-text">Una experiencia interactiva lista para navegador: sobres aleatorios, cromos coleccionables, buscador, filtros, progreso guardado y diseño responsive. Todo el contenido es inventado para evitar marcas, logos y material protegido.</p>
+        <div class="hero-actions">
+          <button class="primary-btn" id="openPackHero" type="button">Abrir sobre de 5 cromos</button>
+          <a class="secondary-btn" href="#coleccion">Ver colección</a>
+        </div>
+        <div class="trust-row" aria-label="Características principales">
+          <span>⚡ HTML/CSS/JS puro</span>
+          <span>💾 Guarda progreso</span>
+          <span>🎴 Cromos animados</span>
+        </div>
+      </div>
+
+      <div class="cover-wrap" aria-label="Portada del álbum ficticio">
+        <div class="album-cover">
+          <div class="cover-glow"></div>
+          <div class="cover-badge">NO OFICIAL</div>
+          <div class="cover-title">
+            <span>Fan Global</span>
+            <strong>2026</strong>
+          </div>
+          <div class="cover-ball" aria-hidden="true">
+            <span></span><span></span><span></span>
+          </div>
+          <div class="cover-meta">Álbum coleccionable digital</div>
+          <div class="cover-shards" aria-hidden="true">
+            <i></i><i></i><i></i><i></i><i></i><i></i>
+          </div>
+        </div>
+        <div class="floating-card card-one"><span>Holo</span><strong>FG-26</strong></div>
+        <div class="floating-card card-two"><span>Rare</span><strong>11</strong></div>
+      </div>
+    </section>
+
+    <section class="stats section-shell" aria-label="Resumen de progreso">
+      <article>
+        <span id="statCollected">0</span>
+        <small>Cromos pegados</small>
+      </article>
+      <article>
+        <span id="statTotal">240</span>
+        <small>Total del álbum</small>
+      </article>
+      <article>
+        <span id="statPercent">0%</span>
+        <small>Progreso</small>
+      </article>
+      <article>
+        <span id="statDuplicates">0</span>
+        <small>Repetidos</small>
+      </article>
+      <div class="progress-card">
+        <div class="progress-label"><span>Álbum completado</span><strong id="progressLabel">0%</strong></div>
+        <div class="progress-track"><div id="progressBar"></div></div>
+      </div>
+    </section>
+
+    <section id="coleccion" class="section-shell panel-section">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Colección</p>
+          <h2>Tu álbum</h2>
+        </div>
+        <div class="section-actions">
+          <button class="secondary-btn small" id="addRandom" type="button">Pegar 10 al azar</button>
+          <button class="danger-btn small" id="resetAlbum" type="button">Reiniciar</button>
+        </div>
+      </div>
+
+      <div class="toolbox">
+        <label class="search-box">
+          <span>Buscar</span>
+          <input id="searchInput" type="search" placeholder="Equipo, jugador, rareza o código..." autocomplete="off" />
+        </label>
+        <label>
+          <span>Región</span>
+          <select id="regionFilter">
+            <option value="all">Todas</option>
+          </select>
+        </label>
+        <label>
+          <span>Estado</span>
+          <select id="statusFilter">
+            <option value="all">Todos</option>
+            <option value="owned">Pegados</option>
+            <option value="missing">Faltantes</option>
+            <option value="duplicate">Repetidos</option>
+          </select>
+        </label>
+        <label>
+          <span>Rareza</span>
+          <select id="rarityFilter">
+            <option value="all">Todas</option>
+            <option value="base">Base</option>
+            <option value="brillante">Brillante</option>
+            <option value="holografico">Holográfico</option>
+          </select>
+        </label>
+      </div>
+
+      <div class="album-toolbar">
+        <div class="view-tabs" role="tablist" aria-label="Vista de colección">
+          <button class="tab active" data-view="grid" type="button">Cromos</button>
+          <button class="tab" data-view="teams" type="button">Páginas</button>
+        </div>
+        <p id="resultCount" class="result-count">Mostrando 240 cromos</p>
+      </div>
+
+      <div id="stickerGrid" class="sticker-grid" aria-live="polite"></div>
+      <div id="teamPages" class="team-pages hidden" aria-live="polite"></div>
+    </section>
+
+    <section id="equipos" class="section-shell panel-section">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Equipos ficticios</p>
+          <h2>48 selecciones inventadas</h2>
+        </div>
+      </div>
+      <div id="teamsBoard" class="teams-board"></div>
+    </section>
+
+    <section id="estadios" class="section-shell panel-section">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Sedes</p>
+          <h2>Ruta de sedes fanmade</h2>
+        </div>
+      </div>
+      <div id="stadiumRoute" class="stadium-route"></div>
+    </section>
+
+    <section id="retos" class="section-shell panel-section retos">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Retos</p>
+          <h2>Misiones del coleccionista</h2>
+        </div>
+      </div>
+      <div class="challenge-grid">
+        <article class="challenge-card" data-challenge="firstPack">
+          <span>01</span><h3>Primer sobre</h3><p>Abre tu primer sobre y pega tus primeros cromos.</p><strong>0/1</strong>
+        </article>
+        <article class="challenge-card" data-challenge="tenPercent">
+          <span>02</span><h3>Arranque fuerte</h3><p>Completa al menos el 10% del álbum.</p><strong>0/10%</strong>
+        </article>
+        <article class="challenge-card" data-challenge="holoHunter">
+          <span>03</span><h3>Cazador holo</h3><p>Consigue 5 cromos holográficos.</p><strong>0/5</strong>
+        </article>
+        <article class="challenge-card" data-challenge="fullTeam">
+          <span>04</span><h3>Página perfecta</h3><p>Completa todos los cromos de un equipo.</p><strong>0/1</strong>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <div class="pack-modal" id="packModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="packTitle">
+    <div class="modal-backdrop" data-close="pack"></div>
+    <section class="pack-dialog">
+      <button class="modal-close" data-close="pack" type="button" aria-label="Cerrar">×</button>
+      <p class="eyebrow">Sobre digital</p>
+      <h2 id="packTitle">Tus nuevos cromos</h2>
+      <div id="packCards" class="pack-cards"></div>
+      <div class="modal-actions">
+        <button class="primary-btn" id="openAnotherPack" type="button">Abrir otro sobre</button>
+        <button class="secondary-btn" data-close="pack" type="button">Cerrar</button>
+      </div>
+    </section>
+  </div>
+
+  <div class="detail-modal" id="detailModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="detailTitle">
+    <div class="modal-backdrop" data-close="detail"></div>
+    <section class="detail-dialog">
+      <button class="modal-close" data-close="detail" type="button" aria-label="Cerrar">×</button>
+      <div id="detailContent"></div>
+    </section>
+  </div>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <footer class="footer section-shell">
+    <strong>Álbum Fan Global 2026</strong>
+    <span>Proyecto demostrativo no oficial. No usa nombres, escudos, logos, tipografías, fotografías ni diseños oficiales.</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
