@@ -116,7 +116,26 @@ http://127.0.0.1:5000/service-worker.js
 
 ## Deploy
 
-Solo ejecutar despues de confirmacion explicita:
+El deploy normal debe ocurrir automaticamente con GitHub Actions cuando se hace push/merge a `main`.
+El workflow vive en:
+
+```txt
+.github/workflows/firebase-hosting-merge.yml
+```
+
+Requiere el secret de Actions:
+
+```txt
+FIREBASE_SERVICE_ACCOUNT_ALBUN_PANINI_FAKE_2026
+```
+
+Antes de mergear a `main`, el PR preview workflow corre desde:
+
+```txt
+.github/workflows/firebase-hosting-pull-request.yml
+```
+
+Deploy manual de fallback, solo despues de confirmacion explicita:
 
 ```powershell
 $env:PATH = 'C:\Users\Admin\AppData\Local\nvm\v24.15.0;' + $env:PATH

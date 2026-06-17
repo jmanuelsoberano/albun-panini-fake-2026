@@ -1,0 +1,64 @@
+name: Deploy to Firebase Hosting on merge
+
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: read
+  checks: write
+  pull-requests: write
+
+jobs:
+  build_and_deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24.15.0
+          cache: npm
+          cache-dependency-path: web/package-lock.json
+
+      - name: Install Angular dependencies
+        working-directory: web
+        run: npm ci
+
+      - name: Install Playwright Chromium
+        working-directory: web
+        run: npx playwright install --with-deps chromium
+
+      - name: Prepare Angular build for Hosting emulator
+        working-directory: web
+        run: npm run build
+
+      - name: Start Firebase Hosting emulator
+        run: |
+          npx -y firebase-tools@14.19.0 emulators:start --only hosting --project albun-panini-fake-2026 > firebase-hosting-ci.log 2>&1 &
+          echo $! > firebase-hosting-ci.pid
+
+      - name: Wait for Hosting emulator
+        run: |
+          for i in {1..60}; do
+            if curl -fsS http://127.0.0.1:5000/coleccion >/dev/null; then
+              exit 0
+            fi
+            sleep 1
+          done
+          cat firebase-hosting-ci.log
+          exit 1
+
+      - name: Verify Angular migration
+        working-directory: web
+        run: npm run verify:migration
+
+      - name: Deploy live channel
+        uses: FirebaseExtended/action-hosting-deploy@v0
+        with:
+          repoToken: ${{ secrets.GITHUB_TOKEN }}
+          firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_ALBUN_PANINI_FAKE_2026 }}
+          channelId: live
+          projectId: albun-panini-fake-2026
