@@ -1,0 +1,69 @@
+<section class="session-panel" aria-label="Sesion de jugador">
+  <div class="session-status">
+    <span class="status-pill" [class.online]="session.onlineMode()">
+      {{ session.onlineMode() ? 'Modo Firebase' : 'Modo local' }}
+    </span>
+    <span>{{ session.message() }}</span>
+  </div>
+
+  @if (session.error()) {
+    <p class="error" role="alert">{{ session.error() }}</p>
+  }
+
+  <div class="session-grid">
+    <label>
+      <span>Nickname</span>
+      <input
+        type="text"
+        maxlength="28"
+        autocomplete="nickname"
+        [value]="nickname()"
+        [disabled]="session.busy()"
+        (input)="updateNickname($event)"
+      />
+    </label>
+    <div class="session-stat">
+      <small>Monedas</small>
+      <strong>{{ session.coins() }}</strong>
+    </div>
+    <div class="session-stat">
+      <small>Sobres</small>
+      <strong>{{ session.onlineMode() ? session.packsAvailable() : 'Local' }}</strong>
+    </div>
+  </div>
+
+  <div class="session-actions">
+    @if (session.onlineMode()) {
+      <button
+        type="button"
+        [disabled]="session.busy() || session.starterPackClaimed()"
+        (click)="claimStarterPack()"
+      >
+        Reclamar sobre inicial
+      </button>
+      <button
+        type="button"
+        [disabled]="session.busy() || session.packsAvailable() <= 0"
+        (click)="openFirebasePack()"
+      >
+        Abrir sobre Firebase
+      </button>
+    } @else {
+      <button
+        type="button"
+        [disabled]="session.busy() || !session.configured()"
+        (click)="signInWithGoogle()"
+      >
+        Entrar con Google
+      </button>
+      <button
+        type="button"
+        [disabled]="session.busy() || !session.canUseGuest()"
+        (click)="signInGuest()"
+      >
+        Invitado local
+      </button>
+      <button type="button" (click)="openLocalPack()">Abrir sobre local</button>
+    }
+  </div>
+</section>

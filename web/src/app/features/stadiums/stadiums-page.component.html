@@ -1,0 +1,15 @@
+<section class="section-shell page-heading">
+  <p class="eyebrow">Sedes</p>
+  <h1>Ruta de sedes</h1>
+  <p>Listado factual de sedes del torneo 2026, sin cargar marcas, escudos ni fotografia oficial.</p>
+</section>
+
+<section class="section-shell stadium-grid">
+  @for (stadium of stadiums; track stadium[0]) {
+    <article class="stadium-card">
+      <strong>{{ stadium[0] }}</strong>
+      <span>{{ stadium[1] }}</span>
+      <p>{{ stadium[2] }}</p>
+    </article>
+  }
+</section>

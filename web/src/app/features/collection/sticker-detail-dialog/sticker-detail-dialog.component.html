@@ -1,0 +1,79 @@
+<section
+  class="dialog"
+  role="dialog"
+  aria-modal="true"
+  [attr.aria-labelledby]="'sticker-detail-title-' + sticker().id"
+  [attr.aria-describedby]="'sticker-detail-summary-' + sticker().id"
+  tabindex="-1"
+  (keydown.escape)="closeDialog()"
+>
+  <button
+    class="backdrop"
+    type="button"
+    tabindex="-1"
+    aria-label="Cerrar detalle"
+    (click)="closeDialog()"
+  ></button>
+  <article class="panel" cdkTrapFocus [cdkTrapFocusAutoCapture]="true">
+    <button
+      #closeButton
+      class="close-btn"
+      type="button"
+      aria-label="Cerrar detalle"
+      (click)="closeDialog()"
+    >
+      ×
+    </button>
+
+    <div
+      class="portrait"
+      [style.--team-a]="sticker().colors[0]"
+      [style.--team-b]="sticker().colors[1]"
+    >
+      <span>{{ sticker().id }}</span>
+      <strong>{{ initials() }}</strong>
+      <small>{{ sticker().privateSlot }}</small>
+    </div>
+
+    <div class="content">
+      <p class="eyebrow">Detalle de cromo</p>
+      <h2 [id]="'sticker-detail-title-' + sticker().id">{{ sticker().name }}</h2>
+      <p class="summary" [id]="'sticker-detail-summary-' + sticker().id">{{ sticker().note }}</p>
+
+      <dl class="detail-list">
+        <div>
+          <dt>Codigo</dt>
+          <dd>{{ sticker().id }}</dd>
+        </div>
+        <div>
+          <dt>Pais</dt>
+          <dd>{{ sticker().team }}</dd>
+        </div>
+        <div>
+          <dt>Posicion</dt>
+          <dd>{{ sticker().position || sticker().role }}</dd>
+        </div>
+        <div>
+          <dt>Numero</dt>
+          <dd>{{ sticker().shirt || sticker().number }}</dd>
+        </div>
+        <div>
+          <dt>Rareza</dt>
+          <dd>{{ sticker().rarity }}</dd>
+        </div>
+        <div>
+          <dt>Copias</dt>
+          <dd>{{ copies() }} · {{ statusLabel() }}</dd>
+        </div>
+        <div>
+          <dt>Altura</dt>
+          <dd>{{ sticker().height || 'Sin dato' }}</dd>
+        </div>
+        <div>
+          <dt>Confederacion</dt>
+          <dd>{{ sticker().confederation }}</dd>
+        </div>
+      </dl>
+    </div>
+  </article>
+</section>

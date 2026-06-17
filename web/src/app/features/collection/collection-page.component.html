@@ -1,0 +1,104 @@
+<section class="hero section-shell">
+  <div>
+    <p class="eyebrow">Edicion fanmade · 48 paises · 240 cromos</p>
+    <h1>Completa tu album digital de futbol 2026.</h1>
+    <p class="hero-text">
+      Esta version Angular ya conserva inventario local con signals y localStorage. Firebase e
+      inventario online entran en la siguiente capa de migracion.
+    </p>
+  </div>
+
+  <app-session-panel
+    (localPackRequested)="openLocalPack()"
+    (firebasePackOpened)="showOpenedPack($event)"
+  />
+</section>
+
+<app-collection-stats
+  [ownedCount]="album.ownedCount()"
+  [totalCount]="stickers.length"
+  [progress]="album.progress()"
+  [duplicateTotal]="album.duplicateTotal()"
+/>
+
+<section class="section-shell panel-section">
+  <div class="section-heading">
+    <div>
+      <p class="eyebrow">Coleccion</p>
+      <h2>Tu album local</h2>
+    </div>
+    <div class="section-actions">
+      <button type="button" (click)="addRandomStickers()">Pegar 10 al azar</button>
+      <button class="danger" type="button" (click)="resetLocalAlbum()">Reiniciar</button>
+    </div>
+  </div>
+
+  <app-collection-filters
+    [filters]="album.filters()"
+    [confederations]="confederations"
+    (filtersChanged)="updateFilters($event)"
+  />
+
+  <p class="result-count">Mostrando {{ album.filteredStickers().length }} cromos</p>
+
+  @if (lastPack().length > 0) {
+    <app-pack-strip [stickers]="lastPack()" />
+  }
+
+  <div class="view-tabs" role="tablist" aria-label="Vista de coleccion">
+    <button
+      class="tab"
+      type="button"
+      role="tab"
+      [class.active]="album.activeView() === 'grid'"
+      [attr.aria-selected]="album.activeView() === 'grid'"
+      (click)="showGridView()"
+    >
+      Cromos
+    </button>
+    <button
+      class="tab"
+      type="button"
+      role="tab"
+      [class.active]="album.activeView() === 'teams'"
+      [attr.aria-selected]="album.activeView() === 'teams'"
+      (click)="showTeamPages()"
+    >
+      Paginas
+    </button>
+  </div>
+
+  @if (album.activeView() === 'grid') {
+    <app-collection-grid
+      [stickers]="album.filteredStickers()"
+      [copies]="album.copies()"
+      (stickerSelected)="selectSticker($event)"
+    />
+  } @else {
+    <app-team-pages
+      [stickers]="stickers"
+      [copies]="album.copies()"
+      (stickerSelected)="selectSticker($event)"
+    />
+  }
+</section>
+
+@if (packDialogOpen() && lastPack().length > 0) {
+  <app-pack-dialog
+    [stickers]="lastPack()"
+    [copies]="album.copies()"
+    [sourceLabel]="lastPackSource() === 'firebase' ? 'Sobre Firebase' : 'Sobre local'"
+    [canOpenAnother]="lastPackSource() === 'local'"
+    (dialogClosed)="closePackDialog()"
+    (openAnotherPack)="openLocalPack()"
+    (stickerSelected)="selectSticker($event)"
+  />
+}
+
+@if (selectedSticker(); as sticker) {
+  <app-sticker-detail-dialog
+    [sticker]="sticker"
+    [copies]="album.copyCount(sticker.id)"
+    (dialogClosed)="closeStickerDetail()"
+  />
+}

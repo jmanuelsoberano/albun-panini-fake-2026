@@ -1,0 +1,32 @@
+.toolbox {
+  display: grid;
+  grid-template-columns: 1.3fr repeat(3, minmax(118px, 0.52fr));
+  gap: 0.75rem;
+  margin: 1rem 0;
+}
+
+label {
+  display: grid;
+  gap: 0.35rem;
+  color: var(--muted);
+  font-size: 0.72rem;
+  font-weight: 950;
+  text-transform: uppercase;
+}
+
+input,
+select {
+  width: 100%;
+  min-height: 46px;
+  padding: 0.65rem 0.8rem;
+  border: 1px solid var(--rule);
+  border-radius: 6px;
+  background: #fff;
+  color: var(--deep);
+}
+
+@media (max-width: 760px) {
+  .toolbox {
+    grid-template-columns: 1fr;
+  }
+}

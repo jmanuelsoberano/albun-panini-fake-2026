@@ -76,6 +76,60 @@ Implementar la primera versión online mínima:
 
 Este es el puente entre el prototipo local y el juego online real.
 
+## Plan activo de migracion Angular
+
+Existe un plan persistido para migrar la app estatica a Angular 22 sin romper el modo local ni Firebase:
+
+```txt
+docs/ANGULAR_22_MIGRATION_PLAN.md
+```
+
+Antes de iniciar cambios Angular, leer ese plan y continuar desde la primera fase pendiente.
+Estado al 2026-06-17: `web/` ya existe con Angular 22; shell/rutas, estado local con signals,
+la pagina de Paises y la componentizacion de Coleccion estan completados. La primera capa de
+servicios Firebase Angular ya existe con fallback local y el flujo guest local fue verificado con
+Firebase Emulator Suite: perfil, starter pack, apertura controlada, inventario online y reglas
+contra doble reclamo/escritura directa. Fase 8 ya tiene mejora inicial de accesibilidad: foco visible,
+labels en cromos y dialogos con `aria-labelledby`/`aria-describedby`, foco inicial y cierre con Escape.
+Tambien se agrego `@angular/cdk` para `cdkTrapFocus` en dialogos; fue verificado en navegador con anclas
+de foco del CDK y `npm audit --omit=dev` sin vulnerabilidades de produccion.
+El siguiente foco recomendado es hacer deploy de Hosting cuando el usuario confirme publicacion. El cutover local ya esta
+preparado: `firebase.json` apunta a `web/dist/web/browser`, el build de produccion excluye config/privados,
+y Hosting Emulator sirve Angular en `http://127.0.0.1:5000`. Tambien se agrego
+`web/public/service-worker.js` como cleanup worker para desregistrar service workers viejos que puedan servir
+bundles anteriores durante QA o deploy; `/service-worker.js` tiene headers no-cache en `firebase.json`.
+Hay un smoke repetible: `cd web && npm run smoke:hosting`, y un verificador completo
+`cd web && npm run verify:migration`. `verify:migration` ejecuta `format:check`, `check:angular-practices`, build,
+tests, `smoke:focusables`, smoke de Hosting y `smoke:keyboard-real`. `format:check` usa Prettier sobre `src/**/*.{ts,html,css}`,
+`scripts/**/*.mjs` y configs raiz del workspace; `format:write` aplica el mismo alcance. El gate
+`check:angular-practices` bloquea regresiones obvias contra Angular 22:
+NgModule, constructores en codigo Angular de app, `@Input`/`@Output` decorators, `EventEmitter`, `*ngIf`/`*ngFor`/`*ngSwitch`,
+`ngClass`/`ngStyle` y componentes sin `ChangeDetectionStrategy.OnPush`. `smoke:focusables` renderiza el
+build Angular en jsdom y valida focusables de rutas clave, 240 cromos con role/button/aria-label,
+Enter sobre un cromo para abrir detalle, skip link global, main#main-content, 48 paises, 16 sedes y 4 retos.
+Tambien se agrego un skip link visible al foco: "Saltar al contenido principal". `smoke:keyboard-real`
+usa Playwright/Chromium contra Hosting Emulator y valida Tab real al skip link, Enter al contenido principal,
+Tab hasta busqueda/tab `Cromos`/cromo, Enter para abrir detalle, focus trap con Tab y Shift+Tab, y Escape para cerrar.
+El smoke de Hosting ya valida repo guards,
+dist sin privados, rutas SPA y que `/service-worker.js` sea JavaScript de cleanup en lugar de caer al
+rewrite de `index.html`.
+La QA responsive de `/coleccion` y `/paises` en desktop/mobile ya no detecta overflow horizontal.
+
+Antes de publicar, seguir el checklist persistido:
+
+```txt
+docs/ANGULAR_22_RELEASE_CHECKLIST.md
+```
+
+Ese checklist incluye:
+
+- comandos previos (`npm run verify:migration`, `npm audit --omit=dev`).
+- smoke de teclado real con Playwright/Chromium.
+- smoke local de Hosting.
+- comando de deploy con `firebase-tools@14.19.0`.
+- verificacion posterior al deploy.
+- rollback temporal a `hosting.public = "public"`.
+
 ## Setup local esperado
 
 ```bash

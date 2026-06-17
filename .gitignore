@@ -3,10 +3,17 @@ node_modules/
 .firebaserc
 firebase-debug.log
 firebase-debug.*.log
+firestore-debug.log
+web-angular-dev.log
+firebase-emulators-angular.log
+firebase-hosting-angular.log
 *.local
 .env
 .env.*
 public/firebase-config.js
+web/public/firebase-config.js
+public/content/private-content.json
+public/private-assets/
 .DS_Store
 dist/
 build/

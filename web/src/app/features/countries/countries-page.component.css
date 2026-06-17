@@ -1,0 +1,237 @@
+.page-heading {
+  padding-block: 2rem 1rem;
+}
+
+h1 {
+  max-width: 760px;
+  margin: 0;
+  color: var(--deep);
+  font-size: clamp(2.2rem, 5vw, 4.6rem);
+  line-height: 0.96;
+  text-transform: uppercase;
+}
+
+.page-heading p:not(.eyebrow) {
+  max-width: 760px;
+  color: var(--muted);
+  line-height: 1.55;
+}
+
+.squad-summary {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(130px, 1fr)) minmax(170px, 0.8fr);
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.squad-summary article,
+.source-links {
+  min-height: 76px;
+  padding: 0.85rem;
+  border: 2px solid var(--deep);
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 4px 5px 0 rgba(16, 35, 61, 0.1);
+}
+
+.source-links {
+  display: grid;
+  gap: 0.5rem;
+  background: var(--deep);
+  color: #fff;
+  font-weight: 1000;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.source-links a {
+  display: grid;
+  min-height: 2.2rem;
+  place-items: center;
+  border-radius: 4px;
+}
+
+.source-links a:last-child {
+  background: #fff;
+  color: var(--deep);
+}
+
+.squad-summary strong {
+  display: block;
+  color: var(--wine);
+  font-size: 1.6rem;
+  line-height: 1;
+}
+
+.squad-summary span {
+  display: block;
+  margin-top: 0.34rem;
+  color: var(--muted);
+  font-size: 0.72rem;
+  font-weight: 950;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.countries-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
+  gap: 1rem;
+  padding-bottom: 1rem;
+}
+
+.country-card {
+  overflow: hidden;
+  border: 2px solid var(--deep);
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 6px 8px 0 rgba(16, 35, 61, 0.12);
+}
+
+.country-card header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem;
+  border-bottom: 2px solid var(--deep);
+  background: linear-gradient(135deg, var(--team-a), var(--team-b));
+  color: #fff;
+}
+
+.country-card h2 {
+  margin: 0;
+  font-size: 1.35rem;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.country-card header span {
+  display: block;
+  margin-top: 0.3rem;
+  color: rgba(255, 255, 255, 0.86);
+  font-size: 0.82rem;
+  font-weight: 850;
+}
+
+.country-card header strong {
+  display: grid;
+  min-width: 56px;
+  min-height: 48px;
+  place-items: center;
+  border: 2px solid rgba(16, 35, 61, 0.2);
+  border-radius: 4px;
+  background: #fff;
+  color: var(--deep);
+}
+
+.country-roster-total {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.7rem;
+  align-items: center;
+  margin: 1rem 1rem 0;
+  padding: 0.7rem;
+  border: 2px solid var(--deep);
+  border-radius: 6px;
+  background: #fff;
+}
+
+.country-roster-total > strong {
+  display: grid;
+  width: 3.2rem;
+  height: 3.2rem;
+  place-items: center;
+  border-radius: 4px;
+  background: var(--wine);
+  color: #fff;
+  font-size: 1.35rem;
+  line-height: 1;
+}
+
+.country-roster-total span {
+  display: block;
+  color: var(--deep);
+  font-size: 0.85rem;
+  font-weight: 1000;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.country-roster-total small {
+  display: block;
+  margin-top: 0.15rem;
+  color: var(--muted);
+  font-weight: 850;
+  line-height: 1.25;
+}
+
+.team-roster {
+  display: grid;
+  max-height: 430px;
+  gap: 0.45rem;
+  margin: 0;
+  padding: 1rem;
+  overflow: auto;
+  list-style: none;
+}
+
+.team-roster li {
+  display: grid;
+  grid-template-columns: 2.2rem 1fr;
+  grid-template-rows: auto auto;
+  column-gap: 0.55rem;
+  align-items: center;
+  padding: 0.45rem 0.5rem;
+  border: 1px solid var(--rule);
+  border-radius: 6px;
+  background: #fbf7ec;
+}
+
+.team-roster span {
+  display: grid;
+  width: 2rem;
+  height: 2rem;
+  grid-row: 1 / 3;
+  place-items: center;
+  border-radius: 4px;
+  background: var(--deep);
+  color: #fff;
+  font-size: 0.72rem;
+  font-weight: 1000;
+}
+
+.team-roster strong {
+  color: var(--deep);
+  font-size: 0.82rem;
+  line-height: 1.12;
+  text-transform: uppercase;
+}
+
+.team-roster small {
+  color: var(--muted);
+  font-size: 0.68rem;
+  font-weight: 850;
+}
+
+@media (max-width: 620px) {
+  .squad-summary {
+    grid-template-columns: 1fr;
+  }
+
+  .country-roster-total {
+    grid-template-columns: 1fr;
+  }
+
+  .country-roster-total > strong {
+    width: 100%;
+    height: auto;
+    min-height: 2.6rem;
+  }
+}
+
+@media (max-width: 900px) and (min-width: 621px) {
+  .squad-summary {
+    grid-template-columns: repeat(2, minmax(130px, 1fr));
+  }
+}

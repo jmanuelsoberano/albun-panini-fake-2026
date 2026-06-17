@@ -1,0 +1,35 @@
+<div class="team-pages">
+  @for (page of pages(); track page.team.id) {
+    <article
+      class="team-page"
+      [style.--team-a]="page.team.colors[0]"
+      [style.--team-b]="page.team.colors[1]"
+    >
+      <header>
+        <div class="team-title">
+          <span>{{ page.team.code }}</span>
+          <div>
+            <h3>{{ page.team.name }}</h3>
+            <small
+              >{{ page.team.confederation }} · {{ page.ownedCount }}/{{
+                page.stickers.length
+              }}
+              cromos</small
+            >
+          </div>
+        </div>
+        <strong>{{ page.progress }}%</strong>
+      </header>
+
+      <div class="team-stickers">
+        @for (sticker of page.stickers; track sticker.id) {
+          <app-sticker-card
+            [sticker]="sticker"
+            [copies]="copyCount(sticker.id)"
+            (stickerSelected)="selectSticker($event)"
+          />
+        }
+      </div>
+    </article>
+  }
+</div>

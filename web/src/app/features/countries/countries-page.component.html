@@ -1,0 +1,75 @@
+<section class="section-shell page-heading">
+  <p class="eyebrow">Paises</p>
+  <h1>48 paises participantes</h1>
+  <p>
+    Plantillas completas de texto: 26 jugadores por pais, sin logos, escudos, fotos oficiales ni
+    arte protegido.
+  </p>
+</section>
+
+<section class="section-shell squad-summary" aria-label="Resumen de plantillas">
+  <article>
+    <strong>{{ teams.length }}</strong>
+    <span>paises</span>
+  </article>
+  <article>
+    <strong>{{ totalPlayersLabel }}</strong>
+    <span>jugadores totales</span>
+  </article>
+  <article>
+    <strong>{{ expectedSquadSize }}</strong>
+    <span>jugadores por pais</span>
+  </article>
+  <div class="source-links" aria-label="Fuentes oficiales de plantillas">
+    <a [href]="squadSourceUrl" target="_blank" rel="noopener noreferrer"
+      >Lista oficial FIFA (PDF)</a
+    >
+    <a [href]="squadArticleUrl" target="_blank" rel="noopener noreferrer"
+      >48 plantillas confirmadas</a
+    >
+  </div>
+</section>
+
+<section class="section-shell countries-grid" aria-label="Paises y plantillas completas">
+  @for (team of teams; track team.id) {
+    <article
+      class="country-card"
+      [style.--team-a]="team.colors[0]"
+      [style.--team-b]="team.colors[1]"
+    >
+      <header>
+        <div>
+          <h2>{{ team.name }}</h2>
+          <span
+            >{{ team.confederation }} &middot; {{ squadSize(team.id) }}/{{
+              expectedSquadSize
+            }}
+            jugadores</span
+          >
+        </div>
+        <strong>{{ team.code }}</strong>
+      </header>
+
+      <div
+        class="country-roster-total"
+        [attr.aria-label]="'Total de jugadores registrados para ' + team.name"
+      >
+        <strong>{{ squadSize(team.id) }}</strong>
+        <div>
+          <span>jugadores totales</span>
+          <small>Plantilla oficial FIFA: {{ squadSize(team.id) }}/{{ expectedSquadSize }}</small>
+        </div>
+      </div>
+
+      <ol class="team-roster" [attr.aria-label]="'Jugadores de ' + team.name">
+        @for (player of squadFor(team.id); track player.shirt) {
+          <li>
+            <span>{{ player.shirt }}</span>
+            <strong>{{ player.name }}</strong>
+            <small>{{ player.position }} &middot; {{ player.club }}</small>
+          </li>
+        }
+      </ol>
+    </article>
+  }
+</section>

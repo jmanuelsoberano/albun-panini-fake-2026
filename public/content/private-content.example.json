@@ -1,0 +1,37 @@
+{
+  "meta": {
+    "name": "Contenido privado local",
+    "notes": [
+      "Copia este archivo como public/content/private-content.json.",
+      "Ese archivo real esta ignorado por git y por Firebase Hosting.",
+      "Coloca imagenes locales en public/private-assets/players/."
+    ]
+  },
+  "album": {
+    "title": "Mi Album Mundial 2026",
+    "subtitle": "Edicion familiar local",
+    "heroLabel": "Coleccion privada local",
+    "heroTitle": "Album digital del torneo",
+    "heroText": "Usa este archivo para cargar nombres, equipos y fotos privadas que solo existan en tu maquina."
+  },
+  "teams": {
+    "T01": {
+      "name": "Nombre completo del equipo",
+      "shortName": "Equipo local",
+      "region": "Grupo A",
+      "motto": "Texto breve de esta pagina sin logos ni marcas.",
+      "colors": ["#8b1538", "#d8b35a"]
+    }
+  },
+  "stickers": {
+    "FG-001": {
+      "name": "Nombre completo del jugador",
+      "role": "Posicion",
+      "team": "Nombre completo del equipo local",
+      "portrait": "private-assets/players/fg-001.webp",
+      "birthplace": "Ciudad, pais",
+      "height": "1.80 m",
+      "caption": "Descripcion corta para el reverso o detalle del cromo."
+    }
+  }
+}
