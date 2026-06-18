@@ -28,6 +28,7 @@
           },
           "configurations": {
             "production": {
+              "serviceWorker": "ngsw-config.json",
               "assets": [
                 {
                   "glob": "**/*",
