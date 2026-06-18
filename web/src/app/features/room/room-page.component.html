@@ -1,0 +1,173 @@
+<section class="room-hero section-shell">
+  <div>
+    <p class="eyebrow">Sala privada</p>
+    <h1>Cambia repetidos con tu grupo.</h1>
+    <p>Revisa faltantes, compara repetidos y mueve propuestas con inventario protegido.</p>
+  </div>
+
+  <div class="room-score" aria-label="Resumen de coleccion">
+    <strong>{{ album.duplicateTotal() }}</strong>
+    <span>repetidos</span>
+    <strong>{{ totalStickers - album.ownedCount() }}</strong>
+    <span>faltantes</span>
+  </div>
+</section>
+
+@if (!session.isAuthenticated()) {
+  <section class="section-shell login-gate room-panel">
+    <div>
+      <p class="panel-kicker">Acceso</p>
+      <h2>Inicia sesión para crear tu sala.</h2>
+      <p>
+        El álbum se puede explorar en lectura. Las salas, propuestas y cambios requieren cuenta.
+      </p>
+    </div>
+    <a routerLink="/coleccion" fragment="play-panel">Iniciar sesión</a>
+  </section>
+} @else {
+  <section class="section-shell room-grid" aria-label="Sala privada e intercambios">
+    <article class="room-panel room-actions">
+      <p class="panel-kicker">Invitacion</p>
+      <h2>Sala activa</h2>
+      <div class="action-row">
+        <button type="button" [disabled]="busy()" (click)="createRoom()">Crear sala</button>
+        <label>
+          <span>Codigo</span>
+          <input
+            type="text"
+            maxlength="8"
+            [value]="roomCode()"
+            (input)="updateRoomCode($event)"
+            placeholder="AB12CD"
+          />
+        </label>
+        <button
+          type="button"
+          class="secondary"
+          [disabled]="busy() || roomCode().trim().length < 4"
+          (click)="joinRoom()"
+        >
+          Unirse
+        </button>
+      </div>
+      @if (status()) {
+        <p class="status-line" role="status">{{ status() }}</p>
+      }
+    </article>
+
+    <article class="room-panel room-list">
+      <p class="panel-kicker">Mis salas</p>
+      <h2>Grupo</h2>
+      @if (rooms().length) {
+        <div class="room-tabs" role="list">
+          @for (room of rooms(); track room.id) {
+            <button
+              type="button"
+              role="listitem"
+              [class.active]="activeRoom()?.id === room.id"
+              (click)="selectRoom(room.id)"
+            >
+              <strong>{{ room.code }}</strong>
+              <span>{{ room.memberIds.length }} miembros</span>
+            </button>
+          }
+        </div>
+      } @else {
+        <p class="empty-state">Crea una sala para invitar a tu grupo.</p>
+      }
+    </article>
+
+    <article class="room-panel inventory-panel">
+      <p class="panel-kicker">Mi álbum</p>
+      <h2>Base de cambios</h2>
+      <div class="mini-columns">
+        <div>
+          <h3>Repetidos</h3>
+          <ul>
+            @for (sticker of duplicates(); track sticker.id) {
+              <li>
+                <strong>{{ sticker.id }}</strong>
+                <span>{{ sticker.name }}</span>
+              </li>
+            } @empty {
+              <li><span>Aun no hay repetidos.</span></li>
+            }
+          </ul>
+        </div>
+        <div>
+          <h3>Faltantes</h3>
+          <ul>
+            @for (sticker of missing(); track sticker.id) {
+              <li>
+                <strong>{{ sticker.id }}</strong>
+                <span>{{ sticker.name }}</span>
+              </li>
+            } @empty {
+              <li><span>Álbum completo.</span></li>
+            }
+          </ul>
+        </div>
+      </div>
+    </article>
+
+    <article class="room-panel trade-panel">
+      <p class="panel-kicker">Propuestas</p>
+      <h2>Cambios sugeridos</h2>
+      <div class="trade-suggestions">
+        @for (pair of tradePairs(); track pair.offer.id + pair.request.id) {
+          <div class="suggestion-card">
+            <div>
+              <span>Das</span>
+              <strong>{{ pair.offer.name }}</strong>
+              <small>{{ pair.offer.id }}</small>
+            </div>
+            <b aria-hidden="true">por</b>
+            <div>
+              <span>Buscas</span>
+              <strong>{{ pair.request.name }}</strong>
+              <small>{{ pair.request.id }}</small>
+            </div>
+            <button
+              type="button"
+              [disabled]="busy() || !activePeerId()"
+              (click)="proposeTrade(pair)"
+            >
+              {{ activePeerId() ? 'Proponer' : 'Invita a alguien' }}
+            </button>
+          </div>
+        } @empty {
+          <p class="empty-state">Necesitas repetidos y faltantes para sugerir cambios.</p>
+        }
+      </div>
+    </article>
+
+    <article class="room-panel incoming-panel">
+      <p class="panel-kicker">Entrantes</p>
+      <h2>Por responder</h2>
+      @for (trade of incomingTrades(); track trade.id) {
+        <div class="trade-card">
+          <span>{{ memberLabel(trade.fromUserId) }}</span>
+          <strong>{{ stickerName(trade.offered[0]) }}</strong>
+          <small>Por {{ stickerMeta(trade.requested[0]) }}</small>
+          <button type="button" [disabled]="busy()" (click)="acceptTrade(trade)">Aceptar</button>
+        </div>
+      } @empty {
+        <p class="empty-state">Sin propuestas entrantes.</p>
+      }
+    </article>
+
+    <article class="room-panel outgoing-panel">
+      <p class="panel-kicker">Enviadas</p>
+      <h2>Mis propuestas</h2>
+      @for (trade of outgoingTrades(); track trade.id) {
+        <div class="trade-card">
+          <span>{{ tradeStatusLabel(trade) }}</span>
+          <strong>{{ stickerName(trade.offered[0]) }}</strong>
+          <small>Por {{ stickerMeta(trade.requested[0]) }}</small>
+        </div>
+      } @empty {
+        <p class="empty-state">Aun no envias propuestas.</p>
+      }
+    </article>
+  </section>
+}

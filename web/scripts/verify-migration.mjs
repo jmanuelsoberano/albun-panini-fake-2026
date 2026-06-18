@@ -7,9 +7,15 @@ const checks = [
   ['run', 'check:angular-practices'],
   ['run', 'build'],
   ['run', 'test:ci'],
+  ['run', 'smoke:real-worldcup-content'],
   ['run', 'smoke:focusables'],
   ['run', 'smoke:hosting'],
+  ['run', 'smoke:auth-gate'],
+  ['run', 'smoke:economy'],
   ['run', 'smoke:keyboard-real'],
+  ['run', 'smoke:responsive'],
+  ['run', 'smoke:room'],
+  ['run', 'smoke:tournament'],
 ];
 
 function run(args) {

@@ -7,6 +7,9 @@ const db = getFirestore();
 
 const PACK_SIZE = 5;
 const STARTER_PACK_TYPE = "starter";
+const MAX_TRADE_ITEMS = 8;
+const MAX_ROOM_MEMBERS = 12;
+const ROOM_CODE_ALPHABET = "ABCDEFGHJKLMNPQRSTUVWXYZ23456789";
 
 function requireAuth(request) {
   if (!request.auth) {
@@ -23,12 +26,87 @@ function pickSticker(catalog) {
   return pool[Math.floor(Math.random() * pool.length)];
 }
 
+function normalizeStickerIds(fieldName, value) {
+  if (!Array.isArray(value) || value.length === 0 || value.length > MAX_TRADE_ITEMS) {
+    throw new HttpsError(
+      "invalid-argument",
+      `${fieldName} debe incluir entre 1 y ${MAX_TRADE_ITEMS} cromos.`
+    );
+  }
+
+  const ids = value.map((item) => String(item || "").trim()).filter(Boolean);
+  if (ids.length !== value.length) {
+    throw new HttpsError("invalid-argument", `${fieldName} contiene cromos no validos.`);
+  }
+
+  return ids;
+}
+
+function countStickerIds(stickerIds) {
+  return stickerIds.reduce((counts, stickerId) => {
+    counts[stickerId] = (counts[stickerId] || 0) + 1;
+    return counts;
+  }, {});
+}
+
+function normalizeRoomCode(value) {
+  return String(value || "").trim().toUpperCase().replace(/[^A-Z0-9]/g, "");
+}
+
+function createRoomCode() {
+  return Array.from({ length: 6 }, () =>
+    ROOM_CODE_ALPHABET[Math.floor(Math.random() * ROOM_CODE_ALPHABET.length)]
+  ).join("");
+}
+
+function safeRoomName(value) {
+  const name = String(value || "").trim();
+  return name.length > 0 ? name.slice(0, 42) : "Sala de coleccionistas";
+}
+
 async function loadCatalog(transaction) {
   const snap = await transaction.get(db.collection("catalog").doc("stickers"));
   if (!snap.exists) {
     throw new HttpsError("failed-precondition", "Falta sembrar el catálogo de cromos.");
   }
   return snap.data().items || [];
+}
+
+async function assertInventoryCopies(transaction, userId, counts, label) {
+  const refs = Object.keys(counts).map((stickerId) => ({
+    stickerId,
+    quantity: counts[stickerId],
+    ref: db.collection("users").doc(userId).collection("inventory").doc(stickerId)
+  }));
+  const snapshots = await Promise.all(refs.map((item) => transaction.get(item.ref)));
+
+  snapshots.forEach((snapshot, index) => {
+    const item = refs[index];
+    const copies = Number(snapshot.data()?.copies || 0);
+    if (!snapshot.exists || copies < item.quantity) {
+      throw new HttpsError(
+        "failed-precondition",
+        `${label} no tiene copias disponibles para completar el cambio.`
+      );
+    }
+  });
+}
+
+function applyInventoryMove(transaction, fromUserId, toUserId, counts) {
+  for (const [stickerId, quantity] of Object.entries(counts)) {
+    const fromRef = db.collection("users").doc(fromUserId).collection("inventory").doc(stickerId);
+    const toRef = db.collection("users").doc(toUserId).collection("inventory").doc(stickerId);
+
+    transaction.update(fromRef, {
+      copies: FieldValue.increment(-quantity),
+      updatedAt: FieldValue.serverTimestamp()
+    });
+    transaction.set(toRef, {
+      stickerId,
+      copies: FieldValue.increment(quantity),
+      updatedAt: FieldValue.serverTimestamp()
+    }, { merge: true });
+  }
 }
 
 exports.claimStarterPack = onCall(async (request) => {
@@ -128,23 +206,104 @@ exports.completeMission = onCall(async (request) => {
   return { ok: true, coins: 25 };
 });
 
+exports.createRoom = onCall(async (request) => {
+  const uid = requireAuth(request);
+  const code = createRoomCode();
+  const roomRef = db.collection("rooms").doc(code);
+  const memberRef = roomRef.collection("members").doc(uid);
+
+  await db.runTransaction(async (transaction) => {
+    const roomSnap = await transaction.get(roomRef);
+    if (roomSnap.exists) {
+      throw new HttpsError("already-exists", "Intenta crear la sala de nuevo.");
+    }
+
+    transaction.set(roomRef, {
+      code,
+      name: safeRoomName(request.data?.name),
+      ownerId: uid,
+      memberIds: [uid],
+      createdAt: FieldValue.serverTimestamp(),
+      updatedAt: FieldValue.serverTimestamp()
+    });
+    transaction.set(memberRef, {
+      userId: uid,
+      role: "owner",
+      joinedAt: FieldValue.serverTimestamp()
+    });
+  });
+
+  return { ok: true, roomId: code, code };
+});
+
+exports.joinRoom = onCall(async (request) => {
+  const uid = requireAuth(request);
+  const code = normalizeRoomCode(request.data?.code);
+  if (code.length < 4) throw new HttpsError("invalid-argument", "Codigo de sala invalido.");
+
+  const roomRef = db.collection("rooms").doc(code);
+  const memberRef = roomRef.collection("members").doc(uid);
+
+  await db.runTransaction(async (transaction) => {
+    const roomSnap = await transaction.get(roomRef);
+    if (!roomSnap.exists) throw new HttpsError("not-found", "Sala no encontrada.");
+
+    const room = roomSnap.data();
+    const memberIds = Array.isArray(room.memberIds) ? room.memberIds : [];
+    if (memberIds.length >= MAX_ROOM_MEMBERS && !memberIds.includes(uid)) {
+      throw new HttpsError("failed-precondition", "La sala ya esta llena.");
+    }
+
+    transaction.update(roomRef, {
+      memberIds: FieldValue.arrayUnion(uid),
+      updatedAt: FieldValue.serverTimestamp()
+    });
+    transaction.set(memberRef, {
+      userId: uid,
+      role: room.ownerId === uid ? "owner" : "member",
+      joinedAt: FieldValue.serverTimestamp()
+    }, { merge: true });
+  });
+
+  return { ok: true, roomId: code, code };
+});
+
 exports.createTrade = onCall(async (request) => {
   const uid = requireAuth(request);
-  const { toUserId, offered = [], requested = [] } = request.data || {};
+  const { toUserId, roomId = null } = request.data || {};
+  const offered = normalizeStickerIds("offered", request.data?.offered);
+  const requested = normalizeStickerIds("requested", request.data?.requested);
 
-  if (!toUserId || !offered.length || !requested.length) {
+  if (!toUserId || toUserId === uid) {
     throw new HttpsError("invalid-argument", "El intercambio necesita destinatario, oferta y solicitud.");
   }
 
+  const offeredCounts = countStickerIds(offered);
   const tradeRef = db.collection("trades").doc();
-  await tradeRef.set({
-    fromUserId: uid,
-    toUserId,
-    offered,
-    requested,
-    status: "pending",
-    createdAt: FieldValue.serverTimestamp(),
-    updatedAt: FieldValue.serverTimestamp()
+
+  await db.runTransaction(async (transaction) => {
+    if (roomId) {
+      const roomSnap = await transaction.get(db.collection("rooms").doc(String(roomId)));
+      const memberIds = roomSnap.exists && Array.isArray(roomSnap.data().memberIds)
+        ? roomSnap.data().memberIds
+        : [];
+      if (!memberIds.includes(uid) || !memberIds.includes(toUserId)) {
+        throw new HttpsError("permission-denied", "Ambos coleccionistas deben estar en la sala.");
+      }
+    }
+
+    await assertInventoryCopies(transaction, uid, offeredCounts, "Tu oferta");
+
+    transaction.set(tradeRef, {
+      fromUserId: uid,
+      toUserId,
+      roomId: roomId ? String(roomId) : null,
+      offered,
+      requested,
+      status: "pending",
+      createdAt: FieldValue.serverTimestamp(),
+      updatedAt: FieldValue.serverTimestamp()
+    });
   });
 
   return { ok: true, tradeId: tradeRef.id };
@@ -165,9 +324,16 @@ exports.acceptTrade = onCall(async (request) => {
     if (trade.status !== "pending") throw new HttpsError("failed-precondition", "El intercambio ya no está pendiente.");
     if (trade.toUserId !== uid) throw new HttpsError("permission-denied", "No puedes aceptar este intercambio.");
 
-    // TODO: validar copias disponibles antes de descontar.
-    // TODO: descontar oferta de fromUserId y solicitud de toUserId.
-    // TODO: sumar cromos a cada usuario con la misma transacción.
+    const offered = normalizeStickerIds("offered", trade.offered);
+    const requested = normalizeStickerIds("requested", trade.requested);
+    const offeredCounts = countStickerIds(offered);
+    const requestedCounts = countStickerIds(requested);
+
+    await assertInventoryCopies(transaction, trade.fromUserId, offeredCounts, "La oferta");
+    await assertInventoryCopies(transaction, trade.toUserId, requestedCounts, "Tu album");
+
+    applyInventoryMove(transaction, trade.fromUserId, trade.toUserId, offeredCounts);
+    applyInventoryMove(transaction, trade.toUserId, trade.fromUserId, requestedCounts);
 
     transaction.update(tradeRef, {
       status: "accepted",

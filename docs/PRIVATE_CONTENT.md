@@ -28,4 +28,4 @@ Peso ideal: menos de 350 KB por imagen
 Nombre: fg-001.webp, fg-002.webp, etc.
 ```
 
-Para publicar, usa solo assets propios, ficticios/no oficiales o con derechos claros.
+Para publicar, usa solo assets propios, licenciados o con derechos claros.

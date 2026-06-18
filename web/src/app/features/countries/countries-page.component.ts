@@ -1,9 +1,7 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import {
-  expectedSquadSize as expectedWorldCupSquadSize,
+  expectedSquadSize as expectedRosterSize,
   fullSquads,
-  squadArticleUrl,
-  squadSourceUrl,
   tournamentTeams,
 } from '../../core/data/worldcup-facts';
 import type { Player } from '../../core/models/album.models';
@@ -16,10 +14,8 @@ import type { Player } from '../../core/models/album.models';
 })
 export class CountriesPageComponent {
   protected readonly teams = tournamentTeams;
-  protected readonly squads = fullSquads;
-  protected readonly expectedSquadSize = expectedWorldCupSquadSize;
-  protected readonly squadSourceUrl = squadSourceUrl;
-  protected readonly squadArticleUrl = squadArticleUrl;
+  protected readonly squads: Readonly<Record<string, readonly Player[]>> = fullSquads;
+  protected readonly expectedSquadSize = expectedRosterSize;
   protected readonly totalPlayers = Object.values(fullSquads).reduce(
     (total, squad) => total + squad.length,
     0,

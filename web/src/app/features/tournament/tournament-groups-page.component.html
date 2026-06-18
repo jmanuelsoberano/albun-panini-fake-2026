@@ -1,0 +1,62 @@
+<section class="section-shell page-heading">
+  <p class="eyebrow">Grupos</p>
+  <h1>Como quedaron los grupos</h1>
+  <p>Tablas calculadas desde resultados verificados del Mundial 2026.</p>
+</section>
+
+<section class="section-shell group-boards" aria-label="Tablas y partidos por grupo">
+  @for (board of groupBoards; track board.group.id) {
+    <article class="group-board">
+      <header>
+        <h2>{{ board.group.name }}</h2>
+        <span>{{ board.group.teamIds.length }} equipos</span>
+      </header>
+
+      <div class="standing-table" role="table" [attr.aria-label]="board.group.name">
+        <div class="standing-head" role="row">
+          <span role="columnheader">Equipo</span>
+          <span role="columnheader">PJ</span>
+          <span role="columnheader">G</span>
+          <span role="columnheader">E</span>
+          <span role="columnheader">P</span>
+          <span role="columnheader">GF</span>
+          <span role="columnheader">GC</span>
+          <span role="columnheader">DG</span>
+          <span role="columnheader">PTS</span>
+        </div>
+        @for (row of board.standings; track row.teamId) {
+          <div class="standing-row" role="row">
+            <strong role="cell">
+              <a [routerLink]="['/torneo/equipos', row.teamId]">
+                {{ teamCode(row.teamId) }} · {{ teamName(row.teamId) }}
+              </a>
+            </strong>
+            <span role="cell">{{ row.played }}</span>
+            <span role="cell">{{ row.wins }}</span>
+            <span role="cell">{{ row.draws }}</span>
+            <span role="cell">{{ row.losses }}</span>
+            <span role="cell">{{ row.goalsFor }}</span>
+            <span role="cell">{{ row.goalsAgainst }}</span>
+            <span role="cell">{{ row.goalDifference }}</span>
+            <b role="cell">{{ row.points }}</b>
+          </div>
+        }
+      </div>
+
+      <div class="group-matches">
+        @for (match of board.matches; track match.id) {
+          <article class="match-card">
+            <div class="match-score">
+              <strong>{{ teamCode(match.homeTeamId) }}</strong>
+              <b>{{ scoreLabel(match) }}</b>
+              <strong>{{ teamCode(match.awayTeamId) }}</strong>
+            </div>
+            <p>{{ teamName(match.homeTeamId) }} vs {{ teamName(match.awayTeamId) }}</p>
+            <small>{{ eventsLabel(match) || 'Pendiente de resultado' }}</small>
+            <a class="match-link" [routerLink]="['/torneo/partidos', match.id]">Match center</a>
+          </article>
+        }
+      </div>
+    </article>
+  }
+</section>

@@ -7,13 +7,7 @@
   tabindex="-1"
   (keydown.escape)="closeDialog()"
 >
-  <button
-    class="backdrop"
-    type="button"
-    tabindex="-1"
-    aria-label="Cerrar sobre"
-    (click)="closeDialog()"
-  ></button>
+  <div class="backdrop" aria-hidden="true" (click)="closeDialog()"></div>
   <article class="panel" cdkTrapFocus [cdkTrapFocusAutoCapture]="true">
     <button
       #closeButton
@@ -22,7 +16,7 @@
       aria-label="Cerrar sobre"
       (click)="closeDialog()"
     >
-      ×
+      &times;
     </button>
     <p class="eyebrow">{{ sourceLabel() }}</p>
     <h2 id="pack-dialog-title">Tus nuevos cromos</h2>
@@ -30,6 +24,21 @@
       Este sobre contiene {{ stickers().length }} cromos nuevos. Puedes revisar cada cromo o cerrar
       el dialogo.
     </p>
+
+    <div class="pack-summary" aria-label="Resumen del sobre">
+      <article>
+        <strong>{{ newCount() }}</strong>
+        <span>nuevos</span>
+      </article>
+      <article>
+        <strong>{{ duplicateCount() }}</strong>
+        <span>repetidos</span>
+      </article>
+      <article>
+        <strong>{{ stickers().length }}</strong>
+        <span>cromos</span>
+      </article>
+    </div>
 
     <div class="pack-grid">
       @for (sticker of stickers(); track sticker.id) {

@@ -5,12 +5,13 @@
 
 .session-panel {
   display: grid;
-  gap: 0.85rem;
+  gap: 0.9rem;
   padding: 1rem;
-  border: 2px solid var(--deep);
+  border: 1px solid var(--rule);
   border-radius: 8px;
-  background: #fff;
-  box-shadow: 6px 6px 0 rgba(16, 35, 61, 0.1);
+  background: rgba(15, 29, 51, 0.86);
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(14px);
 }
 
 .session-status,
@@ -23,6 +24,8 @@
 
 .session-status span:not(.status-pill) {
   min-width: 0;
+  color: var(--muted);
+  line-height: 1.45;
   overflow-wrap: anywhere;
 }
 
@@ -31,58 +34,85 @@
   padding: 0.35rem 0.62rem;
   border-radius: 4px;
   background: var(--amber);
-  color: #211704;
+  color: #07101f;
   font-weight: 1000;
 }
 
 .status-pill.online {
-  background: var(--green);
-  color: #fff;
+  background: var(--teal);
+  color: #07101f;
 }
 
-.error {
+.error,
+.hint {
   margin: 0;
   padding: 0.65rem 0.75rem;
-  border: 1px solid rgba(139, 21, 56, 0.3);
   border-radius: 6px;
-  background: #fff0f2;
-  color: var(--wine);
   font-weight: 850;
 }
 
-.session-grid {
+.error {
+  border: 1px solid rgba(255, 63, 108, 0.35);
+  background: rgba(255, 63, 108, 0.12);
+  color: var(--wine);
+}
+
+.hint {
+  border: 1px solid rgba(248, 201, 69, 0.35);
+  background: rgba(248, 201, 69, 0.12);
+  color: var(--amber);
+}
+
+.player-summary {
   display: grid;
-  grid-template-columns: minmax(180px, 1fr) repeat(2, minmax(96px, 0.36fr));
+  grid-template-columns: minmax(160px, 1fr) repeat(2, minmax(96px, 0.36fr));
   gap: 0.7rem;
 }
 
-label,
-.session-stat {
+.player-summary div,
+.nickname-field {
   display: grid;
   gap: 0.35rem;
 }
 
-label span,
-.session-stat small {
+.player-summary div {
+  min-height: 54px;
+  padding: 0.55rem 0.7rem;
+  border: 1px solid var(--rule);
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.07);
+  color: var(--ink);
+}
+
+.player-summary small,
+.nickname-field span {
   color: var(--muted);
   font-size: 0.68rem;
   font-weight: 950;
   text-transform: uppercase;
 }
 
-input,
-.session-stat {
-  min-height: 44px;
-  padding: 0.55rem 0.7rem;
-  border: 1px solid var(--rule);
-  border-radius: 6px;
-  background: #fbf7ec;
-  color: var(--deep);
-}
-
-.session-stat strong {
+.player-summary strong {
   color: var(--wine);
   font-size: 1.2rem;
+}
+
+.read-only-panel {
+  display: grid;
+  gap: 0.45rem;
+}
+
+.read-only-panel h2 {
+  margin: 0;
+  color: var(--ink);
+  font-size: 1.45rem;
+  line-height: 1.05;
+}
+
+.read-only-panel p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.55;
 }
 
 button {
@@ -90,9 +120,15 @@ button {
   padding: 0.65rem 0.85rem;
   border: 0;
   border-radius: 6px;
-  background: var(--deep);
-  color: #fff;
+  background: linear-gradient(135deg, var(--teal), var(--amber));
+  color: #07101f;
   font-weight: 950;
+}
+
+button.secondary {
+  border: 1px solid var(--rule);
+  background: rgba(255, 255, 255, 0.06);
+  color: var(--ink);
 }
 
 button:disabled,
@@ -101,12 +137,106 @@ input:disabled {
   opacity: 0.55;
 }
 
+.dev-tools {
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--rule);
+}
+
+.dev-tools summary {
+  cursor: pointer;
+  color: var(--muted);
+  font-weight: 900;
+}
+
+.dev-tools .session-actions {
+  margin-top: 0.75rem;
+}
+
+.auth-dialog {
+  position: fixed;
+  inset: 0;
+  z-index: 80;
+  display: grid;
+  place-items: center;
+  padding: 1rem;
+}
+
+.auth-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(7, 15, 29, 0.78);
+  backdrop-filter: blur(8px);
+}
+
+.auth-panel {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  width: min(520px, 100%);
+  gap: 0.9rem;
+  padding: clamp(1rem, 3vw, 1.5rem);
+  border: 1px solid var(--rule);
+  border-radius: 8px;
+  background: var(--surface);
+  box-shadow: var(--shadow);
+}
+
+.auth-panel h2,
+.auth-panel p {
+  margin: 0;
+}
+
+.auth-panel h2 {
+  color: var(--ink);
+  font-size: 2.35rem;
+  line-height: 0.96;
+}
+
 @media (max-width: 620px) {
-  .session-grid {
+  .auth-panel h2 {
+    font-size: 1.85rem;
+  }
+}
+
+.auth-panel p {
+  color: var(--muted);
+  line-height: 1.55;
+}
+
+.close-btn {
+  position: absolute;
+  top: 0.65rem;
+  right: 0.65rem;
+  display: grid;
+  width: 42px;
+  height: 42px;
+  place-items: center;
+  padding: 0;
+  border: 1px solid var(--rule);
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--ink);
+  font-size: 1.35rem;
+}
+
+input {
+  min-height: 44px;
+  padding: 0.55rem 0.7rem;
+  border: 1px solid var(--rule);
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--ink);
+}
+
+@media (max-width: 620px) {
+  .player-summary {
     grid-template-columns: 1fr 1fr;
   }
 
-  label {
+  .player-summary div:first-child {
     grid-column: 1 / -1;
+  }
+
+  .session-actions button {
+    flex: 1 1 150px;
   }
 }

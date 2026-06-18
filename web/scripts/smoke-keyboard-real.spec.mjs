@@ -48,7 +48,7 @@ test('collection route supports real keyboard navigation and dialogs', async ({ 
 
   await tabUntil(
     page,
-    (active) => active.tagName === 'INPUT' && active.placeholder.includes('Pais, jugador'),
+    (active) => active.tagName === 'INPUT' && active.placeholder.includes('Equipo, jugador'),
     'collection search input',
   );
 

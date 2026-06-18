@@ -34,7 +34,7 @@ export class AlbumStore {
   private readonly stickers = albumStickers;
   private readonly initialState = this.readLocalState();
 
-  readonly mode = signal<'local' | 'firebase'>('local');
+  readonly mode = signal<'readonly' | 'local' | 'firebase'>('readonly');
   readonly copies = signal<InventoryCopies>(this.initialState.copies);
   readonly packsOpened = signal(this.initialState.packsOpened);
   readonly theme = signal<'dark' | 'light'>(this.initialState.theme);
@@ -80,6 +80,12 @@ export class AlbumStore {
     this.packsOpened.set(state.packsOpened);
   }
 
+  useReadonlyMode(): void {
+    this.mode.set('readonly');
+    this.copies.set({});
+    this.packsOpened.set(0);
+  }
+
   useFirebaseInventory(copies: InventoryCopies): void {
     this.mode.set('firebase');
     this.copies.set(copies);
@@ -94,12 +100,14 @@ export class AlbumStore {
   }
 
   addRandomStickers(count = 10): readonly Sticker[] {
+    this.mode.set('local');
     const stickers = Array.from({ length: count }, () => this.randomSticker());
     this.addCopies(stickers);
     return stickers;
   }
 
   resetLocalAlbum(): void {
+    this.mode.set('local');
     this.copies.set({});
     this.packsOpened.set(0);
     this.filters.set(INITIAL_FILTERS);
@@ -157,7 +165,7 @@ export class AlbumStore {
         id: 'firstPack',
         index: '01',
         title: 'Primer sobre',
-        copy: 'Abre tu primer sobre local y pega los primeros cromos.',
+        copy: 'Abre tu primer sobre y pega los primeros cromos.',
         progressLabel: `${Math.min(opened, 1)}/1`,
         complete: opened >= 1,
       },
@@ -165,7 +173,7 @@ export class AlbumStore {
         id: 'tenPercent',
         index: '02',
         title: 'Arranque fuerte',
-        copy: 'Completa al menos el 10% del album.',
+        copy: 'Completa al menos el 10% del álbum.',
         progressLabel: `${Math.min(progress, 10)}/10%`,
         complete: progress >= 10,
       },
@@ -173,15 +181,15 @@ export class AlbumStore {
         id: 'holoHunter',
         index: '03',
         title: 'Cazador holo',
-        copy: 'Consigue 5 cromos holograficos.',
+        copy: 'Consigue 5 cromos holográficos.',
         progressLabel: `${Math.min(holoCount, 5)}/5`,
         complete: holoCount >= 5,
       },
       {
         id: 'fullTeam',
         index: '04',
-        title: 'Pais completo',
-        copy: 'Completa los 5 cromos jugables de un pais participante.',
+        title: 'Equipo completo',
+        copy: 'Completa los 5 cromos destacados de una selección.',
         progressLabel: `${hasFullTeam ? 1 : 0}/1`,
         complete: hasFullTeam,
       },

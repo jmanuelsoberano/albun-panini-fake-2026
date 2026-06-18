@@ -2,17 +2,19 @@
 
 ## Contexto
 
-Este proyecto es un álbum digital fanmade/no oficial de cromos ficticios 2026.
+Este proyecto es un álbum digital del Mundial 2026 con datos reales de texto.
 
-Debe mantenerse claramente ficticio:
+## Regla vigente de producto
 
-- No usar marcas oficiales.
-- No usar logos, escudos o mascotas oficiales.
-- No usar jugadores reales.
-- No usar selecciones reales.
-- No copiar arte, layout comercial o assets protegidos.
+- Usar selecciones reales del Mundial 2026.
+- Usar jugadores reales de las plantillas disponibles en el repositorio.
+- Usar grupos, sedes, calendario, marcadores y goleadores verificados.
+- No inventar resultados, sedes, equipos ni jugadores.
+- Mantener la interfaz en español.
+- No usar logos, escudos, mascotas, fotografías, tipografías ni arte protegido.
+- Si un dato deportivo no está verificado, mostrarlo como pendiente.
 
-## Objetivo inmediato
+## Objetivo técnico inmediato
 
 Leer primero:
 
@@ -22,14 +24,15 @@ Leer primero:
 4. `docs/ROADMAP.md`
 5. `docs/BACKLOG.md`
 
-El siguiente bloque de trabajo es:
+El bloque de trabajo vigente es:
 
-> Login anónimo con nickname + perfil en Firestore + sobre inicial + apertura de sobres desde Cloud Functions + inventario renderizado desde Firestore.
+> Login con Google + nickname + perfil en Firestore + sobre inicial + apertura de sobres desde
+> Cloud Functions + inventario renderizado desde Firestore.
 
 ## Reglas técnicas
 
-- Mantener la experiencia visual existente.
-- No eliminar el modo local todavía; debe quedar como fallback/desarrollo.
+- Mantener el modo local solo como fallback de desarrollo, oculto de la UI pública.
+- La experiencia pública sin sesión debe ser solo lectura con CTA claro de login.
 - Las acciones sensibles deben pasar por Cloud Functions.
 - El cliente no debe modificar inventario directamente.
 - `openPack` debe consumir sobres disponibles desde backend.

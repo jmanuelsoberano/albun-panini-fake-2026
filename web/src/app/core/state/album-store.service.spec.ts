@@ -1,15 +1,19 @@
 import { TestBed } from '@angular/core/testing';
 import { AlbumStore } from './album-store.service';
 
+function clearStoredAlbum(): void {
+  globalThis.localStorage?.clear();
+}
+
 describe('AlbumStore', () => {
   beforeEach(() => {
-    localStorage.clear();
+    clearStoredAlbum();
     TestBed.configureTestingModule({});
   });
 
   afterEach(() => {
     TestBed.resetTestingModule();
-    localStorage.clear();
+    clearStoredAlbum();
   });
 
   it('opens a local pack and updates inventory counters', () => {

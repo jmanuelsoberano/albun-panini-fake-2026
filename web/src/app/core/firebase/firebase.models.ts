@@ -40,6 +40,24 @@ export interface OpenPackResult {
   readonly stickers: readonly Sticker[];
 }
 
+export interface RoomSummary {
+  readonly id: string;
+  readonly code: string;
+  readonly name: string;
+  readonly ownerId: string;
+  readonly memberIds: readonly string[];
+}
+
+export interface TradeSummary {
+  readonly id: string;
+  readonly fromUserId: string;
+  readonly toUserId: string;
+  readonly roomId: string | null;
+  readonly offered: readonly string[];
+  readonly requested: readonly string[];
+  readonly status: 'pending' | 'accepted' | 'declined' | 'cancelled';
+}
+
 export function toSessionUser(user: User | null): FirebaseSessionUser | null {
   if (!user) {
     return null;

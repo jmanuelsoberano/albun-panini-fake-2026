@@ -1,15 +1,20 @@
 :root {
-  --paper: #f5efe2;
-  --ink: #1c2430;
-  --deep: #10233d;
-  --teal: #0f766e;
-  --wine: #8b1538;
-  --amber: #c8942e;
-  --cream: #fffaf0;
-  --rule: rgba(28, 36, 48, 0.18);
-  --text: #1c2430;
-  --muted: #667085;
-  --shadow: 0 14px 30px rgba(30, 32, 38, 0.16);
+  --paper: #070f1d;
+  --ink: #f5f8ff;
+  --deep: #0c1628;
+  --teal: #00d084;
+  --wine: #ff3f6c;
+  --amber: #f8c945;
+  --cream: #101c31;
+  --surface: #0f1d33;
+  --surface-strong: #172945;
+  --surface-soft: #0b1527;
+  --rule: rgba(255, 255, 255, 0.16);
+  --text: #f5f8ff;
+  --muted: #aab7cc;
+  --green: #00d084;
+  --gold: #f8c945;
+  --shadow: 0 24px 70px rgba(0, 0, 0, 0.38);
 }
 
 * {
@@ -29,12 +34,16 @@ body {
   min-height: 100vh;
   margin: 0;
   background:
-    linear-gradient(90deg, rgba(16, 35, 61, 0.04) 1px, transparent 1px),
-    linear-gradient(0deg, rgba(16, 35, 61, 0.04) 1px, transparent 1px),
-    linear-gradient(135deg, #f6f1e7 0%, #fffaf0 48%, #e6efe8 100%);
+    linear-gradient(90deg, rgba(255, 255, 255, 0.035) 1px, transparent 1px),
+    linear-gradient(0deg, rgba(255, 255, 255, 0.035) 1px, transparent 1px),
+    linear-gradient(115deg, rgba(0, 208, 132, 0.12), transparent 38%),
+    linear-gradient(245deg, rgba(255, 63, 108, 0.1), transparent 42%),
+    linear-gradient(180deg, #07101f 0%, #101a2f 48%, #07111c 100%);
   background-size:
-    28px 28px,
-    28px 28px,
+    56px 56px,
+    56px 56px,
+    auto,
+    auto,
     auto;
   color: var(--ink);
   font-family:
@@ -70,9 +79,51 @@ select {
 
 .eyebrow {
   margin: 0 0 0.85rem;
-  color: var(--wine);
+  color: var(--amber);
   font-size: 0.76rem;
   font-weight: 950;
-  letter-spacing: 0.12em;
+  letter-spacing: 0;
   text-transform: uppercase;
+}
+
+button,
+a,
+.home-panel,
+.challenge-card,
+.country-card,
+.stadium-card,
+.match-card,
+.bracket-match,
+.room-panel,
+.sticker-card {
+  transition:
+    transform 0.16s ease,
+    box-shadow 0.16s ease,
+    border-color 0.16s ease,
+    background-color 0.16s ease;
+}
+
+@media (hover: hover) and (prefers-reduced-motion: no-preference) {
+  button:not(:disabled):hover,
+  .home-panel:hover,
+  .challenge-card:hover,
+  .country-card:hover,
+  .stadium-card:hover,
+  .match-card:hover,
+  .bracket-match:hover,
+  .room-panel:hover,
+  .sticker-card:hover {
+    transform: translateY(-2px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
 }

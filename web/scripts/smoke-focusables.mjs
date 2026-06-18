@@ -10,26 +10,47 @@ const globalChecks = [
 ];
 const routeChecks = [
   {
+    path: '/inicio',
+    checks: [
+      ['.home-panel', 5],
+      ['.primary-action', 1],
+      ['.score-slab', 1],
+    ],
+  },
+  {
     path: '/coleccion',
     checks: [
       ['.sticker-card', 240],
       ['.sticker-card[role="button"][tabindex="0"][aria-label]', 240],
-      ['input', 2],
+      ['input', 1],
       ['select', 3],
       ['button[role="tab"]', 2],
     ],
   },
   {
-    path: '/paises',
+    path: '/torneo',
+    checks: [
+      ['.tournament-summary article', 4],
+      ['.tournament-actions a', 3],
+    ],
+  },
+  {
+    path: '/equipos',
     checks: [
       ['.country-card', 48],
       ['.country-roster-total', 48],
-      ['.source-links a', 2],
     ],
   },
   {
     path: '/sedes',
     checks: [['.stadium-card', 16]],
+  },
+  {
+    path: '/sala',
+    checks: [
+      ['.room-panel', 1],
+      ['.login-gate a', 1],
+    ],
   },
   {
     path: '/retos',

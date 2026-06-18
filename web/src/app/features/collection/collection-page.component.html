@@ -1,15 +1,15 @@
 <section class="hero section-shell">
   <div>
-    <p class="eyebrow">Edicion fanmade · 48 paises · 240 cromos</p>
-    <h1>Completa tu album digital de futbol 2026.</h1>
+    <p class="eyebrow">Mundial 2026 · 48 selecciones · 240 cromos</p>
+    <h1>Completa tu álbum digital de fútbol 2026.</h1>
     <p class="hero-text">
-      Esta version Angular ya conserva inventario local con signals y localStorage. Firebase e
-      inventario online entran en la siguiente capa de migracion.
+      Explora la colección, revisa selecciones y guarda tu progreso cuando inicies sesión para
+      jugar.
     </p>
   </div>
 
   <app-session-panel
-    (localPackRequested)="openLocalPack()"
+    (devPackRequested)="openDevPack()"
     (firebasePackOpened)="showOpenedPack($event)"
   />
 </section>
@@ -24,13 +24,15 @@
 <section class="section-shell panel-section">
   <div class="section-heading">
     <div>
-      <p class="eyebrow">Coleccion</p>
-      <h2>Tu album local</h2>
+      <p class="eyebrow">Colección</p>
+      <h2>Tu álbum</h2>
     </div>
-    <div class="section-actions">
-      <button type="button" (click)="addRandomStickers()">Pegar 10 al azar</button>
-      <button class="danger" type="button" (click)="resetLocalAlbum()">Reiniciar</button>
-    </div>
+    @if (session.devToolsEnabled()) {
+      <div class="section-actions">
+        <button type="button" (click)="addRandomStickers()">Agregar cromos QA</button>
+        <button class="danger" type="button" (click)="resetLocalAlbum()">Reiniciar</button>
+      </div>
+    }
   </div>
 
   <app-collection-filters
@@ -45,7 +47,7 @@
     <app-pack-strip [stickers]="lastPack()" />
   }
 
-  <div class="view-tabs" role="tablist" aria-label="Vista de coleccion">
+  <div class="view-tabs" role="tablist" aria-label="Vista de colección">
     <button
       class="tab"
       type="button"
@@ -64,7 +66,7 @@
       [attr.aria-selected]="album.activeView() === 'teams'"
       (click)="showTeamPages()"
     >
-      Paginas
+      Páginas
     </button>
   </div>
 
@@ -87,10 +89,10 @@
   <app-pack-dialog
     [stickers]="lastPack()"
     [copies]="album.copies()"
-    [sourceLabel]="lastPackSource() === 'firebase' ? 'Sobre Firebase' : 'Sobre local'"
-    [canOpenAnother]="lastPackSource() === 'local'"
+    [sourceLabel]="lastPackSource() === 'online' ? 'Sobre abierto' : 'Sobre de prueba'"
+    [canOpenAnother]="lastPackSource() === 'dev'"
     (dialogClosed)="closePackDialog()"
-    (openAnotherPack)="openLocalPack()"
+    (openAnotherPack)="openDevPack()"
     (stickerSelected)="selectSticker($event)"
   />
 }

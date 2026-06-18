@@ -1,36 +1,29 @@
 <section class="section-shell page-heading">
-  <p class="eyebrow">Paises</p>
-  <h1>48 paises participantes</h1>
+  <p class="eyebrow">Selecciones</p>
+  <h1>48 selecciones del Mundial 2026</h1>
   <p>
-    Plantillas completas de texto: 26 jugadores por pais, sin logos, escudos, fotos oficiales ni
-    arte protegido.
+    Plantillas reales con 26 jugadores por selección. La app muestra datos de texto: no incluye
+    logos, escudos, fotos ni arte protegido.
   </p>
 </section>
 
 <section class="section-shell squad-summary" aria-label="Resumen de plantillas">
   <article>
     <strong>{{ teams.length }}</strong>
-    <span>paises</span>
+    <span>selecciones</span>
   </article>
   <article>
     <strong>{{ totalPlayersLabel }}</strong>
-    <span>jugadores totales</span>
+    <span>jugadores reales</span>
   </article>
   <article>
     <strong>{{ expectedSquadSize }}</strong>
-    <span>jugadores por pais</span>
+    <span>jugadores por selección</span>
   </article>
-  <div class="source-links" aria-label="Fuentes oficiales de plantillas">
-    <a [href]="squadSourceUrl" target="_blank" rel="noopener noreferrer"
-      >Lista oficial FIFA (PDF)</a
-    >
-    <a [href]="squadArticleUrl" target="_blank" rel="noopener noreferrer"
-      >48 plantillas confirmadas</a
-    >
-  </div>
+  <div class="data-note">Datos de texto del Mundial 2026, en español y sin assets protegidos.</div>
 </section>
 
-<section class="section-shell countries-grid" aria-label="Paises y plantillas completas">
+<section class="section-shell countries-grid" aria-label="Selecciones y plantillas completas">
   @for (team of teams; track team.id) {
     <article
       class="country-card"
@@ -40,12 +33,9 @@
       <header>
         <div>
           <h2>{{ team.name }}</h2>
-          <span
-            >{{ team.confederation }} &middot; {{ squadSize(team.id) }}/{{
-              expectedSquadSize
-            }}
-            jugadores</span
-          >
+          <span>
+            {{ team.confederation }} · {{ squadSize(team.id) }}/{{ expectedSquadSize }} jugadores
+          </span>
         </div>
         <strong>{{ team.code }}</strong>
       </header>
@@ -57,7 +47,7 @@
         <strong>{{ squadSize(team.id) }}</strong>
         <div>
           <span>jugadores totales</span>
-          <small>Plantilla oficial FIFA: {{ squadSize(team.id) }}/{{ expectedSquadSize }}</small>
+          <small>Plantilla real: {{ squadSize(team.id) }}/{{ expectedSquadSize }}</small>
         </div>
       </div>
 
@@ -66,7 +56,7 @@
           <li>
             <span>{{ player.shirt }}</span>
             <strong>{{ player.name }}</strong>
-            <small>{{ player.position }} &middot; {{ player.club }}</small>
+            <small>{{ player.position }} · {{ player.club }}</small>
           </li>
         }
       </ol>

@@ -1,7 +1,7 @@
 {
-  "name": "album-fake-2026-functions",
+  "name": "album-mundial-2026-functions",
   "private": true,
-  "description": "Cloud Functions para economía de sobres, misiones e intercambios del álbum fanmade 2026.",
+  "description": "Cloud Functions para economía de sobres, misiones e intercambios del álbum Mundial 2026.",
   "main": "index.js",
   "engines": {
     "node": "20"

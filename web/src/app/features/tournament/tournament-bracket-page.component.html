@@ -1,0 +1,44 @@
+<section class="section-shell page-heading">
+  <p class="eyebrow">Llaves</p>
+  <h1>Ronda de 32, octavos, cuartos, semifinales y final</h1>
+  <p>Calendario real de eliminación directa; equipos pendientes hasta cierre de fase de grupos.</p>
+</section>
+
+<section class="section-shell bracket-board" aria-label="Llave de eliminacion">
+  @for (round of rounds; track round.round.id) {
+    <section class="bracket-round">
+      <h2>{{ round.round.name }}</h2>
+      <div class="bracket-matches">
+        @for (match of round.matches; track match.id) {
+          <article class="bracket-match">
+            <a class="match-detail-link" [routerLink]="['/torneo/partidos', match.id]">
+              Match center
+            </a>
+            <div>
+              <strong>{{ teamCode(match.homeTeamId) }}</strong>
+              @if (isKnownTeam(match.homeTeamId)) {
+                <a [routerLink]="['/torneo/equipos', match.homeTeamId]">{{
+                  teamName(match.homeTeamId)
+                }}</a>
+              } @else {
+                <span>{{ teamName(match.homeTeamId) }}</span>
+              }
+              <b>{{ scoreLabel(match.homeScore) }}</b>
+            </div>
+            <div>
+              <strong>{{ teamCode(match.awayTeamId) }}</strong>
+              @if (isKnownTeam(match.awayTeamId)) {
+                <a [routerLink]="['/torneo/equipos', match.awayTeamId]">{{
+                  teamName(match.awayTeamId)
+                }}</a>
+              } @else {
+                <span>{{ teamName(match.awayTeamId) }}</span>
+              }
+              <b>{{ scoreLabel(match.awayScore) }}</b>
+            </div>
+          </article>
+        }
+      </div>
+    </section>
+  }
+</section>

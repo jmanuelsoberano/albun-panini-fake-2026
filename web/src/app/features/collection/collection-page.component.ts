@@ -1,6 +1,9 @@
 import { ChangeDetectionStrategy, Component, inject, signal } from '@angular/core';
+import type { OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 import type { CollectionFilters, Sticker } from '../../core/models/album.models';
 import { albumStickers, confederations } from '../../core/data/album-catalog';
+import { FirebaseSessionStore } from '../../core/firebase/firebase-session.store';
 import { AlbumStore } from '../../core/state/album-store.service';
 import { CollectionFiltersComponent } from './collection-filters/collection-filters.component';
 import { CollectionGridComponent } from './collection-grid/collection-grid.component';
@@ -27,17 +30,27 @@ import { SessionPanelComponent } from '../session/session-panel/session-panel.co
   styleUrl: './collection-page.component.css',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class CollectionPageComponent {
+export class CollectionPageComponent implements OnInit {
+  private readonly route = inject(ActivatedRoute);
   protected readonly album = inject(AlbumStore);
+  protected readonly session = inject(FirebaseSessionStore);
   protected readonly stickers = albumStickers;
   protected readonly confederations = confederations;
   protected readonly lastPack = signal<readonly Sticker[]>([]);
-  protected readonly lastPackSource = signal<'local' | 'firebase'>('local');
+  protected readonly lastPackSource = signal<'dev' | 'online'>('dev');
   protected readonly packDialogOpen = signal(false);
   protected readonly selectedSticker = signal<Sticker | null>(null);
 
-  protected openLocalPack(): void {
-    this.lastPackSource.set('local');
+  ngOnInit(): void {
+    const query = this.route.snapshot.queryParamMap.get('q')?.trim();
+
+    if (query) {
+      this.album.updateFilters({ query });
+    }
+  }
+
+  protected openDevPack(): void {
+    this.lastPackSource.set('dev');
     this.lastPack.set(this.album.openLocalPack());
     this.packDialogOpen.set(true);
   }
@@ -48,7 +61,7 @@ export class CollectionPageComponent {
   }
 
   protected showOpenedPack(stickers: readonly Sticker[]): void {
-    this.lastPackSource.set('firebase');
+    this.lastPackSource.set('online');
     this.lastPack.set(stickers);
     this.packDialogOpen.set(true);
   }

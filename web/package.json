@@ -14,7 +14,13 @@
     "check:angular-practices": "node scripts/check-angular-practices.mjs",
     "smoke:focusables": "node scripts/smoke-focusables.mjs",
     "smoke:hosting": "node scripts/smoke-hosting.mjs",
+    "smoke:auth-gate": "playwright test scripts/smoke-auth-gate.spec.mjs --browser=chromium --reporter=line --workers=1",
+    "smoke:real-worldcup-content": "node scripts/smoke-real-worldcup-content.mjs",
+    "smoke:economy": "playwright test scripts/smoke-economy.spec.mjs --browser=chromium --reporter=line --workers=1",
     "smoke:keyboard-real": "playwright test scripts/smoke-keyboard-real.spec.mjs --browser=chromium --reporter=line --workers=1",
+    "smoke:responsive": "playwright test scripts/smoke-responsive.spec.mjs --browser=chromium --reporter=line --workers=1",
+    "smoke:room": "playwright test scripts/smoke-room.spec.mjs --browser=chromium --reporter=line --workers=1",
+    "smoke:tournament": "playwright test scripts/smoke-tournament.spec.mjs --browser=chromium --reporter=line --workers=1",
     "verify:migration": "node scripts/verify-migration.mjs"
   },
   "private": true,

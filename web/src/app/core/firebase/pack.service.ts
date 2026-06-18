@@ -54,7 +54,7 @@ export class PackService {
     }
 
     if (!services.auth.currentUser) {
-      throw new Error('Inicia sesion para continuar.');
+      throw new Error('Inicia sesión para continuar.');
     }
 
     const firestore = await import('firebase/firestore');
@@ -88,7 +88,7 @@ export class PackService {
 
     const user = services.auth.currentUser;
     if (!user) {
-      throw new Error('Inicia sesion para continuar.');
+      throw new Error('Inicia sesión para continuar.');
     }
 
     const firestore = await import('firebase/firestore');

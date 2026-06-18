@@ -489,82 +489,82 @@ export const tournamentStadiums = [
   [
     "Toronto Stadium",
     "Toronto, Canada",
-    "Sede factual del torneo 2026; sin logotipos ni arte oficial."
+    "Sede real del Mundial 2026; se muestra solo como texto, sin logotipos ni arte protegido."
   ],
   [
     "BC Place Vancouver",
     "Vancouver, Canada",
-    "Sede factual del torneo 2026; sin logotipos ni arte oficial."
+    "Sede real del Mundial 2026; se muestra solo como texto, sin logotipos ni arte protegido."
   ],
   [
     "Mexico City Stadium",
     "Mexico City, Mexico",
-    "Sede factual del torneo 2026; sin logotipos ni arte oficial."
+    "Sede real del Mundial 2026; se muestra solo como texto, sin logotipos ni arte protegido."
   ],
   [
     "Estadio Guadalajara",
     "Guadalajara, Mexico",
-    "Sede factual del torneo 2026; sin logotipos ni arte oficial."
+    "Sede real del Mundial 2026; se muestra solo como texto, sin logotipos ni arte protegido."
   ],
   [
     "Estadio Monterrey",
     "Monterrey, Mexico",
-    "Sede factual del torneo 2026; sin logotipos ni arte oficial."
+    "Sede real del Mundial 2026; se muestra solo como texto, sin logotipos ni arte protegido."
   ],
   [
     "Atlanta Stadium",
     "Atlanta, USA",
-    "Sede factual del torneo 2026; sin logotipos ni arte oficial."
+    "Sede real del Mundial 2026; se muestra solo como texto, sin logotipos ni arte protegido."
   ],
   [
     "Boston Stadium",
     "Boston, USA",
-    "Sede factual del torneo 2026; sin logotipos ni arte oficial."
+    "Sede real del Mundial 2026; se muestra solo como texto, sin logotipos ni arte protegido."
   ],
   [
     "Dallas Stadium",
     "Dallas, USA",
-    "Sede factual del torneo 2026; sin logotipos ni arte oficial."
+    "Sede real del Mundial 2026; se muestra solo como texto, sin logotipos ni arte protegido."
   ],
   [
     "Houston Stadium",
     "Houston, USA",
-    "Sede factual del torneo 2026; sin logotipos ni arte oficial."
+    "Sede real del Mundial 2026; se muestra solo como texto, sin logotipos ni arte protegido."
   ],
   [
     "Kansas City Stadium",
     "Kansas City, USA",
-    "Sede factual del torneo 2026; sin logotipos ni arte oficial."
+    "Sede real del Mundial 2026; se muestra solo como texto, sin logotipos ni arte protegido."
   ],
   [
     "Los Angeles Stadium",
     "Los Angeles, USA",
-    "Sede factual del torneo 2026; sin logotipos ni arte oficial."
+    "Sede real del Mundial 2026; se muestra solo como texto, sin logotipos ni arte protegido."
   ],
   [
     "Miami Stadium",
     "Miami, USA",
-    "Sede factual del torneo 2026; sin logotipos ni arte oficial."
+    "Sede real del Mundial 2026; se muestra solo como texto, sin logotipos ni arte protegido."
   ],
   [
     "New York New Jersey Stadium",
     "New York New Jersey, USA",
-    "Sede factual del torneo 2026; sin logotipos ni arte oficial."
+    "Sede real del Mundial 2026; se muestra solo como texto, sin logotipos ni arte protegido."
   ],
   [
     "Philadelphia Stadium",
     "Philadelphia, USA",
-    "Sede factual del torneo 2026; sin logotipos ni arte oficial."
+    "Sede real del Mundial 2026; se muestra solo como texto, sin logotipos ni arte protegido."
   ],
   [
     "San Francisco Bay Area Stadium",
     "San Francisco Bay Area, USA",
-    "Sede factual del torneo 2026; sin logotipos ni arte oficial."
+    "Sede real del Mundial 2026; se muestra solo como texto, sin logotipos ni arte protegido."
   ],
   [
     "Seattle Stadium",
     "Seattle, USA",
-    "Sede factual del torneo 2026; sin logotipos ni arte oficial."
+    "Sede real del Mundial 2026; se muestra solo como texto, sin logotipos ni arte protegido."
   ]
 ];
 

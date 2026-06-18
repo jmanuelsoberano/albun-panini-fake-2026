@@ -1,0 +1,155 @@
+.match-center {
+  padding-block: 2rem 1rem;
+}
+
+.scoreboard {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+  gap: 1rem;
+  align-items: center;
+  padding: 1rem;
+  border: 1px solid var(--rule);
+  border-radius: 8px;
+  background: linear-gradient(135deg, rgba(0, 208, 132, 0.24), rgba(255, 63, 108, 0.16));
+  color: var(--ink);
+  box-shadow: var(--shadow);
+}
+
+.scoreboard a {
+  display: grid;
+  gap: 0.3rem;
+  color: #fff;
+  text-decoration: none;
+}
+
+.scoreboard a:last-child {
+  text-align: right;
+}
+
+.scoreboard span,
+.scoreboard small {
+  font-size: 0.72rem;
+  font-weight: 1000;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+.scoreboard strong {
+  font-size: 1.75rem;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.scoreboard div {
+  display: grid;
+  gap: 0.3rem;
+  min-width: 6rem;
+  text-align: center;
+}
+
+.scoreboard b {
+  color: #fff3b0;
+  font-size: 3.35rem;
+  line-height: 1;
+}
+
+.venue {
+  color: var(--muted);
+  font-weight: 850;
+}
+
+.match-detail-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(240px, 320px);
+  gap: 1rem;
+  padding-bottom: 1.25rem;
+}
+
+.timeline-panel,
+.related-teams,
+.empty-state {
+  border: 1px solid var(--rule);
+  border-radius: 8px;
+  background: rgba(15, 29, 51, 0.82);
+  box-shadow: 0 18px 42px rgba(0, 0, 0, 0.22);
+}
+
+.timeline-panel,
+.related-teams {
+  padding: 1rem;
+}
+
+h1,
+h2 {
+  margin: 0 0 0.8rem;
+  color: var(--ink);
+  text-transform: uppercase;
+}
+
+.timeline {
+  display: grid;
+  gap: 0.55rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.timeline li {
+  display: grid;
+  grid-template-columns: 3.2rem minmax(0, 1fr) minmax(120px, 0.5fr);
+  gap: 0.7rem;
+  align-items: center;
+  padding: 0.65rem;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.timeline span {
+  color: var(--wine);
+  font-weight: 1000;
+}
+
+.timeline small {
+  color: var(--muted);
+  font-weight: 850;
+}
+
+.related-teams {
+  display: grid;
+  align-content: start;
+  gap: 0.55rem;
+}
+
+.related-teams a,
+.empty-state a {
+  display: grid;
+  min-height: 42px;
+  place-items: center;
+  border: 1px solid var(--rule);
+  border-radius: 6px;
+  color: var(--ink);
+  font-weight: 950;
+  text-decoration: none;
+}
+
+.empty-state {
+  padding: 1rem;
+}
+
+@media (max-width: 760px) {
+  .scoreboard,
+  .match-detail-grid,
+  .timeline li {
+    grid-template-columns: 1fr;
+  }
+
+  .scoreboard a,
+  .scoreboard a:last-child {
+    text-align: center;
+  }
+
+  .scoreboard strong,
+  .scoreboard b {
+    font-size: 2rem;
+  }
+}

@@ -25,11 +25,11 @@ const $$ = (q, root = document) => [...root.querySelectorAll(q)];
 const STORE_KEY = "fan-global-2026-state-v1";
 const PRIVATE_CONTENT_URL = "content/private-content.json";
 let albumContent = {
-  title: "Album Fan Global 2026",
-  subtitle: "No oficial - datos factuales",
-  heroLabel: "Edicion premium fanmade",
-  heroTitle: "Album digital de torneo internacional.",
-  heroText: "Colecciona cromos con nombres y sedes factuales, usando retratos privados opcionales y sin logos, escudos, mascotas, marcas ni arte oficial."
+  title: "Álbum Mundial 2026",
+  subtitle: "Datos reales del torneo",
+  heroLabel: "Edicion Mundial 2026",
+  heroTitle: "Álbum digital del Mundial 2026.",
+  heroText: "Colecciona cromos con nombres, selecciones, plantillas y sedes reales en una experiencia interactiva."
 };
 const roles = ["Referente", "Portero", "Defensa", "Mediocampo", "Delantero"];
 
@@ -41,7 +41,7 @@ const teams = tournamentTeams.map(team => ({
   confederation: team.confederation,
   group: team.confederation,
   colors: team.colors,
-  motto: "Nombre factual del torneo 2026. La tarjeta no usa escudo, logo, mascota ni uniforme oficial."
+  motto: "Datos reales del torneo 2026. La tarjeta no usa escudo, logo, mascota ni uniforme protegido."
 }));
 const confederations = [...new Set(teams.map(team => team.confederation))];
 const EXPECTED_SQUAD_SIZE = 26;
@@ -69,7 +69,7 @@ const stickers = teams.flatMap((team, teamIndex) => roles.map((role, roleIndex) 
     portrait: "",
     privateSlot: `private-assets/players/fg-${String(n).padStart(3, "0")}.webp`,
     caption: `Ficha ${String(n).padStart(3, "0")} lista para retrato privado local.`,
-    note: `Cromo ${rarity} de ${team.name}. Nombre factual de plantilla publica; sin foto, escudo, logo ni arte oficial.`
+    note: `Cromo ${rarity} de ${team.name}. Nombre real de plantilla publica; sin foto, escudo, logo ni arte protegido.`
   };
 }));
 
@@ -305,7 +305,7 @@ function applyAlbumContent() {
   $(".hero-copy .eyebrow").textContent = albumContent.heroLabel;
   $(".hero-copy h1").textContent = albumContent.heroTitle;
   $(".hero-text").textContent = albumContent.heroText;
-  $(".cover-title span").textContent = albumContent.title.replace(/^Album\s+/i, "").split(" ").slice(0, 2).join(" ");
+  $(".cover-title span").textContent = albumContent.title.replace(/^Á?lbum\s+/i, "").split(" ").slice(0, 2).join(" ");
   $(".cover-meta").textContent = albumContent.subtitle;
 }
 
@@ -368,19 +368,19 @@ function showPackModal(pack, countOverride = null) {
 function firebaseErrorMessage(error) {
   const code = error?.code || "";
   const messages = {
-    "auth/admin-restricted-operation": "Este metodo de inicio de sesion no esta habilitado en Firebase.",
-    "auth/cancelled-popup-request": "Ya hay una ventana de inicio de sesion abierta.",
-    "auth/network-request-failed": "No se pudo conectar con Firebase. Revisa tu conexion o los emuladores.",
-    "auth/operation-not-allowed": "Este proveedor de inicio de sesion no esta habilitado.",
+    "auth/admin-restricted-operation": "Este método de inicio de sesión no está habilitado.",
+    "auth/cancelled-popup-request": "Ya hay una ventana de inicio de sesión abierta.",
+    "auth/network-request-failed": "No se pudo conectar con el servicio. Revisa tu conexion.",
+    "auth/operation-not-allowed": "Este proveedor de inicio de sesión no está habilitado.",
     "auth/popup-blocked": "El navegador bloqueo la ventana de Google. Permite popups para esta app.",
-    "auth/popup-closed-by-user": "Se cerro la ventana de Google antes de completar el inicio de sesion.",
-    "auth/unauthorized-domain": "Este dominio no esta autorizado en Firebase Authentication.",
+    "auth/popup-closed-by-user": "Se cerró la ventana de Google antes de completar el inicio de sesión.",
+    "auth/unauthorized-domain": "Este dominio no está autorizado para iniciar sesión.",
     "functions/already-exists": "Esta recompensa ya fue reclamada.",
     "functions/failed-precondition": "La accion no se puede completar todavia.",
     "functions/not-found": "No se encontro el recurso solicitado.",
     "functions/permission-denied": "No tienes permiso para realizar esta accion.",
-    "functions/unauthenticated": "Inicia sesion para continuar.",
-    "functions/unavailable": "Firebase no esta disponible. Revisa que los emuladores esten activos."
+    "functions/unauthenticated": "Inicia sesión para continuar.",
+    "functions/unavailable": "El servicio no esta disponible por ahora."
   };
 
   if (messages[code]) return messages[code];
@@ -390,7 +390,7 @@ function firebaseErrorMessage(error) {
     .replace(/\s*\([^)]*\)\.?$/i, "")
     .trim();
 
-  return cleanMessage || "No se pudo completar la accion en Firebase.";
+  return cleanMessage || "No se pudo completar la accion.";
 }
 
 function openLocalPack() {
@@ -405,12 +405,12 @@ function openLocalPack() {
 
 async function openPack() {
   if (!onlineMode || !currentUser) {
-    openLocalPack();
+    toast("Inicia sesión con Google para abrir sobres.");
     return;
   }
 
   if ((onlineProfile?.packsAvailable || 0) <= 0) {
-    toast("No tienes sobres disponibles. Reclama el inicial para probar Firebase.");
+    toast("No tienes sobres disponibles. Reclama el inicial para jugar.");
     return;
   }
 
@@ -437,26 +437,26 @@ async function openPack() {
 
 function addRandom(count = 10) {
   if (onlineMode) {
-    toast("Disponible solo en modo local de desarrollo.");
+    toast("Herramienta de prueba no disponible con sesión activa.");
     return;
   }
 
   Array.from({ length: count }, randomSticker).forEach(s => state.copies[s.id] = copies(s.id) + 1);
   saveState();
-  toast(`${count} cromos pegados para prueba local.`);
+  toast(`${count} cromos pegados para prueba.`);
   refresh();
 }
 function resetAlbum() {
   if (onlineMode) {
-    toast("El inventario online se administra desde Firebase.");
+    toast("El inventario se administra desde tu cuenta.");
     return;
   }
 
-  if (!confirm("¿Reiniciar tu progreso local?")) return;
+  if (!confirm("¿Reiniciar tu progreso de prueba?")) return;
   state = { copies: {}, packsOpened: 0, theme: state.theme || "dark" };
   saveState();
   refresh();
-  toast("Progreso local reiniciado.");
+  toast("Progreso de prueba reiniciado.");
 }
 
 function showDetail(id) {
@@ -517,16 +517,16 @@ function updateSessionPanel() {
 
   const availablePacks = onlineProfile?.packsAvailable || 0;
   mode.textContent = onlineMode
-    ? cloudFunctionsEnabled ? "Modo Firebase" : "Modo Firebase Spark"
-    : "Modo local";
+    ? "Jugador activo"
+    : "Solo lectura";
   mode.classList.toggle("online", onlineMode);
   message.textContent = onlineMode
     ? cloudFunctionsEnabled
-      ? "Inventario sincronizado con Firestore y acciones por Functions."
-      : "Inventario sincronizado con Firestore y sobres por transaccion controlada."
+      ? "Tu progreso esta guardado en tu cuenta."
+      : "Tu progreso esta guardado en tu cuenta."
     : firebaseConfigured
-      ? "Entra con Google para guardar tu album online."
-      : "Firebase no configurado. Usando fallback local.";
+      ? "Entra con Google para guardar tu álbum online."
+      : "El inicio de sesión se activará cuando la app esté conectada.";
 
   if (onlineMode && onlineProfile?.nickname && document.activeElement !== nickname) {
     nickname.value = onlineProfile.nickname;
@@ -534,14 +534,14 @@ function updateSessionPanel() {
 
   nickname.disabled = onlineMode || sessionBusy;
   coins.textContent = onlineMode ? String(onlineProfile?.coins || 0) : "0";
-  packs.textContent = onlineMode ? String(availablePacks) : "Local";
+  packs.textContent = onlineMode ? String(availablePacks) : "0";
 
   googleLogin.disabled = sessionBusy || onlineMode || !firebaseConfigured;
-  googleLogin.textContent = onlineMode ? "Sesion iniciada" : "Entrar con Google";
+  googleLogin.textContent = onlineMode ? "Sesión iniciada" : "Entrar con Google";
 
-  login.hidden = !guestSignInAllowed || onlineMode;
+  login.hidden = true;
   login.disabled = sessionBusy || onlineMode || !firebaseConfigured || !guestSignInAllowed;
-  login.textContent = "Invitado local";
+  login.textContent = "Acceso de prueba";
 
   starter.disabled = sessionBusy || !onlineMode || !onlineProfile || Boolean(onlineProfile.starterPackClaimed);
   starter.textContent = onlineProfile?.starterPackClaimed ? "Sobre inicial reclamado" : "Reclamar sobre inicial";
@@ -600,7 +600,7 @@ async function startFirebaseSession() {
 }
 async function handleGoogleLogin() {
   if (!firebaseConfigured) {
-    toast("Configura Firebase para entrar con Google.");
+    toast("El inicio de sesión todavía no está disponible.");
     return;
   }
 
@@ -609,7 +609,7 @@ async function handleGoogleLogin() {
 
   try {
     await signInWithGoogle($("#nicknameInput").value);
-    toast("Sesion iniciada con Google.");
+    toast("Sesión iniciada con Google.");
   } catch (error) {
     toast(firebaseErrorMessage(error));
   } finally {
@@ -619,12 +619,12 @@ async function handleGoogleLogin() {
 }
 async function handleGuestLogin() {
   if (!firebaseConfigured) {
-    toast("Configura Firebase y los emuladores para usar invitado local.");
+    toast("El acceso de prueba no esta disponible.");
     return;
   }
 
   if (!guestSignInAllowed) {
-    toast("El acceso invitado solo esta disponible en desarrollo local.");
+    toast("El acceso de prueba no esta disponible.");
     return;
   }
 
@@ -633,7 +633,7 @@ async function handleGuestLogin() {
 
   try {
     await signInGuest($("#nicknameInput").value);
-    toast("Sesion invitada iniciada.");
+    toast("Sesión invitada iniciada.");
   } catch (error) {
     toast(firebaseErrorMessage(error));
   } finally {

@@ -70,7 +70,7 @@ El proyecto ya tiene cambios importantes sin commitear en la rama actual. Antes 
 
 ## Restricciones de producto
 
-- Mantener el proyecto claramente no oficial.
+- Mantener el proyecto como experiencia de datos reales de texto, sin logos ni assets protegidos.
 - Se permiten datos factuales de texto, como paises, sedes y nombres de jugadores.
 - No versionar logos, escudos, mascotas, fotos oficiales, marcas, tipografias comerciales ni arte protegido.
 - Mantener `public/firebase-config.js` fuera de git.
@@ -321,7 +321,7 @@ Tareas:
 - [x] Crear rutas equivalentes: coleccion, paises, sedes, retos.
 - [x] Portar hero sin cambiar el lenguaje visual de forma agresiva.
 - [x] Asegurar responsive mobile/desktop base.
-- [x] Mantener textos de "no oficial" y reglas de assets.
+- [x] Mantener reglas de assets: sin logos, escudos, fotos ni arte protegido.
 
 Archivos creados:
 

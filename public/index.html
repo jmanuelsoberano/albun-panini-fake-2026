@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Álbum digital fanmade 2026, no oficial, creado con HTML, CSS y JavaScript." />
-  <title>Álbum Fan Global 2026 — No oficial</title>
+  <meta name="description" content="Álbum digital del Mundial 2026 con datos reales, colección interactiva y seguimiento de selecciones." />
+  <title>Álbum Mundial 2026</title>
   <link rel="stylesheet" href="styles.css" />
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23102a56'/%3E%3Cpath d='M32 8 50 19v22L32 56 14 41V19Z' fill='%23f5c542'/%3E%3Ccircle cx='32' cy='32' r='11' fill='%23fff'/%3E%3C/svg%3E" />
 </head>
@@ -15,8 +15,8 @@
     <a class="brand" href="#top" aria-label="Volver al inicio">
       <span class="brand-mark" aria-hidden="true">FG</span>
       <span>
-        <strong>Álbum Fan Global 2026</strong>
-        <small>No oficial · datos factuales</small>
+        <strong>Álbum Mundial 2026</strong>
+        <small>Datos reales · colección interactiva</small>
       </span>
     </a>
     <nav class="main-nav" aria-label="Navegación principal">
@@ -34,9 +34,9 @@
   <main id="top">
     <section class="hero section-shell">
       <div class="hero-copy">
-        <p class="eyebrow">Edición fanmade · 48 equipos · 240 cromos</p>
-        <h1>Completa tu álbum digital de fútbol 2026.</h1>
-        <p class="hero-text">Una experiencia interactiva lista para navegador: sobres aleatorios, cromos coleccionables, buscador, filtros, progreso guardado y diseño responsive. Usa datos factuales sin logos, escudos, mascotas, marcas ni arte oficial.</p>
+        <p class="eyebrow">Mundial 2026 · 48 selecciones · 240 cromos</p>
+        <h1>Completa tu álbum digital del Mundial 2026.</h1>
+        <p class="hero-text">Una experiencia interactiva lista para navegador: sobres, cromos coleccionables, buscador, filtros, progreso guardado y diseño responsive con datos reales de texto.</p>
         <div class="hero-actions">
           <button class="primary-btn" id="openPackHero" type="button">Abrir sobre de 5 cromos</button>
           <a class="secondary-btn" href="#coleccion">Ver colección</a>
@@ -48,8 +48,8 @@
         </div>
         <section class="session-panel" aria-label="Sesión de jugador">
           <div class="session-status">
-            <span id="sessionMode" class="status-pill">Modo local</span>
-            <span id="sessionMessage">Progreso guardado en este navegador.</span>
+            <span id="sessionMode" class="status-pill">Solo lectura</span>
+            <span id="sessionMessage">Inicia sesión con Google para guardar tu progreso.</span>
           </div>
           <div class="session-grid">
             <label class="nickname-field">
@@ -62,23 +62,23 @@
             </div>
             <div class="session-stat">
               <small>Sobres</small>
-              <strong id="sessionPacks">Local</strong>
+              <strong id="sessionPacks">0</strong>
             </div>
           </div>
           <div class="session-actions">
             <button class="primary-btn small" id="googleLogin" type="button">Entrar con Google</button>
-            <button class="secondary-btn small" id="guestLogin" type="button">Invitado local</button>
+            <button class="secondary-btn small" id="guestLogin" type="button" hidden>Acceso de prueba</button>
             <button class="primary-btn small" id="claimStarterPack" type="button" disabled>Reclamar sobre inicial</button>
           </div>
         </section>
       </div>
 
-      <div class="cover-wrap" aria-label="Portada del álbum no oficial">
+      <div class="cover-wrap" aria-label="Portada del álbum Mundial 2026">
         <div class="album-cover">
           <div class="cover-glow"></div>
-          <div class="cover-badge">NO OFICIAL</div>
+          <div class="cover-badge">2026</div>
           <div class="cover-title">
-            <span>Fan Global</span>
+            <span>Mundial</span>
             <strong>2026</strong>
           </div>
           <div class="cover-ball" aria-hidden="true">
@@ -124,7 +124,7 @@
           <h2>Tu álbum</h2>
         </div>
         <div class="section-actions">
-          <button class="secondary-btn small" id="addRandom" type="button">Pegar 10 al azar</button>
+          <button class="secondary-btn small" id="addRandom" type="button" hidden>Herramienta QA</button>
           <button class="danger-btn small" id="resetAlbum" type="button">Reiniciar</button>
         </div>
       </div>
@@ -263,8 +263,8 @@
   <div id="toast" class="toast" role="status" aria-live="polite"></div>
 
   <footer class="footer section-shell">
-    <strong>Álbum Fan Global 2026</strong>
-    <span>Proyecto demostrativo no oficial. Usa datos factuales de texto; no usa escudos, logos, tipografías, fotografías ni diseños oficiales.</span>
+    <strong>Álbum Mundial 2026</strong>
+    <span>Datos reales de texto; sin escudos, logos, fotografías ni diseños protegidos.</span>
   </footer>
 
   <script type="module" src="script.js"></script>

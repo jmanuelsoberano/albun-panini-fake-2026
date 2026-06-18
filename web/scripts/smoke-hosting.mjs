@@ -4,7 +4,18 @@ import { constants } from 'node:fs';
 const origin = process.env.HOSTING_ORIGIN ?? 'http://127.0.0.1:5000';
 const repoDir = new URL('../../', import.meta.url);
 const distDir = new URL('../dist/web/browser/', import.meta.url);
-const requiredRoutes = ['/coleccion', '/paises', '/sedes', '/retos'];
+const requiredRoutes = [
+  '/inicio',
+  '/coleccion',
+  '/torneo',
+  '/torneo/grupos',
+  '/torneo/partidos',
+  '/torneo/llaves',
+  '/equipos',
+  '/sedes',
+  '/sala',
+  '/retos',
+];
 const forbiddenDistPaths = ['firebase-config.js', 'content/private-content.json', 'private-assets'];
 const requiredGitIgnoreEntries = [
   'public/firebase-config.js',
@@ -97,6 +108,8 @@ async function verifyRepoGuards() {
 }
 
 async function verifyHosting() {
+  let entryHtml = '';
+
   for (const route of requiredRoutes) {
     const response = await fetchText(route);
     assert(
@@ -105,6 +118,28 @@ async function verifyHosting() {
     );
     assert(response.contentType.includes('text/html'), `${route} did not return HTML.`);
     assert(response.body.includes('<app-root'), `${route} did not serve the Angular index.html.`);
+
+    if (!entryHtml) {
+      entryHtml = response.body;
+    }
+  }
+
+  const scriptSources = [...entryHtml.matchAll(/<script\s+[^>]*src="([^"]+\.js)"/g)].map(
+    (match) => match[1],
+  );
+  assert(scriptSources.length > 0, 'Hosted index.html does not reference an Angular JS bundle.');
+
+  for (const source of scriptSources) {
+    const bundleResponse = await fetchText(source);
+    assert(bundleResponse.ok, `Hosted JS bundle ${source} returned HTTP ${bundleResponse.status}.`);
+    assert(
+      bundleResponse.contentType.includes('javascript'),
+      `Hosted JS bundle ${source} was not served as JavaScript.`,
+    );
+    assert(
+      !bundleResponse.body.includes('<app-root'),
+      `Hosted JS bundle ${source} was rewritten to index.html.`,
+    );
   }
 
   const configResponse = await fetchText('/firebase-config.js');

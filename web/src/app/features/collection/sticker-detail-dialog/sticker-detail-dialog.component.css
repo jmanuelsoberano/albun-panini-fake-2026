@@ -11,7 +11,7 @@
   position: absolute;
   inset: 0;
   border: 0;
-  background: rgba(16, 35, 61, 0.58);
+  background: rgba(7, 15, 29, 0.78);
 }
 
 .panel {
@@ -21,10 +21,10 @@
   max-height: min(86vh, 760px);
   grid-template-columns: minmax(210px, 0.42fr) 1fr;
   overflow: auto;
-  border: 3px solid var(--deep);
+  border: 1px solid var(--rule);
   border-radius: 8px;
-  background: #fffaf0;
-  box-shadow: 0 30px 90px rgba(16, 35, 61, 0.34);
+  background: var(--surface);
+  box-shadow: var(--shadow);
 }
 
 .close-btn {
@@ -34,10 +34,10 @@
   z-index: 2;
   width: 42px;
   height: 42px;
-  border: 2px solid var(--deep);
+  border: 1px solid var(--rule);
   border-radius: 4px;
-  background: #fff;
-  color: var(--deep);
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--ink);
   font-size: 1.45rem;
   line-height: 1;
 }
@@ -58,7 +58,7 @@
   padding: 0.35rem 0.5rem;
   border-radius: 4px;
   background: rgba(255, 255, 255, 0.88);
-  color: var(--deep);
+  color: #07101f;
   font-weight: 1000;
 }
 
@@ -78,8 +78,8 @@
 
 h2 {
   margin: 0;
-  color: var(--deep);
-  font-size: clamp(1.8rem, 4vw, 3rem);
+  color: var(--ink);
+  font-size: 2.45rem;
   line-height: 1;
   text-transform: uppercase;
 }
@@ -100,7 +100,7 @@ h2 {
   padding: 0.75rem;
   border: 1px solid var(--rule);
   border-radius: 6px;
-  background: #fff;
+  background: rgba(255, 255, 255, 0.06);
 }
 
 dt {
@@ -112,7 +112,7 @@ dt {
 
 dd {
   margin: 0.25rem 0 0;
-  color: var(--deep);
+  color: var(--ink);
   font-weight: 900;
 }
 
