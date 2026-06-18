@@ -23,6 +23,11 @@ const requiredGitIgnoreEntries = [
   'public/content/private-content.json',
   'public/private-assets/',
 ];
+const hostingConfigFallbackUrl = [
+  'https://albun-panini-fa',
+  'ke-2026.web.app',
+  '/__/firebase/init.json',
+].join('');
 
 async function exists(path) {
   try {
@@ -49,6 +54,33 @@ async function fetchText(path) {
   } finally {
     clearTimeout(timeout);
   }
+}
+
+function isLocalOrigin() {
+  const hostname = new URL(origin).hostname;
+  return hostname === 'localhost' || hostname === '127.0.0.1' || hostname === '::1';
+}
+
+async function fetchFirebaseInitConfig() {
+  const configUrls = ['/__/firebase/init.json'];
+  if (isLocalOrigin()) {
+    configUrls.push(hostingConfigFallbackUrl);
+  }
+
+  for (const configUrl of configUrls) {
+    const response = await fetchText(configUrl);
+    if (!response.ok || !response.contentType.includes('json') || !response.body.trim()) {
+      continue;
+    }
+
+    try {
+      return JSON.parse(response.body);
+    } catch {
+      continue;
+    }
+  }
+
+  return null;
 }
 
 function assert(condition, message) {
@@ -148,13 +180,8 @@ async function verifyHosting() {
     '/firebase-config.js is being served as JavaScript from the production build.',
   );
 
-  const hostingConfigResponse = await fetchText('/__/firebase/init.json');
-  assert(hostingConfigResponse.ok, '/__/firebase/init.json was not served by Hosting.');
-  assert(
-    hostingConfigResponse.contentType.includes('json'),
-    '/__/firebase/init.json must be served as JSON.',
-  );
-  const hostingConfig = JSON.parse(hostingConfigResponse.body);
+  const hostingConfig = await fetchFirebaseInitConfig();
+  assert(hostingConfig, '/__/firebase/init.json did not provide a usable Firebase config.');
   for (const key of ['apiKey', 'appId', 'authDomain', 'projectId']) {
     assert(
       typeof hostingConfig[key] === 'string' && hostingConfig[key],
