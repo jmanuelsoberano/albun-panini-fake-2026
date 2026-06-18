@@ -36,6 +36,10 @@ export class FirebaseConfigService {
       return null;
     }
 
+    return (await this.importLocalConfig()) ?? (await this.fetchHostingConfig());
+  }
+
+  private async importLocalConfig(): Promise<FirebaseRuntimeConfig | null> {
     try {
       const configUrl = new URL('/firebase-config.js', location.origin);
       const head = await fetch(configUrl, { method: 'HEAD' });
@@ -56,6 +60,30 @@ export class FirebaseConfigService {
         useCloudFunctions: Boolean(
           configModule.USE_CLOUD_FUNCTIONS ?? configModule.USE_FIREBASE_EMULATORS,
         ),
+      };
+    } catch {
+      return null;
+    }
+  }
+
+  private async fetchHostingConfig(): Promise<FirebaseRuntimeConfig | null> {
+    try {
+      const configUrl = new URL('/__/firebase/init.json', location.origin);
+      const response = await fetch(configUrl, { headers: { accept: 'application/json' } });
+      const contentType = response.headers.get('content-type') ?? '';
+      if (!response.ok || !contentType.includes('json')) {
+        return null;
+      }
+
+      const firebaseConfig = (await response.json()) as FirebaseOptions;
+      if (this.hasPlaceholderConfig(firebaseConfig)) {
+        return null;
+      }
+
+      return {
+        firebaseConfig,
+        useEmulators: false,
+        useCloudFunctions: false,
       };
     } catch {
       return null;

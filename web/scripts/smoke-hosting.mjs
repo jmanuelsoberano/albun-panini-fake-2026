@@ -148,6 +148,20 @@ async function verifyHosting() {
     '/firebase-config.js is being served as JavaScript from the production build.',
   );
 
+  const hostingConfigResponse = await fetchText('/__/firebase/init.json');
+  assert(hostingConfigResponse.ok, '/__/firebase/init.json was not served by Hosting.');
+  assert(
+    hostingConfigResponse.contentType.includes('json'),
+    '/__/firebase/init.json must be served as JSON.',
+  );
+  const hostingConfig = JSON.parse(hostingConfigResponse.body);
+  for (const key of ['apiKey', 'appId', 'authDomain', 'projectId']) {
+    assert(
+      typeof hostingConfig[key] === 'string' && hostingConfig[key],
+      `/__/firebase/init.json is missing ${key}.`,
+    );
+  }
+
   const serviceWorkerResponse = await fetchText('/service-worker.js');
   assert(serviceWorkerResponse.ok, '/service-worker.js was not served by Hosting.');
   assert(
