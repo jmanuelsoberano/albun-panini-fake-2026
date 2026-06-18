@@ -8,6 +8,7 @@ import { FirebaseConfigService } from './firebase-config.service';
 import type { FirebaseSessionUser } from './firebase.models';
 import { toSessionUser } from './firebase.models';
 import { InventoryService } from './inventory.service';
+import { MissionService } from './mission.service';
 import { PackService } from './pack.service';
 import { UserProfileService } from './user-profile.service';
 
@@ -17,12 +18,14 @@ export class FirebaseSessionStore {
   private readonly auth = inject(AuthService);
   private readonly config = inject(FirebaseConfigService);
   private readonly inventoryService = inject(InventoryService);
+  private readonly missionService = inject(MissionService);
   private readonly packService = inject(PackService);
   private readonly profileService = inject(UserProfileService);
   private initialized = false;
   private sessionUnsubscribe: Unsubscribe = () => undefined;
   private profileUnsubscribe: Unsubscribe = () => undefined;
   private inventoryUnsubscribe: Unsubscribe = () => undefined;
+  private missionUnsubscribe: Unsubscribe = () => undefined;
 
   readonly configured = signal(false);
   readonly canUseGuest = signal(false);
@@ -30,11 +33,14 @@ export class FirebaseSessionStore {
   readonly user = signal<FirebaseSessionUser | null>(null);
   readonly profile = signal<UserProfile | null>(null);
   readonly inventory = signal<InventoryCopies>({});
+  readonly claimedMissions = signal<ReadonlySet<string>>(new Set());
   readonly busy = signal(false);
-  readonly message = signal('Modo local. Progreso guardado en este navegador.');
+  readonly message = signal('Explora el álbum. Inicia sesión para guardar tu progreso.');
   readonly error = signal('');
+  readonly devToolsEnabled = signal(false);
 
   readonly onlineMode = computed(() => Boolean(this.user()));
+  readonly isAuthenticated = computed(() => Boolean(this.user()));
   readonly coins = computed(() => this.profile()?.coins ?? 0);
   readonly packsAvailable = computed(() => this.profile()?.packsAvailable ?? 0);
   readonly starterPackClaimed = computed(() => Boolean(this.profile()?.starterPackClaimed));
@@ -48,10 +54,11 @@ export class FirebaseSessionStore {
     this.configured.set(await this.config.isConfigured());
     this.canUseGuest.set(await this.config.canUseGuestSignIn());
     this.useCloudFunctions.set(await this.config.shouldUseCloudFunctions());
+    this.devToolsEnabled.set(this.readDevToolsFlag());
 
     if (!this.configured()) {
-      this.album.useLocalMode();
-      this.message.set('Modo local. Agrega web/public/firebase-config.js para activar Firebase.');
+      this.album.useReadonlyMode();
+      this.message.set('Explora el álbum. Inicia sesión para guardar tu progreso.');
       return;
     }
 
@@ -63,14 +70,14 @@ export class FirebaseSessionStore {
   async signInWithGoogle(nickname: string): Promise<void> {
     await this.runAction(async () => {
       await this.auth.signInWithGoogle(nickname);
-      this.message.set('Sesion iniciada con Google.');
+      this.message.set('Sesión iniciada. Tu progreso se guardará automáticamente.');
     });
   }
 
   async signInGuest(nickname: string): Promise<void> {
     await this.runAction(async () => {
       await this.auth.signInGuest(nickname);
-      this.message.set('Sesion invitada local iniciada.');
+      this.message.set('Acceso de prueba iniciado.');
     });
   }
 
@@ -86,10 +93,21 @@ export class FirebaseSessionStore {
 
     await this.runAction(async () => {
       stickers = (await this.packService.openPack()).stickers;
-      this.message.set('Sobre abierto con Firebase.');
+      this.message.set('Sobre abierto. Tu álbum se actualizó.');
     });
 
     return stickers;
+  }
+
+  async claimMission(missionId: string): Promise<void> {
+    await this.runAction(async () => {
+      await this.missionService.completeMission(missionId);
+      this.message.set('Mision reclamada. Recibiste 25 monedas.');
+    });
+  }
+
+  isMissionClaimed(missionId: string): boolean {
+    return this.claimedMissions().has(missionId);
   }
 
   private async handleSessionUser(user: User | null): Promise<void> {
@@ -97,14 +115,15 @@ export class FirebaseSessionStore {
     this.user.set(toSessionUser(user));
     this.profile.set(null);
     this.inventory.set({});
+    this.claimedMissions.set(new Set());
 
     if (!user) {
-      this.album.useLocalMode();
-      this.message.set('Modo local. Inicia sesion para sincronizar inventario.');
+      this.album.useReadonlyMode();
+      this.message.set('Explora el álbum. Inicia sesión para guardar tu progreso.');
       return;
     }
 
-    this.message.set('Modo Firebase. Inventario sincronizado.');
+    this.message.set('Sesión activa. Tu progreso está guardado.');
     this.profileUnsubscribe = await this.profileService.listenToUserProfile(
       user.uid,
       (profile) => this.profile.set(profile),
@@ -116,6 +135,11 @@ export class FirebaseSessionStore {
         this.inventory.set(copies);
         this.album.useFirebaseInventory(copies);
       },
+      (error) => this.setError(error),
+    );
+    this.missionUnsubscribe = await this.missionService.listenToClaimedMissions(
+      user.uid,
+      (missions) => this.claimedMissions.set(missions),
       (error) => this.setError(error),
     );
   }
@@ -140,7 +164,17 @@ export class FirebaseSessionStore {
   private unsubscribeOnlineListeners(): void {
     this.profileUnsubscribe();
     this.inventoryUnsubscribe();
+    this.missionUnsubscribe();
     this.profileUnsubscribe = () => undefined;
     this.inventoryUnsubscribe = () => undefined;
+    this.missionUnsubscribe = () => undefined;
+  }
+
+  private readDevToolsFlag(): boolean {
+    if (typeof location === 'undefined') {
+      return false;
+    }
+
+    return new URLSearchParams(location.search).get('devTools') === '1';
   }
 }

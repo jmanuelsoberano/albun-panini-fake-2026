@@ -1,0 +1,40 @@
+<section class="section-shell tournament-hero">
+  <div>
+    <p class="eyebrow">Mundial 2026</p>
+    <h1>Grupos, marcadores y camino a la final.</h1>
+    <p>
+      Consulta tablas, partidos, goleadores y llaves del Mundial 2026 con equipos, sedes y
+      plantillas reales en español.
+    </p>
+    <div class="tournament-actions">
+      <a routerLink="/torneo/grupos">Ver grupos</a>
+      <a routerLink="/torneo/partidos">Ver partidos</a>
+      <a routerLink="/torneo/llaves">Ver llaves</a>
+    </div>
+  </div>
+
+  <div class="tournament-score">
+    <span>Máximo goleador</span>
+    <strong>{{ topScorer?.playerName }}</strong>
+    <small>{{ topScorer?.goals }} goles · {{ teamName(topScorer?.teamId ?? '') }}</small>
+  </div>
+</section>
+
+<section class="section-shell tournament-summary" aria-label="Resumen del torneo">
+  <article>
+    <strong>{{ groups.length }}</strong>
+    <span>grupos</span>
+  </article>
+  <article>
+    <strong>{{ matches.length }}</strong>
+    <span>partidos</span>
+  </article>
+  <article>
+    <strong>{{ rounds.length }}</strong>
+    <span>rondas finales</span>
+  </article>
+  <article>
+    <strong>48</strong>
+    <span>selecciones reales</span>
+  </article>
+</section>

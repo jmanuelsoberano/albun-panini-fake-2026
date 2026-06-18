@@ -12,38 +12,38 @@ const stickers: readonly Sticker[] = [
   {
     id: 'FG-001',
     number: 1,
-    teamId: 'T01',
-    team: 'Mexico',
+    teamId: 'MEX',
+    team: 'México',
     confederation: 'Concacaf',
     colors: ['#10233d', '#c8942e'],
     role: 'Portero',
     rarity: 'base',
-    name: 'Jose Raul Rangel Aguilar',
+    name: 'José Raúl Rangel Aguilar',
     position: 'GK',
     shirt: '1',
     height: '1.90 m',
     portrait: '',
     privateSlot: 'private-assets/players/fg-001.webp',
     caption: 'Ficha 001',
-    note: 'Nombre factual sin arte oficial.',
+    note: 'Datos reales de plantilla; sin arte protegido.',
   },
   {
     id: 'FG-002',
     number: 2,
-    teamId: 'T02',
-    team: 'Argentina',
-    confederation: 'CONMEBOL',
+    teamId: 'BRA',
+    team: 'Brasil',
+    confederation: 'Conmebol',
     colors: ['#0f62fe', '#7dd3fc'],
     role: 'Referente',
     rarity: 'holografico',
-    name: 'Lionel Andres Messi',
+    name: 'Vinícius Júnior',
     position: 'FW',
     shirt: '10',
     height: '1.70 m',
     portrait: '',
     privateSlot: 'private-assets/players/fg-002.webp',
     caption: 'Ficha 002',
-    note: 'Nombre factual sin arte oficial.',
+    note: 'Datos reales de plantilla; sin arte protegido.',
   },
 ];
 
@@ -69,7 +69,7 @@ describe('album-domain utilities', () => {
   it('filters stickers by query, confederation, status, and rarity', () => {
     const copies = { 'FG-001': 2 };
 
-    expect(filterStickers(stickers, { ...defaultFilters, query: 'messi' }, copies)).toEqual([
+    expect(filterStickers(stickers, { ...defaultFilters, query: 'vinicius' }, copies)).toEqual([
       stickers[1],
     ]);
     expect(

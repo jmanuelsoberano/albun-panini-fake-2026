@@ -1,19 +1,32 @@
 <section class="section-shell page-heading">
   <p class="eyebrow">Retos</p>
   <h1>Misiones del coleccionista</h1>
-  <p>
-    Retos calculados con signals desde el inventario local Angular. La capa online se conectara
-    despues al mismo contrato de estado.
-  </p>
+  <p>Completa misiones del álbum y reclama monedas para preparar nuevos sobres.</p>
 </section>
 
 <section class="section-shell challenge-grid">
   @for (challenge of album.challenges(); track challenge.id) {
-    <article class="challenge-card" [class.complete]="challenge.complete">
+    <article
+      class="challenge-card"
+      [class.complete]="challenge.complete"
+      [class.claimed]="session.isMissionClaimed(challenge.id)"
+    >
       <span>{{ challenge.index }}</span>
       <h2>{{ challenge.title }}</h2>
       <p>{{ challenge.copy }}</p>
       <strong>{{ challenge.progressLabel }}</strong>
+      <small>Recompensa: 25 monedas</small>
+      @if (session.isAuthenticated()) {
+        <button
+          type="button"
+          [disabled]="!canClaim(challenge) || session.busy()"
+          (click)="claimMission(challenge)"
+        >
+          {{ actionLabel(challenge) }}
+        </button>
+      } @else {
+        <a routerLink="/coleccion" fragment="play-panel">{{ actionLabel(challenge) }}</a>
+      }
     </article>
   }
 </section>

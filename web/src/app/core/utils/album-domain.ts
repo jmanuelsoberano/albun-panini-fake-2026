@@ -28,12 +28,19 @@ export function albumProgressPercent(total: number, owned: number): number {
   return Math.round((owned / total) * 100);
 }
 
+function normalizeSearchText(value: string): string {
+  return value
+    .normalize('NFD')
+    .replace(/\p{Diacritic}/gu, '')
+    .toLowerCase();
+}
+
 export function matchesStickerFilters(
   sticker: Sticker,
   filters: CollectionFilters,
   copies: InventoryCopies,
 ): boolean {
-  const query = filters.query.trim().toLowerCase();
+  const query = normalizeSearchText(filters.query.trim());
   const text = [
     sticker.id,
     sticker.name,
@@ -43,11 +50,9 @@ export function matchesStickerFilters(
     sticker.shirt,
     sticker.confederation,
     sticker.rarity,
-  ]
-    .join(' ')
-    .toLowerCase();
+  ].join(' ');
 
-  if (query && !text.includes(query)) {
+  if (query && !normalizeSearchText(text).includes(query)) {
     return false;
   }
 

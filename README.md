@@ -1,27 +1,35 @@
-# Álbum fake 2026
+# Álbum Mundial 2026
 
-Proyecto fanmade/no oficial de álbum digital de cromos ficticios inspirado en la experiencia de coleccionar, abrir sobres e intercambiar repetidas con familia y amigos.
+Aplicación web de colección digital del Mundial 2026 con datos reales de selecciones, grupos,
+sedes, calendario, marcadores y plantillas.
 
-> Nota legal/UX: este proyecto evita marcas, logos, escudos, jugadores reales, mascotas oficiales, nombres comerciales y cualquier arte protegido. La intención es una experiencia original y claramente ficticia.
+## Alcance
 
-## Estado actual
+- Colección digital de 240 cromos destacados: 48 selecciones, 5 cromos por selección.
+- Plantillas reales de 26 jugadores por selección en la vista de equipos.
+- Grupos A-L, 72 partidos de fase de grupos y llave de eliminación de 32 equipos.
+- Estado sin sesión en solo lectura con CTA de inicio de sesión.
+- Sobres, inventario, monedas y misiones conectados a Firebase/Cloud Functions cuando la sesión está activa.
 
-- Prototipo estático HTML/CSS/JavaScript.
-- Colección ficticia de 240 cromos.
-- Apertura de sobres, progreso, repetidas, filtros, retos y modo claro/oscuro.
+## Reglas de contenido
 
-## Siguiente dirección
+- Usar datos factuales del Mundial 2026.
+- Mostrar nombres reales de selecciones, jugadores, sedes y marcadores verificados.
+- No inventar resultados, sedes, equipos ni jugadores.
+- No incluir logos, escudos, mascotas, fotografías, tipografías ni arte protegido.
+- Si un resultado o goleador no está verificado, debe mostrarse como pendiente.
 
-La siguiente versión debe migrar la lógica importante a Firebase para que los sobres, progreso e intercambios no dependan solo del navegador.
+## Desarrollo
 
-Servicios propuestos:
+```bash
+cd web
+npm install
+npm start
+```
 
-- Firebase Authentication para cuentas.
-- Cloud Firestore para colección, sobres, misiones, salas y cambios.
-- Cloud Functions para abrir sobres, otorgar recompensas y aceptar intercambios de forma segura.
-- Firebase Hosting para publicar la app web.
-- Firebase Emulator Suite para desarrollo local.
+Verificación completa:
 
-## Roadmap
-
-Ver `docs/ROADMAP.md` y `docs/FIREBASE_ARCHITECTURE.md`.
+```bash
+cd web
+npm run verify:migration
+```

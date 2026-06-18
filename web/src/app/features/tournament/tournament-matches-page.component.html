@@ -1,0 +1,73 @@
+<section class="section-shell page-heading">
+  <p class="eyebrow">Partidos</p>
+  <h1>Marcadores y goleadores</h1>
+  <p>Filtra por fase o grupo y revisa quién metió gol en cada partido verificado.</p>
+</section>
+
+<section class="section-shell match-tools" aria-label="Filtros de partidos">
+  <div class="phase-tabs" role="tablist" aria-label="Fase">
+    @for (filter of phaseFilters; track filter.value) {
+      <button
+        type="button"
+        role="tab"
+        [class.active]="phase() === filter.value"
+        [attr.aria-selected]="phase() === filter.value"
+        (click)="setPhase(filter.value)"
+      >
+        {{ filter.label }}
+      </button>
+    }
+  </div>
+  <label>
+    <span>Grupo</span>
+    <select [value]="groupId()" (change)="updateGroup($event)">
+      <option value="all">Todos</option>
+      @for (group of groups; track group.id) {
+        <option [value]="group.id">{{ group.name }}</option>
+      }
+    </select>
+  </label>
+</section>
+
+<section class="section-shell matches-layout">
+  <div class="matches-list" aria-label="Lista de partidos">
+    @for (match of filteredMatches(); track match.id) {
+      <article class="match-card">
+        <header>
+          <span>{{ match.kickoffLabel }}</span>
+          <strong>{{ statusLabel(match) }}</strong>
+        </header>
+        <div class="match-score">
+          <div>
+            <b>{{ teamCode(match.homeTeamId) }}</b>
+            <a [routerLink]="['/torneo/equipos', match.homeTeamId]">{{
+              teamName(match.homeTeamId)
+            }}</a>
+          </div>
+          <strong>{{ scoreLabel(match) }}</strong>
+          <div>
+            <b>{{ teamCode(match.awayTeamId) }}</b>
+            <a [routerLink]="['/torneo/equipos', match.awayTeamId]">{{
+              teamName(match.awayTeamId)
+            }}</a>
+          </div>
+        </div>
+        <p>{{ eventSummary(match) || 'Pendiente de resultado' }}</p>
+        <a class="detail-link" [routerLink]="['/torneo/partidos', match.id]">Match center</a>
+      </article>
+    }
+  </div>
+
+  <aside class="scorers-panel" aria-label="Tabla de goleadores">
+    <p class="eyebrow">Goleadores</p>
+    <h2>Top del torneo</h2>
+    <ol>
+      @for (scorer of topScorers; track scorer.teamId + scorer.playerName) {
+        <li>
+          <strong>{{ scorer.playerName }}</strong>
+          <span>{{ scorer.goals }} · {{ teamCode(scorer.teamId) }}</span>
+        </li>
+      }
+    </ol>
+  </aside>
+</section>

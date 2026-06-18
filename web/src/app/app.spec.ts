@@ -22,7 +22,7 @@ describe('App', () => {
     fixture.detectChanges();
     await fixture.whenStable();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.brand strong')?.textContent).toContain('Album Fan Global 2026');
-    expect(compiled.querySelectorAll('.main-nav a').length).toBe(4);
+    expect(compiled.querySelector('.brand strong')?.textContent).toContain('Álbum Mundial 2026');
+    expect(compiled.querySelectorAll('.main-nav a').length).toBe(7);
   });
 });

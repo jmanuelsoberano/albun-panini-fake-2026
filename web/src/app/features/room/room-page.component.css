@@ -1,0 +1,304 @@
+.room-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(220px, 320px);
+  gap: 1rem;
+  align-items: end;
+  padding-block: 2rem 1rem;
+}
+
+.room-hero h1 {
+  max-width: 780px;
+  margin: 0;
+  color: var(--ink);
+  font-size: 3.8rem;
+  line-height: 0.96;
+  text-transform: uppercase;
+}
+
+.room-hero p:not(.eyebrow) {
+  max-width: 680px;
+  color: var(--muted);
+}
+
+.room-score {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.3rem 0.8rem;
+  padding: 1rem;
+  border: 1px solid var(--rule);
+  border-radius: 8px;
+  background: rgba(15, 29, 51, 0.82);
+  box-shadow: 0 18px 42px rgba(0, 0, 0, 0.22);
+}
+
+.room-score strong {
+  color: var(--wine);
+  font-size: 2rem;
+}
+
+.room-score span {
+  color: var(--muted);
+  font-weight: 850;
+}
+
+.room-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(280px, 0.85fr);
+  gap: 1rem;
+  align-items: start;
+}
+
+.room-panel {
+  padding: 1rem;
+  border: 1px solid var(--rule);
+  border-radius: 8px;
+  background: rgba(15, 29, 51, 0.82);
+  box-shadow: 0 18px 42px rgba(0, 0, 0, 0.22);
+}
+
+.room-panel h2,
+.room-panel p {
+  margin-top: 0;
+}
+
+.room-panel h2 {
+  margin-bottom: 0.75rem;
+}
+
+.panel-kicker {
+  margin-bottom: 0.35rem;
+  color: var(--teal);
+  font-weight: 950;
+  text-transform: uppercase;
+}
+
+.login-gate {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.login-gate p:not(.panel-kicker) {
+  margin-bottom: 0;
+  color: var(--muted);
+}
+
+.login-gate a,
+.room-actions button,
+.suggestion-card button,
+.trade-card button {
+  display: inline-grid;
+  min-height: 40px;
+  place-items: center;
+  padding: 0.65rem 0.9rem;
+  border: 0;
+  border-radius: 6px;
+  background: linear-gradient(135deg, var(--teal), var(--amber));
+  color: #07101f;
+  font-weight: 950;
+  text-decoration: none;
+}
+
+.room-actions button.secondary {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.room-actions button:disabled,
+.suggestion-card button:disabled,
+.trade-card button:disabled {
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--muted);
+}
+
+.action-row {
+  display: grid;
+  grid-template-columns: auto minmax(130px, 1fr) auto;
+  gap: 0.6rem;
+  align-items: end;
+}
+
+.action-row label {
+  display: grid;
+  gap: 0.25rem;
+}
+
+.action-row label span {
+  color: var(--muted);
+  font-size: 0.72rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.action-row input {
+  width: 100%;
+  min-height: 40px;
+  border: 1px solid var(--rule);
+  border-radius: 6px;
+  padding: 0.55rem 0.7rem;
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--ink);
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.status-line {
+  margin: 0.8rem 0 0;
+  color: var(--wine);
+  font-weight: 850;
+}
+
+.room-tabs {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.room-tabs button {
+  display: flex;
+  min-height: 54px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.7rem;
+  border: 1px solid var(--rule);
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.06);
+  color: var(--ink);
+  text-align: left;
+}
+
+.room-tabs button.active {
+  border-color: var(--amber);
+  background: var(--amber);
+  color: #07101f;
+}
+
+.room-tabs span {
+  font-weight: 850;
+}
+
+.mini-columns {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.mini-columns ul {
+  display: grid;
+  gap: 0.45rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.mini-columns li {
+  display: grid;
+  padding: 0.55rem;
+  border: 1px solid var(--rule);
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.mini-columns strong {
+  color: var(--wine);
+}
+
+.mini-columns span {
+  color: var(--ink);
+  font-weight: 800;
+}
+
+.trade-suggestions {
+  display: grid;
+  gap: 0.7rem;
+}
+
+.suggestion-card,
+.trade-card {
+  display: grid;
+  gap: 0.6rem;
+  padding: 0.7rem;
+  border: 1px solid var(--rule);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.suggestion-card {
+  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr) auto;
+  align-items: center;
+}
+
+.suggestion-card div,
+.trade-card {
+  min-width: 0;
+}
+
+.suggestion-card span,
+.trade-card span {
+  color: var(--muted);
+  font-size: 0.72rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.suggestion-card strong,
+.trade-card strong {
+  display: block;
+  overflow: hidden;
+  color: var(--ink);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.suggestion-card small,
+.trade-card small {
+  display: block;
+  overflow: hidden;
+  color: var(--muted);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.suggestion-card b {
+  color: var(--wine);
+  font-size: 0.78rem;
+  text-transform: uppercase;
+}
+
+.trade-card {
+  margin-top: 0.55rem;
+}
+
+.empty-state {
+  margin-bottom: 0;
+  color: var(--muted);
+}
+
+@media (max-width: 900px) {
+  .room-hero,
+  .room-grid,
+  .mini-columns,
+  .suggestion-card {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 620px) {
+  .action-row,
+  .login-gate {
+    grid-template-columns: 1fr;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .room-hero h1 {
+    font-size: 2.35rem;
+  }
+
+  .login-gate a,
+  .room-actions button,
+  .suggestion-card button,
+  .trade-card button {
+    width: 100%;
+  }
+}

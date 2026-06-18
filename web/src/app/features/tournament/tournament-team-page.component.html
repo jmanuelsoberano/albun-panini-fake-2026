@@ -1,0 +1,64 @@
+@if (team; as item) {
+  <section
+    class="section-shell team-hero"
+    [style.--team-a]="item.colors[0]"
+    [style.--team-b]="item.colors[1]"
+  >
+    <p class="eyebrow">Equipo</p>
+    <div>
+      <span>{{ item.code }}</span>
+      <h1>{{ item.name }}</h1>
+      <p>{{ item.confederation }} · {{ group?.name || 'Sin grupo' }}</p>
+    </div>
+  </section>
+
+  <section class="section-shell team-summary" aria-label="Resumen de equipo">
+    <article>
+      <strong>{{ groupPosition() || '-' }}</strong>
+      <span>posición en grupo</span>
+    </article>
+    <article>
+      <strong>{{ progress() }}%</strong>
+      <span>álbum del equipo</span>
+    </article>
+    <article>
+      <strong>{{ missingCount() }}</strong>
+      <span>faltantes</span>
+    </article>
+    <article>
+      <strong>{{ duplicateCount() }}</strong>
+      <span>repetidas</span>
+    </article>
+  </section>
+
+  <section class="section-shell team-detail-grid">
+    <article class="team-panel">
+      <h2>Partidos</h2>
+      <div class="team-matches">
+        @for (match of teamMatches; track match.id) {
+          <a [routerLink]="['/torneo/partidos', match.id]">
+            <span>
+              {{ teamCode(match.homeTeamId) }} {{ scoreLabel(match.homeScore, match.awayScore) }}
+              {{ teamCode(match.awayTeamId) }}
+            </span>
+            <small>{{ teamName(match.homeTeamId) }} vs {{ teamName(match.awayTeamId) }}</small>
+          </a>
+        }
+      </div>
+    </article>
+
+    <article class="team-panel">
+      <h2>Cromos del equipo</h2>
+      <p>{{ ownedCount() }}/{{ teamStickers.length }} pegados</p>
+      <a class="album-link" routerLink="/coleccion" [queryParams]="{ q: item.name }">
+        Ver cromos en álbum
+      </a>
+    </article>
+  </section>
+} @else {
+  <section class="section-shell team-hero empty-state">
+    <p class="eyebrow">Equipo</p>
+    <h1>Equipo no encontrado</h1>
+    <a routerLink="/torneo/grupos">Volver a grupos</a>
+  </section>
+}

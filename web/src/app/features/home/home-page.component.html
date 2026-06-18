@@ -1,0 +1,90 @@
+<section class="home-hero section-shell">
+  <div>
+    <p class="eyebrow">Centro Mundial 2026</p>
+    <h1>Álbum, selecciones y jornada en un solo lugar.</h1>
+    <p class="hero-copy">
+      Revisa tu progreso, entra a la colección y sigue grupos, marcadores, sedes y llaves del
+      Mundial 2026.
+    </p>
+    <div class="hero-actions">
+      <a
+        class="primary-action"
+        [routerLink]="primaryAction().path"
+        [fragment]="primaryAction().fragment"
+      >
+        {{ primaryAction().label }}
+      </a>
+      <a class="secondary-action" routerLink="/equipos">Ver selecciones</a>
+    </div>
+  </div>
+
+  <div
+    class="score-slab"
+    [style.--team-a]="featuredMatch.home.colors[0]"
+    [style.--team-b]="featuredMatch.away.colors[0]"
+  >
+    <span>{{ featuredMatch.status }}</span>
+    <div class="score-row">
+      <strong>{{ featuredMatch.home.code }}</strong>
+      <b>{{ featuredMatch.score }}</b>
+      <strong>{{ featuredMatch.away.code }}</strong>
+    </div>
+    <small>{{ featuredMatch.venue }}</small>
+  </div>
+</section>
+
+<section class="home-grid section-shell" aria-label="Resumen de álbum y torneo">
+  <article class="home-panel progress-panel">
+    <p class="panel-kicker">Progreso</p>
+    <strong>{{ album.progress() }}%</strong>
+    <span>{{ album.ownedCount() }}/240 cromos pegados</span>
+    <div class="progress-track" aria-hidden="true">
+      <div [style.width.%]="album.progress()"></div>
+    </div>
+  </article>
+
+  <article class="home-panel match-panel">
+    <p class="panel-kicker">Partido destacado</p>
+    <h2>{{ featuredMatch.home.name }} vs {{ featuredMatch.away.name }}</h2>
+    <ol>
+      @for (scorer of featuredMatch.scorers; track scorer) {
+        <li>{{ scorer }}</li>
+      }
+    </ol>
+  </article>
+
+  <article class="home-panel group-panel">
+    <p class="panel-kicker">Grupo A</p>
+    <h2>Grupo inaugural</h2>
+    <ul>
+      @for (team of featuredGroup; track team.id) {
+        <li>
+          <span [style.background]="team.colors[0]"></span>
+          <strong>{{ team.code }}</strong>
+          {{ team.name }}
+        </li>
+      }
+    </ul>
+  </article>
+
+  <article class="home-panel mission-panel">
+    <p class="panel-kicker">Reto activo</p>
+    <h2>{{ dailyChallenge().title }}</h2>
+    <span>{{ dailyChallenge().progressLabel }}</span>
+    <a routerLink="/retos">Ver retos</a>
+  </article>
+
+  <article class="home-panel stickers-panel">
+    <p class="panel-kicker">Faltantes</p>
+    <h2>Primeras fichas por conseguir</h2>
+    <div class="missing-list">
+      @for (sticker of missingPreview(); track sticker.id) {
+        <a routerLink="/coleccion">
+          <span>{{ sticker.id }}</span>
+          <strong>{{ sticker.name }}</strong>
+          <small>{{ sticker.team }}</small>
+        </a>
+      }
+    </div>
+  </article>
+</section>

@@ -24,8 +24,8 @@ export const albumStickers: readonly Sticker[] = tournamentTeams.flatMap((team, 
       height: player?.height ?? '',
       portrait: '',
       privateSlot: `private-assets/players/fg-${String(number).padStart(3, '0')}.webp`,
-      caption: `Ficha ${String(number).padStart(3, '0')} lista para retrato privado local.`,
-      note: `Cromo ${rarity} de ${team.name}. Nombre factual de plantilla publica; sin foto, escudo, logo ni arte oficial.`,
+      caption: `Ficha ${String(number).padStart(3, '0')} del álbum Mundial 2026.`,
+      note: `Cromo ${rarity} de ${team.name}. Datos reales de plantilla; sin foto, escudo, logo ni arte protegido.`,
     };
   }),
 );

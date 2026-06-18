@@ -1,0 +1,51 @@
+@if (match; as item) {
+  <section class="section-shell match-center">
+    <p class="eyebrow">Match center</p>
+    <div class="scoreboard">
+      <a [routerLink]="teamLink(item.homeTeamId)">
+        <span>{{ teamCode(item.homeTeamId) }}</span>
+        <strong>{{ teamName(item.homeTeamId) }}</strong>
+      </a>
+      <div>
+        <b>{{ scoreLabel(item) }}</b>
+        <small>{{ statusLabel(item) }}</small>
+      </div>
+      <a [routerLink]="teamLink(item.awayTeamId)">
+        <span>{{ teamCode(item.awayTeamId) }}</span>
+        <strong>{{ teamName(item.awayTeamId) }}</strong>
+      </a>
+    </div>
+    <p class="venue">{{ item.venue }} · {{ item.kickoffLabel }}</p>
+  </section>
+
+  <section class="section-shell match-detail-grid">
+    <article class="timeline-panel">
+      <h2>Timeline</h2>
+      @if (item.events.length > 0) {
+        <ol class="timeline">
+          @for (event of item.events; track event.id) {
+            <li>
+              <span>{{ minuteLabel(event.minute) }}</span>
+              <strong>{{ event.playerName }}</strong>
+              <small>{{ teamName(event.teamId) }}</small>
+            </li>
+          }
+        </ol>
+      } @else {
+        <p>Resultado y goles pendientes de confirmación.</p>
+      }
+    </article>
+
+    <article class="related-teams">
+      <h2>Equipos relacionados</h2>
+      <a [routerLink]="teamLink(item.homeTeamId)">{{ teamName(item.homeTeamId) }}</a>
+      <a [routerLink]="teamLink(item.awayTeamId)">{{ teamName(item.awayTeamId) }}</a>
+    </article>
+  </section>
+} @else {
+  <section class="section-shell match-center empty-state">
+    <p class="eyebrow">Match center</p>
+    <h1>Partido no encontrado</h1>
+    <a routerLink="/torneo/partidos">Volver a partidos</a>
+  </section>
+}

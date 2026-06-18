@@ -1,5 +1,5 @@
 import { A11yModule } from '@angular/cdk/a11y';
-import { ChangeDetectionStrategy, Component, input, output } from '@angular/core';
+import { ChangeDetectionStrategy, Component, computed, input, output } from '@angular/core';
 import type { InventoryCopies, Sticker } from '../../../core/models/album.models';
 import { copiesOf } from '../../../core/utils/album-domain';
 import { StickerCardComponent } from '../sticker-card/sticker-card.component';
@@ -14,11 +14,15 @@ import { StickerCardComponent } from '../sticker-card/sticker-card.component';
 export class PackDialogComponent {
   readonly stickers = input.required<readonly Sticker[]>();
   readonly copies = input.required<InventoryCopies>();
-  readonly sourceLabel = input('Sobre local');
+  readonly sourceLabel = input('Sobre abierto');
   readonly canOpenAnother = input(true);
   readonly dialogClosed = output<void>();
   readonly openAnotherPack = output<void>();
   readonly stickerSelected = output<Sticker>();
+  protected readonly newCount = computed(
+    () => this.stickers().filter((sticker) => this.copyCount(sticker.id) <= 1).length,
+  );
+  protected readonly duplicateCount = computed(() => this.stickers().length - this.newCount());
 
   protected copyCount(stickerId: string): number {
     return copiesOf(this.copies(), stickerId);

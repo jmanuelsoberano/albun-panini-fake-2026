@@ -16,14 +16,14 @@
     <span class="rarity-badge">{{ sticker().rarity }}</span>
     <div class="placeholder-photo">
       <strong>{{ initials() }}</strong>
-      <span>{{ sticker().privateSlot }}</span>
+      <span>{{ sticker().caption }}</span>
     </div>
     <div class="sticker-number">{{ sticker().number }}</div>
   </div>
   <div class="sticker-body">
     <div class="sticker-name">{{ sticker().name }}</div>
     <div class="sticker-meta">
-      {{ sticker().team }} · {{ sticker().position }} #{{ sticker().shirt }}
+      {{ sticker().team }} &middot; {{ sticker().position }} #{{ sticker().shirt }}
     </div>
     <div class="sticker-footer">
       @if (missing()) {

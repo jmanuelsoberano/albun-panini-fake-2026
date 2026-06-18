@@ -22,7 +22,7 @@
       aria-label="Cerrar detalle"
       (click)="closeDialog()"
     >
-      ×
+      &times;
     </button>
 
     <div
@@ -32,7 +32,7 @@
     >
       <span>{{ sticker().id }}</span>
       <strong>{{ initials() }}</strong>
-      <small>{{ sticker().privateSlot }}</small>
+      <small>{{ sticker().caption }}</small>
     </div>
 
     <div class="content">
@@ -46,7 +46,7 @@
           <dd>{{ sticker().id }}</dd>
         </div>
         <div>
-          <dt>Pais</dt>
+          <dt>Equipo</dt>
           <dd>{{ sticker().team }}</dd>
         </div>
         <div>
@@ -63,14 +63,14 @@
         </div>
         <div>
           <dt>Copias</dt>
-          <dd>{{ copies() }} · {{ statusLabel() }}</dd>
+          <dd>{{ copies() }} &middot; {{ statusLabel() }}</dd>
         </div>
         <div>
           <dt>Altura</dt>
           <dd>{{ sticker().height || 'Sin dato' }}</dd>
         </div>
         <div>
-          <dt>Confederacion</dt>
+          <dt>Region</dt>
           <dd>{{ sticker().confederation }}</dd>
         </div>
       </dl>

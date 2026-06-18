@@ -1,7 +1,7 @@
-<section class="session-panel" aria-label="Sesion de jugador">
+<section id="play-panel" class="session-panel" aria-label="Sesión de jugador">
   <div class="session-status">
-    <span class="status-pill" [class.online]="session.onlineMode()">
-      {{ session.onlineMode() ? 'Modo Firebase' : 'Modo local' }}
+    <span class="status-pill" [class.online]="session.isAuthenticated()">
+      {{ session.isAuthenticated() ? 'Jugador activo' : 'Solo lectura' }}
     </span>
     <span>{{ session.message() }}</span>
   </div>
@@ -10,30 +10,23 @@
     <p class="error" role="alert">{{ session.error() }}</p>
   }
 
-  <div class="session-grid">
-    <label>
-      <span>Nickname</span>
-      <input
-        type="text"
-        maxlength="28"
-        autocomplete="nickname"
-        [value]="nickname()"
-        [disabled]="session.busy()"
-        (input)="updateNickname($event)"
-      />
-    </label>
-    <div class="session-stat">
-      <small>Monedas</small>
-      <strong>{{ session.coins() }}</strong>
+  @if (session.isAuthenticated()) {
+    <div class="player-summary">
+      <div>
+        <small>Nickname</small>
+        <strong>{{ session.profile()?.nickname || nickname() }}</strong>
+      </div>
+      <div>
+        <small>Monedas</small>
+        <strong>{{ session.coins() }}</strong>
+      </div>
+      <div>
+        <small>Sobres</small>
+        <strong>{{ session.packsAvailable() }}</strong>
+      </div>
     </div>
-    <div class="session-stat">
-      <small>Sobres</small>
-      <strong>{{ session.onlineMode() ? session.packsAvailable() : 'Local' }}</strong>
-    </div>
-  </div>
 
-  <div class="session-actions">
-    @if (session.onlineMode()) {
+    <div class="session-actions">
       <button
         type="button"
         [disabled]="session.busy() || session.starterPackClaimed()"
@@ -44,26 +37,96 @@
       <button
         type="button"
         [disabled]="session.busy() || session.packsAvailable() <= 0"
-        (click)="openFirebasePack()"
+        (click)="openPack()"
       >
-        Abrir sobre Firebase
+        Abrir sobre
       </button>
-    } @else {
-      <button
-        type="button"
-        [disabled]="session.busy() || !session.configured()"
-        (click)="signInWithGoogle()"
-      >
-        Entrar con Google
-      </button>
-      <button
-        type="button"
-        [disabled]="session.busy() || !session.canUseGuest()"
-        (click)="signInGuest()"
-      >
-        Invitado local
-      </button>
-      <button type="button" (click)="openLocalPack()">Abrir sobre local</button>
-    }
-  </div>
+    </div>
+  } @else {
+    <div class="read-only-panel">
+      <h2>Explora ahora. Juega al iniciar sesión.</h2>
+      <p>
+        Puedes revisar cromos y progreso general. Para guardar tu álbum, reclamar sobres y avanzar
+        misiones, inicia sesión.
+      </p>
+    </div>
+
+    <div class="session-actions">
+      <button type="button" (click)="openLoginPrompt()">Iniciar sesión</button>
+      <button type="button" (click)="openPack()">Abrir sobre</button>
+    </div>
+  }
+
+  @if (session.devToolsEnabled()) {
+    <details class="dev-tools">
+      <summary>Herramientas QA</summary>
+      <div class="session-actions">
+        <button
+          type="button"
+          [disabled]="session.busy() || !session.canUseGuest()"
+          (click)="signInGuest()"
+        >
+          Acceso de prueba
+        </button>
+        <button type="button" (click)="openDevPack()">Abrir sobre de prueba</button>
+      </div>
+    </details>
+  }
 </section>
+
+@if (loginDialogOpen()) {
+  <section
+    class="auth-dialog"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="auth-dialog-title"
+    aria-describedby="auth-dialog-copy"
+    tabindex="-1"
+    (keydown.escape)="closeLoginPrompt()"
+  >
+    <div class="auth-backdrop" aria-hidden="true" (click)="closeLoginPrompt()"></div>
+    <article class="auth-panel" cdkTrapFocus [cdkTrapFocusAutoCapture]="true">
+      <button
+        class="close-btn"
+        type="button"
+        aria-label="Cerrar inicio de sesión"
+        (click)="closeLoginPrompt()"
+      >
+        &times;
+      </button>
+
+      <p class="eyebrow">Guardar progreso</p>
+      <h2 id="auth-dialog-title">Inicia sesión para jugar</h2>
+      <p id="auth-dialog-copy">
+        Guardaremos tus sobres, cromos, monedas y misiones para que puedas continuar después.
+      </p>
+
+      <label class="nickname-field">
+        <span>Nickname</span>
+        <input
+          type="text"
+          maxlength="28"
+          autocomplete="nickname"
+          [value]="nickname()"
+          [disabled]="session.busy()"
+          (input)="updateNickname($event)"
+        />
+      </label>
+
+      @if (!session.configured()) {
+        <p class="hint">El inicio de sesión se activará cuando la app esté conectada.</p>
+      }
+
+      <div class="session-actions">
+        <button
+          type="button"
+          [disabled]="session.busy() || !session.configured()"
+          (click)="signInWithGoogle()"
+        >
+          Continuar con Google
+        </button>
+        <button class="secondary" type="button" (click)="closeLoginPrompt()">Ahora no</button>
+      </div>
+    </article>
+  </section>
+}

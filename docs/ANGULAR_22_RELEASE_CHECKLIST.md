@@ -99,7 +99,7 @@ Si Hosting Emulator no esta activo:
 
 ```powershell
 $env:PATH = 'C:\Users\Admin\AppData\Local\nvm\v24.15.0;' + $env:PATH
-npx -y firebase-tools@14.19.0 emulators:start --only hosting --project albun-panini-fake-2026
+npx -y firebase-tools@14.19.0 emulators:start --only hosting --project <firebase-project-id>
 ```
 
 Revisar:
@@ -126,7 +126,7 @@ El workflow vive en:
 Requiere el secret de Actions:
 
 ```txt
-FIREBASE_SERVICE_ACCOUNT_ALBUN_PANINI_FAKE_2026
+FIREBASE_SERVICE_ACCOUNT_MUNDIAL_2026
 ```
 
 Antes de mergear a `main`, el PR preview workflow corre desde:
@@ -142,7 +142,7 @@ $env:PATH = 'C:\Users\Admin\AppData\Local\nvm\v24.15.0;' + $env:PATH
 cd web
 npm run verify:migration
 cd ..
-npx -y firebase-tools@14.19.0 deploy --only hosting --project albun-panini-fake-2026
+npx -y firebase-tools@14.19.0 deploy --only hosting --project <firebase-project-id>
 ```
 
 ## Verificacion posterior al deploy
@@ -176,7 +176,7 @@ Si la URL publicada falla:
 3. Ejecutar:
 
 ```powershell
-npx -y firebase-tools@14.19.0 deploy --only hosting --project albun-panini-fake-2026
+npx -y firebase-tools@14.19.0 deploy --only hosting --project <firebase-project-id>
 ```
 
 4. Restaurar el cambio Angular en una rama de fix y repetir el checklist.
