@@ -6,31 +6,64 @@
   <p>Tablas calculadas desde resultados verificados del Mundial 2026.</p>
 </section>
 
-<section class="section-shell group-view-toolbar" aria-label="Vista de posiciones">
-  <span>Vista de grupos</span>
-  <div class="standing-view-toggle" role="group" aria-label="Vista de posiciones">
-    <button
-      type="button"
-      [class.active]="standingView() === 'ranking'"
-      [attr.aria-pressed]="standingView() === 'ranking'"
-      (click)="setStandingView('ranking')"
+<section class="section-shell group-mobile-toolbar" aria-label="Controles de grupos">
+  <div class="group-picker-row">
+    <label for="group-picker">Grupo</label>
+    <select
+      id="group-picker"
+      #groupPicker
+      [value]="selectedGroupId()"
+      (change)="setSelectedGroup(groupPicker.value)"
     >
-      Ranking
+      @for (board of groupBoards; track board.group.id) {
+        <option [value]="board.group.id">{{ board.group.name }}</option>
+      }
+    </select>
+  </div>
+
+  <div class="group-stepper" aria-label="Cambiar grupo">
+    <button type="button" (click)="selectPreviousGroup()" [disabled]="isFirstGroup()">
+      Anterior
     </button>
-    <button
-      type="button"
-      [class.active]="standingView() === 'table'"
-      [attr.aria-pressed]="standingView() === 'table'"
-      (click)="setStandingView('table')"
-    >
-      Tabla completa
-    </button>
+    <button type="button" (click)="selectNextGroup()" [disabled]="isLastGroup()">Siguiente</button>
+  </div>
+
+  <button
+    type="button"
+    class="all-groups-toggle"
+    [class.active]="showAllGroups()"
+    [attr.aria-pressed]="showAllGroups()"
+    (click)="toggleAllGroups()"
+  >
+    {{ showAllGroups() ? 'Ver solo seleccionado' : 'Ver todos los grupos' }}
+  </button>
+
+  <div class="group-view-toolbar" aria-label="Vista de posiciones">
+    <span>Vista de grupos</span>
+    <div class="standing-view-toggle" role="group" aria-label="Vista de posiciones">
+      <button
+        type="button"
+        [class.active]="standingView() === 'ranking'"
+        [attr.aria-pressed]="standingView() === 'ranking'"
+        (click)="setStandingView('ranking')"
+      >
+        Ranking
+      </button>
+      <button
+        type="button"
+        [class.active]="standingView() === 'table'"
+        [attr.aria-pressed]="standingView() === 'table'"
+        (click)="setStandingView('table')"
+      >
+        Tabla completa
+      </button>
+    </div>
   </div>
 </section>
 
 <section class="section-shell group-boards" aria-label="Tablas y partidos por grupo">
   @for (board of groupBoards; track board.group.id) {
-    <article class="group-board">
+    <article class="group-board" [class.hidden-mobile]="isGroupHiddenOnMobile(board.group.id)">
       <header>
         <h2>{{ board.group.name }}</h2>
         <span>{{ board.group.teamIds.length }} equipos</span>

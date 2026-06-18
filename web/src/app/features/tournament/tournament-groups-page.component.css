@@ -14,7 +14,7 @@ h1 {
   color: var(--muted);
 }
 
-.group-view-toolbar {
+.group-mobile-toolbar {
   display: none;
 }
 
@@ -274,29 +274,47 @@ h1 {
 }
 
 @media (max-width: 760px) {
-  h1 {
-    font-size: 2.45rem;
+  .page-heading {
+    padding-block: 1.2rem 0.75rem;
   }
 
-  .group-view-toolbar {
+  h1 {
+    font-size: 2.18rem;
+  }
+
+  .group-mobile-toolbar {
     display: grid;
-    gap: 0.45rem;
+    gap: 0.65rem;
     padding-block: 0 0.75rem;
   }
 
+  .group-picker-row label,
   .group-view-toolbar > span {
     color: var(--muted);
     font-size: 0.72rem;
     font-weight: 1000;
-    letter-spacing: 0;
     text-transform: uppercase;
   }
 
+  .group-picker-row select {
+    min-height: 42px;
+    width: 100%;
+    border: 1px solid rgba(248, 201, 69, 0.5);
+    border-radius: 6px;
+    background: #132237;
+    color: var(--ink);
+    font: inherit;
+    padding-inline: 0.75rem;
+  }
+
+  .group-stepper,
   .standing-view-toggle {
     display: flex;
     gap: 0.4rem;
   }
 
+  .group-stepper button,
+  .all-groups-toggle,
   .standing-view-toggle button {
     flex: 1 1 0;
     min-height: 38px;
@@ -310,10 +328,19 @@ h1 {
     text-transform: uppercase;
   }
 
+  .group-stepper button:disabled {
+    opacity: 0.44;
+  }
+
+  .all-groups-toggle.active,
   .standing-view-toggle button.active {
     border-color: rgba(248, 201, 69, 0.52);
     background: linear-gradient(135deg, rgba(0, 208, 132, 0.22), rgba(248, 201, 69, 0.16));
     color: var(--ink);
+  }
+
+  .group-board.hidden-mobile {
+    display: none;
   }
 
   .standing-cards {

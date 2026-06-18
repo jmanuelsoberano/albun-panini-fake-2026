@@ -44,3 +44,22 @@ test('tournament routes expose groups, scoreboards, scorers, and bracket rounds'
   await expect(page.locator('input[type="search"]')).toHaveValue(mexicoText);
   await expect(page.locator('.sticker-card')).toHaveCount(5);
 });
+
+test('mobile groups page lets users jump between groups without long scrolling', async ({
+  page,
+}) => {
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page.goto(`${origin}/torneo/grupos?qa=tournament-mobile-groups`, {
+    waitUntil: 'networkidle',
+  });
+
+  await expect(page.locator('.group-board:visible')).toHaveCount(1);
+  await expect(page.getByRole('heading', { name: 'Grupo A' })).toBeVisible();
+
+  await page.locator('#group-picker').selectOption({ label: 'Grupo C' });
+  await expect(page.locator('.group-board:visible')).toHaveCount(1);
+  await expect(page.getByRole('heading', { name: 'Grupo C' })).toBeVisible();
+
+  await page.getByRole('button', { name: 'Ver todos los grupos' }).click();
+  await expect(page.locator('.group-board:visible')).toHaveCount(12);
+});
