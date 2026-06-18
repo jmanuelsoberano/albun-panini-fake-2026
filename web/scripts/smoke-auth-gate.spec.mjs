@@ -1,6 +1,12 @@
 import { expect, test } from '@playwright/test';
 
 const origin = process.env.HOSTING_ORIGIN ?? 'http://127.0.0.1:5000';
+const firebaseInitConfig = {
+  apiKey: 'test-api-key',
+  appId: 'test-app-id',
+  authDomain: 'test.firebaseapp.com',
+  projectId: 'test-project',
+};
 const forbiddenPublicText = [
   'Modo local',
   'Modo Angular',
@@ -16,6 +22,14 @@ const forbiddenPublicText = [
 test('public collection route is read-only and prompts sign-in for play actions', async ({
   page,
 }) => {
+  await page.route('**/__/firebase/init.json', async (route) => {
+    await route.fulfill({
+      body: JSON.stringify(firebaseInitConfig),
+      contentType: 'application/json',
+      status: 200,
+    });
+  });
+
   await page.goto(`${origin}/coleccion?qa=auth-gate`, { waitUntil: 'networkidle' });
   await expect(page.locator('.sticker-card')).toHaveCount(240);
 

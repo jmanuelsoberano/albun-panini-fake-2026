@@ -67,15 +67,23 @@ export class FirebaseConfigService {
   }
 
   private async fetchHostingConfig(): Promise<FirebaseRuntimeConfig | null> {
+    return this.fetchHostingConfigFrom(new URL('/__/firebase/init.json', location.origin).href);
+  }
+
+  private async fetchHostingConfigFrom(url: string): Promise<FirebaseRuntimeConfig | null> {
     try {
-      const configUrl = new URL('/__/firebase/init.json', location.origin);
-      const response = await fetch(configUrl, { headers: { accept: 'application/json' } });
+      const response = await fetch(url, { headers: { accept: 'application/json' } });
       const contentType = response.headers.get('content-type') ?? '';
       if (!response.ok || !contentType.includes('json')) {
         return null;
       }
 
-      const firebaseConfig = (await response.json()) as FirebaseOptions;
+      const body = await response.text();
+      if (!body.trim()) {
+        return null;
+      }
+
+      const firebaseConfig = JSON.parse(body) as FirebaseOptions;
       if (this.hasPlaceholderConfig(firebaseConfig)) {
         return null;
       }
