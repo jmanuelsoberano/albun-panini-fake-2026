@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
+import { ChangeDetectionStrategy, Component, input } from '@angular/core';
 import { RouterLink } from '@angular/router';
 
 type TournamentSection = 'resumen' | 'grupos' | 'partidos' | 'llaves';
@@ -11,7 +11,7 @@ type TournamentSection = 'resumen' | 'grupos' | 'partidos' | 'llaves';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class TournamentSectionNavComponent {
-  @Input() activeSection: TournamentSection = 'resumen';
+  readonly activeSection = input<TournamentSection>('resumen');
 
   protected readonly links: readonly {
     id: TournamentSection;

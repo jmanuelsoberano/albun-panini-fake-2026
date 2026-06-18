@@ -4,10 +4,10 @@
     @for (item of links; track item.id) {
       <a
         [routerLink]="item.path"
-        [class.active]="activeSection === item.id"
-        [attr.aria-current]="activeSection === item.id ? 'page' : null"
+        [class.active]="activeSection() === item.id"
+        [attr.aria-current]="activeSection() === item.id ? 'page' : null"
       >
-        @if (item.id === 'resumen' && activeSection !== 'resumen') {
+        @if (item.id === 'resumen' && activeSection() !== 'resumen') {
           <span aria-hidden="true">&larr;</span>
         }
         {{ item.label }}

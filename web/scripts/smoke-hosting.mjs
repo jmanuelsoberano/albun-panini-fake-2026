@@ -113,6 +113,18 @@ async function verifyDist() {
     'Missing hashed Angular main bundle.',
   );
 
+  const manifestPath = new URL('manifest.webmanifest', distDir);
+  assert(await exists(manifestPath), 'Missing PWA manifest.webmanifest in Angular dist.');
+
+  const ngswWorkerPath = new URL('ngsw-worker.js', distDir);
+  assert(await exists(ngswWorkerPath), 'Missing Angular ngsw-worker.js in Angular dist.');
+
+  const ngswManifestPath = new URL('ngsw.json', distDir);
+  assert(await exists(ngswManifestPath), 'Missing Angular ngsw.json service worker manifest.');
+
+  const pwaIconPath = new URL('icons/icon-192x192.png', distDir);
+  assert(await exists(pwaIconPath), 'Missing required PWA icon icons/icon-192x192.png.');
+
   const cleanupWorkerPath = new URL('service-worker.js', distDir);
   assert(await exists(cleanupWorkerPath), 'Missing cleanup service-worker.js in Angular dist.');
 
@@ -179,6 +191,28 @@ async function verifyHosting() {
     !configResponse.contentType.includes('javascript'),
     '/firebase-config.js is being served as JavaScript from the production build.',
   );
+
+  const manifestResponse = await fetchText('/manifest.webmanifest');
+  assert(manifestResponse.ok, '/manifest.webmanifest was not served by Hosting.');
+  const manifest = JSON.parse(manifestResponse.body);
+  assert(manifest.display === 'standalone', 'PWA manifest must use standalone display mode.');
+  assert(
+    manifest.icons?.some((icon) => icon.sizes === '192x192') &&
+      manifest.icons?.some((icon) => icon.sizes === '512x512'),
+    'PWA manifest must include 192x192 and 512x512 icons.',
+  );
+
+  const ngswWorkerResponse = await fetchText('/ngsw-worker.js');
+  assert(ngswWorkerResponse.ok, '/ngsw-worker.js was not served by Hosting.');
+  assert(
+    ngswWorkerResponse.contentType.includes('javascript'),
+    '/ngsw-worker.js must be served as JavaScript, not rewritten to index.html.',
+  );
+
+  const ngswManifestResponse = await fetchText('/ngsw.json');
+  assert(ngswManifestResponse.ok, '/ngsw.json was not served by Hosting.');
+  const ngswManifest = JSON.parse(ngswManifestResponse.body);
+  assert(ngswManifest.configVersion, '/ngsw.json did not contain an Angular SW config version.');
 
   const hostingConfig = await fetchFirebaseInitConfig();
   assert(hostingConfig, '/__/firebase/init.json did not provide a usable Firebase config.');
