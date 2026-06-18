@@ -9,10 +9,11 @@ import { tournamentTeams } from '../../core/data/worldcup-facts';
 import type { Team } from '../../core/models/album.models';
 import { calculateTopScorers } from '../../core/utils/tournament-domain';
 import { TeamFlagComponent } from '../../shared/team-flag/team-flag.component';
+import { TournamentSectionNavComponent } from './tournament-section-nav.component';
 
 @Component({
   selector: 'app-tournament-overview-page',
-  imports: [RouterLink, TeamFlagComponent],
+  imports: [RouterLink, TeamFlagComponent, TournamentSectionNavComponent],
   templateUrl: './tournament-overview-page.component.html',
   styleUrl: './tournament-overview-page.component.css',
   changeDetection: ChangeDetectionStrategy.OnPush,

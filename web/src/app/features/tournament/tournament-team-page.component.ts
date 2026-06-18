@@ -7,10 +7,11 @@ import type { Team } from '../../core/models/album.models';
 import { AlbumStore } from '../../core/state/album-store.service';
 import { calculateGroupStandings } from '../../core/utils/tournament-domain';
 import { TeamFlagComponent } from '../../shared/team-flag/team-flag.component';
+import { TournamentSectionNavComponent } from './tournament-section-nav.component';
 
 @Component({
   selector: 'app-tournament-team-page',
-  imports: [RouterLink, TeamFlagComponent],
+  imports: [RouterLink, TeamFlagComponent, TournamentSectionNavComponent],
   templateUrl: './tournament-team-page.component.html',
   styleUrl: './tournament-team-page.component.css',
   changeDetection: ChangeDetectionStrategy.OnPush,

@@ -5,10 +5,11 @@ import { tournamentTeams } from '../../core/data/worldcup-facts';
 import type { Team } from '../../core/models/album.models';
 import type { TournamentMatch } from '../../core/models/tournament.models';
 import { TeamFlagComponent } from '../../shared/team-flag/team-flag.component';
+import { TournamentSectionNavComponent } from './tournament-section-nav.component';
 
 @Component({
   selector: 'app-tournament-match-center-page',
-  imports: [RouterLink, TeamFlagComponent],
+  imports: [RouterLink, TeamFlagComponent, TournamentSectionNavComponent],
   templateUrl: './tournament-match-center-page.component.html',
   styleUrl: './tournament-match-center-page.component.css',
   changeDetection: ChangeDetectionStrategy.OnPush,

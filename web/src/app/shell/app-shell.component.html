@@ -2,33 +2,62 @@
   Saltar al contenido principal
 </a>
 
-<header class="app-header">
+<header class="app-header" [class.menu-open]="mobileMenuOpen()">
   <a class="brand" routerLink="/inicio" aria-label="Volver al inicio">
     <span class="brand-mark" aria-hidden="true">26</span>
     <span>
-      <strong>Álbum Mundial 2026</strong>
-      <small>Datos reales · colección interactiva</small>
+      <strong>
+        <span class="brand-full">&Aacute;lbum Mundial 2026</span>
+        <span class="brand-short">Mundial 2026</span>
+      </strong>
+      <small>Datos reales &middot; colecci&oacute;n interactiva</small>
     </span>
   </a>
 
-  <nav class="main-nav" aria-label="Navegación principal">
+  <nav
+    id="primary-navigation"
+    class="main-nav"
+    [class.open]="mobileMenuOpen()"
+    aria-label="Navegaci&oacute;n principal"
+  >
     @for (item of navItems; track item.path) {
       <a
         [routerLink]="item.path"
         routerLinkActive="active"
         [routerLinkActiveOptions]="{ exact: true }"
+        (click)="closeMobileMenu()"
       >
         {{ item.label }}
       </a>
     }
   </nav>
 
-  <div class="header-status">
-    @if (session.isAuthenticated()) {
-      <span>{{ session.profile()?.nickname || 'Jugador activo' }}</span>
-    } @else {
-      <a routerLink="/coleccion" fragment="play-panel">Iniciar sesión</a>
-    }
+  <div class="header-actions">
+    <div class="header-status">
+      @if (session.isAuthenticated()) {
+        <span>{{ session.profile()?.nickname || 'Jugador activo' }}</span>
+      } @else {
+        <a routerLink="/coleccion" fragment="play-panel" aria-label="Iniciar sesi&oacute;n">
+          <span class="signin-full">Iniciar sesi&oacute;n</span>
+          <span class="signin-short">Entrar</span>
+        </a>
+      }
+    </div>
+
+    <button
+      class="menu-toggle"
+      type="button"
+      aria-controls="primary-navigation"
+      [attr.aria-expanded]="mobileMenuOpen()"
+      (click)="toggleMobileMenu()"
+    >
+      <span class="menu-icon" aria-hidden="true">
+        <span></span>
+        <span></span>
+        <span></span>
+      </span>
+      <span>Men&uacute;</span>
+    </button>
   </div>
 </header>
 
@@ -37,9 +66,9 @@
 </main>
 
 <footer class="footer section-shell">
-  <strong>Álbum Mundial 2026</strong>
+  <strong>&Aacute;lbum Mundial 2026</strong>
   <span
-    >Datos de texto, colección, calendario y plantillas; sin logos, escudos ni fotos
+    >Datos de texto, colecci&oacute;n, calendario y plantillas; sin logos, escudos ni fotos
     protegidas.</span
   >
 </footer>

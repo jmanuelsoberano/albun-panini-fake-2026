@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component, signal } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { tournamentGroups, tournamentMatches } from '../../core/data/tournament-fixtures';
 import { tournamentTeams } from '../../core/data/worldcup-facts';
@@ -6,16 +6,20 @@ import type { Team } from '../../core/models/album.models';
 import type { TournamentMatch } from '../../core/models/tournament.models';
 import { calculateGroupStandings } from '../../core/utils/tournament-domain';
 import { TeamFlagComponent } from '../../shared/team-flag/team-flag.component';
+import { TournamentSectionNavComponent } from './tournament-section-nav.component';
+
+type StandingView = 'ranking' | 'table';
 
 @Component({
   selector: 'app-tournament-groups-page',
-  imports: [RouterLink, TeamFlagComponent],
+  imports: [RouterLink, TeamFlagComponent, TournamentSectionNavComponent],
   templateUrl: './tournament-groups-page.component.html',
   styleUrl: './tournament-groups-page.component.css',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class TournamentGroupsPageComponent {
   private readonly teamMap = new Map<string, Team>(tournamentTeams.map((team) => [team.id, team]));
+  protected readonly standingView = signal<StandingView>('ranking');
   protected readonly groupBoards = tournamentGroups.map((group) => ({
     group,
     standings: calculateGroupStandings(group, tournamentMatches),
@@ -32,6 +36,10 @@ export class TournamentGroupsPageComponent {
 
   protected teamCode(teamId: string): string {
     return this.teamMap.get(teamId)?.code ?? teamId;
+  }
+
+  protected setStandingView(view: StandingView): void {
+    this.standingView.set(view);
   }
 
   protected scoreLabel(match: TournamentMatch): string {
