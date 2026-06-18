@@ -1,0 +1,28 @@
+:host {
+  display: inline-grid;
+  flex: 0 0 auto;
+  place-items: center;
+}
+
+.team-flag {
+  width: 2.5rem;
+  height: 1.875rem;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.94);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+  object-fit: cover;
+}
+
+.team-flag--sm {
+  width: 1.8rem;
+  height: 1.35rem;
+  border-radius: 3px;
+}
+
+.team-flag--lg {
+  width: 4rem;
+  height: 3rem;
+  border-radius: 6px;
+  box-shadow: 0 18px 34px rgba(0, 0, 0, 0.28);
+}

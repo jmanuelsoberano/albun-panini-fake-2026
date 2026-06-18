@@ -39,6 +39,9 @@
         </header>
         <div class="match-score">
           <div>
+            @if (teamFor(match.homeTeamId); as team) {
+              <app-team-flag size="sm" [flagCode]="team.flagCode" [name]="team.name" />
+            }
             <b>{{ teamCode(match.homeTeamId) }}</b>
             <a [routerLink]="['/torneo/equipos', match.homeTeamId]">{{
               teamName(match.homeTeamId)
@@ -46,6 +49,9 @@
           </div>
           <strong>{{ scoreLabel(match) }}</strong>
           <div>
+            @if (teamFor(match.awayTeamId); as team) {
+              <app-team-flag size="sm" [flagCode]="team.flagCode" [name]="team.name" />
+            }
             <b>{{ teamCode(match.awayTeamId) }}</b>
             <a [routerLink]="['/torneo/equipos', match.awayTeamId]">{{
               teamName(match.awayTeamId)
@@ -65,7 +71,12 @@
       @for (scorer of topScorers; track scorer.teamId + scorer.playerName) {
         <li>
           <strong>{{ scorer.playerName }}</strong>
-          <span>{{ scorer.goals }} · {{ teamCode(scorer.teamId) }}</span>
+          <span>
+            @if (teamFor(scorer.teamId); as team) {
+              <app-team-flag size="sm" [flagCode]="team.flagCode" [name]="team.name" />
+            }
+            {{ scorer.goals }} · {{ teamCode(scorer.teamId) }}
+          </span>
         </li>
       }
     </ol>

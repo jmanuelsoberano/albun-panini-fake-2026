@@ -116,6 +116,12 @@ dd {
   font-weight: 900;
 }
 
+.team-detail-value {
+  display: flex;
+  gap: 0.45rem;
+  align-items: center;
+}
+
 @media (max-width: 720px) {
   .panel {
     grid-template-columns: 1fr;

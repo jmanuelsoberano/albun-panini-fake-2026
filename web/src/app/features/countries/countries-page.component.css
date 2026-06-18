@@ -78,9 +78,9 @@ h1 {
 }
 
 .country-card header {
-  display: flex;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
   align-items: center;
-  justify-content: space-between;
   gap: 1rem;
   padding: 1rem;
   border-bottom: 1px solid var(--rule);
@@ -220,6 +220,15 @@ h1 {
 
   h1 {
     font-size: 2.45rem;
+  }
+
+  .country-card header {
+    grid-template-columns: auto 1fr;
+  }
+
+  .country-card header > strong {
+    grid-column: 1 / -1;
+    justify-self: start;
   }
 }
 

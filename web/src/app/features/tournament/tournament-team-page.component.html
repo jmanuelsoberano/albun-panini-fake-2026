@@ -6,6 +6,7 @@
   >
     <p class="eyebrow">Equipo</p>
     <div>
+      <app-team-flag size="lg" [flagCode]="item.flagCode" [name]="item.name" />
       <span>{{ item.code }}</span>
       <h1>{{ item.name }}</h1>
       <p>{{ item.confederation }} · {{ group?.name || 'Sin grupo' }}</p>
@@ -38,7 +39,13 @@
         @for (match of teamMatches; track match.id) {
           <a [routerLink]="['/torneo/partidos', match.id]">
             <span>
+              @if (teamFor(match.homeTeamId); as team) {
+                <app-team-flag size="sm" [flagCode]="team.flagCode" [name]="team.name" />
+              }
               {{ teamCode(match.homeTeamId) }} {{ scoreLabel(match.homeScore, match.awayScore) }}
+              @if (teamFor(match.awayTeamId); as team) {
+                <app-team-flag size="sm" [flagCode]="team.flagCode" [name]="team.name" />
+              }
               {{ teamCode(match.awayTeamId) }}
             </span>
             <small>{{ teamName(match.homeTeamId) }} vs {{ teamName(match.awayTeamId) }}</small>

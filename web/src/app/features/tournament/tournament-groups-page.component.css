@@ -85,6 +85,9 @@ h1 {
 }
 
 .standing-row a {
+  display: flex;
+  gap: 0.45rem;
+  align-items: center;
   color: inherit;
   text-decoration: none;
 }
@@ -118,6 +121,12 @@ h1 {
 .match-score strong,
 .match-score b {
   text-align: center;
+}
+
+.match-score strong {
+  display: grid;
+  justify-items: center;
+  gap: 0.3rem;
 }
 
 .match-score b {

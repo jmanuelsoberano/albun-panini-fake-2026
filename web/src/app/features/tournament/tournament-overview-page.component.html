@@ -16,7 +16,12 @@
   <div class="tournament-score">
     <span>Máximo goleador</span>
     <strong>{{ topScorer?.playerName }}</strong>
-    <small>{{ topScorer?.goals }} goles · {{ teamName(topScorer?.teamId ?? '') }}</small>
+    <small>
+      @if (teamFor(topScorer?.teamId ?? ''); as team) {
+        <app-team-flag size="sm" [flagCode]="team.flagCode" [name]="team.name" />
+      }
+      {{ topScorer?.goals }} goles · {{ teamName(topScorer?.teamId ?? '') }}
+    </small>
   </div>
 </section>
 

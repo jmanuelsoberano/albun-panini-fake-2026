@@ -4,6 +4,7 @@ import { fileURLToPath } from 'node:url';
 
 const appDir = fileURLToPath(new URL('../src/app/', import.meta.url));
 const webSrcDir = fileURLToPath(new URL('../src/', import.meta.url));
+const worldcupFactsFile = join(appDir, 'core', 'data', 'worldcup-facts.ts');
 
 function forbiddenWord(parts) {
   return new RegExp(`\\b${parts.join('')}\\b`, 'i');
@@ -53,6 +54,7 @@ const files = (await listFiles(webSrcDir)).filter(
 const appFiles = files.filter((file) => file.startsWith(appDir));
 const failures = [];
 const allContent = (await Promise.all(appFiles.map((file) => readFile(file, 'utf8')))).join('\n');
+const worldcupFactsContent = await readFile(worldcupFactsFile, 'utf8');
 
 for (const file of files) {
   const content = await readFile(file, 'utf8');
@@ -70,6 +72,23 @@ for (const file of files) {
 for (const pattern of requiredPatterns) {
   if (!pattern.test(allContent)) {
     failures.push(`missing required real-world content ${pattern}`);
+  }
+}
+
+const flagCodes = [...worldcupFactsContent.matchAll(/flagCode:\s*'([a-z]{2}(?:-[a-z]{3})?)'/g)].map(
+  (match) => match[1],
+);
+const uniqueFlagCodes = new Set(flagCodes);
+
+if (flagCodes.length !== 48 || uniqueFlagCodes.size !== 48) {
+  failures.push(
+    `expected 48 unique country flag codes, found ${flagCodes.length} entries and ${uniqueFlagCodes.size} unique values`,
+  );
+}
+
+for (const regionalFlagCode of ['gb-eng', 'gb-sct']) {
+  if (!uniqueFlagCodes.has(regionalFlagCode)) {
+    failures.push(`missing regional flag code ${regionalFlagCode}`);
   }
 }
 

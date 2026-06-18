@@ -4,6 +4,7 @@ import { bracketRounds, tournamentMatches } from '../../core/data/tournament-fix
 import { tournamentTeams } from '../../core/data/worldcup-facts';
 import type { Team } from '../../core/models/album.models';
 import type { TournamentMatch } from '../../core/models/tournament.models';
+import { TeamFlagComponent } from '../../shared/team-flag/team-flag.component';
 
 function isTournamentMatch(match: TournamentMatch | undefined): match is TournamentMatch {
   return Boolean(match);
@@ -11,7 +12,7 @@ function isTournamentMatch(match: TournamentMatch | undefined): match is Tournam
 
 @Component({
   selector: 'app-tournament-bracket-page',
-  imports: [RouterLink],
+  imports: [RouterLink, TeamFlagComponent],
   templateUrl: './tournament-bracket-page.component.html',
   styleUrl: './tournament-bracket-page.component.css',
   changeDetection: ChangeDetectionStrategy.OnPush,
@@ -30,6 +31,10 @@ export class TournamentBracketPageComponent {
 
   protected teamName(teamId: string): string {
     return this.teamMap.get(teamId)?.name ?? teamId;
+  }
+
+  protected teamFor(teamId: string): Team | null {
+    return this.teamMap.get(teamId) ?? null;
   }
 
   protected isKnownTeam(teamId: string): boolean {

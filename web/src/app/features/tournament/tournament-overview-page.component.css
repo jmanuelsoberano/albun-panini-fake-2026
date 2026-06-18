@@ -63,6 +63,12 @@ h1 {
   text-transform: uppercase;
 }
 
+.tournament-score small {
+  display: inline-flex;
+  gap: 0.4rem;
+  align-items: center;
+}
+
 .tournament-score strong {
   font-size: 1.4rem;
   line-height: 1;

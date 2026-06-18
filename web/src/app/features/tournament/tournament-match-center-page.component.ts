@@ -4,10 +4,11 @@ import { tournamentMatches } from '../../core/data/tournament-fixtures';
 import { tournamentTeams } from '../../core/data/worldcup-facts';
 import type { Team } from '../../core/models/album.models';
 import type { TournamentMatch } from '../../core/models/tournament.models';
+import { TeamFlagComponent } from '../../shared/team-flag/team-flag.component';
 
 @Component({
   selector: 'app-tournament-match-center-page',
-  imports: [RouterLink],
+  imports: [RouterLink, TeamFlagComponent],
   templateUrl: './tournament-match-center-page.component.html',
   styleUrl: './tournament-match-center-page.component.css',
   changeDetection: ChangeDetectionStrategy.OnPush,
@@ -21,6 +22,10 @@ export class TournamentMatchCenterPageComponent {
 
   protected teamName(teamId: string): string {
     return this.teamMap.get(teamId)?.name ?? teamId;
+  }
+
+  protected teamFor(teamId: string): Team | null {
+    return this.teamMap.get(teamId) ?? null;
   }
 
   protected teamCode(teamId: string): string {

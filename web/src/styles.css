@@ -61,6 +61,22 @@ select {
   font: inherit;
 }
 
+select {
+  color-scheme: dark;
+  accent-color: var(--amber);
+}
+
+select option,
+select optgroup {
+  background-color: var(--surface);
+  color: var(--ink);
+}
+
+select option:checked {
+  background-color: var(--amber);
+  color: var(--paper);
+}
+
 .sr-only {
   position: absolute;
   width: 1px;

@@ -71,9 +71,11 @@ label span {
 
 select {
   min-width: 190px;
+  padding: 0.65rem 0.8rem;
   border: 1px solid var(--rule);
-  background: rgba(255, 255, 255, 0.08);
+  background: var(--surface-strong);
   color: var(--ink);
+  box-shadow: inset 0 0 0 1px rgba(248, 201, 69, 0.12);
 }
 
 .matches-layout {
@@ -131,9 +133,11 @@ select {
   display: grid;
   min-width: 0;
   gap: 0.2rem;
+  justify-items: start;
 }
 
 .match-score div:last-child {
+  justify-items: end;
   text-align: right;
 }
 
@@ -201,6 +205,9 @@ select {
 }
 
 .scorers-panel span {
+  display: inline-flex;
+  gap: 0.35rem;
+  align-items: center;
   color: #f8d889;
   font-weight: 950;
 }

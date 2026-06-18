@@ -18,11 +18,13 @@
 .scoreboard a {
   display: grid;
   gap: 0.3rem;
+  justify-items: start;
   color: #fff;
   text-decoration: none;
 }
 
 .scoreboard a:last-child {
+  justify-items: end;
   text-align: right;
 }
 
@@ -110,6 +112,9 @@ h2 {
 }
 
 .timeline small {
+  display: inline-flex;
+  gap: 0.4rem;
+  align-items: center;
   color: var(--muted);
   font-weight: 850;
 }
@@ -122,9 +127,11 @@ h2 {
 
 .related-teams a,
 .empty-state a {
-  display: grid;
+  display: flex;
+  gap: 0.5rem;
   min-height: 42px;
-  place-items: center;
+  align-items: center;
+  justify-content: center;
   border: 1px solid var(--rule);
   border-radius: 6px;
   color: var(--ink);
