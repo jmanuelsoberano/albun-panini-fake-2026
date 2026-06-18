@@ -5,10 +5,11 @@ import { tournamentTeams } from '../../core/data/worldcup-facts';
 import type { Team } from '../../core/models/album.models';
 import type { TournamentMatch } from '../../core/models/tournament.models';
 import { calculateGroupStandings } from '../../core/utils/tournament-domain';
+import { TeamFlagComponent } from '../../shared/team-flag/team-flag.component';
 
 @Component({
   selector: 'app-tournament-groups-page',
-  imports: [RouterLink],
+  imports: [RouterLink, TeamFlagComponent],
   templateUrl: './tournament-groups-page.component.html',
   styleUrl: './tournament-groups-page.component.css',
   changeDetection: ChangeDetectionStrategy.OnPush,
@@ -23,6 +24,10 @@ export class TournamentGroupsPageComponent {
 
   protected teamName(teamId: string): string {
     return this.teamMap.get(teamId)?.name ?? teamId;
+  }
+
+  protected teamFor(teamId: string): Team | null {
+    return this.teamMap.get(teamId) ?? null;
   }
 
   protected teamCode(teamId: string): string {

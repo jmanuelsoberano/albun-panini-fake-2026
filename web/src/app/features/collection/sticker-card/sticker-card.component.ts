@@ -1,8 +1,10 @@
 import { ChangeDetectionStrategy, Component, computed, input, output } from '@angular/core';
 import type { Sticker } from '../../../core/models/album.models';
+import { TeamFlagComponent } from '../../../shared/team-flag/team-flag.component';
 
 @Component({
   selector: 'app-sticker-card',
+  imports: [TeamFlagComponent],
   templateUrl: './sticker-card.component.html',
   styleUrl: './sticker-card.component.css',
   changeDetection: ChangeDetectionStrategy.OnPush,

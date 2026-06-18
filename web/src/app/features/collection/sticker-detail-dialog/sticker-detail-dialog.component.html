@@ -31,6 +31,7 @@
       [style.--team-b]="sticker().colors[1]"
     >
       <span>{{ sticker().id }}</span>
+      <app-team-flag size="lg" [flagCode]="sticker().flagCode" [name]="sticker().team" />
       <strong>{{ initials() }}</strong>
       <small>{{ sticker().caption }}</small>
     </div>
@@ -47,7 +48,10 @@
         </div>
         <div>
           <dt>Equipo</dt>
-          <dd>{{ sticker().team }}</dd>
+          <dd class="team-detail-value">
+            <app-team-flag size="sm" [flagCode]="sticker().flagCode" [name]="sticker().team" />
+            {{ sticker().team }}
+          </dd>
         </div>
         <div>
           <dt>Posicion</dt>

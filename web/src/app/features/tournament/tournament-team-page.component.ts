@@ -3,12 +3,14 @@ import { ActivatedRoute, RouterLink } from '@angular/router';
 import { albumStickers } from '../../core/data/album-catalog';
 import { tournamentGroups, tournamentMatches } from '../../core/data/tournament-fixtures';
 import { tournamentTeams } from '../../core/data/worldcup-facts';
+import type { Team } from '../../core/models/album.models';
 import { AlbumStore } from '../../core/state/album-store.service';
 import { calculateGroupStandings } from '../../core/utils/tournament-domain';
+import { TeamFlagComponent } from '../../shared/team-flag/team-flag.component';
 
 @Component({
   selector: 'app-tournament-team-page',
-  imports: [RouterLink],
+  imports: [RouterLink, TeamFlagComponent],
   templateUrl: './tournament-team-page.component.html',
   styleUrl: './tournament-team-page.component.css',
   changeDetection: ChangeDetectionStrategy.OnPush,
@@ -49,6 +51,10 @@ export class TournamentTeamPageComponent {
 
   protected teamName(teamId: string): string {
     return tournamentTeams.find((team) => team.id === teamId)?.name ?? teamId;
+  }
+
+  protected teamFor(teamId: string): Team | null {
+    return tournamentTeams.find((team) => team.id === teamId) ?? null;
   }
 
   protected teamCode(teamId: string): string {

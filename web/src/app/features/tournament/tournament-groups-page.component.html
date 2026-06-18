@@ -28,7 +28,10 @@
           <div class="standing-row" role="row">
             <strong role="cell">
               <a [routerLink]="['/torneo/equipos', row.teamId]">
-                {{ teamCode(row.teamId) }} · {{ teamName(row.teamId) }}
+                @if (teamFor(row.teamId); as team) {
+                  <app-team-flag size="sm" [flagCode]="team.flagCode" [name]="team.name" />
+                }
+                <span>{{ teamCode(row.teamId) }} · {{ teamName(row.teamId) }}</span>
               </a>
             </strong>
             <span role="cell">{{ row.played }}</span>
@@ -47,9 +50,19 @@
         @for (match of board.matches; track match.id) {
           <article class="match-card">
             <div class="match-score">
-              <strong>{{ teamCode(match.homeTeamId) }}</strong>
+              <strong>
+                @if (teamFor(match.homeTeamId); as team) {
+                  <app-team-flag size="sm" [flagCode]="team.flagCode" [name]="team.name" />
+                }
+                {{ teamCode(match.homeTeamId) }}
+              </strong>
               <b>{{ scoreLabel(match) }}</b>
-              <strong>{{ teamCode(match.awayTeamId) }}</strong>
+              <strong>
+                @if (teamFor(match.awayTeamId); as team) {
+                  <app-team-flag size="sm" [flagCode]="team.flagCode" [name]="team.name" />
+                }
+                {{ teamCode(match.awayTeamId) }}
+              </strong>
             </div>
             <p>{{ teamName(match.homeTeamId) }} vs {{ teamName(match.awayTeamId) }}</p>
             <small>{{ eventsLabel(match) || 'Pendiente de resultado' }}</small>

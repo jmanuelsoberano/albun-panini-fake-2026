@@ -25,9 +25,23 @@
   >
     <span>{{ featuredMatch.status }}</span>
     <div class="score-row">
-      <strong>{{ featuredMatch.home.code }}</strong>
+      <strong>
+        <app-team-flag
+          size="sm"
+          [flagCode]="featuredMatch.home.flagCode"
+          [name]="featuredMatch.home.name"
+        />
+        {{ featuredMatch.home.code }}
+      </strong>
       <b>{{ featuredMatch.score }}</b>
-      <strong>{{ featuredMatch.away.code }}</strong>
+      <strong>
+        <app-team-flag
+          size="sm"
+          [flagCode]="featuredMatch.away.flagCode"
+          [name]="featuredMatch.away.name"
+        />
+        {{ featuredMatch.away.code }}
+      </strong>
     </div>
     <small>{{ featuredMatch.venue }}</small>
   </div>
@@ -59,7 +73,7 @@
     <ul>
       @for (team of featuredGroup; track team.id) {
         <li>
-          <span [style.background]="team.colors[0]"></span>
+          <app-team-flag size="sm" [flagCode]="team.flagCode" [name]="team.name" />
           <strong>{{ team.code }}</strong>
           {{ team.name }}
         </li>
@@ -80,7 +94,10 @@
     <div class="missing-list">
       @for (sticker of missingPreview(); track sticker.id) {
         <a routerLink="/coleccion">
-          <span>{{ sticker.id }}</span>
+          <span>
+            <app-team-flag size="sm" [flagCode]="sticker.flagCode" [name]="sticker.team" />
+            {{ sticker.id }}
+          </span>
           <strong>{{ sticker.name }}</strong>
           <small>{{ sticker.team }}</small>
         </a>

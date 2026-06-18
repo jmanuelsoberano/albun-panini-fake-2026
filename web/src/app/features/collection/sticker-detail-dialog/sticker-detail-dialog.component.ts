@@ -1,10 +1,11 @@
 import { A11yModule } from '@angular/cdk/a11y';
 import { ChangeDetectionStrategy, Component, computed, input, output } from '@angular/core';
 import type { Sticker } from '../../../core/models/album.models';
+import { TeamFlagComponent } from '../../../shared/team-flag/team-flag.component';
 
 @Component({
   selector: 'app-sticker-detail-dialog',
-  imports: [A11yModule],
+  imports: [A11yModule, TeamFlagComponent],
   templateUrl: './sticker-detail-dialog.component.html',
   styleUrl: './sticker-detail-dialog.component.css',
   changeDetection: ChangeDetectionStrategy.OnPush,

@@ -8,10 +8,11 @@ import {
 import { tournamentTeams } from '../../core/data/worldcup-facts';
 import type { Team } from '../../core/models/album.models';
 import { calculateTopScorers } from '../../core/utils/tournament-domain';
+import { TeamFlagComponent } from '../../shared/team-flag/team-flag.component';
 
 @Component({
   selector: 'app-tournament-overview-page',
-  imports: [RouterLink],
+  imports: [RouterLink, TeamFlagComponent],
   templateUrl: './tournament-overview-page.component.html',
   styleUrl: './tournament-overview-page.component.css',
   changeDetection: ChangeDetectionStrategy.OnPush,
@@ -27,5 +28,9 @@ export class TournamentOverviewPageComponent {
 
   protected teamName(teamId: string): string {
     return this.teamMap.get(teamId)?.name ?? teamId;
+  }
+
+  protected teamFor(teamId: string): Team | null {
+    return this.teamMap.get(teamId) ?? null;
   }
 }

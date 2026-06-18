@@ -6,10 +6,11 @@ import { tournamentStadiums, tournamentTeams } from '../../core/data/worldcup-fa
 import { FirebaseSessionStore } from '../../core/firebase/firebase-session.store';
 import type { Team } from '../../core/models/album.models';
 import { AlbumStore } from '../../core/state/album-store.service';
+import { TeamFlagComponent } from '../../shared/team-flag/team-flag.component';
 
 @Component({
   selector: 'app-home-page',
-  imports: [RouterLink],
+  imports: [RouterLink, TeamFlagComponent],
   templateUrl: './home-page.component.html',
   styleUrl: './home-page.component.css',
   changeDetection: ChangeDetectionStrategy.OnPush,

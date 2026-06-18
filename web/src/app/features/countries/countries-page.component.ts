@@ -5,9 +5,11 @@ import {
   tournamentTeams,
 } from '../../core/data/worldcup-facts';
 import type { Player } from '../../core/models/album.models';
+import { TeamFlagComponent } from '../../shared/team-flag/team-flag.component';
 
 @Component({
   selector: 'app-countries-page',
+  imports: [TeamFlagComponent],
   templateUrl: './countries-page.component.html',
   styleUrl: './countries-page.component.css',
   changeDetection: ChangeDetectionStrategy.OnPush,

@@ -84,8 +84,11 @@ h1 {
 
 .score-row strong {
   display: grid;
+  grid-template-columns: auto auto;
+  gap: 0.45rem;
   min-height: 3.2rem;
   place-items: center;
+  justify-content: center;
   border: 2px solid rgba(255, 255, 255, 0.35);
   border-radius: 6px;
   background: rgba(255, 255, 255, 0.12);
@@ -190,18 +193,12 @@ h1 {
 
 .group-panel li {
   display: grid;
-  grid-template-columns: 0.8rem 3rem 1fr;
+  grid-template-columns: auto 3rem 1fr;
   gap: 0.5rem;
   align-items: center;
   padding: 0.55rem;
   color: var(--ink);
   font-size: 0.88rem;
-}
-
-.group-panel li span {
-  width: 0.7rem;
-  height: 0.7rem;
-  border-radius: 99px;
 }
 
 .mission-panel {
@@ -246,6 +243,12 @@ h1 {
   color: var(--muted);
   font-size: 0.72rem;
   font-weight: 850;
+}
+
+.missing-list span {
+  display: flex;
+  gap: 0.4rem;
+  align-items: center;
 }
 
 .missing-list strong {

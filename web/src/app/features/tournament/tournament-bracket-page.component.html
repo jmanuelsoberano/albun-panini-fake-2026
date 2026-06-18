@@ -15,7 +15,12 @@
               Match center
             </a>
             <div>
-              <strong>{{ teamCode(match.homeTeamId) }}</strong>
+              <strong>
+                @if (teamFor(match.homeTeamId); as team) {
+                  <app-team-flag size="sm" [flagCode]="team.flagCode" [name]="team.name" />
+                }
+                {{ teamCode(match.homeTeamId) }}
+              </strong>
               @if (isKnownTeam(match.homeTeamId)) {
                 <a [routerLink]="['/torneo/equipos', match.homeTeamId]">{{
                   teamName(match.homeTeamId)
@@ -26,7 +31,12 @@
               <b>{{ scoreLabel(match.homeScore) }}</b>
             </div>
             <div>
-              <strong>{{ teamCode(match.awayTeamId) }}</strong>
+              <strong>
+                @if (teamFor(match.awayTeamId); as team) {
+                  <app-team-flag size="sm" [flagCode]="team.flagCode" [name]="team.name" />
+                }
+                {{ teamCode(match.awayTeamId) }}
+              </strong>
               @if (isKnownTeam(match.awayTeamId)) {
                 <a [routerLink]="['/torneo/equipos', match.awayTeamId]">{{
                   teamName(match.awayTeamId)

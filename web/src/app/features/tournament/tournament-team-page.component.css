@@ -5,6 +5,9 @@
 }
 
 .team-hero > div {
+  display: grid;
+  justify-items: start;
+  gap: 0.35rem;
   padding: 1rem;
   border: 1px solid var(--rule);
   border-radius: 8px;
@@ -107,6 +110,13 @@ h1 {
 .team-matches small {
   color: var(--muted);
   font-weight: 800;
+}
+
+.team-matches span {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  align-items: center;
 }
 
 .album-link {

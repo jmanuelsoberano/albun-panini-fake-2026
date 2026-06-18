@@ -23,7 +23,7 @@
   display: grid;
   min-height: 230px;
   place-items: center;
-  padding: 2.5rem 0.8rem 0.8rem;
+  padding: 3rem 0.8rem 0.8rem;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   background: linear-gradient(135deg, var(--team-a), var(--team-b));
 }
@@ -32,6 +32,7 @@
 .rarity-badge {
   position: absolute;
   top: 0.7rem;
+  min-height: 2rem;
   padding: 0.35rem 0.48rem;
   border-radius: 4px;
   background: rgba(7, 16, 31, 0.82);
@@ -42,6 +43,9 @@
 }
 
 .sticker-code {
+  display: flex;
+  gap: 0.4rem;
+  align-items: center;
   left: 0.7rem;
 }
 

@@ -3,6 +3,9 @@
     <p class="eyebrow">Match center</p>
     <div class="scoreboard">
       <a [routerLink]="teamLink(item.homeTeamId)">
+        @if (teamFor(item.homeTeamId); as team) {
+          <app-team-flag size="lg" [flagCode]="team.flagCode" [name]="team.name" />
+        }
         <span>{{ teamCode(item.homeTeamId) }}</span>
         <strong>{{ teamName(item.homeTeamId) }}</strong>
       </a>
@@ -11,6 +14,9 @@
         <small>{{ statusLabel(item) }}</small>
       </div>
       <a [routerLink]="teamLink(item.awayTeamId)">
+        @if (teamFor(item.awayTeamId); as team) {
+          <app-team-flag size="lg" [flagCode]="team.flagCode" [name]="team.name" />
+        }
         <span>{{ teamCode(item.awayTeamId) }}</span>
         <strong>{{ teamName(item.awayTeamId) }}</strong>
       </a>
@@ -27,7 +33,12 @@
             <li>
               <span>{{ minuteLabel(event.minute) }}</span>
               <strong>{{ event.playerName }}</strong>
-              <small>{{ teamName(event.teamId) }}</small>
+              <small>
+                @if (teamFor(event.teamId); as team) {
+                  <app-team-flag size="sm" [flagCode]="team.flagCode" [name]="team.name" />
+                }
+                {{ teamName(event.teamId) }}
+              </small>
             </li>
           }
         </ol>
@@ -38,8 +49,18 @@
 
     <article class="related-teams">
       <h2>Equipos relacionados</h2>
-      <a [routerLink]="teamLink(item.homeTeamId)">{{ teamName(item.homeTeamId) }}</a>
-      <a [routerLink]="teamLink(item.awayTeamId)">{{ teamName(item.awayTeamId) }}</a>
+      <a [routerLink]="teamLink(item.homeTeamId)">
+        @if (teamFor(item.homeTeamId); as team) {
+          <app-team-flag size="sm" [flagCode]="team.flagCode" [name]="team.name" />
+        }
+        {{ teamName(item.homeTeamId) }}
+      </a>
+      <a [routerLink]="teamLink(item.awayTeamId)">
+        @if (teamFor(item.awayTeamId); as team) {
+          <app-team-flag size="sm" [flagCode]="team.flagCode" [name]="team.name" />
+        }
+        {{ teamName(item.awayTeamId) }}
+      </a>
     </article>
   </section>
 } @else {

@@ -4,6 +4,7 @@ export interface Team {
   readonly id: string;
   readonly name: string;
   readonly code: string;
+  readonly flagCode: string;
   readonly confederation: string;
   readonly colors: readonly [string, string];
 }
@@ -25,6 +26,7 @@ export interface Sticker {
   readonly number: number;
   readonly teamId: string;
   readonly team: string;
+  readonly flagCode: string;
   readonly confederation: string;
   readonly colors: readonly [string, string];
   readonly role: string;

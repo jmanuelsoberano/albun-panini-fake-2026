@@ -31,6 +31,7 @@
       [style.--team-b]="team.colors[1]"
     >
       <header>
+        <app-team-flag size="lg" [flagCode]="team.flagCode" [name]="team.name" />
         <div>
           <h2>{{ team.name }}</h2>
           <span>

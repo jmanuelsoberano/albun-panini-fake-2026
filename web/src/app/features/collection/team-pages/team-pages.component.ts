@@ -2,6 +2,7 @@ import { ChangeDetectionStrategy, Component, computed, input, output } from '@an
 import type { InventoryCopies, Sticker, Team } from '../../../core/models/album.models';
 import { tournamentTeams } from '../../../core/data/worldcup-facts';
 import { copiesOf } from '../../../core/utils/album-domain';
+import { TeamFlagComponent } from '../../../shared/team-flag/team-flag.component';
 import { StickerCardComponent } from '../sticker-card/sticker-card.component';
 
 interface TeamPage {
@@ -13,7 +14,7 @@ interface TeamPage {
 
 @Component({
   selector: 'app-team-pages',
-  imports: [StickerCardComponent],
+  imports: [StickerCardComponent, TeamFlagComponent],
   templateUrl: './team-pages.component.html',
   styleUrl: './team-pages.component.css',
   changeDetection: ChangeDetectionStrategy.OnPush,
