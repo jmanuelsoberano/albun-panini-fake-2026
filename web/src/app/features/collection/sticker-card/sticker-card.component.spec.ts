@@ -23,6 +23,28 @@ describe('StickerCardComponent', () => {
     expect(compiled.textContent).toContain('x2');
   });
 
+  it('shows licensed portraits only after a sticker is owned', () => {
+    const fixture = TestBed.createComponent(StickerCardComponent);
+    const stickerWithPortrait = albumStickers.find((sticker) => sticker.id === 'FG-006');
+
+    expect(stickerWithPortrait).toBeTruthy();
+
+    fixture.componentRef.setInput('sticker', stickerWithPortrait);
+    fixture.componentRef.setInput('copies', 0);
+    fixture.detectChanges();
+
+    let compiled = fixture.nativeElement as HTMLElement;
+    expect(compiled.querySelector('.player-photo img')).toBeNull();
+
+    fixture.componentRef.setInput('copies', 1);
+    fixture.detectChanges();
+
+    compiled = fixture.nativeElement as HTMLElement;
+    const image = compiled.querySelector('.player-photo img') as HTMLImageElement | null;
+    expect(image?.src).toContain('Lionel_Messi');
+    expect(compiled.querySelector('figcaption')?.textContent).toContain('The White House');
+  });
+
   it('emits selection from keyboard space without default scroll behavior', () => {
     const fixture = TestBed.createComponent(StickerCardComponent);
     let selectedId = '';

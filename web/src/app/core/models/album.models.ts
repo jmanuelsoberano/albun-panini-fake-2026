@@ -36,6 +36,9 @@ export interface Sticker {
   readonly shirt: string;
   readonly height: string;
   readonly portrait: string;
+  readonly portraitCredit: string;
+  readonly portraitLicense: string;
+  readonly portraitSourceUrl: string;
   readonly privateSlot: string;
   readonly caption: string;
   readonly note: string;

@@ -1,5 +1,5 @@
 import { A11yModule } from '@angular/cdk/a11y';
-import { ChangeDetectionStrategy, Component, computed, input, output } from '@angular/core';
+import { ChangeDetectionStrategy, Component, computed, input, output, signal } from '@angular/core';
 import type { Sticker } from '../../../core/models/album.models';
 import { TeamFlagComponent } from '../../../shared/team-flag/team-flag.component';
 
@@ -15,7 +15,11 @@ export class StickerDetailDialogComponent {
   readonly copies = input(0);
   readonly dialogClosed = output<void>();
 
+  protected readonly portraitFailed = signal(false);
   protected readonly initials = computed(() => this.sticker().name.slice(0, 2).toUpperCase());
+  protected readonly canShowPortrait = computed(
+    () => this.copies() > 0 && Boolean(this.sticker().portrait) && !this.portraitFailed(),
+  );
   protected readonly statusLabel = computed(() => {
     if (this.copies() === 0) {
       return 'Faltante';
@@ -30,5 +34,9 @@ export class StickerDetailDialogComponent {
 
   protected closeDialog(): void {
     this.dialogClosed.emit();
+  }
+
+  protected hideBrokenPortrait(): void {
+    this.portraitFailed.set(true);
   }
 }

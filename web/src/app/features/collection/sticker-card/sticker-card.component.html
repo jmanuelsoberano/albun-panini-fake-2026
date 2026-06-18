@@ -17,10 +17,24 @@
       {{ sticker().id }}
     </span>
     <span class="rarity-badge">{{ sticker().rarity }}</span>
-    <div class="placeholder-photo">
-      <strong>{{ initials() }}</strong>
-      <span>{{ sticker().caption }}</span>
-    </div>
+    @if (canShowPortrait()) {
+      <figure class="player-photo">
+        <img
+          [src]="sticker().portrait"
+          [alt]="'Retrato de ' + sticker().name"
+          loading="lazy"
+          (error)="hideBrokenPortrait()"
+        />
+        <figcaption>
+          {{ sticker().portraitCredit }} &middot; {{ sticker().portraitLicense }}
+        </figcaption>
+      </figure>
+    } @else {
+      <div class="placeholder-photo">
+        <strong>{{ initials() }}</strong>
+        <span>{{ sticker().caption }}</span>
+      </div>
+    }
     <div class="sticker-number">{{ sticker().number }}</div>
   </div>
   <div class="sticker-body">

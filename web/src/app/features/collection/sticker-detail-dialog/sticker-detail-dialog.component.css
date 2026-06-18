@@ -67,6 +67,14 @@
   line-height: 1;
 }
 
+.portrait img {
+  width: min(220px, 82%);
+  aspect-ratio: 3 / 4;
+  border: 2px solid rgba(255, 255, 255, 0.82);
+  object-fit: cover;
+  box-shadow: 0 16px 34px rgba(0, 0, 0, 0.24);
+}
+
 .portrait small {
   overflow-wrap: anywhere;
   color: rgba(255, 255, 255, 0.84);
@@ -120,6 +128,14 @@ dd {
   display: flex;
   gap: 0.45rem;
   align-items: center;
+}
+
+.portrait-source {
+  grid-column: 1 / -1;
+}
+
+.portrait-source a {
+  color: var(--ink);
 }
 
 @media (max-width: 720px) {

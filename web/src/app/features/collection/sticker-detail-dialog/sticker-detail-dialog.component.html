@@ -32,7 +32,16 @@
     >
       <span>{{ sticker().id }}</span>
       <app-team-flag size="lg" [flagCode]="sticker().flagCode" [name]="sticker().team" />
-      <strong>{{ initials() }}</strong>
+      @if (canShowPortrait()) {
+        <img
+          [src]="sticker().portrait"
+          [alt]="'Retrato de ' + sticker().name"
+          loading="lazy"
+          (error)="hideBrokenPortrait()"
+        />
+      } @else {
+        <strong>{{ initials() }}</strong>
+      }
       <small>{{ sticker().caption }}</small>
     </div>
 
@@ -77,6 +86,16 @@
           <dt>Region</dt>
           <dd>{{ sticker().confederation }}</dd>
         </div>
+        @if (canShowPortrait()) {
+          <div class="portrait-source">
+            <dt>Foto</dt>
+            <dd>
+              <a [href]="sticker().portraitSourceUrl" target="_blank" rel="noopener noreferrer">
+                {{ sticker().portraitCredit }} &middot; {{ sticker().portraitLicense }}
+              </a>
+            </dd>
+          </div>
+        }
       </dl>
     </div>
   </article>

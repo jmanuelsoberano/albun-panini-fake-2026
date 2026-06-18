@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, computed, input, output } from '@angular/core';
+import { ChangeDetectionStrategy, Component, computed, input, output, signal } from '@angular/core';
 import type { Sticker } from '../../../core/models/album.models';
 import { TeamFlagComponent } from '../../../shared/team-flag/team-flag.component';
 
@@ -14,9 +14,13 @@ export class StickerCardComponent {
   readonly copies = input(0);
   readonly stickerSelected = output<Sticker>();
 
+  protected readonly portraitFailed = signal(false);
   protected readonly missing = computed(() => this.copies() === 0);
   protected readonly duplicate = computed(() => this.copies() > 1);
   protected readonly initials = computed(() => this.sticker().name.slice(0, 2).toUpperCase());
+  protected readonly canShowPortrait = computed(
+    () => !this.missing() && Boolean(this.sticker().portrait) && !this.portraitFailed(),
+  );
   protected readonly accessibilityLabel = computed(() => {
     const status = this.missing()
       ? 'faltante'
@@ -34,5 +38,9 @@ export class StickerCardComponent {
   protected selectStickerFromKeyboard(event: Event): void {
     event.preventDefault();
     this.selectSticker();
+  }
+
+  protected hideBrokenPortrait(): void {
+    this.portraitFailed.set(true);
   }
 }
