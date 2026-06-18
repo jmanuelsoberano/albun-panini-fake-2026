@@ -6,12 +6,13 @@ import type { Team } from '../../core/models/album.models';
 import type { MatchPhase, TournamentMatch } from '../../core/models/tournament.models';
 import { calculateTopScorers } from '../../core/utils/tournament-domain';
 import { TeamFlagComponent } from '../../shared/team-flag/team-flag.component';
+import { TournamentSectionNavComponent } from './tournament-section-nav.component';
 
 type PhaseFilter = 'all' | MatchPhase;
 
 @Component({
   selector: 'app-tournament-matches-page',
-  imports: [RouterLink, TeamFlagComponent],
+  imports: [RouterLink, TeamFlagComponent, TournamentSectionNavComponent],
   templateUrl: './tournament-matches-page.component.html',
   styleUrl: './tournament-matches-page.component.css',
   changeDetection: ChangeDetectionStrategy.OnPush,

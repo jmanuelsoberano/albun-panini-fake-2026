@@ -1,7 +1,31 @@
+<app-tournament-section-nav activeSection="grupos" />
+
 <section class="section-shell page-heading">
   <p class="eyebrow">Grupos</p>
   <h1>Como quedaron los grupos</h1>
   <p>Tablas calculadas desde resultados verificados del Mundial 2026.</p>
+</section>
+
+<section class="section-shell group-view-toolbar" aria-label="Vista de posiciones">
+  <span>Vista de grupos</span>
+  <div class="standing-view-toggle" role="group" aria-label="Vista de posiciones">
+    <button
+      type="button"
+      [class.active]="standingView() === 'ranking'"
+      [attr.aria-pressed]="standingView() === 'ranking'"
+      (click)="setStandingView('ranking')"
+    >
+      Ranking
+    </button>
+    <button
+      type="button"
+      [class.active]="standingView() === 'table'"
+      [attr.aria-pressed]="standingView() === 'table'"
+      (click)="setStandingView('table')"
+    >
+      Tabla completa
+    </button>
+  </div>
 </section>
 
 <section class="section-shell group-boards" aria-label="Tablas y partidos por grupo">
@@ -12,7 +36,59 @@
         <span>{{ board.group.teamIds.length }} equipos</span>
       </header>
 
-      <div class="standing-table" role="table" [attr.aria-label]="board.group.name">
+      <div class="standing-cards" [class.hidden-mobile]="standingView() !== 'ranking'">
+        @for (row of board.standings; track row.teamId; let position = $index) {
+          <article class="standing-card">
+            <a class="standing-team" [routerLink]="['/torneo/equipos', row.teamId]">
+              <span class="standing-rank">{{ position + 1 }}</span>
+              @if (teamFor(row.teamId); as team) {
+                <app-team-flag size="sm" [flagCode]="team.flagCode" [name]="team.name" />
+              }
+              <span>
+                <strong>{{ teamCode(row.teamId) }}</strong>
+                <small>{{ teamName(row.teamId) }}</small>
+              </span>
+            </a>
+            <strong class="standing-points">{{ row.points }} pts</strong>
+            <dl>
+              <div>
+                <dt>PJ</dt>
+                <dd>{{ row.played }}</dd>
+              </div>
+              <div>
+                <dt>G</dt>
+                <dd>{{ row.wins }}</dd>
+              </div>
+              <div>
+                <dt>E</dt>
+                <dd>{{ row.draws }}</dd>
+              </div>
+              <div>
+                <dt>P</dt>
+                <dd>{{ row.losses }}</dd>
+              </div>
+              <div>
+                <dt>DG</dt>
+                <dd>{{ row.goalDifference }}</dd>
+              </div>
+            </dl>
+            <span class="standing-goals"
+              >GF {{ row.goalsFor }} &middot; GC {{ row.goalsAgainst }}</span
+            >
+          </article>
+        }
+      </div>
+
+      <p class="table-scroll-hint" [class.hidden-mobile]="standingView() !== 'table'">
+        Desliza la tabla para ver GF, GC, DG y puntos.
+      </p>
+
+      <div
+        class="standing-table"
+        [class.hidden-mobile]="standingView() !== 'table'"
+        role="table"
+        [attr.aria-label]="board.group.name"
+      >
         <div class="standing-head" role="row">
           <span role="columnheader">Equipo</span>
           <span role="columnheader">PJ</span>

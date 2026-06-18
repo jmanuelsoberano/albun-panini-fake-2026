@@ -1,0 +1,17 @@
+<section class="section-shell tournament-section-nav" aria-label="Navegaci&oacute;n de torneo">
+  <span class="nav-kicker">Torneo</span>
+  <nav aria-label="Secciones del torneo">
+    @for (item of links; track item.id) {
+      <a
+        [routerLink]="item.path"
+        [class.active]="activeSection === item.id"
+        [attr.aria-current]="activeSection === item.id ? 'page' : null"
+      >
+        @if (item.id === 'resumen' && activeSection !== 'resumen') {
+          <span aria-hidden="true">&larr;</span>
+        }
+        {{ item.label }}
+      </a>
+    }
+  </nav>
+</section>

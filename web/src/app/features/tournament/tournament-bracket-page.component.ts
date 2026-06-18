@@ -5,6 +5,7 @@ import { tournamentTeams } from '../../core/data/worldcup-facts';
 import type { Team } from '../../core/models/album.models';
 import type { TournamentMatch } from '../../core/models/tournament.models';
 import { TeamFlagComponent } from '../../shared/team-flag/team-flag.component';
+import { TournamentSectionNavComponent } from './tournament-section-nav.component';
 
 function isTournamentMatch(match: TournamentMatch | undefined): match is TournamentMatch {
   return Boolean(match);
@@ -12,7 +13,7 @@ function isTournamentMatch(match: TournamentMatch | undefined): match is Tournam
 
 @Component({
   selector: 'app-tournament-bracket-page',
-  imports: [RouterLink, TeamFlagComponent],
+  imports: [RouterLink, TeamFlagComponent, TournamentSectionNavComponent],
   templateUrl: './tournament-bracket-page.component.html',
   styleUrl: './tournament-bracket-page.component.css',
   changeDetection: ChangeDetectionStrategy.OnPush,

@@ -14,6 +14,10 @@ h1 {
   color: var(--muted);
 }
 
+.group-view-toolbar {
+  display: none;
+}
+
 .group-boards {
   display: grid;
   gap: 1rem;
@@ -42,6 +46,12 @@ h1 {
 .group-board h2 {
   margin: 0;
   text-transform: uppercase;
+}
+
+.standing-view-toggle,
+.standing-cards,
+.table-scroll-hint {
+  display: none;
 }
 
 .standing-table {
@@ -95,6 +105,108 @@ h1 {
 .standing-row b {
   background: var(--amber);
   color: #07101f;
+}
+
+.standing-card {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 0.55rem;
+  padding: 0.7rem;
+  border: 1px solid var(--rule);
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.standing-team {
+  display: flex;
+  min-width: 0;
+  gap: 0.55rem;
+  align-items: center;
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.standing-team span:last-child {
+  display: grid;
+  min-width: 0;
+  gap: 0.12rem;
+}
+
+.standing-team strong,
+.standing-team small {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.standing-team small {
+  color: var(--muted);
+  font-weight: 850;
+}
+
+.standing-rank {
+  display: grid;
+  flex: 0 0 auto;
+  width: 1.55rem;
+  height: 1.55rem;
+  place-items: center;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--muted);
+  font-size: 0.72rem;
+  font-weight: 1000;
+}
+
+.standing-points {
+  align-self: start;
+  padding: 0.42rem 0.55rem;
+  border-radius: 5px;
+  background: var(--amber);
+  color: #07101f;
+  font-size: 0.8rem;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.standing-card dl {
+  display: grid;
+  grid-column: 1 / -1;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 0.35rem;
+  margin: 0;
+}
+
+.standing-card dl div {
+  display: grid;
+  gap: 0.12rem;
+  padding: 0.42rem;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.06);
+  text-align: center;
+}
+
+.standing-card dt,
+.standing-card dd {
+  margin: 0;
+}
+
+.standing-card dt,
+.standing-goals {
+  color: var(--muted);
+  font-size: 0.68rem;
+  font-weight: 1000;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+.standing-card dd {
+  color: var(--ink);
+  font-size: 0.92rem;
+  font-weight: 950;
+}
+
+.standing-goals {
+  grid-column: 1 / -1;
 }
 
 .group-matches {
@@ -164,5 +276,74 @@ h1 {
 @media (max-width: 760px) {
   h1 {
     font-size: 2.45rem;
+  }
+
+  .group-view-toolbar {
+    display: grid;
+    gap: 0.45rem;
+    padding-block: 0 0.75rem;
+  }
+
+  .group-view-toolbar > span {
+    color: var(--muted);
+    font-size: 0.72rem;
+    font-weight: 1000;
+    letter-spacing: 0;
+    text-transform: uppercase;
+  }
+
+  .standing-view-toggle {
+    display: flex;
+    gap: 0.4rem;
+  }
+
+  .standing-view-toggle button {
+    flex: 1 1 0;
+    min-height: 38px;
+    border: 1px solid var(--rule);
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.065);
+    color: var(--muted);
+    font: inherit;
+    font-size: 0.76rem;
+    font-weight: 950;
+    text-transform: uppercase;
+  }
+
+  .standing-view-toggle button.active {
+    border-color: rgba(248, 201, 69, 0.52);
+    background: linear-gradient(135deg, rgba(0, 208, 132, 0.22), rgba(248, 201, 69, 0.16));
+    color: var(--ink);
+  }
+
+  .standing-cards {
+    display: grid;
+    gap: 0.55rem;
+    padding: 0.75rem 1rem 1rem;
+  }
+
+  .table-scroll-hint {
+    display: block;
+    margin: 0;
+    padding: 0.7rem 1rem 0;
+    color: var(--muted);
+    font-size: 0.78rem;
+    font-weight: 850;
+  }
+
+  .standing-cards.hidden-mobile,
+  .standing-table.hidden-mobile,
+  .table-scroll-hint.hidden-mobile {
+    display: none;
+  }
+
+  .standing-table {
+    padding-top: 0.75rem;
+  }
+}
+
+@media (max-width: 420px) {
+  .standing-card dl {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
