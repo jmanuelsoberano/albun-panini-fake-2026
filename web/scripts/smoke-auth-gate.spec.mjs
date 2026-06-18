@@ -34,5 +34,5 @@ test('public collection route is read-only and prompts sign-in for play actions'
   await expect(page.locator('app-pack-dialog')).toHaveCount(0);
   await expect(page.locator('app-session-panel [role="dialog"]')).toBeVisible();
   await expect(page.getByRole('heading', { name: 'Inicia sesión para jugar' })).toBeVisible();
-  await expect(page.getByRole('button', { name: 'Continuar con Google' })).toBeVisible();
+  await expect(page.getByRole('button', { name: 'Continuar con Google' })).toBeEnabled();
 });
