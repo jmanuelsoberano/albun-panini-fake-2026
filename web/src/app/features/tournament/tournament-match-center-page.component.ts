@@ -49,6 +49,12 @@ export class TournamentMatchCenterPageComponent {
     return minute === null ? 'Gol' : `${minute}'`;
   }
 
+  protected timelineEmptyLabel(match: TournamentMatch): string {
+    return match.status === 'finished'
+      ? 'Goleadores pendientes de confirmacion.'
+      : 'Resultado y goles pendientes de confirmacion.';
+  }
+
   protected statusLabel(match: TournamentMatch): string {
     if (match.status === 'finished') {
       return 'Finalizado';

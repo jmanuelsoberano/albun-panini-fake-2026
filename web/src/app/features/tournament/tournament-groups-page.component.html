@@ -3,6 +3,7 @@
 <section class="section-shell page-heading">
   <p class="eyebrow">Grupos</p>
   <h1>Como quedaron los grupos</h1>
+  <p>{{ resultsCutoffLabel }}</p>
   <p>Tablas calculadas desde resultados verificados del Mundial 2026.</p>
 </section>
 
@@ -174,7 +175,7 @@
               </strong>
             </div>
             <p>{{ teamName(match.homeTeamId) }} vs {{ teamName(match.awayTeamId) }}</p>
-            <small>{{ eventsLabel(match) || 'Pendiente de resultado' }}</small>
+            <small>{{ matchNote(match) }}</small>
             <a class="match-link" [routerLink]="['/torneo/partidos', match.id]">Match center</a>
           </article>
         }

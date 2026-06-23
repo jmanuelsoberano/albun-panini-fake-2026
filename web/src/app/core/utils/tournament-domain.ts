@@ -51,6 +51,10 @@ export function validateMatchScoreEvents(match: TournamentMatch): boolean {
     return match.events.length === 0;
   }
 
+  if (match.events.length === 0) {
+    return true;
+  }
+
   const homeGoals = match.events.filter((event) => event.teamId === match.homeTeamId).length;
   const awayGoals = match.events.filter((event) => event.teamId === match.awayTeamId).length;
 

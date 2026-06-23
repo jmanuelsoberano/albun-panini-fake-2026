@@ -3,6 +3,7 @@
 <section class="section-shell page-heading">
   <p class="eyebrow">Partidos</p>
   <h1>Marcadores y goleadores</h1>
+  <p>{{ resultsCutoffLabel }}</p>
   <p>Filtra por fase o grupo y revisa quién metió gol en cada partido verificado.</p>
 </section>
 
@@ -60,7 +61,7 @@
             }}</a>
           </div>
         </div>
-        <p>{{ eventSummary(match) || 'Pendiente de resultado' }}</p>
+        <p>{{ matchNote(match) }}</p>
         <a class="detail-link" [routerLink]="['/torneo/partidos', match.id]">Match center</a>
       </article>
     }
