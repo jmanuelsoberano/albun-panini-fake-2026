@@ -1,6 +1,10 @@
 import { ChangeDetectionStrategy, Component, signal } from '@angular/core';
 import { RouterLink } from '@angular/router';
-import { tournamentGroups, tournamentMatches } from '../../core/data/tournament-fixtures';
+import {
+  tournamentGroups,
+  tournamentMatches,
+  tournamentResultsCutoffLabel,
+} from '../../core/data/tournament-fixtures';
 import { tournamentTeams } from '../../core/data/worldcup-facts';
 import type { Team } from '../../core/models/album.models';
 import type { TournamentMatch } from '../../core/models/tournament.models';
@@ -24,6 +28,7 @@ export class TournamentGroupsPageComponent {
     standings: calculateGroupStandings(group, tournamentMatches),
     matches: tournamentMatches.filter((match) => match.groupId === group.id),
   }));
+  protected readonly resultsCutoffLabel = tournamentResultsCutoffLabel;
   protected readonly standingView = signal<StandingView>('ranking');
   protected readonly selectedGroupId = signal(this.groupBoards[0]?.group.id ?? '');
   protected readonly showAllGroups = signal(false);
@@ -89,6 +94,18 @@ export class TournamentGroupsPageComponent {
         event.minute === null ? event.playerName : `${event.playerName} ${event.minute}'`,
       )
       .join(' · ');
+  }
+
+  protected matchNote(match: TournamentMatch): string {
+    const summary = this.eventsLabel(match);
+
+    if (summary) {
+      return summary;
+    }
+
+    return match.status === 'finished'
+      ? 'Goleadores pendientes de confirmacion'
+      : 'Pendiente de resultado';
   }
 
   private selectedGroupIndex(): number {

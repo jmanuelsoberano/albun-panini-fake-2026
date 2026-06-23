@@ -1,6 +1,10 @@
 import { ChangeDetectionStrategy, Component, computed, signal } from '@angular/core';
 import { RouterLink } from '@angular/router';
-import { tournamentGroups, tournamentMatches } from '../../core/data/tournament-fixtures';
+import {
+  tournamentGroups,
+  tournamentMatches,
+  tournamentResultsCutoffLabel,
+} from '../../core/data/tournament-fixtures';
 import { tournamentTeams } from '../../core/data/worldcup-facts';
 import type { Team } from '../../core/models/album.models';
 import type { MatchPhase, TournamentMatch } from '../../core/models/tournament.models';
@@ -30,6 +34,7 @@ export class TournamentMatchesPageComponent {
     { value: 'final', label: 'Final' },
   ];
   protected readonly groups = tournamentGroups;
+  protected readonly resultsCutoffLabel = tournamentResultsCutoffLabel;
   protected readonly phase = signal<PhaseFilter>('all');
   protected readonly groupId = signal('all');
   protected readonly topScorers = calculateTopScorers(tournamentMatches, 8);
@@ -75,6 +80,18 @@ export class TournamentMatchesPageComponent {
         event.minute === null ? event.playerName : `${event.playerName} ${event.minute}'`,
       )
       .join(' · ');
+  }
+
+  protected matchNote(match: TournamentMatch): string {
+    const summary = this.eventSummary(match);
+
+    if (summary) {
+      return summary;
+    }
+
+    return match.status === 'finished'
+      ? 'Goleadores pendientes de confirmacion'
+      : 'Pendiente de resultado';
   }
 
   protected statusLabel(match: TournamentMatch): string {

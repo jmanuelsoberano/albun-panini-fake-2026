@@ -86,6 +86,24 @@ describe('tournament-domain utilities', () => {
     expect(tournamentMatches.every(validateMatchScoreEvents)).toBe(true);
   });
 
+  it('allows verified scoreboards while scorers remain pending', () => {
+    expect(
+      validateMatchScoreEvents({
+        id: 'M-test',
+        phase: 'group',
+        groupId: 'GA',
+        homeTeamId: 'A',
+        awayTeamId: 'B',
+        homeScore: 1,
+        awayScore: 0,
+        status: 'finished',
+        venue: 'Foro Test',
+        kickoffLabel: 'Jornada 1',
+        events: [],
+      }),
+    ).toBe(true);
+  });
+
   it('calculates top scorers from goal events', () => {
     const topScorers = calculateTopScorers(tournamentMatches, 5);
 
