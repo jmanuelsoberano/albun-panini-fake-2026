@@ -18,32 +18,31 @@
     </div>
   </div>
 
-  <div
-    class="score-slab"
-    [style.--team-a]="featuredMatch.home.colors[0]"
-    [style.--team-b]="featuredMatch.away.colors[0]"
-  >
-    <span>{{ featuredMatch.status }}</span>
-    <div class="score-row">
-      <strong>
-        <app-team-flag
-          size="sm"
-          [flagCode]="featuredMatch.home.flagCode"
-          [name]="featuredMatch.home.name"
-        />
-        {{ featuredMatch.home.code }}
-      </strong>
-      <b>{{ featuredMatch.score }}</b>
-      <strong>
-        <app-team-flag
-          size="sm"
-          [flagCode]="featuredMatch.away.flagCode"
-          [name]="featuredMatch.away.name"
-        />
-        {{ featuredMatch.away.code }}
-      </strong>
+  <div class="score-slab">
+    <span>Jornada en foco</span>
+    <div class="match-strip">
+      @for (match of featuredMatches; track match.id) {
+        <a
+          class="score-row"
+          [routerLink]="['/torneo/partidos', match.id]"
+          [style.--team-a]="match.home.colors[0]"
+          [style.--team-b]="match.away.colors[0]"
+        >
+          <strong>
+            <app-team-flag size="sm" [flagCode]="match.home.flagCode" [name]="match.home.name" />
+            <span>{{ match.home.code }}</span>
+            <small>{{ match.home.name }}</small>
+          </strong>
+          <b>{{ match.score }}</b>
+          <strong>
+            <app-team-flag size="sm" [flagCode]="match.away.flagCode" [name]="match.away.name" />
+            <span>{{ match.away.code }}</span>
+            <small>{{ match.away.name }}</small>
+          </strong>
+        </a>
+        <small>{{ match.status }} · {{ match.venue }}</small>
+      }
     </div>
-    <small>{{ featuredMatch.venue }}</small>
   </div>
 </section>
 
@@ -58,24 +57,25 @@
   </article>
 
   <article class="home-panel match-panel">
-    <p class="panel-kicker">Partido destacado</p>
-    <h2>{{ featuredMatch.home.name }} vs {{ featuredMatch.away.name }}</h2>
+    <p class="panel-kicker">Jornada en foco</p>
+    <h2>Partidos y goleadores recientes</h2>
     <ol>
-      @for (scorer of featuredMatch.scorers; track scorer) {
+      @for (scorer of featuredScorers; track scorer) {
         <li>{{ scorer }}</li>
+      } @empty {
+        <li>Los goleadores aparecerán cuando haya marcadores verificados.</li>
       }
     </ol>
   </article>
 
   <article class="home-panel group-panel">
-    <p class="panel-kicker">Grupo A</p>
-    <h2>Grupo inaugural</h2>
+    <p class="panel-kicker">Grupos</p>
+    <h2>{{ groupCount }} grupos del torneo</h2>
     <ul>
-      @for (team of featuredGroup; track team.id) {
+      @for (group of groupPreview; track group.id) {
         <li>
-          <app-team-flag size="sm" [flagCode]="team.flagCode" [name]="team.name" />
-          <strong>{{ team.code }}</strong>
-          {{ team.name }}
+          <strong>{{ group.name }}</strong>
+          {{ group.teamCodes }}
         </li>
       }
     </ul>
