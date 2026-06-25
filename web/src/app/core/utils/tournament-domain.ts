@@ -161,6 +161,44 @@ export function winnerOf(match: TournamentMatch): string | null {
   return match.homeScore > match.awayScore ? match.homeTeamId : match.awayTeamId;
 }
 
+export function selectFeaturedMatch(matches: readonly TournamentMatch[]): TournamentMatch | null {
+  return selectFeaturedMatches(matches, 1)[0] ?? null;
+}
+
+export function selectFeaturedMatches(
+  matches: readonly TournamentMatch[],
+  limit = 3,
+): readonly TournamentMatch[] {
+  const liveMatches = matches.filter((match) => match.status === 'live');
+
+  if (liveMatches.length > 0) {
+    return liveMatches.slice(0, limit);
+  }
+
+  const scheduledMatches = matches.filter((match) => match.status === 'scheduled');
+
+  if (scheduledMatches.length > 0) {
+    return scheduledMatches.slice(0, limit);
+  }
+
+  return [...matches]
+    .reverse()
+    .filter((match) => match.status === 'finished')
+    .slice(0, limit);
+}
+
+export function featuredMatchStatusLabel(match: TournamentMatch): string {
+  if (match.status === 'live') {
+    return 'En vivo';
+  }
+
+  if (match.status === 'scheduled') {
+    return 'Proximo partido';
+  }
+
+  return 'Ultimo resultado';
+}
+
 export function deriveBracketRounds(matches: readonly TournamentMatch[]): readonly BracketRound[] {
   const rounds = [
     ['round-of-32', 'Ronda de 32'],

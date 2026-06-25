@@ -5,6 +5,9 @@ import {
   calculateTopScorers,
   deriveBracketRounds,
   deriveQualifiedTeamIds,
+  featuredMatchStatusLabel,
+  selectFeaturedMatch,
+  selectFeaturedMatches,
   validateMatchScoreEvents,
   winnerOf,
 } from './tournament-domain';
@@ -128,5 +131,20 @@ describe('tournament-domain utilities', () => {
     );
     expect(finalRound?.matchIds).toHaveLength(1);
     expect(finalMatch ? winnerOf(finalMatch) : null).toBeNull();
+  });
+
+  it('selects a contextual featured match instead of the fixed opener', () => {
+    const featured = selectFeaturedMatch(tournamentMatches);
+
+    expect(featured).not.toBeNull();
+    expect(featured?.id).not.toBe('M01');
+    expect(featured ? featuredMatchStatusLabel(featured) : '').toBe('Proximo partido');
+  });
+
+  it('selects a contextual match strip instead of a single fixed opener', () => {
+    const featured = selectFeaturedMatches(tournamentMatches, 3);
+
+    expect(featured.map((match) => match.id)).toEqual(['M55', 'M56', 'M57']);
+    expect(featured.some((match) => match.id === 'M01')).toBe(false);
   });
 });
