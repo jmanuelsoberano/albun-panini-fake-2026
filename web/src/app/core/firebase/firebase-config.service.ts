@@ -57,9 +57,7 @@ export class FirebaseConfigService {
       return {
         firebaseConfig: configModule.firebaseConfig,
         useEmulators: Boolean(configModule.USE_FIREBASE_EMULATORS),
-        useCloudFunctions: Boolean(
-          configModule.USE_CLOUD_FUNCTIONS ?? configModule.USE_FIREBASE_EMULATORS,
-        ),
+        useCloudFunctions: Boolean(configModule.USE_CLOUD_FUNCTIONS),
       };
     } catch {
       return null;

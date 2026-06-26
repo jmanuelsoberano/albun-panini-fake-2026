@@ -18,11 +18,10 @@ export class FirebaseAppService {
       return null;
     }
 
-    const [appApi, authApi, firestoreApi, functionsApi] = await Promise.all([
+    const [appApi, authApi, firestoreApi] = await Promise.all([
       import('firebase/app'),
       import('firebase/auth'),
       import('firebase/firestore'),
-      import('firebase/functions'),
     ]);
 
     const app =
@@ -31,14 +30,12 @@ export class FirebaseAppService {
         : appApi.initializeApp(config.firebaseConfig);
     const auth = authApi.getAuth(app);
     const db = firestoreApi.getFirestore(app);
-    const functions = functionsApi.getFunctions(app);
 
     if (config.useEmulators) {
       authApi.connectAuthEmulator(auth, 'http://127.0.0.1:9099', { disableWarnings: true });
       firestoreApi.connectFirestoreEmulator(db, '127.0.0.1', 8080);
-      functionsApi.connectFunctionsEmulator(functions, '127.0.0.1', 5001);
     }
 
-    return { app, auth, db, functions };
+    return { app, auth, db };
   }
 }

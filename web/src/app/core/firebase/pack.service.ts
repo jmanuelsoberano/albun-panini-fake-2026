@@ -2,49 +2,19 @@ import { inject, Injectable } from '@angular/core';
 import { albumStickers } from '../data/album-catalog';
 import type { Sticker } from '../models/album.models';
 import { FirebaseAppService } from './firebase-app.service';
-import { FirebaseConfigService } from './firebase-config.service';
 import type { OpenPackResult } from './firebase.models';
 
 @Injectable({ providedIn: 'root' })
 export class PackService {
   private readonly firebaseApp = inject(FirebaseAppService);
-  private readonly config = inject(FirebaseConfigService);
   private readonly stickers = albumStickers;
 
   async claimStarterPack(): Promise<void> {
-    if (await this.config.shouldUseCloudFunctions()) {
-      await this.callFunction('claimStarterPack', {});
-      return;
-    }
-
     await this.claimStarterPackInFirestore();
   }
 
   async openPack(packType = 'normal'): Promise<OpenPackResult> {
-    if (await this.config.shouldUseCloudFunctions()) {
-      const result = await this.callFunction('openPack', { packType });
-      return { stickers: this.toStickerList(result['stickers']) };
-    }
-
     return { stickers: await this.openPackInFirestore(packType) };
-  }
-
-  private async callFunction(
-    name: string,
-    payload: Record<string, unknown>,
-  ): Promise<Record<string, unknown>> {
-    const services = await this.firebaseApp.getServices();
-    if (!services) {
-      throw new Error('Firebase no esta configurado.');
-    }
-
-    const functions = await import('firebase/functions');
-    const callable = functions.httpsCallable<Record<string, unknown>, Record<string, unknown>>(
-      services.functions,
-      name,
-    );
-    const result = await callable(payload);
-    return result.data;
   }
 
   private async claimStarterPackInFirestore(): Promise<void> {
@@ -156,18 +126,5 @@ export class PackService {
     const pool = this.stickers.filter((sticker) => sticker.rarity === rarity);
     const source = pool.length > 0 ? pool : this.stickers;
     return source[Math.floor(Math.random() * source.length)];
-  }
-
-  private toStickerList(value: unknown): readonly Sticker[] {
-    if (!Array.isArray(value)) {
-      return [];
-    }
-
-    return value
-      .map((item) => {
-        const id = typeof item === 'string' ? item : String(item?.id ?? '');
-        return this.stickers.find((sticker) => sticker.id === id);
-      })
-      .filter((sticker): sticker is Sticker => Boolean(sticker));
   }
 }

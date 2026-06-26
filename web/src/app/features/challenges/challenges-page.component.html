@@ -1,7 +1,7 @@
 <section class="section-shell page-heading">
   <p class="eyebrow">Retos</p>
   <h1>Misiones del coleccionista</h1>
-  <p>Completa misiones del álbum y reclama monedas para preparar nuevos sobres.</p>
+  <p>Completa misiones del album y reclama sobres para conseguir mas cromos.</p>
 </section>
 
 <section class="section-shell challenge-grid">
@@ -15,7 +15,7 @@
       <h2>{{ challenge.title }}</h2>
       <p>{{ challenge.copy }}</p>
       <strong>{{ challenge.progressLabel }}</strong>
-      <small>Recompensa: 25 monedas</small>
+      <small>Recompensa: 25 monedas + 1 sobre</small>
       @if (session.isAuthenticated()) {
         <button
           type="button"
