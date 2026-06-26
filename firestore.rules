@@ -37,80 +37,6 @@ service cloud.firestore {
       ]);
     }
 
-    function safeStarterClaim() {
-      return request.resource.data.diff(resource.data).affectedKeys().hasOnly([
-          'starterPackClaimed',
-          'packsAvailable',
-          'updatedAt'
-        ])
-        && resource.data.starterPackClaimed == false
-        && request.resource.data.starterPackClaimed == true
-        && request.resource.data.packsAvailable == resource.data.packsAvailable + 1;
-    }
-
-    function safeClientPackOpenProfile() {
-      return request.resource.data.diff(resource.data).affectedKeys().hasOnly([
-          'packsAvailable',
-          'packsOpened',
-          'updatedAt'
-        ])
-        && resource.data.packsAvailable > 0
-        && request.resource.data.packsAvailable == resource.data.packsAvailable - 1
-        && request.resource.data.packsOpened == resource.data.packsOpened + 1;
-    }
-
-    function clientPackOpenAfter(userId) {
-      let before = get(/databases/$(database)/documents/users/$(userId)).data;
-      let after = getAfter(/databases/$(database)/documents/users/$(userId)).data;
-      return after.packsAvailable == before.packsAvailable - 1
-        && after.packsOpened == before.packsOpened + 1;
-    }
-
-    function validClientOpening(userId, openingId, stickerId) {
-      let opening = getAfter(/databases/$(database)/documents/packOpenings/$(openingId)).data;
-      return opening.userId == userId
-        && opening.source == 'firestore-client'
-        && opening.stickerIds is list
-        && opening.stickerIds.size() == 5
-        && stickerId in opening.stickerIds;
-    }
-
-    function safeInventoryCreate(userId, stickerId) {
-      return isOwner(userId)
-        && request.resource.data.keys().hasOnly([
-          'stickerId',
-          'copies',
-          'lastOpeningId',
-          'updatedAt'
-        ])
-        && request.resource.data.stickerId == stickerId
-        && request.resource.data.copies == 1
-        && request.resource.data.lastOpeningId is string
-        && clientPackOpenAfter(userId)
-        && validClientOpening(userId, request.resource.data.lastOpeningId, stickerId);
-    }
-
-    function safeInventoryUpdate(userId, stickerId) {
-      return isOwner(userId)
-        && request.resource.data.keys().hasOnly([
-          'stickerId',
-          'copies',
-          'lastOpeningId',
-          'updatedAt'
-        ])
-        && request.resource.data.diff(resource.data).affectedKeys().hasOnly([
-          'copies',
-          'lastOpeningId',
-          'updatedAt'
-        ])
-        && request.resource.data.stickerId == resource.data.stickerId
-        && request.resource.data.stickerId == stickerId
-        && request.resource.data.copies == resource.data.copies + 1
-        && request.resource.data.lastOpeningId is string
-        && clientPackOpenAfter(userId)
-        && validClientOpening(userId, request.resource.data.lastOpeningId, stickerId);
-    }
-
     function safeRoomCreate() {
       return signedIn()
         && request.resource.data.keys().hasOnly([
@@ -189,16 +115,13 @@ service cloud.firestore {
     match /users/{userId} {
       allow read: if signedIn();
       allow create: if isOwner(userId) && safeProfileCreate();
-      allow update: if isOwner(userId)
-        && (safeProfileUpdate() || safeStarterClaim() || safeClientPackOpenProfile());
+      allow update: if isOwner(userId) && safeProfileUpdate();
       allow delete: if false;
     }
 
     match /users/{userId}/inventory/{stickerId} {
       allow read: if isOwner(userId);
-      allow create: if safeInventoryCreate(userId, stickerId);
-      allow update: if safeInventoryUpdate(userId, stickerId);
-      allow delete: if false;
+      allow write: if false; // Solo Cloud Functions debe modificar inventario.
     }
 
     match /users/{userId}/missions/{missionId} {
@@ -208,15 +131,13 @@ service cloud.firestore {
 
     match /rooms/{roomId} {
       allow read: if signedIn();
-      allow create: if safeRoomCreate();
-      allow update: if safeRoomUpdate();
+      allow create, update: if false; // Solo Cloud Functions debe crear o actualizar salas.
       allow delete: if false;
 
       match /members/{userId} {
         allow read: if signedIn()
           && request.auth.uid in get(/databases/$(database)/documents/rooms/$(roomId)).data.memberIds;
-        allow create, update: if isOwner(userId)
-          && request.auth.uid in get(/databases/$(database)/documents/rooms/$(roomId)).data.memberIds;
+        allow create, update: if false; // Solo Cloud Functions debe administrar miembros.
         allow delete: if false;
       }
     }
@@ -224,27 +145,12 @@ service cloud.firestore {
     match /trades/{tradeId} {
       allow read: if signedIn()
         && (request.auth.uid == resource.data.fromUserId || request.auth.uid == resource.data.toUserId);
-      allow create: if safeTradeCreate();
-      allow update, delete: if false; // Aceptar/cancelar debe pasar por Cloud Functions.
+      allow create, update, delete: if false; // Crear/aceptar/cancelar debe pasar por Cloud Functions.
     }
 
     match /packOpenings/{openingId} {
       allow read: if signedIn() && resource.data.userId == request.auth.uid;
-      allow create: if signedIn()
-        && request.resource.data.keys().hasOnly([
-          'userId',
-          'packType',
-          'stickerIds',
-          'source',
-          'createdAt'
-        ])
-        && request.resource.data.userId == request.auth.uid
-        && request.resource.data.packType is string
-        && request.resource.data.stickerIds is list
-        && request.resource.data.stickerIds.size() == 5
-        && request.resource.data.source == 'firestore-client'
-        && clientPackOpenAfter(request.auth.uid);
-      allow update, delete: if false;
+      allow write: if false; // Solo Cloud Functions debe registrar aperturas.
     }
 
     match /catalog/{docId} {

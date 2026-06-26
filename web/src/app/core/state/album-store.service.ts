@@ -91,6 +91,13 @@ export class AlbumStore {
     this.copies.set(copies);
   }
 
+  useFirebaseProgress(packsOpened: number): void {
+    const safePacksOpened = Number.isFinite(packsOpened) ? Math.max(0, Math.floor(packsOpened)) : 0;
+
+    this.mode.set('firebase');
+    this.packsOpened.set(safePacksOpened);
+  }
+
   openLocalPack(size = 5): readonly Sticker[] {
     this.mode.set('local');
     const pack = this.randomUniquePack(size);

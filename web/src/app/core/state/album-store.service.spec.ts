@@ -51,6 +51,20 @@ describe('AlbumStore', () => {
     expect(firstPack?.progressLabel).toBe('1/1');
   });
 
+  it('recalculates challenges from firebase profile progress without replacing inventory', () => {
+    const store = TestBed.inject(AlbumStore);
+
+    store.useFirebaseInventory({ TEST001: 2 });
+    store.useFirebaseProgress(3);
+
+    const firstPack = store.challenges().find((challenge) => challenge.id === 'firstPack');
+    expect(store.mode()).toBe('firebase');
+    expect(store.copyCount('TEST001')).toBe(2);
+    expect(store.packsOpened()).toBe(3);
+    expect(firstPack?.complete).toBe(true);
+    expect(firstPack?.progressLabel).toBe('1/1');
+  });
+
   it('resets local album state', () => {
     const store = TestBed.inject(AlbumStore);
 

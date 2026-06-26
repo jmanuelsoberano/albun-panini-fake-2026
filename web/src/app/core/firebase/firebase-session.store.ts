@@ -102,7 +102,7 @@ export class FirebaseSessionStore {
   async claimMission(missionId: string): Promise<void> {
     await this.runAction(async () => {
       await this.missionService.completeMission(missionId);
-      this.message.set('Mision reclamada. Recibiste 25 monedas.');
+      this.message.set('Mision reclamada. Recibiste 25 monedas y 1 sobre.');
     });
   }
 
@@ -126,7 +126,12 @@ export class FirebaseSessionStore {
     this.message.set('Sesión activa. Tu progreso está guardado.');
     this.profileUnsubscribe = await this.profileService.listenToUserProfile(
       user.uid,
-      (profile) => this.profile.set(profile),
+      (profile) => {
+        this.profile.set(profile);
+        if (profile) {
+          this.album.useFirebaseProgress(profile.packsOpened);
+        }
+      },
       (error) => this.setError(error),
     );
     this.inventoryUnsubscribe = await this.inventoryService.listenToInventory(

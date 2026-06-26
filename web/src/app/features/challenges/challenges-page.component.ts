@@ -24,7 +24,7 @@ export class ChallengesPageComponent {
       return 'Reclamado';
     }
 
-    return challenge.complete ? 'Reclamar 25 monedas' : 'En progreso';
+    return challenge.complete ? 'Reclamar recompensa' : 'En progreso';
   }
 
   protected canClaim(challenge: AlbumChallenge): boolean {
