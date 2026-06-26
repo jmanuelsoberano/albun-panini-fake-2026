@@ -55,15 +55,6 @@ jobs:
         working-directory: web
         run: npm run verify:migration
 
-      - name: Prepare Firebase service account
-        run: |
-          printf '%s' '${{ secrets.FIREBASE_SERVICE_ACCOUNT_ALBUN_PANINI_FAKE_2026 }}' > "${RUNNER_TEMP}/firebase-service-account.json"
-
-      - name: Deploy Firestore rules
-        env:
-          GOOGLE_APPLICATION_CREDENTIALS: ${{ runner.temp }}/firebase-service-account.json
-        run: npx -y firebase-tools@14.19.0 deploy --only firestore:rules --project albun-panini-fake-2026
-
       - name: Deploy live channel
         uses: FirebaseExtended/action-hosting-deploy@v0
         with:
@@ -71,3 +62,13 @@ jobs:
           firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_ALBUN_PANINI_FAKE_2026 }}
           channelId: live
           projectId: albun-panini-fake-2026
+
+      - name: Prepare Firebase service account
+        run: |
+          printf '%s' '${{ secrets.FIREBASE_SERVICE_ACCOUNT_ALBUN_PANINI_FAKE_2026 }}' > "${RUNNER_TEMP}/firebase-service-account.json"
+
+      - name: Deploy Firestore rules
+        continue-on-error: true
+        env:
+          GOOGLE_APPLICATION_CREDENTIALS: ${{ runner.temp }}/firebase-service-account.json
+        run: npx -y firebase-tools@14.19.0 deploy --only firestore:rules --project albun-panini-fake-2026
