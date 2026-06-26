@@ -1,19 +1,15 @@
 import { inject, Injectable } from '@angular/core';
 import type { Unsubscribe } from 'firebase/firestore';
+import { AlbumStore } from '../state/album-store.service';
 import { FirebaseAppService } from './firebase-app.service';
-import { FirebaseConfigService } from './firebase-config.service';
 
 @Injectable({ providedIn: 'root' })
 export class MissionService {
+  private readonly album = inject(AlbumStore);
   private readonly firebaseApp = inject(FirebaseAppService);
-  private readonly config = inject(FirebaseConfigService);
 
   async completeMission(missionId: string): Promise<void> {
-    if (await this.config.shouldUseCloudFunctions()) {
-      await this.callFunction('completeMission', { missionId });
-      return;
-    }
-
+    this.assertMissionComplete(missionId);
     await this.completeMissionInFirestore(missionId);
   }
 
@@ -44,24 +40,6 @@ export class MissionService {
     );
   }
 
-  private async callFunction(
-    name: string,
-    payload: Record<string, unknown>,
-  ): Promise<Record<string, unknown>> {
-    const services = await this.firebaseApp.getServices();
-    if (!services) {
-      throw new Error('Firebase no esta configurado.');
-    }
-
-    const functions = await import('firebase/functions');
-    const callable = functions.httpsCallable<Record<string, unknown>, Record<string, unknown>>(
-      services.functions,
-      name,
-    );
-    const result = await callable(payload);
-    return result.data;
-  }
-
   private async completeMissionInFirestore(missionId: string): Promise<void> {
     const services = await this.firebaseApp.getServices();
     if (!services) {
@@ -78,6 +56,8 @@ export class MissionService {
     const missionRef = firestore.doc(services.db, 'users', user.uid, 'missions', missionId);
 
     await firestore.runTransaction(services.db, async (transaction) => {
+      const userSnap = await transaction.get(userRef);
+      const profile = userSnap.exists() ? userSnap.data() : {};
       const missionSnap = await transaction.get(missionRef);
       if (missionSnap.exists() && missionSnap.data()['claimed']) {
         throw new Error('La mision ya fue cobrada.');
@@ -88,18 +68,31 @@ export class MissionService {
         {
           claimed: true,
           claimedAt: firestore.serverTimestamp(),
-          reward: { coins: 25 },
+          reward: { coins: 25, packsAvailable: 1 },
         },
         { merge: true },
       );
       transaction.set(
         userRef,
         {
-          coins: firestore.increment(25),
+          coins: Number(profile['coins'] ?? 0) + 25,
+          packsAvailable: Number(profile['packsAvailable'] ?? 0) + 1,
+          lastMissionRewardId: missionId,
           updatedAt: firestore.serverTimestamp(),
         },
         { merge: true },
       );
     });
+  }
+
+  private assertMissionComplete(missionId: string): void {
+    const challenge = this.album.challenges().find((item) => item.id === missionId);
+    if (!challenge) {
+      throw new Error('Mision no reconocida.');
+    }
+
+    if (!challenge.complete) {
+      throw new Error('Aun no completas esta mision.');
+    }
   }
 }

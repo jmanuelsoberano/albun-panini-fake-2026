@@ -1,7 +1,6 @@
 import type { FirebaseOptions, FirebaseApp } from 'firebase/app';
 import type { Auth, User } from 'firebase/auth';
 import type { Firestore } from 'firebase/firestore';
-import type { Functions } from 'firebase/functions';
 import type { InventoryCopies, Sticker, UserProfile } from '../models/album.models';
 
 export interface FirebaseRuntimeConfig {
@@ -14,7 +13,6 @@ export interface FirebaseServices {
   readonly app: FirebaseApp;
   readonly auth: Auth;
   readonly db: Firestore;
-  readonly functions: Functions;
 }
 
 export interface FirebaseSessionUser {

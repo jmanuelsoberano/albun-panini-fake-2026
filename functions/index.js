@@ -7,7 +7,6 @@ const db = getFirestore();
 
 const PACK_SIZE = 5;
 const STARTER_PACK_TYPE = "starter";
-const MISSION_REWARD = { coins: 25, packsAvailable: 1 };
 const MAX_TRADE_ITEMS = 8;
 const MAX_ROOM_MEMBERS = 12;
 const ROOM_CODE_ALPHABET = "ABCDEFGHJKLMNPQRSTUVWXYZ23456789";
@@ -70,86 +69,7 @@ async function loadCatalog(transaction) {
   if (!snap.exists) {
     throw new HttpsError("failed-precondition", "Falta sembrar el catálogo de cromos.");
   }
-  const items = snap.data().items || [];
-  if (!Array.isArray(items) || !items.length) {
-    throw new HttpsError("failed-precondition", "El catalogo de cromos esta vacio.");
-  }
-  return items;
-}
-
-function inventoryCopiesFromSnapshot(snapshot) {
-  const copies = {};
-  snapshot.forEach((document) => {
-    const data = document.data() || {};
-    const stickerId = String(data.stickerId || document.id);
-    copies[stickerId] = Number(data.copies || 0);
-  });
-  return copies;
-}
-
-function ownedStickerIds(copies) {
-  return new Set(
-    Object.entries(copies)
-      .filter(([, count]) => Number(count) > 0)
-      .map(([stickerId]) => stickerId)
-  );
-}
-
-function assertKnownMission(missionId) {
-  const allowed = new Set(["firstPack", "tenPercent", "holoHunter", "fullTeam"]);
-  if (!allowed.has(missionId)) {
-    throw new HttpsError("invalid-argument", "Mision no reconocida.");
-  }
-}
-
-async function assertMissionComplete(transaction, uid, missionId, user) {
-  assertKnownMission(missionId);
-
-  if (missionId === "firstPack") {
-    if (Number(user.packsOpened || 0) < 1) {
-      throw new HttpsError("failed-precondition", "Abre tu primer sobre antes de reclamar.");
-    }
-    return;
-  }
-
-  const [catalog, inventorySnap] = await Promise.all([
-    loadCatalog(transaction),
-    transaction.get(db.collection("users").doc(uid).collection("inventory"))
-  ]);
-  const copies = inventoryCopiesFromSnapshot(inventorySnap);
-  const ownedIds = ownedStickerIds(copies);
-
-  if (missionId === "tenPercent") {
-    const required = Math.ceil(catalog.length * 0.10);
-    if (ownedIds.size < required) {
-      throw new HttpsError("failed-precondition", "Aun no completas el 10% del album.");
-    }
-    return;
-  }
-
-  if (missionId === "holoHunter") {
-    const holoCount = catalog.filter(
-      (sticker) => sticker.rarity === "holografico" && ownedIds.has(sticker.id)
-    ).length;
-    if (holoCount < 5) {
-      throw new HttpsError("failed-precondition", "Aun necesitas 5 cromos holograficos.");
-    }
-    return;
-  }
-
-  const stickersByTeam = catalog.reduce((teams, sticker) => {
-    if (!sticker.teamId) return teams;
-    teams[sticker.teamId] = teams[sticker.teamId] || [];
-    teams[sticker.teamId].push(sticker.id);
-    return teams;
-  }, {});
-  const hasFullTeam = Object.values(stickersByTeam).some((stickerIds) =>
-    stickerIds.length > 0 && stickerIds.every((stickerId) => ownedIds.has(stickerId))
-  );
-
-  if (!hasFullTeam) {
-    throw new HttpsError("failed-precondition", "Completa los cromos de una seleccion.");
-  }
+  return snap.data().items || [];
 }
 
 async function assertInventoryCopies(transaction, userId, counts, label) {
@@ -266,31 +186,24 @@ exports.completeMission = onCall(async (request) => {
   const missionRef = userRef.collection("missions").doc(missionId);
 
   await db.runTransaction(async (transaction) => {
-    const [userSnap, missionSnap] = await Promise.all([
-      transaction.get(userRef),
-      transaction.get(missionRef)
-    ]);
-    const user = userSnap.exists ? userSnap.data() : {};
+    const missionSnap = await transaction.get(missionRef);
     if (missionSnap.exists && missionSnap.data().claimed) {
       throw new HttpsError("already-exists", "La misión ya fue cobrada.");
     }
 
-    await assertMissionComplete(transaction, uid, String(missionId), user);
-
     transaction.set(missionRef, {
       claimed: true,
       claimedAt: FieldValue.serverTimestamp(),
-      reward: MISSION_REWARD
+      reward: { coins: 25 }
     }, { merge: true });
 
     transaction.set(userRef, {
-      coins: FieldValue.increment(MISSION_REWARD.coins),
-      packsAvailable: FieldValue.increment(MISSION_REWARD.packsAvailable),
+      coins: FieldValue.increment(25),
       updatedAt: FieldValue.serverTimestamp()
     }, { merge: true });
   });
 
-  return { ok: true, ...MISSION_REWARD };
+  return { ok: true, coins: 25 };
 });
 
 exports.createRoom = onCall(async (request) => {
