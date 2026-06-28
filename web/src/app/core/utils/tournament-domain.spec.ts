@@ -144,7 +144,7 @@ describe('tournament-domain utilities', () => {
   it('selects a contextual match strip instead of a single fixed opener', () => {
     const featured = selectFeaturedMatches(tournamentMatches, 3);
 
-    expect(featured.map((match) => match.id)).toEqual(['M55', 'M56', 'M57']);
+    expect(featured.map((match) => match.id)).toEqual(['R32-01', 'R32-02', 'R32-03']);
     expect(featured.some((match) => match.id === 'M01')).toBe(false);
   });
 });
